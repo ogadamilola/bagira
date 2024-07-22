@@ -25,12 +25,12 @@ const Page = ({ children }: PageProps) => {
     <PreloaderProvider>
       <div className="relative flex size-full min-h-screen flex-col items-center justify-start overflow-hidden">
         {/* Splash Screen Overlay */}
-        {/* {(!isLoaded || isAnimating) && (
+        {(!isLoaded || isAnimating) && (
           <Preloader
             finishLoading={finishLoading}
             finishAnimation={finishAnimation}
           />
-        )} */}
+        )}
         {children}
       </div>
     </PreloaderProvider>

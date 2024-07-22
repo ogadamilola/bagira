@@ -84,7 +84,7 @@ function AboutSection() {
           >
             <Image src="/images/IMG_4263.jpg" alt="" objectFit="cover" fill />
           </div>
-          <div className="absolute bg-gradient-to-b from-transparent from-0% via-black/70 via-50% to-black to-90% size-full" />
+          <div className="absolute bg-gradient-to-b from-transparent from-0% via-black/70 via-50% to-black to-90% size-full z-10" />
           <div className="flex flex-col items-start justify-end size-full p-20 z-10">
             <div className="flex flex-col max-w-[60vw] text-white">
               <h2 className="jost text-5xl">
