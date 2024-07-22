@@ -73,7 +73,7 @@ function HeroSection() {
       <div className="absolute bg-gradient-to-b from-transparent from-0% via-black/70 via-50% to-black to-90% size-full top-0 left-0" />
       <div className="flex flex-col items-start justify-end size-full p-20 z-10">
         <div className="flex flex-col max-w-[50vw] text-white">
-          <h1 className="jost text-7xl">Life Without Art is just "Meh"</h1>
+          <h1 className="jost text-7xl">Life Without Art is just &quot;Meh&quot;</h1>
           <h3 className="josefin-sans text-xl max-w-[40vw] mt-8">
             Wondering about how the process goes or previous projects
           </h3>

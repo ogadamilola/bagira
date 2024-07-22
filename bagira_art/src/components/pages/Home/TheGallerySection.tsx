@@ -98,7 +98,7 @@ function TheGallerySection() {
                 textAnchor="middle"
                 startOffset="50%"
               >
-                Life Without Art is just "Meh" -
+                Life Without Art is just &quot;Meh&quot; -
               </textPath>
             </text>
           </svg>

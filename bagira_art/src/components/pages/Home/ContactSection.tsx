@@ -72,13 +72,13 @@ function ContactSection() {
       <div className="bg-black flex flex-col items-center justify-center size-full px-20 z-10">
         <div className="flex flex-col items-center justify-center max-w-[50vw] text-white text-center">
           <p className="josefin-sans text-white text-xs mt-4 text-center max-w-[30ch] uppercase tracking-[0.3em]">
-            Let's Talk
+            Let&apos;s Talk
           </p>
           <h1 className="jost text-7xl font-black tracking-wide">
             I want my own BAGIRA piece.
           </h1>
           <p className="josefin-sans text-sm mt-4 text-center">
-            Schedule a free consultation with our team and let's make things
+            Schedule a free consultation with our team and let&apos;s make things
             happen!
           </p>
           <div className="relative group flex mt-12 items-center justify-center text-white bg-black border border-white rounded-full transition-all duration-300">
