@@ -133,7 +133,7 @@ function TheGallerySection() {
               marginRight: "0.4ch", // Custom character spacing
             }}
           >
-            BAGIRA's vibrant Instagram page unveils a self-taught artist
+            BAGIRA&apos;s vibrant Instagram page unveils a self-taught artist
             blossoming on the sunny shores of Curacao. With a bold artistic
             spirit discovered at 21, she left her job behind just two weeks
             later to fully embrace her newfound passion. Her work thrives on a
