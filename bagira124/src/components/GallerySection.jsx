@@ -25,7 +25,7 @@ const GallerySection = () => {
 
           <div class="island-text">
             <p class="untitled-400-13">
-              BAGIRA's collection are paintings she created based on her
+              BAGIRA&apos;s collection are paintings she created based on her
               inspiration. These pieces are for sale and available at the
               Gallery in Kura Hulanda Village and can be shipped worldwide.
             </p>
