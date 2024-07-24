@@ -2271,7 +2271,7 @@ const MuralsSection = () => {
                       <div class="footer-rights">
                         <div class="small-links">
                           <a
-                            href="https://duallstudio.com"
+                            href="https://relaydigital.agency"
                             target="_blank"
                             class="untitled-400-13"
                           >
@@ -2282,7 +2282,7 @@ const MuralsSection = () => {
                         </div>
 
                         <div class="untitled-400-13">
-                          ©ONE24 - 2023. ALL RIGHTS RESERVED.
+                          ©BAGIRA - 2024. ALL RIGHTS RESERVED.
                           <br />
                         </div>
                       </div>

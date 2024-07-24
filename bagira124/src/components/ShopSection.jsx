@@ -19,7 +19,7 @@ const ShopSection = () => {
                   <img
                     src="images/6405cdaf4aff8b98974c7362_Logo-NVVV.svg"
                     loading="lazy"
-                    alt="Logo ONE24"
+                    alt="Logo BAGIRA"
                   />
                 </div>
               </div>

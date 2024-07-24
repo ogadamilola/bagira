@@ -8,7 +8,7 @@ const HomeSection = () => {
           <img
             src="images/6405cdaf4aff8b98974c7362_Logo-NV.svg"
             loading="lazy"
-            alt="Logo ONE24"
+            alt="Logo BAGIRA"
             class="hero-logo"
           />
 
@@ -124,7 +124,7 @@ const HomeSection = () => {
         loading="lazy"
         sizes="100vw"
         srcset="images/6405d4c052dec18e7d8789b9_hero-p-500.webp 500w, images/6405d4c052dec18e7d8789b9_hero-p-800.webp 800w, images/6405d4c052dec18e7d8789b9_hero-p-1080.webp 1080w, images/6405d4c052dec18e7d8789b9_hero-p-1600.webp 1600w, images/6405d4c052dec18e7d8789b9_hero-p-2000.webp 2000w, images/6405d4c052dec18e7d8789b9_hero.webp 2161w"
-        alt="ONE24"
+        alt="BAGIRA"
         class="hero-img-background"
       />
 

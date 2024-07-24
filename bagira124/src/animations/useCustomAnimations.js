@@ -1435,7 +1435,7 @@ const useCustomAnimations = () => {
     });
 
     // Image HOVER Animation
-    $("#one24-img, #gallery-img").each(function () {
+    $("#bagira-img, #gallery-img").each(function () {
       // Each define esta function a cada um com esta class
       let targetElement1 = $(".vision-img.n1");
       let targetElement2 = $(".vision-img.n2");
@@ -1505,7 +1505,7 @@ const useCustomAnimations = () => {
         }
       });
 
-      $("#one24-img").on("mouseenter", function () {
+      $("#bagira-img").on("mouseenter", function () {
         galleryV = true;
         animation1gallery.play();
         animation2gallery.play();

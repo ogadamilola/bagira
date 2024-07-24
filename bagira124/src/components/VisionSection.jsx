@@ -10,15 +10,15 @@ const VisionSection = () => {
 
         <div class="vision-title">
           <div anim="1" split="words" class="tobias-300-40 mb-32">
-            <span id="one24-img" class="vision-hover-text">
+            <span id="bagira-img" class="vision-hover-text">
               BAGIRA
             </span>{" "}
             is a 28-year old Algerian – Hungarian{" "}
-            <span id="one24-img" class="vision-hover-text">
+            <span id="bagira-img" class="vision-hover-text">
               self-taught
             </span>{" "}
             artist who moved to Curaçao, discovered her{" "}
-            <span id="one24-img" class="vision-hover-text">
+            <span id="bagira-img" class="vision-hover-text">
               talent
             </span>{" "}
             at 21 years old, she quit her job 2 weeks later to pursue art

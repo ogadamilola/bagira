@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import "@/styles/one24.css";
+import "@/styles/bagira.css";
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
@@ -54,7 +54,7 @@ export default function RootLayout({
         <meta name="generator" content="Webflow" />
 
         {/* Stylesheets */}
-        <link href="/styles/one24.css" rel="stylesheet" type="text/css" />
+        <link href="/styles/bagira.css" rel="stylesheet" type="text/css" />
 
         {/* Preconnects */}
         <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -148,7 +148,7 @@ export default function RootLayout({
         />
 
         <Script
-          src="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6440fcdd9913381980813a0b_one24.txt"
+          src="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6440fcdd9913381980813a0b_bagira.txt"
           strategy="beforeInteractive"
         />
 
