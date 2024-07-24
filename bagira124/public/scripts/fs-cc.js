@@ -908,7 +908,7 @@
     }
   };
   var je = async (o) => {
-      let { origin: e, pathname: t, href: n } = window.location,
+      let { origin: e, pathname: t, href: n } = window.shop,
         { origin: r, pathname: s, href: i } = new URL(document.baseURI);
       try {
         if (o.startsWith("/")) {
@@ -1147,7 +1147,7 @@
             action: n,
             consents: t,
             bannerText: r,
-            url: window.location.href,
+            url: window.shop.href,
             userAgent: navigator.userAgent,
           }),
           i = await fetch(e, { body: s, method: "POST" });
@@ -1242,7 +1242,7 @@
   var ze = (o) => Object.keys(o).every((e) => w(e, le));
   var We = (o) => {
       if (!o) return;
-      let { hostname: e } = window.location;
+      let { hostname: e } = window.shop;
       return e.includes("webflow.io") ? e : o;
     },
     Ve = () => {
@@ -1259,7 +1259,7 @@
       let o = E.get();
       for (let e in o) {
         if (e === D.main) continue;
-        let t = window.location.host.split(".");
+        let t = window.shop.host.split(".");
         for (; t.length > 1; )
           E.remove(e),
             E.remove(e, { domain: `.${t.join(".")}` }),

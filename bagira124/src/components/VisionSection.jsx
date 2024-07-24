@@ -13,17 +13,17 @@ const VisionSection = () => {
             <span id="one24-img" class="vision-hover-text">
               BAGIRA
             </span>{" "}
-            is a 28-year old Algerian – Hungarian
+            is a 28-year old Algerian – Hungarian{" "}
             <span id="one24-img" class="vision-hover-text">
               self-taught
             </span>{" "}
-            artist who moved to Curaçao, discovered her
+            artist who moved to Curaçao, discovered her{" "}
             <span id="one24-img" class="vision-hover-text">
               talent
             </span>{" "}
             at 21 years old, she quit her job 2 weeks later to pursue art
-            full-time. Recently opening her own
-            <span id="island-img" class="vision-hover-text">
+            full-time. Recently opening her own{" "}
+            <span id="gallery-img" class="vision-hover-text">
               art gallery in Kura Hulanda
             </span>
             .
@@ -55,7 +55,7 @@ const VisionSection = () => {
 
         <div class="vision-text-wrap">
           <p class="untitled-400-13">
-            BAGIRA IS NOW KNOWN AS AN ESTABLISHED ARTIST OF CURACAO, MOSTLY
+            BAGIRA IS NOW KNOWN AS AN ESTABLISHED ARTIST OF CURAÇAO, MOSTLY
             BECAUSE OF HER MURALS AND CAPTIVATING PORTRAITS. HER WORK CAN BE
             SEEN AROUND THE ISLAND, IN RESTAURANTS, HOTELS, BEACHES, IN THE
             CITY. PRIVATE HOMES, AND IN GOVERNMENT BUILDINGS. BEING SELF-TAUGHT.

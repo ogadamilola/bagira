@@ -91,23 +91,23 @@ input:-webkit-autofill {
   overflow: scroll !important;
 }
 
-.w-editor .availability-anda {
+.w-editor .murals-anda {
   overflow: scroll !important;
 }
-.w-editor .location-info-wrap.n1 {
+.w-editor .shop-info-wrap.n1 {
   position: relative !important;
   opacity: 1 !important;
 }
-.w-editor .location-info-wrap.n2 {
+.w-editor .shop-info-wrap.n2 {
   position: relative !important;
   opacity: 1 !important;
 }
-.w-editor .location-info-wrap.n3 {
+.w-editor .shop-info-wrap.n3 {
   position: relative !important;
   opacity: 1 !important;
 }
 
-.w-editor .location-info-anim {
+.w-editor .shop-info-anim {
   z-index: 30 !important;
   display: flex !important;
   flex-direction: row !important;
@@ -115,7 +115,7 @@ input:-webkit-autofill {
   align-items: flex-start !important;
 }
 
-.w-editor .location-background {
+.w-editor .shop-background {
   width: 100%;
 }
 /* END EDITOR CODE */
@@ -156,7 +156,7 @@ input[type="file"]:focus-visible {
 .ap-img-description,
 .mouse-outro,
 .mouse-outro-2,
-.availability-button.grey {
+.murals-button.grey {
   pointer-events: none;
 }
 
@@ -347,7 +347,7 @@ body:hover .mouse-outro-2 {
 }
 
 /* Inglês ou Português???? */
-.availability-portugues {
+.murals-portugues {
   display: none;
 }
 

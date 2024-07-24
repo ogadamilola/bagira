@@ -2,21 +2,21 @@ import React from "react";
 
 const ArtworkSection = () => {
   return (
-    <section id="apartments" class="apartments-section panel">
+    <section id="artwork" class="artwork-section panel">
       <div class="vertical-line-wrap">
         <div class="vertical-line"></div>
       </div>
 
-      <div class="apartments-component">
-        <div class="apartments-info">
+      <div class="artwork-component">
+        <div class="artwork-info">
           <div class="ap-info-top">
             <div class="ap-info-wrap">
               <div class="ap-info-text-wrap-left">
-                <div class="untitled-400-13">location</div>
+                <div class="untitled-400-13">shop</div>
               </div>
 
               <div class="ap-info-text-wrap-right">
-                <div class="untitled-400-13">CURACAO</div>
+                <div class="untitled-400-13">CURAÇAO</div>
               </div>
             </div>
 
@@ -52,20 +52,20 @@ const ArtworkSection = () => {
           </div>
 
           <div class="ap-info-bottom">
-            <div class="apartments-titulo">
+            <div class="artwork-titulo">
               <h2 anim="2" split="lines" class="untitled-400-13">
                 Artwork
               </h2>
             </div>
 
-            <div class="apartments-sub-titulo">
+            <div class="artwork-sub-titulo">
               <div anim="3" split="words" class="tobias-300-50 mb-40">
                 Paintings for sale and custom orders
               </div>
             </div>
 
-            <div class="apartments-cta">
-              <a href="#availability" class="cta-link c w-inline-block">
+            <div class="artwork-cta">
+              <a href="#murals" class="cta-link c w-inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"

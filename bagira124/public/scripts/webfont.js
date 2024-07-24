@@ -100,12 +100,12 @@
   }
   function z(a) {
     if ("string" === typeof a.f) return a.f;
-    var b = a.m.location.protocol;
-    "about:" == b && (b = a.a.location.protocol);
+    var b = a.m.shop.protocol;
+    "about:" == b && (b = a.a.shop.protocol);
     return "https:" == b ? "https:" : "http:";
   }
   function ea(a) {
-    return a.m.location.hostname || a.a.location.hostname;
+    return a.m.shop.hostname || a.a.shop.hostname;
   }
   function A(a, b, c) {
     function d() {

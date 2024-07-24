@@ -155,7 +155,7 @@ const PageTransition = () => {
       const exitDurationMS = 1000;
 
       if (
-        $(e.currentTarget).prop("hostname") === window.location.host &&
+        $(e.currentTarget).prop("hostname") === window.shop.host &&
         $(e.currentTarget).attr("href").indexOf("#") === -1 &&
         !$(e.currentTarget).hasClass(excludedClass) &&
         $(e.currentTarget).attr("target") !== "_blank" &&
@@ -166,7 +166,7 @@ const PageTransition = () => {
         let transitionURL = $(e.currentTarget).attr("href");
         transitionTrigger.click();
         setTimeout(() => {
-          window.location = transitionURL;
+          window.shop = transitionURL;
         }, exitDurationMS);
       }
     };
@@ -175,7 +175,7 @@ const PageTransition = () => {
 
     window.onpageshow = (event) => {
       if (event.persisted) {
-        window.location.reload();
+        window.shop.reload();
       }
     };
 

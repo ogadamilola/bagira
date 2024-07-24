@@ -21,7 +21,7 @@ const HomeSection = () => {
 
             <div class="hero-sub-titulo">
               <h2 class="untitled-400-26 mb-16">
-                BAGIRA , visual artist of Curacao
+                BAGIRA , visual artist of Curaçao
               </h2>
             </div>
           </div>
@@ -61,7 +61,7 @@ const HomeSection = () => {
 
                   <div class="mobile-frase">
                     <div class="untitled-400-10">
-                      Kura Hulanda Village, Curacao
+                      Kura Hulanda Village, Curaçao
                     </div>
                   </div>
 

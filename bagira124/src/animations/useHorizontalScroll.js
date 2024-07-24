@@ -191,7 +191,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".apartments-section",
+            trigger: ".artwork-section",
             containerAnimation: tlMain,
             start: "left 50%",
             end: "right left",
@@ -217,7 +217,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "left 50%",
             end: "right left",
@@ -243,7 +243,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-section",
+            trigger: ".shop-section",
             containerAnimation: tlMain,
             start: "left 50%",
             end: "right left",
@@ -343,12 +343,12 @@ const useHorizontalScroll = () => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
-      // NAV BALL APARTMENTS -------
-      let navApartments = $("#nav-apartments").find(".nav-ball");
+      // NAV BALL artwork -------
+      let navartwork = $("#nav-artwork").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".apartments-section",
+            trigger: ".artwork-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -357,7 +357,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          "#nav-apartments",
+          "#nav-artwork",
           {
             pointerEvents: "auto",
           },
@@ -366,7 +366,7 @@ const useHorizontalScroll = () => {
           }
         )
         .to(
-          navApartments,
+          navartwork,
           {
             x: "-100%",
             opacity: 1,
@@ -376,18 +376,18 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-apartments").on("click", function () {
+      $("#nav-artwork").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
       // NAV BALL ISLAND -------
-      let navIsland = $("#nav-island").find(".nav-ball");
+      let navIsland = $("#nav-gallery").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -396,7 +396,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          "#nav-island",
+          "#nav-gallery",
           {
             pointerEvents: "auto",
           },
@@ -415,18 +415,18 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-island").on("click", function () {
+      $("#nav-gallery").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
       // NAV BALL LOCATION -------
-      let navLocation = $("#nav-location").find(".nav-ball");
+      let navLocation = $("#nav-shop").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-section",
+            trigger: ".shop-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -435,7 +435,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          "#nav-location",
+          "#nav-shop",
           {
             pointerEvents: "auto",
           },
@@ -454,18 +454,18 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-location").on("click", function () {
+      $("#nav-shop").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
       // NAV BALL AVAILABILITY -------
-      let navAvailability = $("#nav-availability").find(".nav-ball");
+      let navAvailability = $("#nav-murals").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".availability-section",
+            trigger: ".murals-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -474,7 +474,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          "#nav-availability",
+          "#nav-murals",
           {
             pointerEvents: "auto",
           },
@@ -493,7 +493,7 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-availability").on("click", function () {
+      $("#nav-murals").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
@@ -682,7 +682,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right right",
@@ -690,14 +690,14 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".island-component", {
+        .to(".gallery-component", {
           xPercent: 100,
           ease: "none",
         });
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "10% left",
             end: "right right",
@@ -706,7 +706,7 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".island-background-video", {
+        .to(".gallery-background-video", {
           width: "100%",
           height: "100%",
           marginTop: 0,
@@ -714,7 +714,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "10% left",
             end: "20% left",
@@ -723,14 +723,14 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".island-cima", {
+        .to(".gallery-cima", {
           y: "-50%",
           rotationX: "60_cw",
           opacity: 0,
           ease: "none",
         })
         .to(
-          ".island-baixo",
+          ".gallery-baixo",
           {
             y: "50%",
             rotationX: "-60_ccw",
@@ -744,7 +744,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-trigger",
+            trigger: ".shop-trigger",
             containerAnimation: tlMain,
             start: "left left",
             end: "right right",
@@ -752,12 +752,12 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".location-sticky", {
+        .to(".shop-sticky", {
           x: "100vw",
           ease: "none",
         })
         .to(
-          ".location-update-line",
+          ".shop-update-line",
           {
             height: "100%",
             ease: "none",
@@ -768,7 +768,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-trigger",
+            trigger: ".shop-trigger",
             containerAnimation: tlMain,
             start: "18% left",
             end: "right right",
@@ -777,14 +777,14 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".location-info-wrap.n1", {
+        .to(".shop-info-wrap.n1", {
           //scale: 0.5,
           opacity: 0,
           ease: "power1.inOut",
           duration: 1,
         })
         .to(
-          ".location-info-wrap.n2",
+          ".shop-info-wrap.n2",
           {
             scale: 1,
             opacity: 1,
@@ -796,7 +796,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-trigger",
+            trigger: ".shop-trigger",
             containerAnimation: tlMain,
             start: "36% left",
             end: "right right",
@@ -805,14 +805,14 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".location-info-wrap.n2", {
+        .to(".shop-info-wrap.n2", {
           //scale: 0.5,
           opacity: 0,
           ease: "power1.inOut",
           duration: 1,
         })
         .to(
-          ".location-info-wrap.n3",
+          ".shop-info-wrap.n3",
           {
             scale: 1,
             opacity: 1,
@@ -838,7 +838,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".availability-section",
+            trigger: ".murals-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right right",
@@ -846,14 +846,14 @@ const useHorizontalScroll = () => {
             //markers: true
           },
         })
-        .to(".availability-anda", {
+        .to(".murals-anda", {
           x: "100vw",
           ease: "none",
         });
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".availability-scroll-absolute",
+            trigger: ".murals-scroll-absolute",
             containerAnimation: tlMain,
             start: "left left",
             end: "right right",
@@ -959,7 +959,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".island-section",
+            trigger: ".gallery-section",
             containerAnimation: tlMain,
             start: "50% left",
             end: "right left",
@@ -968,7 +968,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          ".island-background-video",
+          ".gallery-background-video",
           {
             x: "0%",
           },
@@ -980,7 +980,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".location-section",
+            trigger: ".shop-section",
             containerAnimation: tlMain,
             start: "40% left",
             end: "right left",
@@ -989,7 +989,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          ".location-big-img",
+          ".shop-big-img",
           {
             x: "-20%",
           },
@@ -1001,7 +1001,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".availability-section",
+            trigger: ".murals-section",
             containerAnimation: tlMain,
             start: "25% left",
             end: "right 99%",

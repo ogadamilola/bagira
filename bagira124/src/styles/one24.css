@@ -2082,13 +2082,13 @@ textarea.w-input, textarea.w-select {
 
 :root {
   --floral-white-background: #f7f4ef;
-  --black: #120902;
-  --white: white;
+  --black: #0f1211;
+  --white: #eff2f1;
   --grey-vertical-line: #d0d0d0;
-  --main: #c88e57;
+  --main: #e81d5a;
   --grey: #7e7e7e;
   --form-grey: #969696;
-  --form-error: #eb473b;
+  --form-error: #e81d5a;
 }
 
 .w-embed-youtubevideo {
@@ -3524,7 +3524,7 @@ figcaption {
 }
 
 .untitled-400-26 {
-  font-family: Untitled sans, sans-serif;
+  font-family: Josefin sans, sans-serif;
   font-size: 1.625em;
   font-weight: 400;
   line-height: 1.03846;
@@ -3532,7 +3532,7 @@ figcaption {
 
 .untitled-400-13 {
   z-index: 5;
-  font-family: Untitled sans, sans-serif;
+  font-family: Josefin sans, sans-serif;
   font-size: .8125em;
   font-weight: 400;
   line-height: 1.23077;
@@ -3541,56 +3541,56 @@ figcaption {
 }
 
 .tobias-300-122 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 7.625em;
   font-weight: 300;
   line-height: .868852;
 }
 
 .tobias-300-40 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 2.5em;
   font-weight: 300;
   line-height: .95;
 }
 
 .tobias-300-50 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 3.125em;
   font-weight: 300;
   line-height: .96;
 }
 
 .tobias-300-98 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 6.125em;
   font-weight: 300;
   line-height: .846939;
 }
 
 .tobias-300-32 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 2em;
   font-weight: 300;
   line-height: 1;
 }
 
 .tobias-300-16 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 2;
 }
 
 .untitled-400-20 {
-  font-family: Untitled sans, sans-serif;
+  font-family: Josefin sans, sans-serif;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .tobias-300-26 {
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 1.625em;
   font-weight: 300;
   line-height: 1.03846;
@@ -3599,7 +3599,7 @@ figcaption {
 .untitled-400-10 {
   justify-content: flex-start;
   align-items: flex-end;
-  font-family: Untitled sans, sans-serif;
+  font-family: Josefin sans, sans-serif;
   font-size: .625em;
   font-weight: 400;
   line-height: 1.27;
@@ -3947,7 +3947,7 @@ figcaption {
   margin-top: 1em;
 }
 
-.apartments-section {
+.artwork-section {
   flex-direction: row;
   justify-content: flex-start;
   display: flex;
@@ -3960,14 +3960,14 @@ figcaption {
   display: flex;
 }
 
-.apartments-component {
+.artwork-component {
   flex-direction: row;
   justify-content: flex-start;
   padding: 0 7.1875em 0 1.25em;
   display: flex;
 }
 
-.apartments-info {
+.artwork-info {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
@@ -3996,7 +3996,7 @@ figcaption {
   display: flex;
 }
 
-.apartments-sub-titulo {
+.artwork-sub-titulo {
   margin-top: .8125em;
   margin-bottom: 1.375em;
   padding-right: 1.4em;
@@ -4080,18 +4080,18 @@ figcaption {
   display: flex;
 }
 
-.island-section {
+.gallery-section {
   background-color: var(--main);
   color: var(--white);
   width: 200vw;
   height: 100%;
 }
 
-.island-section.panel {
+.gallery-section.panel {
   overflow: hidden;
 }
 
-.island-component {
+.gallery-component {
   perspective: 510px;
   flex-direction: column;
   justify-content: space-between;
@@ -4103,12 +4103,12 @@ figcaption {
   position: relative;
 }
 
-.island-title {
+.gallery-title {
   z-index: 3;
   position: relative;
 }
 
-.island-sub-title {
+.gallery-sub-title {
   z-index: 3;
   text-align: center;
   max-width: 69.5625em;
@@ -4116,13 +4116,13 @@ figcaption {
   position: relative;
 }
 
-.island-sub-title-2 {
+.gallery-sub-title-2 {
   z-index: 3;
   text-align: center;
   position: relative;
 }
 
-.island-text {
+.gallery-text {
   z-index: 3;
   text-align: center;
   max-width: 45.3125em;
@@ -4130,7 +4130,7 @@ figcaption {
   position: relative;
 }
 
-.island-background {
+.gallery-background {
   z-index: 0;
   justify-content: center;
   align-items: center;
@@ -4144,13 +4144,13 @@ figcaption {
   right: 0%;
 }
 
-.island-background-video {
+.gallery-background-video {
   width: 61.8125em;
   height: 39%;
   margin-top: 3%;
 }
 
-.location-section {
+.shop-section {
   justify-content: flex-start;
   width: 250vw;
   height: 100%;
@@ -4159,7 +4159,7 @@ figcaption {
   overflow: hidden;
 }
 
-.location-marquee {
+.shop-marquee {
   align-items: flex-end;
   width: 7.1875em;
   height: 100%;
@@ -4168,7 +4168,7 @@ figcaption {
   overflow: hidden;
 }
 
-.location-track {
+.shop-track {
   transform-origin: 0 100%;
   flex-direction: row;
   flex: none;
@@ -4180,24 +4180,24 @@ figcaption {
   transform: translate(5.375em)rotate(-90deg);
 }
 
-.location-track.pt {
+.shop-track.pt {
   width: 179.3em;
 }
 
-.location-marquee-repete {
+.shop-marquee-repete {
   align-items: center;
   width: 100%;
   display: flex;
 }
 
-.location-marquee-text {
+.shop-marquee-text {
   flex: none;
   margin-left: 1.6875em;
   margin-right: 1.6875em;
   display: flex;
 }
 
-.location-ball {
+.shop-ball {
   background-color: var(--black);
   border-radius: 100vh;
   flex: none;
@@ -4205,7 +4205,7 @@ figcaption {
   height: .9375em;
 }
 
-.location-anda {
+.shop-anda {
   flex: none;
   align-items: flex-end;
   width: 100%;
@@ -4213,7 +4213,7 @@ figcaption {
   display: flex;
 }
 
-.island-cima, .island-baixo {
+.gallery-cima, .gallery-baixo {
   z-index: 5;
   transform-style: preserve-3d;
   flex-direction: column;
@@ -4224,7 +4224,7 @@ figcaption {
   transform: none;
 }
 
-.location-update {
+.shop-update {
   align-items: flex-end;
   width: 1px;
   height: 100%;
@@ -4232,7 +4232,7 @@ figcaption {
   position: relative;
 }
 
-.location-update-line {
+.shop-update-line {
   z-index: 3;
   background-color: var(--main);
   width: 100%;
@@ -4244,7 +4244,7 @@ figcaption {
   right: auto;
 }
 
-.location-info {
+.shop-info {
   justify-content: center;
   align-items: center;
   width: 45.625em;
@@ -4252,7 +4252,7 @@ figcaption {
   position: relative;
 }
 
-.location-cta {
+.shop-cta {
   justify-content: center;
   padding-bottom: 3.3125em;
   display: flex;
@@ -4263,12 +4263,12 @@ figcaption {
   right: 0%;
 }
 
-.location-cta-wrap {
+.shop-cta-wrap {
   justify-content: center;
   display: flex;
 }
 
-.location-info-component {
+.shop-info-component {
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -4278,7 +4278,7 @@ figcaption {
   position: relative;
 }
 
-.location-info-wrap {
+.shop-info-wrap {
   background-color: var(--floral-white-background);
   flex-direction: column;
   flex: none;
@@ -4291,12 +4291,12 @@ figcaption {
   position: relative;
 }
 
-.location-info-wrap.relative {
+.shop-info-wrap.relative {
   width: 20.125em;
   height: 19.0625em;
 }
 
-.location-info-wrap.n2 {
+.shop-info-wrap.n2 {
   z-index: 2;
   opacity: 0;
   perspective-origin: 50%;
@@ -4305,7 +4305,7 @@ figcaption {
   transform: scale(1);
 }
 
-.location-info-wrap.n3 {
+.shop-info-wrap.n3 {
   z-index: 1;
   opacity: 0;
   transform-style: preserve-3d;
@@ -4313,18 +4313,18 @@ figcaption {
   transform: scale(1);
 }
 
-.location-info-wrap.n1 {
+.shop-info-wrap.n1 {
   z-index: 3;
   opacity: 1;
   position: absolute;
   transform: scale(1);
 }
 
-.location-sub-title {
+.shop-sub-title {
   margin-bottom: 1.6875em;
 }
 
-.location-title {
+.shop-title {
   text-align: center;
 }
 
@@ -4332,19 +4332,19 @@ figcaption {
   color: var(--main);
 }
 
-.location-paragraph {
+.shop-paragraph {
   color: var(--grey);
   text-align: center;
   margin-top: 1.25em;
 }
 
-.location-sticky {
+.shop-sticky {
   justify-content: flex-start;
   align-items: stretch;
   display: flex;
 }
 
-.location-big-img {
+.shop-big-img {
   z-index: 3;
   object-fit: cover;
   width: 100%;
@@ -4353,14 +4353,14 @@ figcaption {
   transform: scale(1.1);
 }
 
-.location-big-img-wrap {
+.shop-big-img-wrap {
   width: 100vw;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.availability-section {
+.murals-section {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
@@ -4370,18 +4370,18 @@ figcaption {
   overflow: hidden;
 }
 
-.availability-section.panel {
+.murals-section.panel {
   position: relative;
 }
 
-.availability-anda {
+.murals-anda {
   width: 100vw;
   height: 100%;
   display: flex;
   overflow: hidden;
 }
 
-.availability-component {
+.murals-component {
   z-index: 5;
   background-color: var(--floral-white-background);
   flex-direction: column;
@@ -4393,7 +4393,7 @@ figcaption {
   position: relative;
 }
 
-.availability-scroll {
+.murals-scroll {
   flex-direction: column;
   flex: none;
   justify-content: flex-start;
@@ -4403,92 +4403,92 @@ figcaption {
   transform: none;
 }
 
-.availability-title {
+.murals-title {
   margin-bottom: 1.875em;
 }
 
-.availability-sub-title {
+.murals-sub-title {
   width: 77.25em;
   margin-bottom: 1.875em;
 }
 
-.availability-cta-component {
+.murals-cta-component {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 1.25em;
   display: flex;
 }
 
-.availability-cta-space {
+.murals-cta-space {
   margin-left: 2.5em;
 }
 
-.availability-table {
+.murals-table {
   width: 100%;
   margin-top: 6.375em;
 }
 
-.availability-table-head {
+.murals-table-head {
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
 }
 
-.availability-fraction {
+.murals-fraction {
   width: 11em;
 }
 
-.availability-bedrooms {
+.murals-bedrooms {
   width: 11.4375em;
 }
 
-.availability-floor {
+.murals-floor {
   width: 9.5625em;
 }
 
-.availability-side {
+.murals-side {
   width: 8.6875em;
 }
 
-.availability-storeroom {
+.murals-storeroom {
   width: 12em;
 }
 
-.availability-parking {
+.murals-parking {
   width: 10.4375em;
 }
 
-.availability-areas {
+.murals-areas {
   width: 12.0625em;
 }
 
-.availability-floorplan {
+.murals-floorplan {
   width: 9.6875em;
 }
 
-.availability-table-title {
+.murals-table-title {
   justify-content: flex-start;
   align-items: flex-end;
   padding-bottom: .8125em;
   display: flex;
 }
 
-.availability-table-content {
+.murals-table-content {
   justify-content: flex-start;
   align-items: center;
   height: 5em;
   display: flex;
 }
 
-.availability-table-content.floor.grey {
+.murals-table-content.floor.grey {
   color: var(--grey);
 }
 
-.availability-portugues.mb {
+.murals-portugues.mb {
   display: none;
 }
 
-.availability-button {
+.murals-button {
   border: 1px solid var(--black);
   border-radius: 100vh;
   justify-content: center;
@@ -4499,12 +4499,12 @@ figcaption {
   display: flex;
 }
 
-.availability-button:hover {
+.murals-button:hover {
   background-color: var(--black);
   color: var(--white);
 }
 
-.availability-button.grey {
+.murals-button.grey {
   border-color: var(--grey);
   color: var(--grey);
 }
@@ -4679,7 +4679,7 @@ figcaption {
   border: 1px #231f20;
   margin-bottom: -.1em;
   padding: 0;
-  font-family: Tobias, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 6.125em;
   font-weight: 300;
   line-height: .9;
@@ -4973,7 +4973,7 @@ figcaption {
   display: block;
 }
 
-.location-info-anim {
+.shop-info-anim {
   perspective: 510px;
   flex: 1;
   justify-content: center;
@@ -5426,7 +5426,7 @@ figcaption {
   position: relative;
 }
 
-.location-width {
+.shop-width {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
@@ -5435,7 +5435,7 @@ figcaption {
   position: absolute;
 }
 
-.location-trigger {
+.shop-trigger {
   width: 200vw;
   position: absolute;
 }
@@ -5580,7 +5580,7 @@ figcaption {
   margin-bottom: 20px;
 }
 
-.p-edicao-location {
+.p-edicao-shop {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -5717,7 +5717,7 @@ figcaption {
   align-items: flex-start;
 }
 
-.location-background {
+.shop-background {
   z-index: -1;
   background-color: var(--floral-white-background);
   width: 190%;
@@ -5729,7 +5729,7 @@ figcaption {
   margin-bottom: 4px;
 }
 
-.availability-scroll-absolute {
+.murals-scroll-absolute {
   width: 185vw;
   height: 0;
   display: block;
@@ -6085,21 +6085,21 @@ figcaption {
     margin-bottom: 2.5em;
   }
 
-  .apartments-section {
+  .artwork-section {
     width: 100vw;
   }
 
-  .apartments-section.panel {
+  .artwork-section.panel {
     overflow: hidden;
   }
 
-  .apartments-component {
+  .artwork-component {
     flex-direction: column;
     width: 100%;
     padding: 1.125em 1em 1.5em;
   }
 
-  .apartments-info {
+  .artwork-info {
     width: 100%;
     margin-right: 0;
     padding-top: 0;
@@ -6110,18 +6110,18 @@ figcaption {
     padding-bottom: 1.625em;
   }
 
-  .apartments-titulo {
+  .artwork-titulo {
     margin-top: 3.3125em;
   }
 
-  .apartments-sub-titulo {
+  .artwork-sub-titulo {
     max-width: 14.625em;
     margin-top: .8125em;
     margin-bottom: 1.25em;
     padding-right: 0;
   }
 
-  .apartments-cta {
+  .artwork-cta {
     width: 100%;
   }
 
@@ -6162,16 +6162,16 @@ figcaption {
     height: auto;
   }
 
-  .island-section {
+  .gallery-section {
     width: 100vw;
     position: relative;
   }
 
-  .island-section.panel {
+  .gallery-section.panel {
     overflow: hidden;
   }
 
-  .island-component {
+  .gallery-component {
     height: auto;
     padding: 3.125em 1em 3.25em;
     position: -webkit-sticky;
@@ -6179,28 +6179,28 @@ figcaption {
     top: 0;
   }
 
-  .island-sub-title {
+  .gallery-sub-title {
     margin-top: 1.25em;
   }
 
-  .island-text {
+  .gallery-text {
     margin-top: 1.6875em;
   }
 
-  .island-background {
+  .gallery-background {
     align-items: flex-start;
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  .island-background-video {
+  .gallery-background-video {
     width: 100%;
     height: auto;
     margin-top: 8.8em;
     padding-top: 55%;
   }
 
-  .location-section {
+  .shop-section {
     align-items: flex-start;
     width: 100vw;
     height: 250vh;
@@ -6208,75 +6208,75 @@ figcaption {
     overflow: visible;
   }
 
-  .location-marquee {
+  .shop-marquee {
     flex: none;
     width: 100vw;
     height: 4.6875em;
   }
 
-  .location-track {
+  .shop-track {
     width: auto;
     position: relative;
     transform: none;
   }
 
-  .location-track.pt {
+  .shop-track.pt {
     width: auto;
   }
 
-  .location-anda {
+  .shop-anda {
     align-items: center;
     width: auto;
     display: flex;
     transform: none;
   }
 
-  .island-baixo {
+  .gallery-baixo {
     margin-top: 15.2em;
   }
 
-  .location-update {
+  .shop-update {
     width: 100%;
     height: 1px;
   }
 
-  .location-update-line {
+  .shop-update-line {
     width: 0%;
     height: 100%;
   }
 
-  .location-info {
+  .shop-info {
     flex-direction: column;
     width: 100vw;
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  .location-info-component {
+  .shop-info-component {
     height: 25em;
     padding: 3.125em 0 3.5625em;
   }
 
-  .location-info-wrap {
+  .shop-info-wrap {
     width: 100%;
     max-width: none;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .location-info-wrap.relative {
+  .shop-info-wrap.relative {
     position: relative;
   }
 
-  .location-sub-title {
+  .shop-sub-title {
     margin-bottom: 1.25em;
   }
 
-  .location-paragraph {
+  .shop-paragraph {
     margin-top: 1.6875em;
   }
 
-  .location-sticky {
+  .shop-sticky {
     flex-direction: column;
     align-items: center;
     position: -webkit-sticky;
@@ -6288,7 +6288,7 @@ figcaption {
     overflow: hidden;
   }
 
-  .location-big-img {
+  .shop-big-img {
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -6296,39 +6296,39 @@ figcaption {
     right: 0%;
   }
 
-  .location-big-img-wrap {
+  .shop-big-img-wrap {
     height: auto;
     padding-top: 100%;
   }
 
-  .availability-section {
+  .murals-section {
     width: 100vw;
   }
 
-  .availability-component {
+  .murals-component {
     padding: 2.5em 1em 3.75em;
   }
 
-  .availability-scroll {
+  .murals-scroll {
     overflow: visible;
   }
 
-  .availability-title {
+  .murals-title {
     margin-bottom: 1.125em;
   }
 
-  .availability-sub-title {
+  .murals-sub-title {
     width: auto;
     margin-bottom: 1.625em;
   }
 
-  .availability-cta-component {
+  .murals-cta-component {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
   }
 
-  .availability-cta-space {
+  .murals-cta-space {
     margin-top: .5em;
     margin-left: 0;
   }
@@ -6337,51 +6337,51 @@ figcaption {
     width: 100%;
   }
 
-  .availability-table {
+  .murals-table {
     margin-top: 1.875em;
   }
 
-  .availability-table-head {
+  .murals-table-head {
     justify-content: space-between;
   }
 
-  .availability-fraction {
+  .murals-fraction {
     width: 5.125em;
   }
 
-  .availability-bedrooms {
+  .murals-bedrooms {
     width: 5.6875em;
   }
 
-  .availability-floor, .availability-side, .availability-storeroom, .availability-parking {
+  .murals-floor, .murals-side, .murals-storeroom, .murals-parking {
     display: none;
   }
 
-  .availability-areas {
+  .murals-areas {
     width: 5.5625em;
   }
 
-  .availability-floorplan {
+  .murals-floorplan {
     width: 4.9375em;
   }
 
-  .availability-table-content {
+  .murals-table-content {
     height: 3.375em;
   }
 
-  .availability-table-content.floor {
+  .murals-table-content.floor {
     justify-content: flex-end;
   }
 
-  .availability-ingles.mb-bedrooms, .availability-portugues {
+  .murals-ingles.mb-bedrooms, .murals-portugues {
     display: none;
   }
 
-  .availability-portugues.mb {
+  .murals-portugues.mb {
     display: block;
   }
 
-  .availability-button {
+  .murals-button {
     width: 4.375em;
   }
 
@@ -6609,7 +6609,7 @@ figcaption {
     right: 0%;
   }
 
-  .location-trigger {
+  .shop-trigger {
     width: 100vw;
   }
 
@@ -6650,12 +6650,12 @@ figcaption {
     height: 30%;
   }
 
-  .location-background {
+  .shop-background {
     width: 130%;
     height: 140%;
   }
 
-  .availability-scroll-absolute {
+  .murals-scroll-absolute {
     display: none;
   }
 
@@ -6979,11 +6979,11 @@ figcaption {
     width: 20.1875em;
   }
 
-  .island-baixo {
+  .gallery-baixo {
     margin-top: 13.3em;
   }
 
-  .location-info-wrap {
+  .shop-info-wrap {
     min-height: 330px;
   }
 
@@ -7046,7 +7046,7 @@ figcaption {
     padding-right: 1.6em;
   }
 
-  .location-background {
+  .shop-background {
     height: 120%;
   }
 
@@ -7155,11 +7155,11 @@ figcaption {
     width: 100%;
   }
 
-  .island-baixo {
+  .gallery-baixo {
     margin-top: 8.6em;
   }
 
-  .location-info-wrap {
+  .shop-info-wrap {
     min-height: 250px;
   }
 
@@ -7207,21 +7207,36 @@ figcaption {
     padding-right: .9rem;
   }
 
-  .location-background {
+  .shop-background {
     width: 110%;
   }
 }
 
-@font-face {
-  font-family: 'Untitled sans';
+/* @font-face {
+  font-family: 'Josefin sans';
   src: url('../../public/fonts/6406036ea7eadc8675ccf684_UntitledSansWeb-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Tobias';
-  src: url('../../public/fonts/640603819170086ea05df6fc_Tobias-Light.woff2') format('woff2');
+  font-family: 'Jost';
+  src: url('../../public/fonts/640603819170086ea05df6fc_Jost-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Josefin sans';
+  src: url('../../public/fonts/Jost-Light.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('../../public/fonts/JosefinSans-Regular.ttf') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;

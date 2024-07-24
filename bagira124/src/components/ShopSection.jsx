@@ -2,20 +2,20 @@ import React from "react";
 
 const ShopSection = () => {
   return (
-    <div id="location" class="location-section panel">
-      <div class="location-trigger"></div>
+    <div id="shop" class="shop-section panel">
+      <div class="shop-trigger"></div>
 
-      <div class="location-sticky">
-        <div class="location-width"></div>
+      <div class="shop-sticky">
+        <div class="shop-width"></div>
 
-        <div class="location-marquee">
+        <div class="shop-marquee">
           <div
             data-w-id="a69e3c76-4a04-0ceb-2f87-e329ebd28016"
-            class="location-anda"
+            class="shop-anda"
           >
-            <div class="location-track">
-              <div class="location-marquee-repete">
-                <div class="location-marquee-text">
+            <div class="shop-track">
+              <div class="shop-marquee-repete">
+                <div class="shop-marquee-text">
                   <img
                     src="images/6405cdaf4aff8b98974c7362_Logo-NVVV.svg"
                     loading="lazy"
@@ -24,20 +24,20 @@ const ShopSection = () => {
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-marquee-text">
+              <div class="shop-marquee-repete">
+                <div class="shop-marquee-text">
                   <div class="tobias-300-50 mb-40">bagira</div>
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-marquee-text">
+              <div class="shop-marquee-repete">
+                <div class="shop-marquee-text">
                   <div class="tobias-300-50 mb-40">art</div>
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-marquee-text">
+              <div class="shop-marquee-repete">
+                <div class="shop-marquee-text">
                   <div class="tobias-300-50 mb-40">commissions</div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const ShopSection = () => {
           </div>
         </div>
 
-        <div class="location-update">
+        <div class="shop-update">
           <div class="vertical-line-wrap mb-none">
             <div class="vertical-line"></div>
           </div>
@@ -54,26 +54,26 @@ const ShopSection = () => {
             <div class="horizontal-line grey"></div>
           </div>
 
-          <div class="location-update-line"></div>
+          <div class="shop-update-line"></div>
         </div>
 
-        <div class="location-info">
-          <div class="location-info-component">
-            <div class="location-info-wrap relative">
-              <div class="location-sub-title">
-                <div class="untitled-400-13">location</div>
+        <div class="shop-info">
+          <div class="shop-info-component">
+            <div class="shop-info-wrap relative">
+              <div class="shop-sub-title">
+                <div class="untitled-400-13">shop</div>
               </div>
 
-              <div class="location-info-anim">
-                <div class="location-info-wrap n1">
-                  <div class="location-title">
+              <div class="shop-info-anim">
+                <div class="shop-info-wrap n1">
+                  <div class="shop-title">
                     <h3 anim="1" split="words" class="tobias-300-50 mb-40">
                       Kura Hulanda Village,
-                      <span class="main-color">curacao</span>
+                      <span class="main-color">curaçao</span>
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
+                  <div class="shop-paragraph">
                     <p class="untitled-400-13">
                       commercial murals Transforming spaces, elevating brands We
                       specialize in crafting bespoke mural experiences that
@@ -82,11 +82,11 @@ const ShopSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div class="shop-background"></div>
                 </div>
 
-                <div class="location-info-wrap n2">
-                  <div class="location-title">
+                <div class="shop-info-wrap n2">
+                  <div class="shop-title">
                     <h3 class="tobias-300-50 mb-40">
                       <span class="main-color">whiteglove delivery</span> to
                       Your
@@ -94,7 +94,7 @@ const ShopSection = () => {
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
+                  <div class="shop-paragraph">
                     <p class="untitled-400-13">
                       Oftentimes clients request a special painting that would
                       fit in their interior and vision. You can directly
@@ -104,18 +104,18 @@ const ShopSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div class="shop-background"></div>
                 </div>
 
-                <div class="location-info-wrap n3">
-                  <div class="location-title">
+                <div class="shop-info-wrap n3">
+                  <div class="shop-title">
                     <h3 class="tobias-300-50 mb-40">
                       Comissions
                       <span class="main-color">& murals</span>
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
+                  <div class="shop-paragraph">
                     <p class="untitled-400-13">
                       We believe in collaboration as the key to creating
                       exceptional murals. Our design process involves continuous
@@ -125,14 +125,14 @@ const ShopSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div class="shop-background"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="location-cta mb-none">
-            <div class="location-cta-wrap">
+          <div class="shop-cta mb-none">
+            <div class="shop-cta-wrap">
               <a
                 href="https://maps.app.goo.gl/gpnGN3DZZUzTdrVb6?g_st=iwb"
                 target="_blank"
@@ -176,7 +176,7 @@ const ShopSection = () => {
           </div>
         </div>
 
-        <div class="location-big-img-wrap">
+        <div class="shop-big-img-wrap">
           <div class="img-background"></div>
           <img
             src="images/64070b5af80a800a9c6bf1d9_big-img.webp"
@@ -184,7 +184,7 @@ const ShopSection = () => {
             sizes="100vw"
             srcset="images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
             alt="EDIFICIO ONE 24"
-            class="location-big-img"
+            class="shop-big-img"
           />
         </div>
       </div>
