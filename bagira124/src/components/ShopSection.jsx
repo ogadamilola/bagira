@@ -134,7 +134,7 @@ const ShopSection = () => {
           <div class="shop-cta mb-none">
             <div class="shop-cta-wrap">
               <a
-                href="https://maps.app.goo.gl/gpnGN3DZZUzTdrVb6?g_st=iwb"
+                href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                 target="_blank"
                 class="cta-link w-inline-block"
               >

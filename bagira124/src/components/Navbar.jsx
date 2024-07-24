@@ -45,11 +45,11 @@ const Navbar = () => {
       </div>
 
       <div class="nav-link-inquire">
-        <a href="/pt" class="nav-link lingua w-inline-block">
+        {/* <a href="/pt" class="nav-link lingua w-inline-block">
           <div class="untitled-400-13">pt</div>
 
           <div class="nav-ball"></div>
-        </a>
+        </a> */}
         <a href="#" class="nav-link inquire w-inline-block">
           <div class="untitled-400-13">inquire</div>
 
