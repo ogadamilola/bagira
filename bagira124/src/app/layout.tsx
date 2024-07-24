@@ -125,7 +125,7 @@ export default function RootLayout({
         {children}
         {/* Client-side only scripts */}
         <Script src="/scripts/bundle.v1.0.0.js" strategy="beforeInteractive" />
-        <Script src="/scripts/fs-cc.js" strategy="beforeInteractive" />
+        {/* <Script src="/scripts/fs-cc.js" strategy="beforeInteractive" /> */}
         <Script
           src="/scripts/jquery-3.5.1.min.dc5e7f18c8.js"
           strategy="beforeInteractive"
@@ -147,10 +147,10 @@ export default function RootLayout({
           strategy="beforeInteractive"
         />
 
-        <Script
-          src="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6440fcdd9913381980813a0b_bagira.txt"
+        {/* <Script
+          src="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6440fcdd9913381980813a0b_one24.txt"
           strategy="beforeInteractive"
-        />
+        /> */}
 
         <Script src="/scripts/Flip.min.js" strategy="beforeInteractive" />
         <Script
