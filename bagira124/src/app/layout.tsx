@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta charSet="utf-8" />
         <title>BAGIRA | Visual Artist of Curacao</title>
         <meta
@@ -120,7 +120,7 @@ export default function RootLayout({
           }}
           strategy="beforeInteractive"
         />
-      </Head>
+      </head>
 
       <body className={inter.className}>
         <Navbar />
