@@ -98,7 +98,7 @@ export default function Home() {
 
                     <div className="inquire-open-info-links">
                       <a
-                        href="https://goo.gl/maps/okYjeK9wPskFLS179"
+                        href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                         target="_blank"
                         className="tobias-300-26 hover-links mb-13"
                       >

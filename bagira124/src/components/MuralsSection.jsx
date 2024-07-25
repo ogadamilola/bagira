@@ -2140,7 +2140,7 @@ const MuralsSection = () => {
 
                         <div class="small-links top">
                           <a
-                            href="https://goo.gl/maps/okYjeK9wPskFLS179"
+                            href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                             target="_blank"
                             class="untitled-400-13"
                           >
@@ -2217,7 +2217,7 @@ const MuralsSection = () => {
                         </div>
                       </div>
 
-                      <div class="footer-visite last">
+                      {/* <div class="footer-visite last">
                         <div class="small-links">
                           <a
                             privacy="link"
@@ -2243,7 +2243,7 @@ const MuralsSection = () => {
 
                           <div class="nav-ball"></div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
 
                     <div class="footer-right">
