@@ -4081,7 +4081,7 @@ figcaption {
 }
 
 .gallery-section {
-  background-color: var(--main);
+  background-color: var(--black);
   color: var(--white);
   width: 200vw;
   height: 100%;

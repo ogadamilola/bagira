@@ -114,7 +114,7 @@ const MuralsSection = () => {
                   </div>
                 </div>
 
-                <div class="murals-table">
+                {/* <div class="murals-table">
                   <div class="murals-table-head">
                     <div class="murals-fraction">
                       <div class="murals-table-title">
@@ -2084,7 +2084,7 @@ const MuralsSection = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div class="inquire-section">
