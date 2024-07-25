@@ -97,8 +97,8 @@ const ShopSection = () => {
                   <div class="shop-paragraph">
                     <p class="untitled-400-13">
                       Oftentimes clients request a special painting that would
-                      fit in their interior and vision. You can directly
-                      collaborate with the artist to bring your vision to
+                      fit in their interior and about. You can directly
+                      collaborate with the artist to bring your about to
                       reality, whether it’s a personal portrait, a made up
                       person’s portrait, landscape or abstract piece.
                     </p>

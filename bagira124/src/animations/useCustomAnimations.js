@@ -246,7 +246,7 @@ const useCustomAnimations = () => {
 
     // MOUSE
     $(
-      ".cta, .big-cta, .murals-button, .vision-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+      ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
     )
       .not(".nav-link, .small-links")
       .mouseenter(function () {
@@ -255,7 +255,7 @@ const useCustomAnimations = () => {
         $(".mouse-outro-2").addClass("hover");
       });
     $(
-      ".cta, .big-cta, .murals-button, .vision-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+      ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
     )
       .not(".nav-link, .small-links")
       .mouseleave(function () {
@@ -316,7 +316,7 @@ const useCustomAnimations = () => {
       $(".glass-block").removeClass("expand");
     });
     $(
-      ".vision-section, .artwork-section, .shop-section, .murals-section, .hero-scroll, .murals-component"
+      ".about-section, .artwork-section, .shop-section, .murals-section, .hero-scroll, .murals-component"
     ).mouseenter(function () {
       $(".mouse, .mouse-outro, .mouse-outro-2").addClass("black");
     });
@@ -495,7 +495,7 @@ const useCustomAnimations = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".vision-section",
+            trigger: ".about-section",
             containerAnimation: tlMain,
             start: "left 50%",
             end: "right left",
@@ -586,18 +586,18 @@ const useCustomAnimations = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-vision").on("click", function () {
+      $("#nav-about").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
-      // NAV BALL VISION -------
-      let navVision = $("#nav-vision").find(".nav-ball");
+      // NAV BALL ABOUT -------
+      let navVision = $("#nav-about").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".vision-section",
+            trigger: ".about-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -606,7 +606,7 @@ const useCustomAnimations = () => {
           },
         })
         .fromTo(
-          "#nav-vision",
+          "#nav-about",
           { pointerEvents: "auto" },
           { pointerEvents: "none" }
         )
@@ -616,7 +616,7 @@ const useCustomAnimations = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-vision").on("click", function () {
+      $("#nav-about").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
@@ -1087,10 +1087,10 @@ const useCustomAnimations = () => {
 
       // END Titulo
       // IMAGEM APARECE
-      $(".vision-img-wrap").each(function (index) {
+      $(".about-img-wrap").each(function (index) {
         let triggerElement = $(this);
         let targetElement = $(this);
-        let castanho = $(this).siblings(".vision-img-brown");
+        let castanho = $(this).siblings(".about-img-brown");
         let tlImg = gsap.timeline({
           scrollTrigger: {
             trigger: triggerElement,
@@ -1305,7 +1305,7 @@ const useCustomAnimations = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".vision-section",
+            trigger: ".about-section",
             start: "top top",
             end: "bottom bottom",
             toggleActions: "play none none reverse",
@@ -1437,8 +1437,8 @@ const useCustomAnimations = () => {
     // Image HOVER Animation
     $("#bagira-img, #gallery-img").each(function () {
       // Each define esta function a cada um com esta class
-      let targetElement1 = $(".vision-img.n1");
-      let targetElement2 = $(".vision-img.n2");
+      let targetElement1 = $(".about-img.n1");
+      let targetElement2 = $(".about-img.n2");
       let animation1 = gsap.fromTo(
         targetElement1,
         {

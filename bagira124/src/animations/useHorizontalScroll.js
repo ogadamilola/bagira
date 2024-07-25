@@ -166,7 +166,7 @@ const useHorizontalScroll = () => {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".vision-section",
+            trigger: ".about-section",
             containerAnimation: tlMain,
             start: "left 50%",
             end: "right left",
@@ -298,18 +298,18 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-vision").on("click", function () {
+      $("#nav-about").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
         }, 100);
       });
-      // NAV BALL VISION -------
-      let navVision = $("#nav-vision").find(".nav-ball");
+      // NAV BALL ABOUT -------
+      let navVision = $("#nav-about").find(".nav-ball");
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".vision-section",
+            trigger: ".about-section",
             containerAnimation: tlMain,
             start: "left left",
             end: "right left",
@@ -318,7 +318,7 @@ const useHorizontalScroll = () => {
           },
         })
         .fromTo(
-          "#nav-vision",
+          "#nav-about",
           {
             pointerEvents: "auto",
           },
@@ -337,7 +337,7 @@ const useHorizontalScroll = () => {
           0
         );
       // Click para a bola ficar no sitio correto
-      $("#nav-vision").on("click", function () {
+      $("#nav-about").on("click", function () {
         $(".nav-link").css("pointer-events", "auto");
         setTimeout(() => {
           $(this).css("pointer-events", "none");
@@ -893,10 +893,10 @@ const useHorizontalScroll = () => {
 
       // END Titulo
       // IMAGEM APARECE
-      $(".vision-img-wrap").each(function (index) {
+      $(".about-img-wrap").each(function (index) {
         let triggerElement = $(this);
         let targetElement = $(this);
-        let castanho = $(this).siblings(".vision-img-brown");
+        let castanho = $(this).siblings(".about-img-brown");
         let tlImg = gsap.timeline({
           scrollTrigger: {
             trigger: triggerElement,

@@ -83,7 +83,7 @@ export default function Home() {
               <div className="inquire-open-left">
                 <div className="inquire-open-title">
                   <h2 className="tobias-300-122 mb-40">
-                    INQUIRY
+                    INQUIRE
                     <br />
                     NOW
                   </h2>

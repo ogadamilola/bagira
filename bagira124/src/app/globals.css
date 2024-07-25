@@ -338,11 +338,11 @@ body:hover .mouse-outro-2 {
   clip-path: circle(10% at 50% 50%);
 }
 
-.vision-img.n1 {
+.about-img.n1 {
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
 
-.vision-img.n2 {
+.about-img.n2 {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 

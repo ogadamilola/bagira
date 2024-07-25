@@ -67,7 +67,7 @@ const useMouseAnimations = () => {
 
   // MOUSE
   $(
-    ".cta, .big-cta, .murals-button, .vision-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+    ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
   )
     .not(".nav-link, .small-links")
     .mouseenter(function () {
@@ -76,7 +76,7 @@ const useMouseAnimations = () => {
       $(".mouse-outro-2").addClass("hover");
     });
   $(
-    ".cta, .big-cta, .murals-button, .vision-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+    ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
   )
     .not(".nav-link, .small-links")
     .mouseleave(function () {
@@ -137,7 +137,7 @@ const useMouseAnimations = () => {
     $(".glass-block").removeClass("expand");
   });
   $(
-    ".vision-section, .artwork-section, .shop-section, .murals-section, .hero-scroll, .murals-component"
+    ".about-section, .artwork-section, .shop-section, .murals-section, .hero-scroll, .murals-component"
   ).mouseenter(function () {
     $(".mouse, .mouse-outro, .mouse-outro-2").addClass("black");
   });

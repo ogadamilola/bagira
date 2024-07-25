@@ -9,8 +9,8 @@ const Navbar = () => {
 
           <div class="nav-ball"></div>
         </a>
-        <a href="#vision" id="nav-vision" class="nav-link a w-inline-block">
-          <div class="untitled-400-13">vision</div>
+        <a href="#about" id="nav-about" class="nav-link a w-inline-block">
+          <div class="untitled-400-13">about</div>
 
           <div class="nav-ball"></div>
         </a>

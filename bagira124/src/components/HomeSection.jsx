@@ -101,7 +101,7 @@ const HomeSection = () => {
             <div class="hero-scroll">
               <a
                 data-w-id="cd947534-154b-d008-a35f-bce9f4afa8aa"
-                href="#vision"
+                href="#about"
                 class="big-cta w-inline-block"
               >
                 <div class="big-cta-text">
