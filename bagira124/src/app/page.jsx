@@ -10,7 +10,6 @@ import MuralsSection from "@/components/MuralsSection";
 import useCustomAnimations from "@/animations/useCustomAnimations";
 
 export default function Home() {
-  
   useCustomAnimations();
 
   return (
@@ -102,9 +101,9 @@ export default function Home() {
                         target="_blank"
                         className="tobias-300-26 hover-links mb-13"
                       >
-                        Av. Arriaga 75 Loja A, Marina Shopping
+                        19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
                         <br />
-                        9000-065 Funchal
+                        Willemstad, Curaçao
                       </a>
                     </div>
                   </div>

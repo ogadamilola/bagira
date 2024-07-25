@@ -2144,8 +2144,8 @@ const MuralsSection = () => {
                             target="_blank"
                             class="untitled-400-13"
                           >
-                            Av. Arriaga 75 Loja A, Marina Shopping 9000-065
-                            Funchal
+                            19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
+                            Willemstad, Curaçao
                           </a>
 
                           <div class="nav-ball top"></div>
