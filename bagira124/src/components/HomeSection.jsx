@@ -14,13 +14,13 @@ const HomeSection = () => {
 
           <div class="hero-titulo-component">
             <div class="hero-titulo">
-              <h1 load="anim" split="words" class="tobias-300-122 mb-40">
+              <h1 load="anim" split="words" class="jost-300-122 mb-40">
                 Life without art is just ‘meh’
               </h1>
             </div>
 
             <div class="hero-sub-titulo">
-              <h2 class="untitled-400-26 mb-16">
+              <h2 class="josefin-400-26 mb-16">
                 BAGIRA , visual artist of Curaçao
               </h2>
             </div>
@@ -31,7 +31,7 @@ const HomeSection = () => {
               <div class="hero-call-wrap">
                 <div class="hero-call-bola"></div>
 
-                <div class="untitled-400-13">contact us today</div>
+                <div class="josefin-400-13">contact us today</div>
               </div>
 
               <div class="hero-left-left">
@@ -46,7 +46,7 @@ const HomeSection = () => {
                           role="listitem"
                           class="collection-numero w-dyn-item"
                         >
-                          <a href="tel:+5999 686 38 62" class="untitled-400-13">
+                          <a href="tel:+5999 686 38 62" class="josefin-400-13">
                             +5999 686 38 62
                           </a>
                         </div>
@@ -60,7 +60,7 @@ const HomeSection = () => {
                   </div>
 
                   <div class="mobile-frase">
-                    <div class="untitled-400-10">
+                    <div class="josefin-400-10">
                       Kura Hulanda Village, Curaçao
                     </div>
                   </div>
@@ -72,7 +72,7 @@ const HomeSection = () => {
                           role="listitem"
                           class="collection-numero w-dyn-item"
                         >
-                          <a href="tel:" class="untitled-400-13">
+                          <a href="tel:" class="josefin-400-13">
                             Message Me on whatsapp
                           </a>
                         </div>
@@ -83,7 +83,7 @@ const HomeSection = () => {
                   </div>
 
                   <div class="mobile-frase">
-                    <div class="untitled-400-10"></div>
+                    <div class="josefin-400-10"></div>
                   </div>
                 </div>
 
@@ -105,7 +105,7 @@ const HomeSection = () => {
                 class="big-cta w-inline-block"
               >
                 <div class="big-cta-text">
-                  <div class="untitled-400-13">scroll</div>
+                  <div class="josefin-400-13">scroll</div>
                 </div>
 
                 <div class="big-cta-hover"></div>

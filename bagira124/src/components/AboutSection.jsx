@@ -1,15 +1,15 @@
 import React from "react";
 
-const VisionSection = () => {
+const AboutSection = () => {
   return (
     <section id="about" class="about-section panel">
       <div class="about-top">
         <div class="about-sub-title">
-          <h2 class="untitled-400-13">About the artist</h2>
+          <h2 class="josefin-400-13">About the artist</h2>
         </div>
 
         <div class="about-title">
-          <div anim="1" split="words" class="tobias-300-40 mb-32">
+          <div anim="1" split="words" class="jost-300-40 mb-32">
             <span id="bagira-img" class="about-hover-text">
               BAGIRA
             </span>{" "}
@@ -54,7 +54,7 @@ const VisionSection = () => {
         </div>
 
         <div class="about-text-wrap">
-          <p class="untitled-400-13">
+          <p class="josefin-400-13">
             BAGIRA IS NOW KNOWN AS AN ESTABLISHED ARTIST OF CURAÇAO, MOSTLY
             BECAUSE OF HER MURALS AND CAPTIVATING PORTRAITS. HER WORK CAN BE
             SEEN AROUND THE ISLAND, IN RESTAURANTS, HOTELS, BEACHES, IN THE
@@ -72,4 +72,4 @@ const VisionSection = () => {
   );
 };
 
-export default VisionSection;
+export default AboutSection;

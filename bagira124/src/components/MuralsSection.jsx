@@ -11,14 +11,14 @@ const MuralsSection = () => {
             <div class="scroll-track-margin">
               <div class="murals-component">
                 <div class="murals-title">
-                  <h2 class="untitled-400-13">Commercial murals</h2>
+                  <h2 class="josefin-400-13">Commercial murals</h2>
                 </div>
 
                 <div class="murals-sub-title">
                   <h3
                     anim="1"
                     split="words"
-                    class="tobias-300-98 mb-40 mb-line-h-1"
+                    class="jost-300-98 mb-40 mb-line-h-1"
                   >
                     Discover Amazing Brand Identity- Transforming spaces,
                     elevating brands. We specialize in crafting bespoke mural
@@ -40,7 +40,7 @@ const MuralsSection = () => {
                       data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                       class="cta"
                     >
-                      <div class="untitled-400-13">
+                      <div class="josefin-400-13">
                         Message me on Whatsapp +5999 68 63 62
                       </div>
 
@@ -80,7 +80,7 @@ const MuralsSection = () => {
                           data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                           class="cta"
                         >
-                          <div class="untitled-400-13">SHOP THE GALLErY</div>
+                          <div class="josefin-400-13">SHOP THE GALLErY</div>
 
                           <div class="cta-ball">
                             <div class="seta-cta-wrap">
@@ -118,49 +118,49 @@ const MuralsSection = () => {
                   <div class="murals-table-head">
                     <div class="murals-fraction">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">fraction</div>
+                        <div class="josefin-400-13">fraction</div>
                       </div>
                     </div>
 
                     <div class="murals-bedrooms">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">bedrooms</div>
+                        <div class="josefin-400-13">bedrooms</div>
                       </div>
                     </div>
 
                     <div class="murals-floor">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">floor</div>
+                        <div class="josefin-400-13">floor</div>
                       </div>
                     </div>
 
                     <div class="murals-side">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">side</div>
+                        <div class="josefin-400-13">side</div>
                       </div>
                     </div>
 
                     <div class="murals-parking">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">parking</div>
+                        <div class="josefin-400-13">parking</div>
                       </div>
                     </div>
 
                     <div class="murals-areas">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">areas (m2)</div>
+                        <div class="josefin-400-13">areas (m2)</div>
                       </div>
                     </div>
 
                     <div class="murals-storeroom">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">murals</div>
+                        <div class="josefin-400-13">murals</div>
                       </div>
                     </div>
 
                     <div class="murals-floorplan">
                       <div class="murals-table-title">
-                        <div class="untitled-400-13">floorplan</div>
+                        <div class="josefin-400-13">floorplan</div>
                       </div>
                     </div>
                   </div>
@@ -178,50 +178,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">K</div>
+                              <div class="jost-300-32 mb-16">K</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">0</div>
+                              <div class="jost-300-16">0</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Direito</div>
+                                <div class="jost-300-16">Direito</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -229,43 +229,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">147.01</div>
+                              <div class="jost-300-16">147.01</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -278,17 +278,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -297,17 +297,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -326,50 +326,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">L</div>
+                              <div class="jost-300-32 mb-16">L</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">1</div>
+                              <div class="jost-300-16">1</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16">�&nbsp;Bedroom</div>
+                                <div class="jost-300-16">�&nbsp;Bedroom</div>
 
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedrooms
                                 </div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">0</div>
+                              <div class="jost-300-16">0</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Frente</div>
+                                <div class="jost-300-16">Frente</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -377,43 +377,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">122.08</div>
+                              <div class="jost-300-16">122.08</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -426,17 +426,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -445,17 +445,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -474,50 +474,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">M</div>
+                              <div class="jost-300-32 mb-16">M</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">0</div>
+                              <div class="jost-300-16">0</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Esquerdo</div>
+                                <div class="jost-300-16">Esquerdo</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -525,43 +525,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">166.56</div>
+                              <div class="jost-300-16">166.56</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -574,17 +574,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -593,17 +593,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -622,50 +622,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">I</div>
+                              <div class="jost-300-32 mb-16">I</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">1</div>
+                              <div class="jost-300-16">1</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Direito</div>
+                                <div class="jost-300-16">Direito</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -673,43 +673,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -722,17 +722,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -741,17 +741,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -770,50 +770,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">J</div>
+                              <div class="jost-300-32 mb-16">J</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">1</div>
+                              <div class="jost-300-16">1</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Esquerdo</div>
+                                <div class="jost-300-16">Esquerdo</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -821,43 +821,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">134.5</div>
+                              <div class="jost-300-16">134.5</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -870,17 +870,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -889,17 +889,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -918,50 +918,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">F</div>
+                              <div class="jost-300-32 mb-16">F</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Direito</div>
+                                <div class="jost-300-16">Direito</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -969,43 +969,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1018,17 +1018,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1037,17 +1037,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1066,50 +1066,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">G</div>
+                              <div class="jost-300-32 mb-16">G</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">3</div>
+                              <div class="jost-300-16">3</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Frente</div>
+                                <div class="jost-300-16">Frente</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1117,43 +1117,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">220.78</div>
+                              <div class="jost-300-16">220.78</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1166,17 +1166,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1185,17 +1185,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1214,50 +1214,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">H</div>
+                              <div class="jost-300-32 mb-16">H</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Esquerdo</div>
+                                <div class="jost-300-16">Esquerdo</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1265,41 +1265,41 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Reservado</div>
+                                <div class="jost-300-16">Reservado</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1312,17 +1312,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1331,17 +1331,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1360,50 +1360,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">D</div>
+                              <div class="jost-300-32 mb-16">D</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">3</div>
+                              <div class="jost-300-16">3</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Direito</div>
+                                <div class="jost-300-16">Direito</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1411,41 +1411,41 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">134.5</div>
+                              <div class="jost-300-16">134.5</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Reservado</div>
+                                <div class="jost-300-16">Reservado</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1458,17 +1458,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1477,17 +1477,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1506,50 +1506,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">E</div>
+                              <div class="jost-300-32 mb-16">E</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">3</div>
+                              <div class="jost-300-16">3</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Esquerdo</div>
+                                <div class="jost-300-16">Esquerdo</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1557,41 +1557,41 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Reservado</div>
+                                <div class="jost-300-16">Reservado</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1604,17 +1604,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1623,17 +1623,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1652,50 +1652,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">A</div>
+                              <div class="jost-300-32 mb-16">A</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">4</div>
+                              <div class="jost-300-16">4</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Direito</div>
+                                <div class="jost-300-16">Direito</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1703,41 +1703,41 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Reservado</div>
+                                <div class="jost-300-16">Reservado</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1750,17 +1750,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1769,17 +1769,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1798,50 +1798,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">B</div>
+                              <div class="jost-300-32 mb-16">B</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">3</div>
+                              <div class="jost-300-16">3</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">4</div>
+                              <div class="jost-300-16">4</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Frente</div>
+                                <div class="jost-300-16">Frente</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1849,41 +1849,41 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">220.78</div>
+                              <div class="jost-300-16">220.78</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Vendido</div>
+                                <div class="jost-300-16">Vendido</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -1895,17 +1895,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -1913,17 +1913,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -1942,50 +1942,50 @@ const MuralsSection = () => {
                         <div class="murals-table-head">
                           <div class="murals-fraction">
                             <div class="murals-table-content">
-                              <div class="tobias-300-32 mb-16">C</div>
+                              <div class="jost-300-32 mb-16">C</div>
                             </div>
                           </div>
 
                           <div class="murals-bedrooms">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">2</div>
+                              <div class="jost-300-16">2</div>
 
                               <div class="murals-ingles mb-bedrooms">
-                                <div class="tobias-300-16 w-condition-invisible">
+                                <div class="jost-300-16 w-condition-invisible">
                                   �&nbsp;Bedroom
                                 </div>
 
-                                <div class="tobias-300-16">�&nbsp;Bedrooms</div>
+                                <div class="jost-300-16">�&nbsp;Bedrooms</div>
                               </div>
 
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">�&nbsp;Quartos</div>
+                                <div class="jost-300-16">�&nbsp;Quartos</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-floor">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">4</div>
+                              <div class="jost-300-16">4</div>
                             </div>
                           </div>
 
                           <div class="murals-side">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Esquerdo</div>
+                                <div class="jost-300-16">Esquerdo</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Right</div>
+                                <div class="jost-300-16">Right</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">Front</div>
+                                <div class="jost-300-16">Front</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">Left</div>
+                                <div class="jost-300-16">Left</div>
                               </div>
                             </div>
                           </div>
@@ -1993,43 +1993,43 @@ const MuralsSection = () => {
                           <div class="murals-parking">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">Sim</div>
+                                <div class="jost-300-16">Sim</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">yes</div>
+                                <div class="jost-300-16">yes</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">no</div>
+                                <div class="jost-300-16">no</div>
                               </div>
                             </div>
                           </div>
 
                           <div class="murals-areas">
                             <div class="murals-table-content">
-                              <div class="tobias-300-16">135.11</div>
+                              <div class="jost-300-16">135.11</div>
                             </div>
                           </div>
 
                           <div class="murals-storeroom">
                             <div class="murals-table-content">
                               <div class="murals-portugues">
-                                <div class="tobias-300-16">
+                                <div class="jost-300-16">
                                   Disponível�&nbsp;
                                 </div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">reserved</div>
+                                <div class="jost-300-16">reserved</div>
                               </div>
 
                               <div class="murals-ingles w-condition-invisible">
-                                <div class="tobias-300-16">sold</div>
+                                <div class="jost-300-16">sold</div>
                               </div>
 
                               <div class="murals-ingles">
-                                <div class="tobias-300-16">available</div>
+                                <div class="jost-300-16">available</div>
                               </div>
                             </div>
                           </div>
@@ -2042,17 +2042,17 @@ const MuralsSection = () => {
                                 class="murals-button w-inline-block"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                               <a
@@ -2061,17 +2061,17 @@ const MuralsSection = () => {
                                 class="murals-button grey w-inline-block w-condition-invisible"
                               >
                                 <div class="murals-ingles mb-none">
-                                  <div class="untitled-400-13">
+                                  <div class="josefin-400-13">
                                     view floorplan
                                   </div>
                                 </div>
 
                                 <div class="murals-ingles mb-block">
-                                  <div class="untitled-400-13">view</div>
+                                  <div class="josefin-400-13">view</div>
                                 </div>
 
                                 <div class="murals-portugues">
-                                  <div class="untitled-400-13">ver planta</div>
+                                  <div class="josefin-400-13">ver planta</div>
                                 </div>
                               </a>
                             </div>
@@ -2091,7 +2091,7 @@ const MuralsSection = () => {
                 <div class="inquire-component">
                   <div class="inquire-top">
                     <div class="inquire-title">
-                      <h2 anim="1" split="words" class="tobias-300-122 mb-40">
+                      <h2 anim="1" split="words" class="jost-300-122 mb-40">
                         inquire today
                       </h2>
                     </div>
@@ -2106,7 +2106,7 @@ const MuralsSection = () => {
                         class="big-cta w-inline-block"
                       >
                         <div class="big-cta-text">
-                          <div class="untitled-400-13">Schedule</div>
+                          <div class="josefin-400-13">Schedule</div>
                         </div>
 
                         <div class="big-cta-hover"></div>
@@ -2119,7 +2119,7 @@ const MuralsSection = () => {
                     </div>
 
                     <div class="inquire-text">
-                      <p class="untitled-400-20">
+                      <p class="josefin-400-20">
                         Need a quick response? Email us now or message us on
                         Whatsapp +5999 68 63862.
                       </p>
@@ -2133,7 +2133,7 @@ const MuralsSection = () => {
                   <div class="footer">
                     <div class="footer-left">
                       <div class="footer-visite">
-                        <div class="untitled-400-13">
+                        <div class="josefin-400-13">
                           visit us
                           <br />
                         </div>
@@ -2142,7 +2142,7 @@ const MuralsSection = () => {
                           <a
                             href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                             target="_blank"
-                            class="untitled-400-13"
+                            class="josefin-400-13"
                           >
                             19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
                             Willemstad, Curaçao
@@ -2153,7 +2153,7 @@ const MuralsSection = () => {
                       </div>
 
                       <div class="footer-visite middle">
-                        <div class="untitled-400-13">
+                        <div class="josefin-400-13">
                           Contact us
                           <br />
                         </div>
@@ -2170,7 +2170,7 @@ const MuralsSection = () => {
                               >
                                 <a
                                   href="tel:+351291147686"
-                                  class="untitled-400-13"
+                                  class="josefin-400-13"
                                 >
                                   +351 291 147 686
                                 </a>
@@ -2182,7 +2182,7 @@ const MuralsSection = () => {
                         </div>
 
                         <div class="mobile-frase">
-                          <div class="untitled-400-10">
+                          <div class="josefin-400-10">
                             Local call, fees may apply
                           </div>
                         </div>
@@ -2199,7 +2199,7 @@ const MuralsSection = () => {
                               >
                                 <a
                                   href="tel:+351967182444"
-                                  class="untitled-400-13"
+                                  class="josefin-400-13"
                                 >
                                   +351 967 182 444
                                 </a>
@@ -2211,7 +2211,7 @@ const MuralsSection = () => {
                         </div>
 
                         <div class="mobile-frase">
-                          <div class="untitled-400-10">
+                          <div class="josefin-400-10">
                             Local call, fees may apply
                           </div>
                         </div>
@@ -2225,7 +2225,7 @@ const MuralsSection = () => {
                             target="_blank"
                             class="form-politica-link line-none w-inline-block"
                           >
-                            <div class="untitled-400-13">privacy policy</div>
+                            <div class="josefin-400-13">privacy policy</div>
                           </a>
 
                           <div class="nav-ball"></div>
@@ -2235,7 +2235,7 @@ const MuralsSection = () => {
                           <a
                             href="https://www.livroreclamacoes.pt/INICIO/"
                             target="_blank"
-                            class="untitled-400-13"
+                            class="josefin-400-13"
                           >
                             complaint book
                             <br />
@@ -2248,7 +2248,7 @@ const MuralsSection = () => {
 
                     <div class="footer-right">
                       <div class="footer-exclusive">
-                        <div class="untitled-400-13">
+                        <div class="josefin-400-13">
                           an exclusive
                           <br />
                         </div>
@@ -2273,7 +2273,7 @@ const MuralsSection = () => {
                           <a
                             href="https://relaydigital.agency"
                             target="_blank"
-                            class="untitled-400-13"
+                            class="josefin-400-13"
                           >
                             designed by Relaydigital
                           </a>
@@ -2281,7 +2281,7 @@ const MuralsSection = () => {
                           <div class="nav-ball"></div>
                         </div>
 
-                        <div class="untitled-400-13">
+                        <div class="josefin-400-13">
                           ©BAGIRA - 2024. ALL RIGHTS RESERVED.
                           <br />
                         </div>

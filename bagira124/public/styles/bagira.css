@@ -2088,11 +2088,11 @@ textarea.w-input, textarea.w-select {
   --main: #e81d5a;
   --grey: #7e7e7e;
   --form-grey: #969696;
-  --form-error: #e81d5a;
+  --form-error: #eb473b;
 }
 
 .w-embed-youtubevideo {
-  background-image: url("../../public/images/youtube-placeholder.2b05e7d68d.svg");
+  background-image: url("../images/youtube-placeholder.2b05e7d68d.svg");
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -2141,7 +2141,7 @@ textarea.w-input, textarea.w-select {
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url("../../public/images/custom-checkbox-checkmark.589d534424.svg");
+  background-image: url("../images/custom-checkbox-checkmark.589d534424.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3523,14 +3523,14 @@ figcaption {
   line-height: 1;
 }
 
-.untitled-400-26 {
+.josefin-400-26 {
   font-family: Josefin sans, sans-serif;
   font-size: 1.625em;
   font-weight: 400;
   line-height: 1.03846;
 }
 
-.untitled-400-13 {
+.josefin-400-13 {
   z-index: 5;
   font-family: Josefin sans, sans-serif;
   font-size: .8125em;
@@ -3540,63 +3540,63 @@ figcaption {
   position: relative;
 }
 
-.tobias-300-122 {
+.jost-300-122 {
   font-family: Jost, sans-serif;
   font-size: 7.625em;
   font-weight: 300;
   line-height: .868852;
 }
 
-.tobias-300-40 {
+.jost-300-40 {
   font-family: Jost, sans-serif;
   font-size: 2.5em;
   font-weight: 300;
   line-height: .95;
 }
 
-.tobias-300-50 {
+.jost-300-50 {
   font-family: Jost, sans-serif;
   font-size: 3.125em;
   font-weight: 300;
   line-height: .96;
 }
 
-.tobias-300-98 {
+.jost-300-98 {
   font-family: Jost, sans-serif;
   font-size: 6.125em;
   font-weight: 300;
   line-height: .846939;
 }
 
-.tobias-300-32 {
+.jost-300-32 {
   font-family: Jost, sans-serif;
   font-size: 2em;
   font-weight: 300;
   line-height: 1;
 }
 
-.tobias-300-16 {
+.jost-300-16 {
   font-family: Jost, sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 2;
 }
 
-.untitled-400-20 {
+.josefin-400-20 {
   font-family: Josefin sans, sans-serif;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.2;
 }
 
-.tobias-300-26 {
+.jost-300-26 {
   font-family: Jost, sans-serif;
   font-size: 1.625em;
   font-weight: 300;
   line-height: 1.03846;
 }
 
-.untitled-400-10 {
+.josefin-400-10 {
   justify-content: flex-start;
   align-items: flex-end;
   font-family: Josefin sans, sans-serif;
@@ -4896,7 +4896,7 @@ figcaption {
 .form-checkbox.w--redirected-checked {
   border-color: var(--form-grey);
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("../../public/images/6408679b9214265f4b09340c_Checked.svg");
+  background-image: url("../images/6408679b9214265f4b09340c_Checked.svg");
   background-position: 0 0;
   background-size: cover;
 }
@@ -5136,7 +5136,7 @@ figcaption {
   color: #fff;
   text-align: center;
   background-color: rgba(255, 255, 255, .23);
-  background-image: url("../../public/images/6409fa73f20795b3979f590c_noise.png");
+  background-image: url("../images/6409fa73f20795b3979f590c_noise.png");
   background-size: 25%;
   border-radius: 100vh;
   justify-content: center;
@@ -5156,7 +5156,7 @@ figcaption {
 
 .glass-block.expand-cookie {
   opacity: 1;
-  background-image: url("../../public/images/6409fa73f20795b3979f590c_noise.png");
+  background-image: url("../images/6409fa73f20795b3979f590c_noise.png");
   background-size: 25%;
   border-radius: 0;
   width: 100%;
@@ -5307,7 +5307,7 @@ figcaption {
   color: #fff;
   text-align: center;
   background-color: rgba(255, 255, 255, .23);
-  background-image: url("../../public/images/6409fa73f20795b3979f590c_noise.png");
+  background-image: url("../images/6409fa73f20795b3979f590c_noise.png");
   background-size: 25%;
   border-radius: 100vh;
   justify-content: center;
@@ -5963,11 +5963,11 @@ figcaption {
     align-items: flex-start;
   }
 
-  .tobias-300-98.mb-40.mb-line-h-1 {
+  .jost-300-98.mb-40.mb-line-h-1 {
     line-height: 1;
   }
 
-  .tobias-300-26.hover-links.mb-13 {
+  .jost-300-26.hover-links.mb-13 {
     line-height: 1.23;
     display: block;
   }
@@ -7146,7 +7146,7 @@ figcaption {
     margin-left: 1.34375em;
   }
 
-  .untitled-400-10 {
+  .josefin-400-10 {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -7214,14 +7214,14 @@ figcaption {
 
 /* @font-face {
   font-family: 'Josefin sans';
-  src: url('../../public/fonts/6406036ea7eadc8675ccf684_UntitledSansWeb-Regular.woff2') format('woff2');
+  src: url('../fonts/6406036ea7eadc8675ccf684_JosefinSansWeb-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Jost';
-  src: url('../../public/fonts/640603819170086ea05df6fc_Jost-Light.woff2') format('woff2');
+  src: url('../fonts/640603819170086ea05df6fc_Jost-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -7229,14 +7229,14 @@ figcaption {
 
 @font-face {
   font-family: 'Josefin sans';
-  src: url('../../public/fonts/JosefinSans-Regular.ttf') format('woff2');
+  src: url('../fonts/JosefinSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Jost';
-  src: url('../../public/fonts/Jost-Light.ttf') format('woff2');
+  src: url('../fonts/Jost-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;

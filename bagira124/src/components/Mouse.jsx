@@ -9,7 +9,7 @@ const Mouse = () => {
 
           <div class="expand-text">
             <div class="expand-text-none">
-              <div class="untitled-400-13">expand</div>
+              <div class="josefin-400-13">expand</div>
             </div>
           </div>
 

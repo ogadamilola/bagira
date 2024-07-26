@@ -1700,10 +1700,10 @@ __p+='`),
         n
       );
     }
-    se.shop = function (e) {
-      window.shop = e;
+    se.location = function (e) {
+      window.location = e;
     };
-    se.env() && (se.shop = function () {});
+    se.env() && (se.location = function () {});
     se.ready = function () {
       (tn = !0), Ri ? eb() : Ge.each(Pt, Ns), Ge.each(Ci, Ns), se.resize.up();
     };
@@ -1750,7 +1750,7 @@ __p+='`),
           n = e("html"),
           i = e("body"),
           o = ".w-webflow-badge",
-          s = window.shop,
+          s = window.location,
           a = /PhantomJS/i.test(navigator.userAgent),
           u =
             "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange",
@@ -1823,7 +1823,7 @@ __p+='`),
         var n = {},
           i = e(window),
           o = e(document.documentElement),
-          s = document.shop,
+          s = document.location,
           a = "hashchange",
           u,
           f = r.load || d,
@@ -10486,7 +10486,7 @@ __p+='`),
           n = e(window),
           i,
           o = cr.env(),
-          s = window.shop,
+          s = window.location,
           a = document.createElement("a"),
           u = "w--current",
           f = /index\.(html|php)$/,
@@ -10558,7 +10558,7 @@ __p+='`),
             WF_CLICK_EMPTY: "click.wf-empty-link",
             WF_CLICK_SCROLL: "click.wf-scroll",
           },
-          r = window.shop,
+          r = window.location,
           n = b() ? null : window.history,
           i = e(window),
           o = e(document),
@@ -10850,7 +10850,7 @@ __p+='`),
         var r = {},
           n = e(document),
           i,
-          o = window.shop,
+          o = window.location,
           s = window.XDomainRequest && !window.atob,
           a = ".w-form",
           u,
@@ -11107,7 +11107,7 @@ __p+='`),
             H = N.redirect,
             F = N.success;
           if (F && H) {
-            Ai.shop(H);
+            Ai.location(H);
             return;
           }
           N.done.toggle(F),
@@ -15497,7 +15497,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -15518,7 +15518,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 6000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 38.8,
@@ -15539,7 +15539,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -15899,7 +15899,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: 0,
@@ -15921,7 +15921,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 10000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: -50,
@@ -15943,7 +15943,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: 0,
@@ -16579,7 +16579,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -16600,7 +16600,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 6000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 44.8,
@@ -16621,7 +16621,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,

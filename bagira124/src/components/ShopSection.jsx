@@ -26,19 +26,19 @@ const ShopSection = () => {
 
               <div class="shop-marquee-repete">
                 <div class="shop-marquee-text">
-                  <div class="tobias-300-50 mb-40">bagira</div>
+                  <div class="jost-300-50 mb-40">bagira</div>
                 </div>
               </div>
 
               <div class="shop-marquee-repete">
                 <div class="shop-marquee-text">
-                  <div class="tobias-300-50 mb-40">art</div>
+                  <div class="jost-300-50 mb-40">art</div>
                 </div>
               </div>
 
               <div class="shop-marquee-repete">
                 <div class="shop-marquee-text">
-                  <div class="tobias-300-50 mb-40">commissions</div>
+                  <div class="jost-300-50 mb-40">commissions</div>
                 </div>
               </div>
             </div>
@@ -61,20 +61,20 @@ const ShopSection = () => {
           <div class="shop-info-component">
             <div class="shop-info-wrap relative">
               <div class="shop-sub-title">
-                <div class="untitled-400-13">shop</div>
+                <div class="josefin-400-13">shop</div>
               </div>
 
               <div class="shop-info-anim">
                 <div class="shop-info-wrap n1">
                   <div class="shop-title">
-                    <h3 anim="1" split="words" class="tobias-300-50 mb-40">
+                    <h3 anim="1" split="words" class="jost-300-50 mb-40">
                       Kura Hulanda Village,
                       <span class="main-color">curaçao</span>
                     </h3>
                   </div>
 
                   <div class="shop-paragraph">
-                    <p class="untitled-400-13">
+                    <p class="josefin-400-13">
                       commercial murals Transforming spaces, elevating brands We
                       specialize in crafting bespoke mural experiences that
                       transcend conventional aesthetics. Elevate your business
@@ -87,7 +87,7 @@ const ShopSection = () => {
 
                 <div class="shop-info-wrap n2">
                   <div class="shop-title">
-                    <h3 class="tobias-300-50 mb-40">
+                    <h3 class="jost-300-50 mb-40">
                       <span class="main-color">whiteglove delivery</span> to
                       Your
                       <span class="main-color">doorstep</span>
@@ -95,7 +95,7 @@ const ShopSection = () => {
                   </div>
 
                   <div class="shop-paragraph">
-                    <p class="untitled-400-13">
+                    <p class="josefin-400-13">
                       Oftentimes clients request a special painting that would
                       fit in their interior and about. You can directly
                       collaborate with the artist to bring your about to
@@ -109,14 +109,14 @@ const ShopSection = () => {
 
                 <div class="shop-info-wrap n3">
                   <div class="shop-title">
-                    <h3 class="tobias-300-50 mb-40">
+                    <h3 class="jost-300-50 mb-40">
                       Comissions
                       <span class="main-color">& murals</span>
                     </h3>
                   </div>
 
                   <div class="shop-paragraph">
-                    <p class="untitled-400-13">
+                    <p class="josefin-400-13">
                       We believe in collaboration as the key to creating
                       exceptional murals. Our design process involves continuous
                       communication with you, incorporating your feedback to
@@ -142,7 +142,7 @@ const ShopSection = () => {
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"
                 >
-                  <div class="untitled-400-13">see Location</div>
+                  <div class="josefin-400-13">see Location</div>
 
                   <div class="cta-ball">
                     <div class="seta-cta-wrap">

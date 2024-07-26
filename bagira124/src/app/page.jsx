@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import HomeSection from "@/components/HomeSection";
-import VisionSection from "@/components/VisionSection";
+import AboutSection from "@/components/AboutSection";
 import ArtworkSection from "@/components/ArtworkSection";
 import GallerySection from "@/components/GallerySection";
 import ShopSection from "@/components/ShopSection";
@@ -10,7 +10,7 @@ import MuralsSection from "@/components/MuralsSection";
 import useCustomAnimations from "@/animations/useCustomAnimations";
 
 export default function Home() {
-  useCustomAnimations();
+  // useCustomAnimations();
 
   return (
     <div className="page-wrapper">
@@ -20,7 +20,7 @@ export default function Home() {
             <div id="panels" className="track">
               <div id="panels-container" className="track-flex">
                 <HomeSection />
-                <VisionSection />
+                <AboutSection />
                 <ArtworkSection />
                 <GallerySection />
                 <ShopSection />
@@ -73,7 +73,7 @@ export default function Home() {
                 href="#"
                 className="nav-link inquire-close w-inline-block"
               >
-                <div className="untitled-400-13">close</div>
+                <div className="josefin-400-13">close</div>
 
                 <div className="nav-ball white"></div>
               </a>
@@ -82,7 +82,7 @@ export default function Home() {
             <div className="inquire-open-component">
               <div className="inquire-open-left">
                 <div className="inquire-open-title">
-                  <h2 className="tobias-300-122 mb-40">
+                  <h2 className="jost-300-122 mb-40">
                     INQUIRE
                     <br />
                     NOW
@@ -92,14 +92,14 @@ export default function Home() {
                 <div className="inquire-open-info">
                   <div className="inquire-open-info-cima">
                     <div className="inquire-open-info-title">
-                      <div className="untitled-400-13">WHERE</div>
+                      <div className="josefin-400-13">WHERE</div>
                     </div>
 
                     <div className="inquire-open-info-links">
                       <a
                         href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                         target="_blank"
-                        className="tobias-300-26 hover-links mb-13"
+                        className="jost-300-26 hover-links mb-13"
                       >
                         19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
                         <br />
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
 
                   <div className="inquire-open-info-title">
-                    <div className="untitled-400-13">CONTACTS</div>
+                    <div className="josefin-400-13">CONTACTS</div>
                   </div>
 
                   <div className="inquire-open-info-links">
@@ -124,7 +124,7 @@ export default function Home() {
                         >
                           <a
                             href="tel:+351291147686"
-                            className="tobias-300-26 hover-links mb-13"
+                            className="jost-300-26 hover-links mb-13"
                           >
                             +351 291 147 686
                           </a>
@@ -133,7 +133,7 @@ export default function Home() {
                     </div>
 
                     <div className="mobile-frase">
-                      <div className="untitled-400-10">
+                      <div className="josefin-400-10">
                         Local call, fees may apply
                       </div>
                     </div>
@@ -149,7 +149,7 @@ export default function Home() {
                         >
                           <a
                             href="tel:+351967182444"
-                            className="tobias-300-26 hover-links mb-13"
+                            className="jost-300-26 hover-links mb-13"
                           >
                             +351 967 182 444
                           </a>
@@ -158,7 +158,7 @@ export default function Home() {
                     </div>
 
                     <div className="mobile-frase">
-                      <div className="untitled-400-10">
+                      <div className="josefin-400-10">
                         Local call, fees may apply
                       </div>
                     </div>
@@ -184,13 +184,13 @@ export default function Home() {
                           <div className="form-interest">
                             <div className="ball-interest"></div>
 
-                            <div className="untitled-400-13">
+                            <div className="josefin-400-13">
                               Register interest
                             </div>
                           </div>
 
                           <div className="form-required">
-                            <div className="untitled-400-10">
+                            <div className="josefin-400-10">
                               *Required fields
                             </div>
                           </div>
@@ -319,7 +319,7 @@ export default function Home() {
                               zIndex: -1,
                             }}
                           />
-                          <span className="untitled-400-10 w-form-label">
+                          <span className="josefin-400-10 w-form-label">
                             I have read and accept the�&nbsp;
                             <a
                               href="#"
@@ -351,7 +351,7 @@ export default function Home() {
                           <div className="form-interest">
                             <div className="ball-interest"></div>
 
-                            <div className="untitled-400-13">
+                            <div className="josefin-400-13">
                               WE RECEIVED YOUR �&nbsp;MESSAGE
                             </div>
                           </div>
@@ -362,7 +362,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="tobias-300-98 mb-40">THANK YOU</div>
+                      <div className="jost-300-98 mb-40">THANK YOU</div>
                     </div>
                   </div>
 
@@ -376,7 +376,7 @@ export default function Home() {
 
               <div className="form-please">
                 <div className="form-please-wrap">
-                  <div className="untitled-400-10">
+                  <div className="josefin-400-10">
                     PLEASE FILL IN THIS FIELD.
                   </div>
                 </div>
@@ -423,23 +423,23 @@ export default function Home() {
 
               <div className="transition-bottom">
                 <div className="transition-loading">
-                  <div className="untitled-400-13">loading</div>
+                  <div className="josefin-400-13">loading</div>
 
                   <div className="transition-point-1">
-                    <div className="untitled-400-13">.</div>
+                    <div className="josefin-400-13">.</div>
                   </div>
 
                   <div className="transition-point-2">
-                    <div className="untitled-400-13">.</div>
+                    <div className="josefin-400-13">.</div>
                   </div>
 
                   <div className="transition-point-3">
-                    <div className="untitled-400-13">.</div>
+                    <div className="josefin-400-13">.</div>
                   </div>
                 </div>
 
                 <div className="transition-number">
-                  <div className="tobias-300-32">0</div>
+                  <div className="jost-300-32">0</div>
                 </div>
               </div>
             </div>

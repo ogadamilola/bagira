@@ -31,7 +31,7 @@ const BTS = () => {
         <div fs-cc="banner" class="fs-cc-banner2_component">
           <div class="fs-cc-banner2_container">
             <div class="fs-cc-banner2_text">
-              <div class="untitled-400-10">
+              <div class="josefin-400-10">
                 We use cookies to make things better.&nbsp;
                 <br />
                 <a href="#" privacy="link" target="_blank" class="cookies-link">
@@ -46,7 +46,7 @@ const BTS = () => {
                 data-w-id="d6075ca9-8cd1-4e0e-8dd4-e23067d34e67"
                 class="small-links-cookie"
               >
-                <a href="#" class="untitled-400-10">
+                <a href="#" class="josefin-400-10">
                   accept
                 </a>
 
@@ -55,7 +55,7 @@ const BTS = () => {
             </div>
 
             <div fs-cc="deny" class="decline">
-              <a href="#" class="untitled-400-10">
+              <a href="#" class="josefin-400-10">
                 decline
               </a>
             </div>

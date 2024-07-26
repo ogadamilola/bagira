@@ -6,11 +6,11 @@ const GallerySection = () => {
       <div class="gallery-component">
         <div class="gallery-cima">
           <div class="gallery-title">
-            <h2 class="untitled-400-13">the gallery</h2>
+            <h2 class="josefin-400-13">the gallery</h2>
           </div>
 
           <div class="gallery-sub-title">
-            <div anim="1" split="words" class="tobias-300-122 mb-40">
+            <div anim="1" split="words" class="jost-300-122 mb-40">
               Experience the Best of Bagira
             </div>
           </div>
@@ -18,13 +18,13 @@ const GallerySection = () => {
 
         <div class="gallery-baixo">
           <div class="gallery-sub-title-2">
-            <div anim="1" split="words" class="tobias-300-122 mb-40">
+            <div anim="1" split="words" class="jost-300-122 mb-40">
               VISIT THE GALLERY
             </div>
           </div>
 
           <div class="gallery-text">
-            <p class="untitled-400-13">
+            <p class="josefin-400-13">
               BAGIRA&apos;s collection are paintings she created based on her
               inspiration. These pieces are for sale and available at the
               Gallery in Kura Hulanda Village and can be shipped worldwide.
@@ -34,7 +34,7 @@ const GallerySection = () => {
 
             <p>YES you can.</p>
 
-            <p class="untitled-400-13">
+            <p class="josefin-400-13">
               BAGIRA IS NOW KNOWN AS AN ESTABLISHED ARTIST OF CURAÇAO, MOSTLY
               BECAUSE OF HER MURALS AND CAPTIVATING PORTRAITS. HER WORK CAN BE
               SEEN AROUND THE ISLAND, IN RESTAURANTS, HOTELS, BEACHES, IN THE
@@ -45,7 +45,7 @@ const GallerySection = () => {
 
             <p></p>
 
-            <p class="untitled-400-12">
+            <p class="josefin-400-12">
               {" "}
               With 8 years of artistic expertise, BAGIRA creates a digital
               version of the design so you can first see what to expect in terms

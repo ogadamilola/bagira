@@ -12,54 +12,54 @@ const ArtworkSection = () => {
           <div class="ap-info-top">
             <div class="ap-info-wrap">
               <div class="ap-info-text-wrap-left">
-                <div class="untitled-400-13">shop</div>
+                <div class="josefin-400-13">shop</div>
               </div>
 
               <div class="ap-info-text-wrap-right">
-                <div class="untitled-400-13">CURAÇAO</div>
+                <div class="josefin-400-13">CURAÇAO</div>
               </div>
             </div>
 
             <div class="ap-info-wrap">
               <div class="ap-info-text-wrap-left">
-                <div class="untitled-400-13">Medium</div>
+                <div class="josefin-400-13">Medium</div>
               </div>
 
               <div class="ap-info-text-wrap-right">
-                <div class="untitled-400-13">acrylic</div>
+                <div class="josefin-400-13">acrylic</div>
               </div>
             </div>
 
             <div class="ap-info-wrap">
               <div class="ap-info-text-wrap-left">
-                <div class="untitled-400-13">Begin date</div>
+                <div class="josefin-400-13">Begin date</div>
               </div>
 
               <div class="ap-info-text-wrap-right">
-                <div class="untitled-400-13">2016</div>
+                <div class="josefin-400-13">2016</div>
               </div>
             </div>
 
             <div class="ap-info-wrap">
               <div class="ap-info-text-wrap-left">
-                <div class="untitled-400-13">Origin</div>
+                <div class="josefin-400-13">Origin</div>
               </div>
 
               <div class="ap-info-text-wrap-right">
-                <div class="untitled-400-13">Amazigh-Hungarian</div>
+                <div class="josefin-400-13">Amazigh-Hungarian</div>
               </div>
             </div>
           </div>
 
           <div class="ap-info-bottom">
             <div class="artwork-titulo">
-              <h2 anim="2" split="lines" class="untitled-400-13">
+              <h2 anim="2" split="lines" class="josefin-400-13">
                 Artwork
               </h2>
             </div>
 
             <div class="artwork-sub-titulo">
-              <div anim="3" split="words" class="tobias-300-50 mb-40">
+              <div anim="3" split="words" class="jost-300-50 mb-40">
                 Paintings for sale and custom orders
               </div>
             </div>
@@ -70,7 +70,7 @@ const ArtworkSection = () => {
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"
                 >
-                  <div class="untitled-400-13">Available Artwork</div>
+                  <div class="josefin-400-13">Available Artwork</div>
 
                   <div class="cta-ball">
                     <div class="seta-cta-wrap">
@@ -109,7 +109,7 @@ const ArtworkSection = () => {
             data-w-id="6a4cb653-2432-a39b-d379-1d855ae2f630"
             class="ap-img-description _1"
           >
-            <div class="untitled-400-13">LAUREN HILL</div>
+            <div class="josefin-400-13">LAUREN HILL</div>
           </div>
 
           <div
@@ -135,14 +135,14 @@ const ArtworkSection = () => {
             data-w-id="0531396c-cab0-e7ad-82dc-25ddb9b5efa5"
             class="ap-img-description _3"
           >
-            <div class="untitled-400-13">YOU ARE MY SUNSHINE</div>
+            <div class="josefin-400-13">YOU ARE MY SUNSHINE</div>
           </div>
 
           <div
             data-w-id="9220f8e5-6b50-26ed-4c11-097c7b82ac90"
             class="ap-img-description _2"
           >
-            <div class="untitled-400-13">oreintal beauty</div>
+            <div class="josefin-400-13">oreintal beauty</div>
           </div>
 
           <div class="ap-img-center">
@@ -191,7 +191,7 @@ const ArtworkSection = () => {
             data-w-id="2017f6d2-be53-45d8-fd19-0621beaef914"
             class="ap-img-description _4"
           >
-            <div class="untitled-400-13">AUDREY HEPBURN</div>
+            <div class="josefin-400-13">AUDREY HEPBURN</div>
           </div>
 
           <div
