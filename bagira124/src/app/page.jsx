@@ -32,7 +32,7 @@ export default function Home() {
         <img
           className="ap-img-full-screen-1"
           src="images/640623a27b5c66fa68701f66_apartment-1.webp"
-          alt="Apartamento ONE 24"
+          alt="BAGIRA"
           sizes="100vw"
           data-flip-id="1"
           loading="lazy"
@@ -41,7 +41,7 @@ export default function Home() {
         <img
           className="ap-img-full-screen-2"
           src="images/640623a3a5bff942b070fac8_apartment-2.webp"
-          alt="Sala ONE 24"
+          alt="BAGIRA"
           sizes="100vw"
           data-flip-id="2"
           loading="lazy"
@@ -50,7 +50,7 @@ export default function Home() {
         <img
           className="ap-img-full-screen-3"
           src="images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
-          alt="Cozinha ONE 24"
+          alt="BAGIRA"
           sizes="100vw"
           data-flip-id="3"
           loading="lazy"
@@ -59,7 +59,7 @@ export default function Home() {
         <img
           className="ap-img-full-screen-4"
           src="images/640623a37b5c66566c701f67_apartment-4.webp"
-          alt="Quarto ONE 24"
+          alt="BAGIRA"
           sizes="100vw"
           data-flip-id="4"
           loading="lazy"
@@ -400,7 +400,7 @@ export default function Home() {
                   loading="lazy"
                   sizes="100vw"
                   srcSet="images/6405d4c052dec18e7d8789b9_hero-p-500.webp 500w, images/6405d4c052dec18e7d8789b9_hero-p-800.webp 800w, images/6405d4c052dec18e7d8789b9_hero-p-1080.webp 1080w, images/6405d4c052dec18e7d8789b9_hero-p-1600.webp 1600w, images/6405d4c052dec18e7d8789b9_hero-p-2000.webp 2000w, images/6405d4c052dec18e7d8789b9_hero.webp 2161w"
-                  alt="Edificio ONE 24"
+                  alt="Edificio BAGIRA"
                   className="transition-img n1"
                 />
                 <img
@@ -408,7 +408,7 @@ export default function Home() {
                   loading="lazy"
                   sizes="100vw"
                   srcSet="images/64061e47a47c5fe13ae8f44c_img-2-p-500.webp 500w, images/64061e47a47c5fe13ae8f44c_img-2-p-800.webp 800w, images/64061e47a47c5fe13ae8f44c_img-2-p-1080.webp 1080w, images/64061e47a47c5fe13ae8f44c_img-2-p-1600.webp 1600w, images/64061e47a47c5fe13ae8f44c_img-2.webp 1662w"
-                  alt="Sala ONE 24"
+                  alt="BAGIRA"
                   className="transition-img n2"
                 />
                 <img
@@ -416,7 +416,7 @@ export default function Home() {
                   loading="lazy"
                   sizes="100vw"
                   srcSet="images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
-                  alt="ONE 24"
+                  alt="BAGIRA"
                   className="transition-img n3"
                 />
               </div>

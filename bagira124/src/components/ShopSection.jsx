@@ -183,7 +183,7 @@ const ShopSection = () => {
             loading="lazy"
             sizes="100vw"
             srcset="images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
-            alt="EDIFICIO ONE 24"
+            alt="EDIFICIO BAGIRA"
             class="shop-big-img"
           />
         </div>

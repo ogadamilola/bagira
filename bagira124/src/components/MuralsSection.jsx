@@ -2299,7 +2299,7 @@ const MuralsSection = () => {
                   loading="lazy"
                   sizes="100vw"
                   srcset="images/640753df75ae157db4ba17d5_inquire-p-500.webp 500w, images/640753df75ae157db4ba17d5_inquire-p-800.webp 800w, images/640753df75ae157db4ba17d5_inquire-p-1080.webp 1080w, images/640753df75ae157db4ba17d5_inquire-p-1600.webp 1600w, images/640753df75ae157db4ba17d5_inquire-p-2000.webp 2000w, images/640753df75ae157db4ba17d5_inquire.webp 2161w"
-                  alt="EDIFICIO ONE 24"
+                  alt="EDIFICIO BAGIRA"
                   class="inquire-background-img pc"
                 />
                 <img
@@ -2307,7 +2307,7 @@ const MuralsSection = () => {
                   loading="lazy"
                   sizes="100vw"
                   srcset="images/64187a45057aa041b0d87682_mb-footer-p-500.jpg 500w, images/64187a45057aa041b0d87682_mb-footer.jpg 750w"
-                  alt="EDIFICIO ONE 24"
+                  alt="EDIFICIO BAGIRA"
                   class="inquire-background-img mobile"
                 />
               </div>

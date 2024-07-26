@@ -120,7 +120,7 @@ const ArtworkSection = () => {
             <img
               class="ap-img-a-1"
               src="images/640623a27b5c66fa68701f66_apartment-1.webp"
-              alt="Apartamento ONE 24"
+              alt="BAGIRA"
               sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
               data-flip-id="1"
               img-anim="1"
@@ -155,7 +155,7 @@ const ArtworkSection = () => {
                 <img
                   class="ap-img-a-2"
                   src="images/640623a3a5bff942b070fac8_apartment-2.webp"
-                  alt="Sala ONE 24"
+                  alt="BAGIRA"
                   sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 36vw"
                   data-flip-id="2"
                   img-anim="1"
@@ -174,7 +174,7 @@ const ArtworkSection = () => {
                 <img
                   class="ap-img-a-3"
                   src="images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
-                  alt="Cozinha ONE 24"
+                  alt="BAGIRA"
                   sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 36vw"
                   data-flip-id="3"
                   img-anim="1"
@@ -202,7 +202,7 @@ const ArtworkSection = () => {
             <img
               class="ap-img-a-4"
               src="images/640623a37b5c66566c701f67_apartment-4.webp"
-              alt="Quarto ONE 24"
+              alt="BAGIRA"
               sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
               data-flip-id="4"
               img-anim="1"

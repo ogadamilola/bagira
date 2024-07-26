@@ -41,7 +41,7 @@ const AboutSection = () => {
               loading="lazy"
               sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 21vw"
               srcset="images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-500.webp 500w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-800.webp 800w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-1080.webp 1080w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-1600.webp 1600w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29.webp 1920w"
-              alt="ONE 24"
+              alt="BAGIRA"
               class="about-img n1"
             />
             <img

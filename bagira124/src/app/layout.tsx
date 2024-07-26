@@ -2,13 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-// import "@/styles/bagira.css";
-import Link from "next/link";
-import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import BTS from "@/components/BTS";
-import { NextScript } from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -72,10 +68,10 @@ export default function RootLayout({
           type="text/javascript"
           strategy="beforeInteractive"
         ></Script>
-        <Script type="text/javascript" strategy="beforeInteractive">
+        <Script id="" type="text/javascript" strategy="beforeInteractive">
           {`WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});`}
         </Script>
-        <Script type="text/javascript" strategy="beforeInteractive">
+        <Script id="" type="text/javascript" strategy="beforeInteractive">
           {`!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);`}
         </Script>
         <link
@@ -492,7 +488,7 @@ export default function RootLayout({
 
         {/* SCRIPT GENERAL */}
 
-        <Script type="text/javascript">
+        <Script id="" type="text/javascript">
           {`// Initiate GSAP
             gsap.registerPlugin(ScrollTrigger, SplitText, Flip, ScrollToPlugin);  
             
@@ -539,7 +535,7 @@ export default function RootLayout({
 
         {/* SCRIPT */}
 
-        <Script type="text/javascript">
+        <Script id="" type="text/javascript">
           {`$(document).ready(function() {$(".w-webflow-badge").removeClass("w-webflow-badge").empty(); });`}
         </Script>
 
