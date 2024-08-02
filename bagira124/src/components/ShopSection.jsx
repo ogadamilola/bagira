@@ -89,8 +89,7 @@ const ShopSection = () => {
                   <div class="shop-title">
                     <h3 class="jost-300-50 mb-40">
                       <span class="main-color">whiteglove delivery</span> to
-                      Your
-                      <span class="main-color">doorstep</span>
+                      Your <span class="main-color">doorstep</span>
                     </h3>
                   </div>
 
@@ -110,8 +109,7 @@ const ShopSection = () => {
                 <div class="shop-info-wrap n3">
                   <div class="shop-title">
                     <h3 class="jost-300-50 mb-40">
-                      Comissions
-                      <span class="main-color">& murals</span>
+                      Comissions <span class="main-color">& murals</span>
                     </h3>
                   </div>
 

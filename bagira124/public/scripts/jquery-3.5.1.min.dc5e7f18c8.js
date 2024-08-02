@@ -1119,7 +1119,7 @@
             );
           }),
           target: function (e) {
-            var t = n.shop && n.shop.hash;
+            var t = n.location && n.location.hash;
             return t && t.slice(1) === e.id;
           },
           root: function (e) {
@@ -4586,7 +4586,7 @@
           },
         };
       });
-  var Tt = C.shop,
+  var Tt = C.location,
     Ct = { guid: Date.now() },
     Et = /\?/;
   S.parseXML = function (e) {
@@ -5309,7 +5309,7 @@
               ? (((r = (t =
                   E.implementation.createHTMLDocument("")).createElement(
                   "base"
-                )).href = E.shop.href),
+                )).href = E.location.href),
                 t.head.appendChild(r))
               : (t = E)),
           (o = !n && []),

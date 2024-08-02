@@ -5,6 +5,7 @@ import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import BTS from "@/components/BTS";
+import FlowScript from "@/scripts/FlowScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -437,16 +438,19 @@ export default function RootLayout({
 
         {/* --------------------------- */}
 
+        {/* Important Scripts */}
+
         <Script
           src="/scripts/jquery-3.5.1.min.dc5e7f18c8.js"
           type="text/javascript"
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         ></Script>
-        <Script
-          src="/scripts/webflow.7341b0d66.js"
+        {/* <Script
+          src="/scripts/flow.7341b0d66.js"
           type="text/javascript"
-        ></Script>
+          strategy="beforeInteractive"
+        ></Script> */}
 
         {/* Place all used libraries here */}
 
@@ -552,7 +556,8 @@ export default function RootLayout({
         {/* <NextScript/> */}
         <Navbar />
         <Mouse />
-        <BTS />
+        <FlowScript />
+        {/* <BTS /> */}
         {children}
       </body>
     </html>

@@ -136,7 +136,7 @@ let excludedClass = "no-transition";
 // On Link Click
 $("a").on("click", function (e) {
   if (
-    $(this).prop("hostname") == window.shop.host &&
+    $(this).prop("hostname") == window.location.host &&
     $(this).attr("href").indexOf("#") === -1 &&
     !$(this).hasClass(excludedClass) &&
     $(this).attr("target") !== "_blank" &&
@@ -147,14 +147,14 @@ $("a").on("click", function (e) {
     let transitionURL = $(this).attr("href");
     transitionTrigger.click();
     setTimeout(function () {
-      window.shop = transitionURL;
+      window.location = transitionURL;
     }, exitDurationMS);
   }
 });
 // On Back Button Tap
 window.onpageshow = function (event) {
   if (event.persisted) {
-    window.shop.reload();
+    window.location.reload();
   }
 };
 // Hide Transition on Window Width Resize
@@ -1067,7 +1067,7 @@ horizontalM.add("(min-width: 991px)", () => {
     });
   });
 
-  // END Titulo
+  // END Title
   // IMAGEM APARECE
   $(".about-img-wrap").each(function (index) {
     let triggerElement = $(this);
@@ -1264,7 +1264,7 @@ $(window).on("resize", function () {
   function tablet() {
     if ((tabletV === true || tabletM.matches) && (pcM === true || pc.matches)) {
       // If media query matches
-      shop.reload();
+      location.reload();
       pcM = false;
       tabletV = false;
     }

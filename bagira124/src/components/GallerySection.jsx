@@ -5,13 +5,23 @@ const GallerySection = () => {
     <div id="gallery" class="gallery-section panel">
       <div class="gallery-component">
         <div class="gallery-cima">
-          <div class="gallery-title">
+          {/* <div class="gallery-title">
             <h2 class="josefin-400-13">the gallery</h2>
-          </div>
+          </div> */}
 
           <div class="gallery-sub-title">
             <div anim="1" split="words" class="jost-300-122 mb-40">
-              Experience the Best of Bagira
+              {/* THE GALLERY */}
+              <img
+                class="ap-img-a-candc"
+                src="images/the-gallery.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+              />
             </div>
           </div>
         </div>
@@ -19,11 +29,11 @@ const GallerySection = () => {
         <div class="gallery-baixo">
           <div class="gallery-sub-title-2">
             <div anim="1" split="words" class="jost-300-122 mb-40">
-              VISIT THE GALLERY
+              IN KURA HULANDA
             </div>
           </div>
 
-          <div class="gallery-text">
+          {/* <div class="gallery-text">
             <p class="josefin-400-13">
               BAGIRA&apos;s collection are paintings she created based on her
               inspiration. These pieces are for sale and available at the
@@ -52,7 +62,7 @@ const GallerySection = () => {
               of colors and size, and make changes before the painting work
               begins.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div class="gallery-background">

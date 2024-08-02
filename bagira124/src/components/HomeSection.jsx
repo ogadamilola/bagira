@@ -12,14 +12,14 @@ const HomeSection = () => {
             class="hero-logo"
           />
 
-          <div class="hero-titulo-component">
-            <div class="hero-titulo">
+          <div class="hero-title-component">
+            <div class="hero-title">
               <h1 load="anim" split="words" class="jost-300-122 mb-40">
                 Life without art is just ‘meh’
               </h1>
             </div>
 
-            <div class="hero-sub-titulo">
+            <div class="hero-sub-title">
               <h2 class="josefin-400-26 mb-16">
                 BAGIRA , visual artist of Curaçao
               </h2>

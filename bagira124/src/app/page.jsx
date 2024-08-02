@@ -3,15 +3,14 @@ import Image from "next/image";
 import HomeSection from "@/components/HomeSection";
 import AboutSection from "@/components/AboutSection";
 import ArtworkSection from "@/components/ArtworkSection";
+import CandCSection from "@/components/CandCSection";
+import PaintingsSection from "@/components/PaintingsSection";
 import GallerySection from "@/components/GallerySection";
+import GalleryCircleSection from "@/components/GalleryCircleSection";
 import ShopSection from "@/components/ShopSection";
 import MuralsSection from "@/components/MuralsSection";
 
-import useCustomAnimations from "@/animations/useCustomAnimations";
-
 export default function Home() {
-  // useCustomAnimations();
-
   return (
     <div className="page-wrapper">
       <main className="main-wrapper">
@@ -22,7 +21,10 @@ export default function Home() {
                 <HomeSection />
                 <AboutSection />
                 <ArtworkSection />
+                <CandCSection />
+                <PaintingsSection />
                 <GallerySection />
+                <GalleryCircleSection />
                 <ShopSection />
                 <MuralsSection />
               </div>

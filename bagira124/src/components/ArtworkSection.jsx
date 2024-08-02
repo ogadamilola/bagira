@@ -52,13 +52,13 @@ const ArtworkSection = () => {
           </div>
 
           <div class="ap-info-bottom">
-            <div class="artwork-titulo">
+            <div class="artwork-title">
               <h2 anim="2" split="lines" class="josefin-400-13">
                 Artwork
               </h2>
             </div>
 
-            <div class="artwork-sub-titulo">
+            <div class="artwork-sub-title">
               <div anim="3" split="words" class="jost-300-50 mb-40">
                 Paintings for sale and custom orders
               </div>
@@ -104,7 +104,7 @@ const ArtworkSection = () => {
           </div>
         </div>
 
-        <div class="ap-img-wrap _2">
+        {/* <div class="ap-img-wrap _2">
           <div
             data-w-id="6a4cb653-2432-a39b-d379-1d855ae2f630"
             class="ap-img-description _1"
@@ -128,7 +128,7 @@ const ArtworkSection = () => {
               srcset="images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
             />
           </div>
-        </div>
+        </div> */}
 
         <div class="ap-img-wrap">
           <div
@@ -186,7 +186,7 @@ const ArtworkSection = () => {
           </div>
         </div>
 
-        <div class="ap-img-wrap">
+        {/* <div class="ap-img-wrap">
           <div
             data-w-id="2017f6d2-be53-45d8-fd19-0621beaef914"
             class="ap-img-description _4"
@@ -210,7 +210,7 @@ const ArtworkSection = () => {
               srcset="images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
