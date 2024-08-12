@@ -441,7 +441,7 @@ export default function Home() {
                 </div>
 
                 <div className="transition-number">
-                  <div className="jost-300-32">0</div>
+                  <div className="jost-300-32" progress="text">0</div>
                 </div>
               </div>
             </div>

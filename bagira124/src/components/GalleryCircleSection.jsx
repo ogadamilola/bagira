@@ -73,7 +73,6 @@ const GalleryCircleSection = () => {
 
         <div
             class="gallery-circle"
-            data-speed="1.2"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >

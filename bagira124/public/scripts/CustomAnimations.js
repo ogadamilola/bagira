@@ -82,23 +82,24 @@ let customEase =
 let counter = {
   value: 0
 };
-let loaderDuration = 4.3;
+let loaderDuration = 4.3; // Set this duration according to your page load time
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
   $("[progress=text]").text(progress);
 }
 
+// Function to end the loader animation
 function endLoaderAnimation() {
   $(".transition-bottom").addClass("close");
   setTimeout(() => {
     $(".transition-wrap").addClass("close");
-    $(".home-page-trasition").click();
+    $(".home-page-transition").click();
     setTimeout(() => {
       $(".transition").css("display", "none");
     }, 1000);
     setTimeout(() => {
-      textLoad();
+      textLoad(); // Call any text animations after the loader
     }, 200);
   }, 900);
 }
@@ -115,17 +116,18 @@ let tlLoad = gsap.timeline({
     loadImage4.play().delay(4.5);
   }
 });
+// Animate the counter from 0 to 100 over the duration of the page load
 tlLoad.to(counter, {
   value: 100,
   onUpdate: updateLoaderText,
   duration: loaderDuration,
-  ease: CustomEase.create("custom", customEase)
+  ease: "power1.inOut" // You can adjust the easing as needed
 });
 
-// Depois da animaÃ§Ã£o Scroll
+// Optional: Remove the no-scroll class after the transition completes
 setTimeout(() => {
   $("body").removeClass("no-scroll-transition");
-}, 3000);
+}, 3000); // Adjust timing based on your animation needs
 
 // On Click
 let transitionTrigger = $(".transition-trigger");
