@@ -7,7 +7,7 @@ const PaintingsSection = () => {
         <div class="vertical-line"></div>
       </div> */}
 
-      <div class="paintings-component-top">
+      <div class="paintings-component">
         {/* <div class="paintings-info">
 
           <div class="ap-info-bottom">
@@ -18,7 +18,7 @@ const PaintingsSection = () => {
             </div>
 
             <div class="paintings-title">
-              <h2 anim="2" split="lines" class="josefin-400-13">
+              <h2 anim="2" split="" class="josefin-400-13">
                 BAGIRA's collection are paintings she created based on her
                 inspiration. These pieces are for sale and available at the
                 Gallery in Kura Hulanda Village and can be shipped worldwide.
@@ -65,7 +65,7 @@ const PaintingsSection = () => {
           </div>
         </div> */}
 
-        <div class="ap-img-wrap-paintings-top">
+        <div class="ap-img-wrap-paintings">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -83,14 +83,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
-              ‘TUR SHIMARUKU TA HECHU’ 185 X 140 CM
+            <h2 anim="2" split="" class="josefin-400-13">
+              ‘tur shimaruku ta hechu’ 185 X 140 cm
               <br />F 9.200
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings-top">
+        <div class="ap-img-wrap-paintings">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -108,14 +108,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘Muhammad ali’ 124 X 148 CM
               <br />F 8.500
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings-top">
+        <div class="ap-img-wrap-paintings">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -133,14 +133,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘SISTERS’ 110 X 140 CM
               <br />F 5.500
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings-top">
+        <div class="ap-img-wrap-paintings">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -158,7 +158,7 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘SISTERS’ 100 X 100 CM
               <br />F 4.500
             </h2>
@@ -176,7 +176,7 @@ const PaintingsSection = () => {
             </div>
 
             <div class="paintings-title">
-              <h2 anim="2" split="lines" class="josefin-400-13">
+              <h2 anim="2" split="" class="josefin-400-13">
                 Custom paintings, in other words, commission are pieces that are
                 created based on the client's request. These pieces are
                 customizable based on design, material, color-scheme and size
@@ -224,7 +224,7 @@ const PaintingsSection = () => {
           </div>
         </div> */}
 
-        <div class="ap-img-wrap-paintings">
+        <div class="ap-img-wrap-paintings bottom">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -242,14 +242,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘rOOTED IN CURACAO’ 110 X 140 CM
               <br />F 5.000
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings">
+        <div class="ap-img-wrap-paintings bottom">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -267,14 +267,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘STILL DREAMING’ 90 X 120 CM
               <br />F 4.000
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings">
+        <div class="ap-img-wrap-paintings bottom">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-paintings"
@@ -292,14 +292,14 @@ const PaintingsSection = () => {
             />
           </div>
           <div class="paintings-title">
-            <h2 anim="2" split="lines" class="josefin-400-13">
+            <h2 anim="2" split="" class="josefin-400-13">
               ‘EEW, PEOPLE’ 145 X 255 CM
               <br />F 9.000
             </h2>
           </div>
         </div>
 
-        <div class="ap-img-wrap-paintings">
+        <div class="ap-img-wrap-paintings bottom">
           <div class="artwork-cta">
             <a href="#artwork" class="cta-link c w-inline-block">
               <div data-w-id="e458047e-b02a-b003-344d-013e414fafd4" class="cta">

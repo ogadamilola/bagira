@@ -65,7 +65,7 @@ const CandCSection = () => {
           </div>
         </div>
 
-        <div class="ap-img-wrap">
+        <div class="ap-img-wrap-candc">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-candc"
@@ -143,7 +143,7 @@ const CandCSection = () => {
           </div>
         </div>
 
-        <div class="ap-img-wrap-candc">
+        <div class="ap-img-wrap-candc bottom">
           <div
             // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
             class="ap-img-1-candc"
