@@ -67,8 +67,8 @@ const GallerySection = () => {
 
         <div class="gallery-background">
           <div
-            data-poster-url="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-poster-00001.jpg"
-            data-video-urls="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.mp4,https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.webm"
+            // data-poster-url="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-poster-00001.jpg"
+            // data-video-urls="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.mp4,https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.webm"
             data-autoplay="true"
             data-loop="true"
             data-wf-ignore="true"
@@ -76,9 +76,10 @@ const GallerySection = () => {
           >
             <video
               id="6988ffef-990c-7d4a-a94f-500697e81823-video"
-              autoplay
-              loop
+              autoplay="true"
+              loop="true"
               // style={`"background-image:url(" https:="" assets-global.website-files.com="" 63d3a5c57af34837d7bbb1a0="" 6407644d418722e08e114c7e_ilha-madeira-poster-00001.jpg")"=""`}
+              src="media/6407644d418722e08e114c7e_ilha-madeira-transcode.mp4"
               muted
               playsinline
               data-wf-ignore="true"
