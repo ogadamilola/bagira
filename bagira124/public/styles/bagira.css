@@ -4106,6 +4106,7 @@ figcaption {
   flex-direction: column;
   justify-content: flex-start;
   display: flex;
+  width: max-content;
 }
 
 .vertical-line-wrap {
@@ -4182,14 +4183,6 @@ figcaption {
   height: 50%;
 }
 
-.paintings-component-top {
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0 7.1875em 0 1.25em;
-  display: flex;
-  height: 50%;
-}
-
 .paintings-info {
   flex-direction: column;
   justify-content: center;
@@ -4253,8 +4246,8 @@ figcaption {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: 0.8125em;
-  margin-bottom: 1.375em;
+  margin: 0.8125em 0 0 0;
+  width: 100%;
 }
 
 .paintings-sub-title {
@@ -4307,11 +4300,12 @@ figcaption {
 
 .ap-img-1-paintings {
   justify-content: center;
-  align-items: center;
-  width: 20.1875em;
-  height: 20.1875em;
+  align-items: flex-start;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .img-background {
@@ -4525,6 +4519,7 @@ figcaption {
   display: flex;
   position: relative;
   transform: none;
+  width: 100%
 }
 
 .shop-update {
@@ -5534,44 +5529,31 @@ figcaption {
 .ap-img-wrap-candc {
   justify-content: flex-start;
   align-items: center;
-  padding-top: 7.25em;
-  padding-bottom: 3.125em;
+  padding: 7.25em 0 3.125em 0;
   display: flex;
   position: relative;
   width: 50%;
 }
 
 .ap-img-wrap-candc.bottom {
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 3.125em;
-  padding-bottom: 3.125em;
-  display: flex;
-  position: relative;
-  width: 50%;
-}
-
-.ap-img-wrap-paintings-top {
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 7.25em;
-  padding-bottom: 3.125em;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  margin-right: 1.25em;
+  padding: 3.125em 0 3.125em 0;
 }
 
 .ap-img-wrap-paintings {
   justify-content: center;
   align-items: center;
-  padding-top: 3.125em;
-  padding-bottom: 3.125em;
+  padding: 7.25em 0 0 0;
   display: flex;
   position: relative;
   flex-direction: column;
   margin-right: 1.25em;
-  width: 20.1875em;
+  width: 100%;
+  height: 100%;
+}
+
+.ap-img-wrap-paintings.bottom {
+  /* justify-content: flex-start; */
+  padding: 3.125em 0 3.125em 0;
 }
 
 .mouse-outro-2 {
@@ -6506,13 +6488,11 @@ figcaption {
   .paintings-component {
     flex-direction: column;
     width: 100%;
-    padding: 1.125em 1em 1.5em;
+    padding: 1.125em 1em 0;
   }
 
-  .paintings-component-top {
-    flex-direction: column;
-    width: 100%;
-    padding: 1.125em 1em 1.5em;
+  .paintings-component:nth-of-type(2) {
+    padding: 0 1em 1.125em;
   }
 
   .paintings-info {
@@ -6566,6 +6546,7 @@ figcaption {
 
   .paintings-title {
     /* margin-top: 3.3125em; */
+    margin: 0.8125em 0 1.375em 0;
   }
 
   .paintings-sub-title {
@@ -6642,6 +6623,7 @@ figcaption {
   }
 
   .gallery-circle-section {
+    display: none;
     width: 100vw;
     position: relative;
   }
@@ -6669,6 +6651,8 @@ figcaption {
 
   .gallery-sub-title {
     margin-top: 1.25em;
+    width: 100%;
+    height:2.6rem;
   }
 
   .gallery-text {
@@ -6684,7 +6668,7 @@ figcaption {
   .gallery-background-video {
     width: 100%;
     height: auto;
-    margin-top: 8.8em;
+    margin-top: 5.8rem;
     padding-top: 55%;
   }
 
@@ -7081,14 +7065,14 @@ figcaption {
     width: auto;
   }
 
-  .ap-img-wrap-paintings-top {
-    padding-top: 0;
-    padding-bottom: 1em;
+  .ap-img-wrap-paintings {
+    padding: 0 0 1em 0;
+    margin: 0;
   }
 
-  .ap-img-wrap-paintings {
-    padding-top: 0;
-    padding-bottom: 1em;
+  .ap-img-wrap-paintings.bottom {
+    padding: 0 0 1em 0;
+    margin: 0;
   }
 
   .mouse-outro-2,
