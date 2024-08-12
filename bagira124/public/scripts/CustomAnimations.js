@@ -244,7 +244,7 @@ gsap.ticker.add(() => {
 
 // MOUSE
 $(
-  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
 )
   .not(".nav-link, .small-links")
   .mouseenter(function () {
@@ -253,7 +253,7 @@ $(
     $(".mouse-outro-2").addClass("hover");
   });
 $(
-  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bemine-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
 )
   .not(".nav-link, .small-links")
   .mouseleave(function () {

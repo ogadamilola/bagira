@@ -283,6 +283,7 @@ html.w-mod-touch * {
 
 .w-inline-block {
   max-width: 100%;
+  height: 100%;
   display: inline-block;
 }
 
@@ -4904,9 +4905,9 @@ figcaption {
   margin-right: 5.25em;
 }
 
-.footer-bemine {
+.footer-bagira {
   width: 5.9375em;
-  height: 2.0625em;
+  height: 100%;
   margin-top: 1px;
   margin-left: -0.1875em;
 }

@@ -2254,16 +2254,16 @@ const MuralsSection = () => {
                         </div>
                         <a
                           data-w-id="3638706f-c714-bc5e-1f07-65fdb402a816"
-                          href="https://bemineproperties.com/"
+                          href="http://bagicreatives.com/"
                           target="_blank"
-                          class="bemine-link w-inline-block"
+                          class="bagira-link w-inline-block"
                         >
                           <img
                             src="images/63d3bab7fb9a02f1f85b4adf_exclusive.webp"
                             loading="lazy"
                             data-w-id="fa49143a-6785-adfe-02c0-b78a7e2e1b1b"
-                            alt="Bemine Logo"
-                            class="footer-bemine"
+                            alt="Bagira Logo"
+                            class="footer-bagira"
                           />
                         </a>
                       </div>

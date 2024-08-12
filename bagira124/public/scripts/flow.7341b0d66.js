@@ -14589,7 +14589,7 @@ Webflow.require("ix2").init({
     },
     "a-12": {
       id: "a-12",
-      title: "Bemine - HOVER IN",
+      title: "Bagira - HOVER IN",
       actionItemGroups: [
         {
           actionItems: [
@@ -14602,7 +14602,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".footer-bemine",
+                  selector: ".footer-bagira",
                   selectorGuids: ["75fbdee3-660a-afe0-51f8-6ab2c9ad216f"],
                 },
                 xValue: 1,
@@ -14623,7 +14623,7 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".footer-bemine",
+                  selector: ".footer-bagira",
                   selectorGuids: ["75fbdee3-660a-afe0-51f8-6ab2c9ad216f"],
                 },
                 xValue: 0.9,
@@ -14639,7 +14639,7 @@ Webflow.require("ix2").init({
     },
     "a-13": {
       id: "a-13",
-      title: "Bemine - HOVER OUT",
+      title: "Bagira - HOVER OUT",
       actionItemGroups: [
         {
           actionItems: [
@@ -14652,7 +14652,7 @@ Webflow.require("ix2").init({
                 duration: 350,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".footer-bemine",
+                  selector: ".footer-bagira",
                   selectorGuids: ["75fbdee3-660a-afe0-51f8-6ab2c9ad216f"],
                 },
                 xValue: 1,
