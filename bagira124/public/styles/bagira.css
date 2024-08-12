@@ -4248,6 +4248,7 @@ figcaption {
   justify-content: center;
   margin: 0.8125em 0 0 0;
   width: 100%;
+  flex-grow: 1;
 }
 
 .paintings-sub-title {
@@ -4301,8 +4302,8 @@ figcaption {
 .ap-img-1-paintings {
   justify-content: center;
   align-items: flex-start;
-  width: 20rem;
-  height: 20rem;
+  width: 20vw;
+  height: 20vw;
   display: flex;
   position: relative;
   overflow: hidden;
