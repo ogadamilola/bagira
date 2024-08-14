@@ -1,4 +1,5 @@
 import React from "react";
+import FooterSection from "@/components/FooterSection";
 
 const MuralsSection = () => {
   return (
@@ -81,6 +82,88 @@ const MuralsSection = () => {
                           class="cta"
                         >
                           <div class="josefin-400-13">SHOP THE GALLErY</div>
+
+                          <div class="cta-ball">
+                            <div class="seta-cta-wrap">
+                              <div class="seta-cta-anda-1">
+                                <img
+                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="seta-cta"
+                                />
+                              </div>
+
+                              <div class="seta-cta-anda-2">
+                                <img
+                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  loading="lazy"
+                                  alt=""
+                                  class="seta-cta"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                            class="cta-hover-sticky"
+                          ></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="murals-cta-space">
+                    <a
+                      href="https://www.instagram.com/theonlybagirayouknow/"
+                      target="_blank"
+                      class="download-brochure-link w-inline-block"
+                    >
+                      <div
+                        data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                        class="cta"
+                      >
+                        <div class="josefin-400-13">follow me on instagram</div>
+
+                        <div class="cta-ball">
+                          <div class="seta-cta-wrap">
+                            <div class="seta-cta-anda-1">
+                              <img
+                                src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                loading="lazy"
+                                alt=""
+                                class="seta-cta"
+                              />
+                            </div>
+
+                            <div class="seta-cta-anda-2">
+                              <img
+                                src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                loading="lazy"
+                                alt=""
+                                class="seta-cta"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                          class="cta-hover-sticky"
+                        ></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="murals-cta-space">
+                    <div class="cta-black">
+                      <a href="#" class="cta-link inquire w-inline-block">
+                        <div
+                          data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                          class="cta"
+                        >
+                          <div class="josefin-400-13">send me an email</div>
 
                           <div class="cta-ball">
                             <div class="seta-cta-wrap">
@@ -2087,7 +2170,7 @@ const MuralsSection = () => {
                 </div> */}
               </div>
 
-              <div class="inquire-section">
+              {/* <div class="inquire-section">
                 <div class="inquire-component">
                   <div class="inquire-top">
                     <div class="inquire-title">
@@ -2217,7 +2300,7 @@ const MuralsSection = () => {
                         </div>
                       </div>
 
-                      {/* <div class="footer-visite last">
+                      <div class="footer-visite last">
                         <div class="small-links">
                           <a
                             privacy="link"
@@ -2243,7 +2326,7 @@ const MuralsSection = () => {
 
                           <div class="nav-ball"></div>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
 
                     <div class="footer-right">
@@ -2310,7 +2393,9 @@ const MuralsSection = () => {
                   alt="EDIFICIO BAGIRA"
                   class="inquire-background-img mobile"
                 />
-              </div>
+              </div> */}
+
+              <FooterSection />
             </div>
           </div>
         </div>

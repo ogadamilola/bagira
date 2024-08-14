@@ -6,7 +6,7 @@ const CandCSection = () => {
       <div class="vertical-line-wrap">
         <div class="vertical-line"></div>
       </div>
-      <section id="candc" class="candc-section panel">
+      <section class="candc-section panel">
         <div class="candc-component-top">
           <div class="candc-info">
             <div class="ap-info-bottom">
@@ -26,7 +26,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="#candc" class="cta-link c w-inline-block">
+                <a href="/paintings" class="cta-link artwork[x] w-inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"
@@ -40,7 +40,7 @@ const CandCSection = () => {
                             src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
-                            class="seta-cta"
+                            class="seta-cta-redirect"
                           />
                         </div>
 
@@ -49,7 +49,7 @@ const CandCSection = () => {
                             src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
-                            class="seta-cta"
+                            class="seta-cta-redirect"
                           />
                         </div>
                       </div>
@@ -104,7 +104,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="#candc" class="cta-link c w-inline-block">
+                <a href="/paintings" class="cta-link artwork[x] w-inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"
@@ -118,7 +118,7 @@ const CandCSection = () => {
                             src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
-                            class="seta-cta"
+                            class="seta-cta-redirect"
                           />
                         </div>
 
@@ -127,7 +127,7 @@ const CandCSection = () => {
                             src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
-                            class="seta-cta"
+                            class="seta-cta-redirect"
                           />
                         </div>
                       </div>

@@ -15497,7 +15497,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -15518,7 +15518,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 6000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 38.8,
@@ -15539,7 +15539,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -15899,7 +15899,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: 0,
@@ -15921,7 +15921,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 10000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: -50,
@@ -15943,7 +15943,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 xValue: 0,
@@ -16579,7 +16579,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,
@@ -16600,7 +16600,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 6000,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 44.8,
@@ -16621,7 +16621,7 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 0,
                 target: {
-                  selector: ".shop-anda",
+                  selector: ".location-anda",
                   selectorGuids: ["bae91837-3692-ad9d-0e54-916601dfdd94"],
                 },
                 yValue: 0,

@@ -4,10 +4,10 @@ import HomeSection from "@/components/HomeSection";
 import AboutSection from "@/components/AboutSection";
 import ArtworkSection from "@/components/ArtworkSection";
 import CandCSection from "@/components/CandCSection";
-import PaintingsSection from "@/components/PaintingsSection";
+import ShopSection from "@/components/ShopSection";
 import GallerySection from "@/components/GallerySection";
 import GalleryCircleSection from "@/components/GalleryCircleSection";
-import ShopSection from "@/components/ShopSection";
+import LocationSection from "@/components/LocationSection";
 import MuralsSection from "@/components/MuralsSection";
 
 export default function Home() {
@@ -21,11 +21,11 @@ export default function Home() {
                 <HomeSection />
                 <AboutSection />
                 <ArtworkSection />
-                <CandCSection />
-                <PaintingsSection />
-                <GallerySection />
-                <GalleryCircleSection />
+                {/* <CandCSection /> */}
                 <ShopSection />
+                <GallerySection />
+                {/* <GalleryCircleSection /> */}
+                <LocationSection />
                 <MuralsSection />
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
 
                 <div className="inquire-open-info">
-                  <div className="inquire-open-info-cima">
+                  <div className="inquire-open-info-top">
                     <div className="inquire-open-info-title">
                       <div className="josefin-400-13">WHERE</div>
                     </div>
@@ -398,10 +398,10 @@ export default function Home() {
             <div className="transition-component">
               <div className="transition-img-wrap">
                 <img
-                  src="images/6405d4c052dec18e7d8789b9_hero.webp"
+                  src="images/FullSizeRender.webp"
                   loading="lazy"
                   sizes="100vw"
-                  srcSet="images/6405d4c052dec18e7d8789b9_hero-p-500.webp 500w, images/6405d4c052dec18e7d8789b9_hero-p-800.webp 800w, images/6405d4c052dec18e7d8789b9_hero-p-1080.webp 1080w, images/6405d4c052dec18e7d8789b9_hero-p-1600.webp 1600w, images/6405d4c052dec18e7d8789b9_hero-p-2000.webp 2000w, images/6405d4c052dec18e7d8789b9_hero.webp 2161w"
+                  srcSet="images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
                   alt="Edificio BAGIRA"
                   className="transition-img n1"
                 />

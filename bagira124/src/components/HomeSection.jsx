@@ -14,7 +14,7 @@ const HomeSection = () => {
 
           <div class="hero-title-component">
             <div class="hero-title">
-              <h1 load="anim" split="words" class="jost-300-122 mb-40">
+              <h1 load="anim" split="words" class="jost-700-122 mb-40">
                 Life without art is just ‘meh’
               </h1>
             </div>
@@ -120,10 +120,10 @@ const HomeSection = () => {
         </div>
       </div>
       <img
-        src="images/6405d4c052dec18e7d8789b9_hero.webp"
+        src="images/FullSizeRender.webp"
         loading="lazy"
         sizes="100vw"
-        srcset="images/6405d4c052dec18e7d8789b9_hero-p-500.webp 500w, images/6405d4c052dec18e7d8789b9_hero-p-800.webp 800w, images/6405d4c052dec18e7d8789b9_hero-p-1080.webp 1080w, images/6405d4c052dec18e7d8789b9_hero-p-1600.webp 1600w, images/6405d4c052dec18e7d8789b9_hero-p-2000.webp 2000w, images/6405d4c052dec18e7d8789b9_hero.webp 2161w"
+        srcset="images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
         alt="BAGIRA"
         class="hero-img-background"
       />

@@ -314,14 +314,14 @@ $(".ap-img-1, .ap-img-50, .ap-img-4").mouseleave(function () {
   $(".glass-block").removeClass("expand");
 });
 $(
-  ".about-section, .artwork-section, .shop-section, .murals-section, .hero-scroll, .murals-component"
+  ".about-section, .artwork-section, .candc-section, .shop-section, .location-section, .murals-section, .hero-scroll, .murals-component"
 ).mouseenter(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").addClass("black");
 });
 $(".hero-scroll").mouseleave(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
 });
-$(".gallery-section, .hero-section, .inquire-open, .inquire-section").mouseenter(
+$(".gallery-section, .gallery-circle-section, .hero-section, .inquire-open, .inquire-section").mouseenter(
   function () {
     $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
   }
@@ -366,7 +366,7 @@ horizontalM.add("(min-width: 991px)", () => {
       ease: "none"
     });
   // SCROLL TO home
-  document.querySelectorAll(".nav-link.home").forEach((element) => {
+  document.querySelectorAll(".nav-link.home, .cta-link.home").forEach((element) => {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       let scrollContainer = document.querySelector(".track");
@@ -389,8 +389,8 @@ horizontalM.add("(min-width: 991px)", () => {
       });
     });
   });
-  // SCROLL TO a
-  document.querySelectorAll(".nav-link.a, .big-cta").forEach((element) => {
+  // SCROLL TO about
+  document.querySelectorAll(".nav-link.about, .big-cta, .cta-link.about").forEach((element) => {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       let scrollContainer = document.querySelector(".track");
@@ -413,15 +413,15 @@ horizontalM.add("(min-width: 991px)", () => {
       });
     });
   });
-  // SCROLL TO d
-  document.querySelectorAll(".nav-link.d").forEach((element) => {
+  // SCROLL TO artwork
+  document.querySelectorAll(".nav-link.artwork, .cta-link.artwork").forEach((element) => {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       let scrollContainer = document.querySelector(".track");
       const id = this.getAttribute("href").split("#")[1];
 
       const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 50;
+      const element2 = targetElement.offsetWidth / 15;
 
       const scrollToHere =
         (targetElement.offsetLeft + element2) /
@@ -437,8 +437,32 @@ horizontalM.add("(min-width: 991px)", () => {
       });
     });
   });
-  // SCROLL TO b
-  document.querySelectorAll(".nav-link.b").forEach((element) => {
+    // SCROLL TO shop
+    document.querySelectorAll(".nav-link.shop, .cta-link.shop").forEach((element) => {
+      element.addEventListener("click", function (e) {
+        e.preventDefault();
+        let scrollContainer = document.querySelector(".track");
+        const id = this.getAttribute("href").split("#")[1];
+  
+        const targetElement = document.getElementById(id);
+        const element2 = targetElement.offsetWidth / 30;
+  
+        const scrollToHere =
+          (targetElement.offsetLeft + element2) /
+          (scrollContainer.scrollWidth /
+            (scrollContainer.scrollWidth - window.innerWidth));
+  
+        console.log(scrollToHere);
+        console.log(element2);
+  
+        gsap.to(window, {
+          scrollTo: scrollToHere,
+          duration: 2
+        });
+      });
+    });
+  // SCROLL TO gallery
+  document.querySelectorAll(".nav-link.gallery, .cta-link.gallery").forEach((element) => {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       let scrollContainer = document.querySelector(".track");
@@ -461,8 +485,32 @@ horizontalM.add("(min-width: 991px)", () => {
       });
     });
   });
-  // SCROLL TO c
-  document.querySelectorAll(".nav-link.c, .cta-link.c").forEach((element) => {
+    // SCROLL TO location
+    document.querySelectorAll(".nav-link.location, .cta-link.location").forEach((element) => {
+      element.addEventListener("click", function (e) {
+        e.preventDefault();
+        let scrollContainer = document.querySelector(".track");
+        const id = this.getAttribute("href").split("#")[1];
+  
+        const targetElement = document.getElementById(id);
+        const element2 = targetElement.offsetWidth / 20;
+  
+        const scrollToHere =
+          (targetElement.offsetLeft + element2) /
+          (scrollContainer.scrollWidth /
+            (scrollContainer.scrollWidth - window.innerWidth));
+  
+        console.log(scrollToHere);
+        console.log(element2);
+  
+        gsap.to(window, {
+          scrollTo: scrollToHere,
+          duration: 2
+        });
+      });
+    });
+  // SCROLL TO murals
+  document.querySelectorAll(".nav-link.murals, .cta-link.murals").forEach((element) => {
     element.addEventListener("click", function (e) {
       e.preventDefault();
       let scrollContainer = document.querySelector(".track");
@@ -508,7 +556,7 @@ horizontalM.add("(min-width: 991px)", () => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".artwork-section",
+        trigger: ".artwork-full-section",
         containerAnimation: tlMain,
         start: "left 50%",
         end: "right left",
@@ -544,7 +592,7 @@ horizontalM.add("(min-width: 991px)", () => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         containerAnimation: tlMain,
         start: "left 50%",
         end: "right left",
@@ -577,7 +625,7 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-about").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
@@ -603,19 +651,19 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-about").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
       $(this).css("pointer-events", "none");
     }, 100);
   });
-  // NAV BALL APARTMENTS -------
+  // NAV BALL ARTWORK -------
   let navArtwork = $("#nav-artwork").find(".nav-ball");
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".artwork-section",
+        trigger: ".artwork-full-section",
         containerAnimation: tlMain,
         start: "left left",
         end: "right left",
@@ -633,7 +681,7 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-artwork").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
@@ -645,11 +693,11 @@ horizontalM.add("(min-width: 991px)", () => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".gallery-section",
+        trigger: ".gallery-full-section",
         containerAnimation: tlMain,
         start: "left left",
         end: "right left",
-        //markers: true,
+        // markers: true,
         toggleActions: "play reverse play reverse"
       }
     })
@@ -659,7 +707,7 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-gallery").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
@@ -689,13 +737,43 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-shop").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
       $(this).css("pointer-events", "none");
     }, 100);
   });
+    // NAV BALL Location -------
+    let navLocation = $("#nav-location").find(".nav-ball");
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".location-section",
+          containerAnimation: tlMain,
+          start: "left left",
+          end: "right left",
+          //markers: true,
+          toggleActions: "play reverse play reverse"
+        }
+      })
+      .fromTo(
+        "#nav-location",
+        { pointerEvents: "auto" },
+        { pointerEvents: "none" }
+      )
+      .to(
+        navLocation,
+        { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+        0
+      );
+    // Click to make the ball stay in the correct place
+    $("#nav-location").on("click", function () {
+      $(".nav-link").css("pointer-events", "auto");
+      setTimeout(() => {
+        $(this).css("pointer-events", "none");
+      }, 100);
+    });
   // NAV BALL MURALS -------
   let navMurals = $("#nav-murals").find(".nav-ball");
   gsap
@@ -719,7 +797,7 @@ horizontalM.add("(min-width: 991px)", () => {
       { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
       0
     );
-  // Click para a bola ficar no sitio correto
+  // Click to make the ball stay in the correct place
   $("#nav-murals").on("click", function () {
     $(".nav-link").css("pointer-events", "auto");
     setTimeout(() => {
@@ -933,23 +1011,23 @@ horizontalM.add("(min-width: 991px)", () => {
         //markers: true
       }
     })
-    .to(".gallery-cima", {
+    .to(".gallery-top", {
       y: "-50%",
       rotationX: "60_cw",
       opacity: 0,
       ease: "none"
     })
     .to(
-      ".gallery-baixo",
+      ".gallery-bottom",
       { y: "50%", rotationX: "-60_ccw", opacity: 0, ease: "none" },
       0
     );
   // END THE GALLERY
-  // SHOP ------
+  // LOCATION ------
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-trigger",
+        trigger: ".location-trigger",
         containerAnimation: tlMain,
         start: "left left",
         end: "right right",
@@ -957,13 +1035,13 @@ horizontalM.add("(min-width: 991px)", () => {
         //markers: true
       }
     })
-    .to(".shop-sticky", { x: "100vw", ease: "none" })
-    .to(".shop-update-line", { height: "100%", ease: "none" }, 0);
+    .to(".location-sticky", { x: "100vw", ease: "none" })
+    .to(".location-update-line", { height: "100%", ease: "none" }, 0);
 
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-trigger",
+        trigger: ".location-trigger",
         containerAnimation: tlMain,
         start: "18% left",
         end: "right right",
@@ -972,21 +1050,21 @@ horizontalM.add("(min-width: 991px)", () => {
         //markers: true
       }
     })
-    .to(".shop-info-wrap.n1", {
+    .to(".location-info-wrap.n1", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
       duration: 1
     })
     .to(
-      ".shop-info-wrap.n2",
+      ".location-info-wrap.n2",
       { scale: 1, opacity: 1, ease: "power1.inOut", duration: 1 },
       0.5
     );
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-trigger",
+        trigger: ".location-trigger",
         containerAnimation: tlMain,
         start: "36% left",
         end: "right right",
@@ -995,18 +1073,18 @@ horizontalM.add("(min-width: 991px)", () => {
         //markers: true
       }
     })
-    .to(".shop-info-wrap.n2", {
+    .to(".location-info-wrap.n2", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
       duration: 1
     })
     .to(
-      ".shop-info-wrap.n3",
+      ".location-info-wrap.n3",
       { scale: 1, opacity: 1, ease: "power1.inOut", duration: 1 },
       0.5
     );
-  // END SHOP
+  // END LOCATION
   // MURALS ------
   var trackHeight = $(this).outerHeight();
   function setAvailabityHeights() {
@@ -1138,11 +1216,11 @@ horizontalM.add("(min-width: 991px)", () => {
       }
     })
     .fromTo(".gallery-background-video", { x: "0%" }, { x: "30%" });
-  // SHOP Image
+  // LOCATION Image
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         containerAnimation: tlMain,
         start: "40% left",
         end: "right left",
@@ -1150,7 +1228,7 @@ horizontalM.add("(min-width: 991px)", () => {
         //markers: true
       }
     })
-    .fromTo(".shop-big-img", { x: "-20%" }, { x: "20%" });
+    .fromTo(".location-big-img", { x: "-20%" }, { x: "20%" });
   // FOOTER
   gsap
     .timeline({
@@ -1307,7 +1385,7 @@ horizontalM.add("(max-width: 991px)", () => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         start: "top top",
         end: "bottom bottom",
         toggleActions: "play none none reverse"
@@ -1339,44 +1417,44 @@ horizontalM.add("(max-width: 991px)", () => {
       }
     });
   });
-  // SHOP ------
+  // LOCATION ------
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         start: "top top",
         end: "80% bottom",
         scrub: true
         //markers: true
       }
     })
-    .to(".shop-update-line", { width: "100%", ease: "none" });
+    .to(".location-update-line", { width: "100%", ease: "none" });
 
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         start: "15% top",
         end: "bottom bottom",
         toggleActions: "play none none reverse"
         //markers: true
       }
     })
-    .to(".shop-info-wrap.n1", {
+    .to(".location-info-wrap.n1", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
       duration: 1
     })
     .to(
-      ".shop-info-wrap.n2",
+      ".location-info-wrap.n2",
       { scale: 1, opacity: 1, ease: "power1.inOut", duration: 1 },
       0.5
     );
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: ".shop-section",
+        trigger: ".location-section",
         start: "30% top",
         end: "bottom bottom",
         //scrub: true,
@@ -1384,18 +1462,18 @@ horizontalM.add("(max-width: 991px)", () => {
         //markers: true
       }
     })
-    .to(".shop-info-wrap.n2", {
+    .to(".location-info-wrap.n2", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
       duration: 1
     })
     .to(
-      ".shop-info-wrap.n3",
+      ".location-info-wrap.n3",
       { scale: 1, opacity: 1, ease: "power1.inOut", duration: 1 },
       0.5
     );
-  // END SHOP
+  // END LOCATION
   // IMAGE PARALLAX --------
   // Hero
   gsap

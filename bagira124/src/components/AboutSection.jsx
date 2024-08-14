@@ -14,10 +14,10 @@ const AboutSection = () => {
 
             <div class="about-img-wrap">
               <img
-                src="images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29.webp"
+                src="images/BagiraAboutHeadshot.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 21vw"
-                srcset="images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-500.webp 500w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-800.webp 800w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-1080.webp 1080w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29-p-1600.webp 1600w, images/6411a4b4d1a0ba3eb1887e64_one-24%20%281%29.webp 1920w"
+                srcset="images/BagiraAboutHeadshot-p-500.webp 500w, images/BagiraAboutHeadshot-p-800.webp 800w, images/BagiraAboutHeadshot-p-1080.webp 1080w, images/BagiraAboutHeadshot-p-1600.webp 1600w, images/BagiraAboutHeadshot.webp 1920w"
                 alt="BAGIRA"
                 class="about-img n1"
               />
@@ -66,7 +66,7 @@ const AboutSection = () => {
       </div>
 
       <div class="artwork-cta">
-        <a href="#artwork" class="cta-link c w-inline-block">
+        <a href="/about" class="cta-link artwork[x] w-inline-block">
           <div data-w-id="e458047e-b02a-b003-344d-013e414fafd4" class="cta">
             <div class="josefin-400-13">Learn More</div>
 
@@ -77,7 +77,7 @@ const AboutSection = () => {
                     src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                     loading="lazy"
                     alt=""
-                    class="seta-cta"
+                    class="seta-cta-redirect"
                   />
                 </div>
 
@@ -86,7 +86,7 @@ const AboutSection = () => {
                     src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                     loading="lazy"
                     alt=""
-                    class="seta-cta"
+                    class="seta-cta-redirect"
                   />
                 </div>
               </div>

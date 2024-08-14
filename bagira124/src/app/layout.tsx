@@ -150,20 +150,20 @@ export default function RootLayout({
             .w-editor .murals-anda {
               overflow: scroll!important;
             }
-            .w-editor .shop-info-wrap.n1{
+            .w-editor .location-info-wrap.n1{
               position: relative!important;
               opacity: 1!important;
             }
-            .w-editor .shop-info-wrap.n2{
+            .w-editor .location-info-wrap.n2{
               position: relative!important;
               opacity: 1!important;
             }
-            .w-editor .shop-info-wrap.n3{
+            .w-editor .location-info-wrap.n3{
               position: relative!important;
               opacity: 1!important;
             }
 
-            .w-editor .shop-info-anim {
+            .w-editor .location-info-anim {
               z-index: 30!important;
               display: flex!important;
               flex-direction: row!important;
@@ -171,7 +171,7 @@ export default function RootLayout({
               align-items: flex-start!important;
             }
 
-            .w-editor .shop-background {
+            .w-editor .location-background {
               width: 100%;
             }
             /* END EDITOR CODE */`,

@@ -2,145 +2,40 @@ import React from "react";
 
 const ShopSection = () => {
   return (
-    <div id="shop" class="shop-section panel">
-      <div class="shop-trigger"></div>
+    <>
+      <div class="vertical-line-wrap">
+        <div class="vertical-line"></div>
+      </div>
+      <section id="shop" class="shop-section panel">
+        {/* <div class="vertical-line-wrap">
+        <div class="vertical-line"></div>
+      </div> */}
 
-      <div class="shop-sticky">
-        <div class="shop-width"></div>
+        <div class="shop-component">
+          {/* <div class="shop-info">
 
-        <div class="shop-marquee">
-          <div
-            data-w-id="a69e3c76-4a04-0ceb-2f87-e329ebd28016"
-            class="shop-anda"
-          >
-            <div class="shop-track">
-              <div class="shop-marquee-repete">
-                <div class="shop-marquee-text">
-                  <img
-                    src="images/6405cdaf4aff8b98974c7362_Logo-NVVV.svg"
-                    loading="lazy"
-                    alt="Logo BAGIRA"
-                  />
-                </div>
-              </div>
-
-              <div class="shop-marquee-repete">
-                <div class="shop-marquee-text">
-                  <div class="jost-300-50 mb-40">bagira</div>
-                </div>
-              </div>
-
-              <div class="shop-marquee-repete">
-                <div class="shop-marquee-text">
-                  <div class="jost-300-50 mb-40">art</div>
-                </div>
-              </div>
-
-              <div class="shop-marquee-repete">
-                <div class="shop-marquee-text">
-                  <div class="jost-300-50 mb-40">commissions</div>
-                </div>
+          <div class="ap-info-bottom">
+            <div class="shop-sub-title">
+              <div anim="3" split="words" class="jost-300-50 mb-40">
+                Collection
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="shop-update">
-          <div class="vertical-line-wrap mb-none">
-            <div class="vertical-line"></div>
-          </div>
-
-          <div class="horizontal-line-wrap mb-block">
-            <div class="horizontal-line grey"></div>
-          </div>
-
-          <div class="shop-update-line"></div>
-        </div>
-
-        <div class="shop-info">
-          <div class="shop-info-component">
-            <div class="shop-info-wrap relative">
-              <div class="shop-sub-title">
-                <div class="josefin-400-13">shop</div>
-              </div>
-
-              <div class="shop-info-anim">
-                <div class="shop-info-wrap n1">
-                  <div class="shop-title">
-                    <h3 anim="1" split="words" class="jost-300-50 mb-40">
-                      Kura Hulanda Village,
-                      <span class="main-color">curaçao</span>
-                    </h3>
-                  </div>
-
-                  <div class="shop-paragraph">
-                    <p class="josefin-400-13">
-                      commercial murals Transforming spaces, elevating brands We
-                      specialize in crafting bespoke mural experiences that
-                      transcend conventional aesthetics. Elevate your business
-                      with our expertly designed and executed murals.
-                    </p>
-                  </div>
-
-                  <div class="shop-background"></div>
-                </div>
-
-                <div class="shop-info-wrap n2">
-                  <div class="shop-title">
-                    <h3 class="jost-300-50 mb-40">
-                      <span class="main-color">whiteglove delivery</span> to
-                      Your <span class="main-color">doorstep</span>
-                    </h3>
-                  </div>
-
-                  <div class="shop-paragraph">
-                    <p class="josefin-400-13">
-                      Oftentimes clients request a special painting that would
-                      fit in their interior and about. You can directly
-                      collaborate with the artist to bring your about to
-                      reality, whether it’s a personal portrait, a made up
-                      person’s portrait, landscape or abstract piece.
-                    </p>
-                  </div>
-
-                  <div class="shop-background"></div>
-                </div>
-
-                <div class="shop-info-wrap n3">
-                  <div class="shop-title">
-                    <h3 class="jost-300-50 mb-40">
-                      Comissions <span class="main-color">& murals</span>
-                    </h3>
-                  </div>
-
-                  <div class="shop-paragraph">
-                    <p class="josefin-400-13">
-                      We believe in collaboration as the key to creating
-                      exceptional murals. Our design process involves continuous
-                      communication with you, incorporating your feedback to
-                      guarantee that the final artwork aligns seamlessly with
-                      your expectations and business objectives.
-                    </p>
-                  </div>
-
-                  <div class="shop-background"></div>
-                </div>
-              </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                BAGIRA's collection are paintings she created based on her
+                inspiration. These pieces are for sale and available at the
+                Gallery in Kura Hulanda Village and can be shipped worldwide.
+              </h2>
             </div>
-          </div>
 
-          <div class="shop-cta mb-none">
-            <div class="shop-cta-wrap">
-              <a
-                href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
-                target="_blank"
-                class="cta-link w-inline-block"
-              >
+            <div class="shop-cta">
+              <a href="#shop" class="cta-link artwork w-inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"
                 >
-                  <div class="josefin-400-13">see Location</div>
+                  <div class="josefin-400-13">Learn More</div>
 
                   <div class="cta-ball">
                     <div class="seta-cta-wrap">
@@ -172,21 +67,284 @@ const ShopSection = () => {
               </a>
             </div>
           </div>
+        </div> */}
+
+          <div class="ap-img-wrap-shop">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘tur shimaruku ta hechu’ 185 X 140 cm
+                <br />F 9.200
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_1.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘Muhammad ali’ 124 X 148 CM
+                <br />F 8.500
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_2.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘SISTERS’ 110 X 140 CM
+                <br />F 5.500
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_3.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘SISTERS’ 100 X 100 CM
+                <br />F 4.500
+              </h2>
+            </div>
+          </div>
         </div>
 
-        <div class="shop-big-img-wrap">
-          <div class="img-background"></div>
-          <img
-            src="images/64070b5af80a800a9c6bf1d9_big-img.webp"
-            loading="lazy"
-            sizes="100vw"
-            srcset="images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
-            alt="EDIFICIO BAGIRA"
-            class="shop-big-img"
-          />
+        <div class="shop-component">
+          {/* <div class="shop-info-bottom">
+          <div class="ap-info-bottom">
+            <div class="shop-sub-title">
+              <div anim="3" split="words" class="jost-300-50 mb-40">
+                Commission
+              </div>
+            </div>
+
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                Custom paintings, in other words, commission are pieces that are
+                created based on the client's request. These pieces are
+                customizable based on design, material, color-scheme and size
+                and can be shipped worldwide.
+              </h2>
+            </div>
+
+            <div class="shop-cta">
+              <a href="#shop" class="cta-link artwork w-inline-block">
+                <div
+                  data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                  class="cta"
+                >
+                  <div class="josefin-400-13">Learn More</div>
+
+                  <div class="cta-ball">
+                    <div class="seta-cta-wrap">
+                      <div class="seta-cta-anda-1">
+                        <img
+                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          class="seta-cta"
+                        />
+                      </div>
+
+                      <div class="seta-cta-anda-2">
+                        <img
+                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          class="seta-cta"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                    class="cta-hover-sticky"
+                  ></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div> */}
+
+          <div class="ap-img-wrap-shop bottom">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_4.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘rOOTED IN CURACAO’ 110 X 140 CM
+                <br />F 5.000
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop bottom">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_5.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘STILL DREAMING’ 90 X 120 CM
+                <br />F 4.000
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop bottom">
+            <div
+              // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
+              class="ap-img-1-shop"
+            >
+              {/* <div img-castanho="1" class="img-background"></div> */}
+              <img
+                class="ap-img-a-shop"
+                src="images/Background_6.webp"
+                alt="BAGIRA"
+                // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+                // srcset="images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+              />
+            </div>
+            <div class="shop-title">
+              <h2 anim="2" split="" class="josefin-400-13">
+                ‘EEW, PEOPLE’ 145 X 255 CM
+                <br />F 9.000
+              </h2>
+            </div>
+          </div>
+
+          <div class="ap-img-wrap-shop bottom">
+            <div class="artwork-cta">
+              <a href="/paintings/collection" class="cta-link artwork[x] w-inline-block">
+                <div
+                  data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                  class="cta"
+                >
+                  <div class="josefin-400-13">See All Available Artwork</div>
+
+                  <div class="cta-ball">
+                    <div class="seta-cta-wrap">
+                      <div class="seta-cta-anda-1">
+                        <img
+                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          class="seta-cta-redirect"
+                        />
+                      </div>
+
+                      <div class="seta-cta-anda-2">
+                        <img
+                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          class="seta-cta-redirect"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                    class="cta-hover-sticky"
+                  ></div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

@@ -67,7 +67,7 @@ const GalleryCircleSection = () => {
     loadGSAP();
   }, []);
   return (
-    <div id="gallery-circle" class="gallery-circle-section panel">
+    <div id="gallery" class="gallery-circle-section panel">
       <div class="gallery-circle-component">
 
 
