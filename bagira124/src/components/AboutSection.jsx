@@ -10,7 +10,7 @@ const AboutSection = () => {
 
         <div class="about-bottom">
           <div class="about-img-component">
-            <div class="about-img-brown"></div>
+            <div class="about-img-brown z-0 w-full h-full absolute top-0 bottom-0 left-0 right-0"></div>
 
             <div class="about-img-wrap">
               <img

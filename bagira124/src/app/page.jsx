@@ -9,8 +9,37 @@ import GallerySection from "@/components/GallerySection";
 import GalleryCircleSection from "@/components/GalleryCircleSection";
 import LocationSection from "@/components/LocationSection";
 import MuralsSection from "@/components/MuralsSection";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Wait for router to be ready and query parameters to be populated
+    if (router.isReady) {
+      const { scrollTo } = router.query || {}; // Safely destructure scrollTo
+
+      if (scrollTo) {
+        const handleScroll = () => {
+          const targetLink = document.querySelector(`a[href="#${scrollTo}"]`);
+          if (targetLink) {
+            targetLink.scrollIntoView({ behavior: "smooth" });
+
+            // Clean up the URL
+            router.replace(router.pathname, undefined, { shallow: true });
+          }
+        };
+
+        window.addEventListener("load", () => {
+          setTimeout(handleScroll, 1000); // Adjust the delay as needed
+        });
+
+        return () => window.removeEventListener("load", handleScroll);
+      }
+    }
+  }, [router.isReady, router.query, router]);
+
   return (
     <div className="page-wrapper">
       <main className="main-wrapper">
@@ -441,7 +470,9 @@ export default function Home() {
                 </div>
 
                 <div className="transition-number">
-                  <div className="jost-300-32" progress="text">0</div>
+                  <div className="jost-300-32" progress="text">
+                    0
+                  </div>
                 </div>
               </div>
             </div>

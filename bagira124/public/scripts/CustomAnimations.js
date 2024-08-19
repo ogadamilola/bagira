@@ -253,7 +253,7 @@ gsap.ticker.add(() => {
 
 // MOUSE
 $(
-  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
 )
   .not(".nav-link, .small-links")
   .mouseenter(function () {
@@ -262,7 +262,7 @@ $(
     $(".mouse-outro-2").addClass("hover");
   });
 $(
-  ".cta, .big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
 )
   .not(".nav-link, .small-links")
   .mouseleave(function () {
@@ -381,12 +381,12 @@ horizontalM.add("(min-width: 991px)", () => {
     const clickedLink = this;
     const targetSection = clickedLink.getAttribute("href").split("#")[1];
 
-    // If not on homepage, go to homepage first
+    // If not on homepage, go to homepage with a parameter
     if (
       window.location.pathname !== "/" &&
       window.location.pathname !== "/index.html"
     ) {
-      window.location.href = "/#" + targetSection;
+      window.location.href = "/?scrollTo=" + targetSection;
     } else {
       // If already on homepage, just scroll to the section
       scrollToSection(clickedLink);
@@ -395,7 +395,7 @@ horizontalM.add("(min-width: 991px)", () => {
 
   document
     .querySelectorAll(
-      ".nav-link.home, .cta-link.home, .nav-link.about, .big-cta, .cta-link.about, .nav-link.artwork, .cta-link.artwork, .nav-link.shop, .cta-link.shop, .nav-link.gallery, .cta-link.gallery, .nav-link.location, .cta-link.location, .nav-link.murals, .cta-link.murals"
+      ".nav-link.home, .cta-link.home, .nav-link.about, .big-cta.home, .cta-link.about, .nav-link.artwork, .cta-link.artwork, .nav-link.shop, .cta-link.shop, .nav-link.gallery, .cta-link.gallery, .nav-link.location, .cta-link.location, .nav-link.murals, .cta-link.murals"
     )
     .forEach((element) => {
       element.addEventListener("click", handleNavLinkClick);
@@ -698,8 +698,8 @@ horizontalM.add("(min-width: 991px)", () => {
       );
   } else {
     // Nav Color for additional pages
-    gsap.set(".nav", { color: "#120902" });
-    gsap.set(".nav-ball", { backgroundColor: "#120902" });
+    gsap.set(".nav", { color: "white", mixBlendMode: "difference" });
+    gsap.set(".nav-ball", { backgroundColor: "white" });
 
     // Remove horizontal scroll functionality
     // You may need to remove or adjust other horizontal scroll related code as well
@@ -750,215 +750,6 @@ horizontalM.add("(min-width: 991px)", () => {
         }, 100);
       });
     });
-
-    // // NAV BALL HOME -------
-    // let navHome = $("#nav-home").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".hero-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left+=150",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo("#nav-home", { pointerEvents: "auto" }, { pointerEvents: "none" })
-    //   .to(
-    //     navHome,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-about").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL ABOUT -------
-    // let navAbout = $("#nav-about").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".about-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "#nav-about",
-    //     { pointerEvents: "auto" },
-    //     { pointerEvents: "none" }
-    //   )
-    //   .to(
-    //     navAbout,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-about").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL ARTWORK -------
-    // let navArtwork = $("#nav-artwork").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".artwork-full-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "#nav-artwork",
-    //     { pointerEvents: "auto" },
-    //     { pointerEvents: "none" }
-    //   )
-    //   .to(
-    //     navArtwork,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-artwork").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL GALLERY -------
-    // let navGallery = $("#nav-gallery").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".gallery-full-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       // markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "#nav-gallery",
-    //     { pointerEvents: "auto" },
-    //     { pointerEvents: "none" }
-    //   )
-    //   .to(
-    //     navGallery,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-gallery").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL SHOP -------
-    // let navShop = $("#nav-shop").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".shop-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo("#nav-shop", { pointerEvents: "auto" }, { pointerEvents: "none" })
-    //   .to(
-    //     navShop,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-shop").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL Location -------
-    // let navLocation = $("#nav-location").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".location-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "#nav-location",
-    //     { pointerEvents: "auto" },
-    //     { pointerEvents: "none" }
-    //   )
-    //   .to(
-    //     navLocation,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-location").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
-
-    // // NAV BALL MURALS -------
-    // let navMurals = $("#nav-murals").find(".nav-ball");
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".murals-section",
-    //       containerAnimation: tlMain,
-    //       start: "left left",
-    //       end: "right left",
-    //       //markers: true,
-    //       toggleActions: "play reverse play reverse",
-    //     },
-    //   })
-    //   .fromTo(
-    //     "#nav-murals",
-    //     { pointerEvents: "auto" },
-    //     { pointerEvents: "none" }
-    //   )
-    //   .to(
-    //     navMurals,
-    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-    //     0
-    //   );
-    // // Click to make the ball stay in the correct place
-    // $("#nav-murals").on("click", function () {
-    //   $(".nav-link").css("pointer-events", "auto");
-    //   setTimeout(() => {
-    //     $(this).css("pointer-events", "none");
-    //   }, 100);
-    // });
   } else {
     const currentPath = window.location.pathname;
     const pageToNavMap = {
@@ -972,13 +763,22 @@ horizontalM.add("(min-width: 991px)", () => {
 
     const relevantNavId = pageToNavMap[currentPath];
     if (relevantNavId) {
-      const navBall = $(relevantNavId).find(".nav-ball");
+      const navItem = $(relevantNavId);
+      const navBall = navItem.find(".nav-ball");
 
-      // Reset any existing transformations and opacity
-      $(relevantNavId).find(".nav-ball").css("rotate", "1");
+      // Add a class to indicate this is the current page
+      navItem.addClass("current-page");
 
-      // Ensure the nav link is not clickable
-      $(relevantNavId).css("pointer-events", "none");
+      // Immediately play the GSAP animation for this nav item
+      gsap.to(navBall, {
+        x: "-100%",
+        opacity: 1,
+        duration: 0.35,
+        ease: "power1.out",
+      });
+
+      // Disable pointer events
+      navItem.css("pointer-events", "none");
     }
   }
   // EXPAND IMAGE ----------

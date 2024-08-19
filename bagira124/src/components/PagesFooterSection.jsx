@@ -1,8 +1,8 @@
 import React from "react";
 
-const FooterSection = () => {
+const PagesFooterSection = () => {
   return (
-    <div class="inquire-section">
+    <div class="pages-inquire-section">
       <div class="inquire-component">
         <div class="inquire-top">
           <div class="inquire-title">
@@ -18,7 +18,7 @@ const FooterSection = () => {
             <a
               data-w-id="cd947534-154b-d008-a35f-bce9f4afa8aa"
               href="#"
-              class="big-cta home w-inline-block"
+              class="pages-big-cta big-cta w-inline-block"
             >
               <div class="big-cta-text">
                 <div class="josefin-400-13">Schedule</div>
@@ -119,20 +119,20 @@ const FooterSection = () => {
         src="/images/640753df75ae157db4ba17d5_inquire.webp"
         loading="lazy"
         sizes="100vw"
-        srcset="/images/640753df75ae157db4ba17d5_inquire-p-500.webp 500w, images/640753df75ae157db4ba17d5_inquire-p-800.webp 800w, images/640753df75ae157db4ba17d5_inquire-p-1080.webp 1080w, images/640753df75ae157db4ba17d5_inquire-p-1600.webp 1600w, images/640753df75ae157db4ba17d5_inquire-p-2000.webp 2000w, images/640753df75ae157db4ba17d5_inquire.webp 2161w"
+        srcset="/images/640753df75ae157db4ba17d5_inquire-p-500.webp 500w, /images/640753df75ae157db4ba17d5_inquire-p-800.webp 800w, /images/640753df75ae157db4ba17d5_inquire-p-1080.webp 1080w, /images/640753df75ae157db4ba17d5_inquire-p-1600.webp 1600w, /images/640753df75ae157db4ba17d5_inquire-p-2000.webp 2000w, /images/640753df75ae157db4ba17d5_inquire.webp 2161w"
         alt="EDIFICIO BAGIRA"
-        class="inquire-background-img pc"
+        class="pages-inquire-background-img pc"
       />
       <img
         src="/images/64187a45057aa041b0d87682_mb-footer.jpg"
         loading="lazy"
         sizes="100vw"
-        srcset="/images/64187a45057aa041b0d87682_mb-footer-p-500.jpg 500w, images/64187a45057aa041b0d87682_mb-footer.jpg 750w"
+        srcset="/images/64187a45057aa041b0d87682_mb-footer-p-500.jpg 500w, /images/64187a45057aa041b0d87682_mb-footer.jpg 750w"
         alt="EDIFICIO BAGIRA"
-        class="inquire-background-img mobile"
+        class="pages-inquire-background-img mobile"
       />
     </div>
   );
 };
 
-export default FooterSection;
+export default PagesFooterSection;
