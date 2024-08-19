@@ -49,7 +49,7 @@ const MuralsSection = () => {
                         <div class="seta-cta-wrap">
                           <div class="seta-cta-anda-1">
                             <img
-                              src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                               loading="lazy"
                               alt=""
                               class="seta-cta"
@@ -58,7 +58,7 @@ const MuralsSection = () => {
 
                           <div class="seta-cta-anda-2">
                             <img
-                              src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                               loading="lazy"
                               alt=""
                               class="seta-cta"
@@ -87,7 +87,7 @@ const MuralsSection = () => {
                             <div class="seta-cta-wrap">
                               <div class="seta-cta-anda-1">
                                 <img
-                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
                                   class="seta-cta"
@@ -96,7 +96,7 @@ const MuralsSection = () => {
 
                               <div class="seta-cta-anda-2">
                                 <img
-                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
                                   class="seta-cta"
@@ -130,7 +130,7 @@ const MuralsSection = () => {
                           <div class="seta-cta-wrap">
                             <div class="seta-cta-anda-1">
                               <img
-                                src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                 loading="lazy"
                                 alt=""
                                 class="seta-cta"
@@ -139,7 +139,7 @@ const MuralsSection = () => {
 
                             <div class="seta-cta-anda-2">
                               <img
-                                src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                 loading="lazy"
                                 alt=""
                                 class="seta-cta"
@@ -169,7 +169,7 @@ const MuralsSection = () => {
                             <div class="seta-cta-wrap">
                               <div class="seta-cta-anda-1">
                                 <img
-                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
                                   class="seta-cta"
@@ -178,7 +178,7 @@ const MuralsSection = () => {
 
                               <div class="seta-cta-anda-2">
                                 <img
-                                  src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                                  src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
                                   class="seta-cta"
@@ -2342,7 +2342,7 @@ const MuralsSection = () => {
                           class="bagira-link w-inline-block"
                         >
                           <img
-                            src="images/63d3bab7fb9a02f1f85b4adf_exclusive.webp"
+                            src="/images/63d3bab7fb9a02f1f85b4adf_exclusive.webp"
                             loading="lazy"
                             data-w-id="fa49143a-6785-adfe-02c0-b78a7e2e1b1b"
                             alt="Bagira Logo"
@@ -2378,18 +2378,18 @@ const MuralsSection = () => {
                   class="inquire-gradient"
                 ></div>
                 <img
-                  src="images/640753df75ae157db4ba17d5_inquire.webp"
+                  src="/images/640753df75ae157db4ba17d5_inquire.webp"
                   loading="lazy"
                   sizes="100vw"
-                  srcset="images/640753df75ae157db4ba17d5_inquire-p-500.webp 500w, images/640753df75ae157db4ba17d5_inquire-p-800.webp 800w, images/640753df75ae157db4ba17d5_inquire-p-1080.webp 1080w, images/640753df75ae157db4ba17d5_inquire-p-1600.webp 1600w, images/640753df75ae157db4ba17d5_inquire-p-2000.webp 2000w, images/640753df75ae157db4ba17d5_inquire.webp 2161w"
+                  srcset="/images/640753df75ae157db4ba17d5_inquire-p-500.webp 500w, images/640753df75ae157db4ba17d5_inquire-p-800.webp 800w, images/640753df75ae157db4ba17d5_inquire-p-1080.webp 1080w, images/640753df75ae157db4ba17d5_inquire-p-1600.webp 1600w, images/640753df75ae157db4ba17d5_inquire-p-2000.webp 2000w, images/640753df75ae157db4ba17d5_inquire.webp 2161w"
                   alt="EDIFICIO BAGIRA"
                   class="inquire-background-img pc"
                 />
                 <img
-                  src="images/64187a45057aa041b0d87682_mb-footer.jpg"
+                  src="/images/64187a45057aa041b0d87682_mb-footer.jpg"
                   loading="lazy"
                   sizes="100vw"
-                  srcset="images/64187a45057aa041b0d87682_mb-footer-p-500.jpg 500w, images/64187a45057aa041b0d87682_mb-footer.jpg 750w"
+                  srcset="/images/64187a45057aa041b0d87682_mb-footer-p-500.jpg 500w, images/64187a45057aa041b0d87682_mb-footer.jpg 750w"
                   alt="EDIFICIO BAGIRA"
                   class="inquire-background-img mobile"
                 />

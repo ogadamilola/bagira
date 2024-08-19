@@ -10105,15 +10105,15 @@ __p+='`),
       });
     }
   }
-  function m_({ store: e }) {
-    let { ixInstances: t } = e.getState();
-    (0, ur.default)(t, (r) => {
-      if (!r.continuous) {
-        let { actionListId: n, verbose: i } = r;
-        Is(r, e), i && e.dispatch(ar({ actionListId: n, isPlaying: !1 }));
-      }
-    });
-  }
+  // function m_({ store: e }) {
+  //   let { ixInstances: t } = e.getState();
+  //   (0, ur.default)(t, (r) => {
+  //     if (!r.continuous) {
+  //       let { actionListId: n, verbose: i } = r;
+  //       Is(r, e), i && e.dispatch(ar({ actionListId: n, isPlaying: !1 }));
+  //     }
+  //   });
+  // }
   function sr({
     store: e,
     eventId: t,
@@ -11258,49 +11258,22 @@ __p+='`),
       })
     );
   });
-  xs();
-  Cs();
-  Xs();
-  Hs();
-  js();
-  Ys();
-  ru();
+  // xs();
+  // Cs();
+  // Xs();
+  // Hs();
+  // js();
+  // Ys();
+  // ru();
   x_();
-  R_();
-  N_();
-  q_();
-  D_();
+  // R_();
+  // N_();
+  // q_();
+  // D_();
 })();
-/*!
- * tram.js v0.8.2-global
- * Cross-browser CSS3 transitions in JavaScript
- * https://github.com/bkwld/tram
- * MIT License
- */
-/*!
- * Webflow._ (aka) Underscore.js 1.6.0 (custom build)
- *
- * http://underscorejs.org
- * (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- * Underscore may be freely distributed under the MIT license.
- * @license MIT
- */
-/*! Bundled license information:
 
-timm/lib/timm.js:
-  (*!
-   * Timm
-   *
-   * Immutability helpers with fast reads and acceptable writes.
-   *
-   * @copyright Guillermo Grau Panea 2016
-   * @license MIT
-   *)
-*/
-/**
- * ----------------------------------------------------------------------
- * Webflow: Interactions 2.0: Init
- */
+
+
 Webflow.require("ix2").init({
   events: {
     e: {

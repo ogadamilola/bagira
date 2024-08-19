@@ -16,13 +16,13 @@ const GallerySection = () => {
                 {/* THE GALLERY */}
                 <img
                   class="ap-img-a-candc"
-                  src="images/the-gallery.webp"
+                  src="/images/the-gallery.webp"
                   alt="BAGIRA"
                   // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                   data-flip-id="1"
                   img-anim="1"
                   loading="lazy"
-                  // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                  // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
                 />
               </div>
             </div>

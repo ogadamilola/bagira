@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
 const Body = () => {
   return (
-    <div>Body</div>
-  )
-}
+    <section id="shop" class="page-section">
+      <div class="page-padding">
+        {/* <section id="shop" class="shop-section panel">
 
-export default Body
+
+        
+      </section> */}
+      </div>
+    </section>
+  );
+};
+
+export default Body;

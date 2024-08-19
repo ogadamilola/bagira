@@ -14,15 +14,15 @@ const AboutSection = () => {
 
             <div class="about-img-wrap">
               <img
-                src="images/BagiraAboutHeadshot.webp"
+                src="/images/BagiraAboutHeadshot.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 21vw"
-                srcset="images/BagiraAboutHeadshot-p-500.webp 500w, images/BagiraAboutHeadshot-p-800.webp 800w, images/BagiraAboutHeadshot-p-1080.webp 1080w, images/BagiraAboutHeadshot-p-1600.webp 1600w, images/BagiraAboutHeadshot.webp 1920w"
+                srcset="/images/BagiraAboutHeadshot-p-500.webp 500w, images/BagiraAboutHeadshot-p-800.webp 800w, images/BagiraAboutHeadshot-p-1080.webp 1080w, images/BagiraAboutHeadshot-p-1600.webp 1600w, images/BagiraAboutHeadshot.webp 1920w"
                 alt="BAGIRA"
                 class="about-img n1"
               />
               <img
-                src="images/640605b828c86d2a9487bb88_vision.webp"
+                src="/images/640605b828c86d2a9487bb88_vision.webp"
                 loading="lazy"
                 alt="Ilha da Madeira"
                 class="about-img n2"
@@ -74,7 +74,7 @@ const AboutSection = () => {
               <div class="seta-cta-wrap">
                 <div class="seta-cta-anda-1">
                   <img
-                    src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                    src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                     loading="lazy"
                     alt=""
                     class="seta-cta-redirect"
@@ -83,7 +83,7 @@ const AboutSection = () => {
 
                 <div class="seta-cta-anda-2">
                   <img
-                    src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                    src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                     loading="lazy"
                     alt=""
                     class="seta-cta-redirect"

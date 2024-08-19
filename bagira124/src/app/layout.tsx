@@ -1,3 +1,4 @@
+"use client"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,14 +7,15 @@ import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import BTS from "@/components/BTS";
 import FlowScript from "@/scripts/FlowScript";
+import FooterSection from "@/components/FooterSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "BAGIRA | Visual Artist of Curaçao",
-  description:
-    "BAGIRA is a 28-year old Algerian – Hungarian self-taught artist who moved to Curaçao, discovered her talent at 21 years old, she quit her job 2 weeks later to pursue art full-time. Recently opening her own art gallery in Kura Hulanda.",
-};
+// export const metadata: Metadata = {
+//   title: "BAGIRA | Visual Artist of Curaçao",
+//   description:
+//     "BAGIRA is a 28-year old Algerian – Hungarian self-taught artist who moved to Curaçao, discovered her talent at 21 years old, she quit her job 2 weeks later to pursue art full-time. Recently opening her own art gallery in Kura Hulanda.",
+// };
 
 export default function RootLayout({
   children,
@@ -76,12 +78,12 @@ export default function RootLayout({
           {`!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);`}
         </Script>
         <link
-          href="images/63d78ea31938080e242c1622_Favicon-2.png"
+          href="/images/63d78ea31938080e242c1622_Favicon-2.png"
           rel="shortcut icon"
           type="image/x-icon"
         />
         <link
-          href="images/63d78f0854c09d35688be1b5_Webclip-2.png"
+          href="/images/63d78f0854c09d35688be1b5_Webclip-2.png"
           rel="apple-touch-icon"
         />
 
@@ -150,20 +152,20 @@ export default function RootLayout({
             .w-editor .murals-anda {
               overflow: scroll!important;
             }
-            .w-editor .location-info-wrap.n1{
+            .w-editor .shop-info-wrap.n1{
               position: relative!important;
               opacity: 1!important;
             }
-            .w-editor .location-info-wrap.n2{
+            .w-editor .shop-info-wrap.n2{
               position: relative!important;
               opacity: 1!important;
             }
-            .w-editor .location-info-wrap.n3{
+            .w-editor .shop-info-wrap.n3{
               position: relative!important;
               opacity: 1!important;
             }
 
-            .w-editor .location-info-anim {
+            .w-editor .shop-info-anim {
               z-index: 30!important;
               display: flex!important;
               flex-direction: row!important;
@@ -171,7 +173,7 @@ export default function RootLayout({
               align-items: flex-start!important;
             }
 
-            .w-editor .location-background {
+            .w-editor .shop-background {
               width: 100%;
             }
             /* END EDITOR CODE */`,
@@ -559,6 +561,7 @@ export default function RootLayout({
         <FlowScript />
         {/* <BTS /> */}
         {children}
+        {/* <FooterSection /> */}
       </body>
     </html>
   );

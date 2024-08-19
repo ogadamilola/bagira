@@ -78,7 +78,7 @@ const ArtworkSection = () => {
                       <div class="seta-cta-wrap">
                         <div class="seta-cta-anda-1">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta"
@@ -87,7 +87,7 @@ const ArtworkSection = () => {
 
                         <div class="seta-cta-anda-2">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta"
@@ -121,13 +121,13 @@ const ArtworkSection = () => {
             <div img-castanho="1" class="img-background"></div>
             <img
               class="ap-img-a-1"
-              src="images/640623a27b5c66fa68701f66_apartment-1.webp"
+              src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
               alt="BAGIRA"
               sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
               data-flip-id="1"
               img-anim="1"
               loading="lazy"
-              srcset="images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+              srcset="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
             />
           </div>
         </div>
@@ -156,13 +156,13 @@ const ArtworkSection = () => {
                   <div img-castanho="1" class="img-background"></div>
                   <img
                     class="ap-img-a-2"
-                    src="images/640623a3a5bff942b070fac8_apartment-2.webp"
+                    src="/images/640623a3a5bff942b070fac8_apartment-2.webp"
                     alt="BAGIRA"
                     sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 36vw"
                     data-flip-id="2"
                     img-anim="1"
                     loading="lazy"
-                    srcset="images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
+                    srcset="/images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
                   />
                 </div>
               </div>
@@ -175,13 +175,13 @@ const ArtworkSection = () => {
                   <div img-castanho="1" class="img-background"></div>
                   <img
                     class="ap-img-a-3"
-                    src="images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
+                    src="/images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
                     alt="BAGIRA"
                     sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 36vw"
                     data-flip-id="3"
                     img-anim="1"
                     loading="lazy"
-                    srcset="images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
+                    srcset="/images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
                   />
                 </div>
               </div>
@@ -203,13 +203,13 @@ const ArtworkSection = () => {
             <div img-castanho="1" class="img-background"></div>
             <img
               class="ap-img-a-4"
-              src="images/640623a37b5c66566c701f67_apartment-4.webp"
+              src="/images/640623a37b5c66566c701f67_apartment-4.webp"
               alt="BAGIRA"
               sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
               data-flip-id="4"
               img-anim="1"
               loading="lazy"
-              srcset="images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
+              srcset="/images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
             />
           </div>
         </div>

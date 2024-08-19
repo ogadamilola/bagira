@@ -33,39 +33,39 @@ export default function Home() {
         </section>
         <img
           className="ap-img-full-screen-1"
-          src="images/640623a27b5c66fa68701f66_apartment-1.webp"
+          src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
           alt="BAGIRA"
           sizes="100vw"
           data-flip-id="1"
           loading="lazy"
-          srcSet="images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+          srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
         />
         <img
           className="ap-img-full-screen-2"
-          src="images/640623a3a5bff942b070fac8_apartment-2.webp"
+          src="/images/640623a3a5bff942b070fac8_apartment-2.webp"
           alt="BAGIRA"
           sizes="100vw"
           data-flip-id="2"
           loading="lazy"
-          srcSet="images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
+          srcSet="/images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
         />
         <img
           className="ap-img-full-screen-3"
-          src="images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
+          src="/images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
           alt="BAGIRA"
           sizes="100vw"
           data-flip-id="3"
           loading="lazy"
-          srcSet="images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
+          srcSet="/images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
         />
         <img
           className="ap-img-full-screen-4"
-          src="images/640623a37b5c66566c701f67_apartment-4.webp"
+          src="/images/640623a37b5c66566c701f67_apartment-4.webp"
           alt="BAGIRA"
           sizes="100vw"
           data-flip-id="4"
           loading="lazy"
-          srcSet="images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
+          srcSet="/images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
         ></img>
         <div className="inquire-open close">
           <div className="inquire-wrap close">
@@ -398,26 +398,26 @@ export default function Home() {
             <div className="transition-component">
               <div className="transition-img-wrap">
                 <img
-                  src="images/FullSizeRender.webp"
+                  src="/images/FullSizeRender.webp"
                   loading="lazy"
                   sizes="100vw"
-                  srcSet="images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
+                  srcSet="/images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
                   alt="Edificio BAGIRA"
                   className="transition-img n1"
                 />
                 <img
-                  src="images/64061e47a47c5fe13ae8f44c_img-2.webp"
+                  src="/images/64061e47a47c5fe13ae8f44c_img-2.webp"
                   loading="lazy"
                   sizes="100vw"
-                  srcSet="images/64061e47a47c5fe13ae8f44c_img-2-p-500.webp 500w, images/64061e47a47c5fe13ae8f44c_img-2-p-800.webp 800w, images/64061e47a47c5fe13ae8f44c_img-2-p-1080.webp 1080w, images/64061e47a47c5fe13ae8f44c_img-2-p-1600.webp 1600w, images/64061e47a47c5fe13ae8f44c_img-2.webp 1662w"
+                  srcSet="/images/64061e47a47c5fe13ae8f44c_img-2-p-500.webp 500w, images/64061e47a47c5fe13ae8f44c_img-2-p-800.webp 800w, images/64061e47a47c5fe13ae8f44c_img-2-p-1080.webp 1080w, images/64061e47a47c5fe13ae8f44c_img-2-p-1600.webp 1600w, images/64061e47a47c5fe13ae8f44c_img-2.webp 1662w"
                   alt="BAGIRA"
                   className="transition-img n2"
                 />
                 <img
-                  src="images/640623a27b5c66fa68701f66_apartment-1.webp"
+                  src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
                   loading="lazy"
                   sizes="100vw"
-                  srcSet="images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+                  srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
                   alt="BAGIRA"
                   className="transition-img n3"
                 />
@@ -453,7 +453,7 @@ export default function Home() {
           ></div>
         </div>
       </main>
-      <div className="design-system">
+      {/* <div className="design-system">
         <a href="tel:+351291147686" className="hover-links">
           +351 291 �&nbsp;147 686
           <br />
@@ -468,8 +468,8 @@ export default function Home() {
         <div className="mb-line-h-1-23">
           This is some text inside of a div block.
         </div>
-      </div>
-      <div className="combo-classes">
+      </div> */}
+      {/* <div className="combo-classes">
         <div className="form-field-label cc-error"></div>
 
         <div className="c-error-message cc-shown"></div>
@@ -537,7 +537,7 @@ export default function Home() {
         <div className="transition-bottom close"></div>
 
         <div className="murals-button grey"></div>
-      </div>
+      </div> */}
     </div>
   );
 }

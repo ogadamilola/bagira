@@ -26,7 +26,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="/paintings" class="cta-link artwork[x] w-inline-block">
+                <a href="/artwork" class="cta-link artwork[x] w-inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"
@@ -37,7 +37,7 @@ const CandCSection = () => {
                       <div class="seta-cta-wrap">
                         <div class="seta-cta-anda-1">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta-redirect"
@@ -46,7 +46,7 @@ const CandCSection = () => {
 
                         <div class="seta-cta-anda-2">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta-redirect"
@@ -73,13 +73,13 @@ const CandCSection = () => {
               {/* <div img-castanho="1" class="img-background"></div> */}
               <img
                 class="ap-img-a-candc"
-                src="images/IMG_8093-784x1024.webp"
+                src="/images/IMG_8093-784x1024.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
           </div>
@@ -104,7 +104,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="/paintings" class="cta-link artwork[x] w-inline-block">
+                <a href="/artwork" class="cta-link artwork[x] w-inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"
@@ -115,7 +115,7 @@ const CandCSection = () => {
                       <div class="seta-cta-wrap">
                         <div class="seta-cta-anda-1">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta-redirect"
@@ -124,7 +124,7 @@ const CandCSection = () => {
 
                         <div class="seta-cta-anda-2">
                           <img
-                            src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                             loading="lazy"
                             alt=""
                             class="seta-cta-redirect"
@@ -151,13 +151,13 @@ const CandCSection = () => {
               {/* <div img-castanho="1" class="img-background"></div> */}
               <img
                 class="ap-img-a-candc"
-                src="images/IMG_8080-892x1024.webp"
+                src="/images/IMG_8080-892x1024.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+                // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
               />
             </div>
           </div>

@@ -15,9 +15,10 @@ const LocationSection = () => {
           >
             <div class="location-track">
               <div class="location-marquee-repete">
+                <div class="location-ball"></div>
                 <div class="location-marquee-text">
                   <img
-                    src="images/6405cdaf4aff8b98974c7362_Logo-NVVV.svg"
+                    src="/images/6405cdaf4aff8b98974c7362_Logo-NVVV.png"
                     loading="lazy"
                     alt="Logo BAGIRA"
                   />
@@ -25,18 +26,21 @@ const LocationSection = () => {
               </div>
 
               <div class="location-marquee-repete">
+                <div class="location-ball"></div>
                 <div class="location-marquee-text">
                   <div class="jost-300-50 mb-40">bagira</div>
                 </div>
               </div>
 
               <div class="location-marquee-repete">
+                <div class="location-ball"></div>
                 <div class="location-marquee-text">
                   <div class="jost-300-50 mb-40">art</div>
                 </div>
               </div>
 
               <div class="location-marquee-repete">
+                <div class="location-ball"></div>
                 <div class="location-marquee-text">
                   <div class="jost-300-50 mb-40">commissions</div>
                 </div>
@@ -146,7 +150,7 @@ const LocationSection = () => {
                     <div class="seta-cta-wrap">
                       <div class="seta-cta-anda-1">
                         <img
-                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
                           class="seta-cta"
@@ -155,7 +159,7 @@ const LocationSection = () => {
 
                       <div class="seta-cta-anda-2">
                         <img
-                          src="images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
                           class="seta-cta"
@@ -177,10 +181,10 @@ const LocationSection = () => {
         <div class="location-big-img-wrap">
           <div class="img-background"></div>
           <img
-            src="images/64070b5af80a800a9c6bf1d9_big-img.webp"
+            src="/images/64070b5af80a800a9c6bf1d9_big-img.webp"
             loading="lazy"
             sizes="100vw"
-            srcset="images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
+            srcset="/images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
             alt="EDIFICIO BAGIRA"
             class="location-big-img"
           />

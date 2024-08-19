@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Body from "@/components/Pages/About Page/Body";
+import Body from "@/components/Pages/Artwork Page/Body";
 import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
               />
               <Body />
             </div>
-            {/* <FooterSection /> */}
+            <FooterSection />
         </section>
         <div className="inquire-open close">
           <div className="inquire-wrap close">

@@ -6,7 +6,7 @@ const HomeSection = () => {
       <div class="page-padding">
         <div class="hero-component">
           <img
-            src="images/6405cdaf4aff8b98974c7362_Logo-NV.svg"
+            src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
             loading="lazy"
             alt="Logo BAGIRA"
             class="hero-logo"
@@ -89,7 +89,7 @@ const HomeSection = () => {
 
                 <div class="hero-energia">
                   <img
-                    src="images/64380da380fc5a66db7f00d4_energia.svg"
+                    src="/images/64380da380fc5a66db7f00d4_energia.svg"
                     loading="lazy"
                     alt=""
                     class="image-energia"
@@ -120,10 +120,10 @@ const HomeSection = () => {
         </div>
       </div>
       <img
-        src="images/FullSizeRender.webp"
+        src="/images/FullSizeRender.webp"
         loading="lazy"
         sizes="100vw"
-        srcset="images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
+        srcset="/images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
         alt="BAGIRA"
         class="hero-img-background"
       />

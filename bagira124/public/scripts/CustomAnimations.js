@@ -7,49 +7,49 @@ let loadTarget3 = $(".transition-img-wrap");
 let loadImage1 = gsap.fromTo(
   loadTarget1,
   {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" //"circle(0% at 50% 50%)"
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", //"circle(0% at 50% 50%)"
   },
   {
     paused: true,
     duration: 1,
     clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)", //"circle(100% at 50% 50%)",
-    ease: "power1.inOut"
+    ease: "power1.inOut",
   }
 );
 let loadImage2 = gsap.fromTo(
   loadTarget2,
   {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
   },
   {
     paused: true,
     duration: 1.2,
     clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
-    ease: "power1.inOut"
+    ease: "power1.inOut",
   }
 );
 let loadImage3 = gsap.fromTo(
   loadTarget3,
   {
-    clipPath: "circle(10% at 50% 50%)"
+    clipPath: "circle(10% at 50% 50%)",
   },
   {
     paused: true,
     duration: 1.2,
     clipPath: "circle(100% at 50% 50%)",
-    ease: "power1.inOut"
+    ease: "power1.inOut",
   }
 );
 let loadInicioMask = gsap.fromTo(
   loadTarget3,
   {
-    clipPath: "circle(0% at 50% 50%)"
+    clipPath: "circle(0% at 50% 50%)",
   },
   {
     paused: true,
     duration: 1.2,
     clipPath: "circle(10% at 50% 50%)",
-    ease: "power1.inOut"
+    ease: "power1.inOut",
   }
 );
 let loadImage4 = gsap.to(loadTarget4, {
@@ -57,7 +57,7 @@ let loadImage4 = gsap.to(loadTarget4, {
   duration: 0.5,
   width: "100%",
   height: "100%",
-  ease: "power1.inOut"
+  ease: "power1.inOut",
 });
 
 // NEW TEXT LOAD
@@ -71,8 +71,8 @@ function textLoad() {
       stagger: {
         amount: 0.8,
         ease: "none",
-        from: "random"
-      }
+        from: "random",
+      },
     });
   });
 }
@@ -80,7 +80,7 @@ function textLoad() {
 let customEase =
   "M0,0,C0,0,0.13,0.34,0.238,0.442,0.305,0.506,0.322,0.514,0.396,0.54,0.478,0.568,0.468,0.56,0.522,0.584,0.572,0.606,0.61,0.719,0.714,0.826,0.798,0.912,1,1,1,1";
 let counter = {
-  value: 0
+  value: 0,
 };
 let loaderDuration = 4.3; // Set this duration according to your page load time
 
@@ -104,30 +104,39 @@ function endLoaderAnimation() {
   }, 900);
 }
 
-$("body").addClass("no-scroll-transition");
-let tlLoad = gsap.timeline({
-  onComplete: endLoaderAnimation,
-  onStart: () => {
-    $(".transition-trigger").click();
-    loadInicioMask.play().delay(0);
-    loadImage1.play().delay(1.5);
-    loadImage2.play().delay(3);
-    loadImage3.play().delay(4.5);
-    loadImage4.play().delay(4.5);
-  }
-});
-// Animate the counter from 0 to 100 over the duration of the page load
-tlLoad.to(counter, {
-  value: 100,
-  onUpdate: updateLoaderText,
-  duration: loaderDuration,
-  ease: "power1.inOut" // You can adjust the easing as needed
-});
+// Check if the current page is the homepage
+if (
+  window.location.pathname === "/" ||
+  window.location.pathname === "/index.html"
+) {
+  $("body").addClass("no-scroll-transition");
+  let tlLoad = gsap.timeline({
+    onComplete: endLoaderAnimation,
+    onStart: () => {
+      $(".transition-trigger").click();
+      loadInicioMask.play().delay(0);
+      loadImage1.play().delay(1.5);
+      loadImage2.play().delay(3);
+      loadImage3.play().delay(4.5);
+      loadImage4.play().delay(4.5);
+    },
+  });
+  // Animate the counter from 0 to 100 over the duration of the page load
+  tlLoad.to(counter, {
+    value: 100,
+    onUpdate: updateLoaderText,
+    duration: loaderDuration,
+    ease: "power1.inOut", // You can adjust the easing as needed
+  });
 
-// Optional: Remove the no-scroll class after the transition completes
-setTimeout(() => {
-  $("body").removeClass("no-scroll-transition");
-}, 3000); // Adjust timing based on your animation needs
+  // Optional: Remove the no-scroll class after the transition completes
+  setTimeout(() => {
+    $("body").removeClass("no-scroll-transition");
+  }, 3000); // Adjust timing based on your animation needs
+} else {
+  // For non-homepage, just run the text load animation
+  textLoad();
+}
 
 // On Click
 let transitionTrigger = $(".transition-trigger");
@@ -314,18 +323,18 @@ $(".ap-img-1, .ap-img-50, .ap-img-4").mouseleave(function () {
   $(".glass-block").removeClass("expand");
 });
 $(
-  ".about-section, .artwork-section, .candc-section, .shop-section, .location-section, .murals-section, .hero-scroll, .murals-component"
+  ".about-section, .artwork-section, .candc-section, .shop-section, .location-section, .murals-section, .hero-scroll, .murals-component, .about-page, .artwork-page, .collection-page, .shop-page, .page-section"
 ).mouseenter(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").addClass("black");
 });
 $(".hero-scroll").mouseleave(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
 });
-$(".gallery-section, .gallery-circle-section, .hero-section, .inquire-open, .inquire-section").mouseenter(
-  function () {
-    $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
-  }
-);
+$(
+  ".gallery-section, .gallery-circle-section, .hero-section, .inquire-open, .inquire-section"
+).mouseenter(function () {
+  $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
+});
 // Add class on mouse down
 $("body").mousedown(function () {
   $(".mouse").addClass("pressed");
@@ -358,452 +367,620 @@ horizontalM.add("(min-width: 991px)", () => {
         trigger: ".section-height",
         start: "top top",
         end: "98% bottom", //"+=15000" "98% bottom"
-        scrub: 3
-      }
+        scrub: 3,
+      },
     })
     .to(".track", {
       xPercent: -100,
-      ease: "none"
+      ease: "none",
     });
-  // SCROLL TO home
-  document.querySelectorAll(".nav-link.home, .cta-link.home").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let scrollContainer = document.querySelector(".track");
-      const id = this.getAttribute("href").split("#")[1];
 
-      const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 0;
+  // SCROLL TO sections
+  function handleNavLinkClick(e) {
+    e.preventDefault();
+    const clickedLink = this;
+    const targetSection = clickedLink.getAttribute("href").split("#")[1];
 
-      const scrollToHere =
-        (targetElement.offsetLeft + element2) /
-        (scrollContainer.scrollWidth /
-          (scrollContainer.scrollWidth - window.innerWidth));
+    // If not on homepage, go to homepage first
+    if (
+      window.location.pathname !== "/" &&
+      window.location.pathname !== "/index.html"
+    ) {
+      window.location.href = "/#" + targetSection;
+    } else {
+      // If already on homepage, just scroll to the section
+      scrollToSection(clickedLink);
+    }
+  }
 
-      console.log(scrollToHere);
-      console.log(element2);
-
-      gsap.to(window, {
-        scrollTo: scrollToHere,
-        duration: 2
-      });
+  document
+    .querySelectorAll(
+      ".nav-link.home, .cta-link.home, .nav-link.about, .big-cta, .cta-link.about, .nav-link.artwork, .cta-link.artwork, .nav-link.shop, .cta-link.shop, .nav-link.gallery, .cta-link.gallery, .nav-link.location, .cta-link.location, .nav-link.murals, .cta-link.murals"
+    )
+    .forEach((element) => {
+      element.addEventListener("click", handleNavLinkClick);
     });
-  });
-  // SCROLL TO about
-  document.querySelectorAll(".nav-link.about, .big-cta, .cta-link.about").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let scrollContainer = document.querySelector(".track");
-      const id = this.getAttribute("href").split("#")[1];
 
-      const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 15;
+  function scrollToSection(clickedLink) {
+    let scrollContainer = document.querySelector(".track");
+    const id = clickedLink.getAttribute("href").split("#")[1];
+    const targetElement = document.getElementById(id);
 
-      const scrollToHere =
-        (targetElement.offsetLeft + element2) /
-        (scrollContainer.scrollWidth /
-          (scrollContainer.scrollWidth - window.innerWidth));
+    // Determine the appropriate divisor based on the section
+    let divisor;
+    if (clickedLink.classList.contains("home")) divisor = 0;
+    else if (
+      clickedLink.classList.contains("about") ||
+      clickedLink.classList.contains("artwork")
+    )
+      divisor = 15;
+    else if (clickedLink.classList.contains("shop")) divisor = 30;
+    else if (
+      clickedLink.classList.contains("gallery") ||
+      clickedLink.classList.contains("location")
+    )
+      divisor = 20;
+    else if (clickedLink.classList.contains("murals")) divisor = 12;
+    else divisor = 15; // default value
 
-      console.log(scrollToHere);
-      console.log(element2);
+    const element2 = targetElement.offsetWidth / divisor;
 
-      gsap.to(window, {
-        scrollTo: scrollToHere,
-        duration: 2
-      });
+    const scrollToHere =
+      (targetElement.offsetLeft + element2) /
+      (scrollContainer.scrollWidth /
+        (scrollContainer.scrollWidth - window.innerWidth));
+
+    gsap.to(window, {
+      scrollTo: scrollToHere,
+      duration: 2,
     });
-  });
-  // SCROLL TO artwork
-  document.querySelectorAll(".nav-link.artwork, .cta-link.artwork").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let scrollContainer = document.querySelector(".track");
-      const id = this.getAttribute("href").split("#")[1];
+  }
 
-      const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 15;
+  // // SCROLL TO home
+  // document
+  //   .querySelectorAll(".nav-link.home, .cta-link.home")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
 
-      const scrollToHere =
-        (targetElement.offsetLeft + element2) /
-        (scrollContainer.scrollWidth /
-          (scrollContainer.scrollWidth - window.innerWidth));
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 0;
 
-      console.log(scrollToHere);
-      console.log(element2);
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
 
-      gsap.to(window, {
-        scrollTo: scrollToHere,
-        duration: 2
-      });
-    });
-  });
-    // SCROLL TO shop
-    document.querySelectorAll(".nav-link.shop, .cta-link.shop").forEach((element) => {
-      element.addEventListener("click", function (e) {
-        e.preventDefault();
-        let scrollContainer = document.querySelector(".track");
-        const id = this.getAttribute("href").split("#")[1];
-  
-        const targetElement = document.getElementById(id);
-        const element2 = targetElement.offsetWidth / 30;
-  
-        const scrollToHere =
-          (targetElement.offsetLeft + element2) /
-          (scrollContainer.scrollWidth /
-            (scrollContainer.scrollWidth - window.innerWidth));
-  
-        console.log(scrollToHere);
-        console.log(element2);
-  
-        gsap.to(window, {
-          scrollTo: scrollToHere,
-          duration: 2
-        });
-      });
-    });
-  // SCROLL TO gallery
-  document.querySelectorAll(".nav-link.gallery, .cta-link.gallery").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let scrollContainer = document.querySelector(".track");
-      const id = this.getAttribute("href").split("#")[1];
+  //       console.log(scrollToHere);
+  //       console.log(element2);
 
-      const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 20;
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO about
+  // document
+  //   .querySelectorAll(".nav-link.about, .big-cta, .cta-link.about")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
 
-      const scrollToHere =
-        (targetElement.offsetLeft + element2) /
-        (scrollContainer.scrollWidth /
-          (scrollContainer.scrollWidth - window.innerWidth));
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 15;
 
-      console.log(scrollToHere);
-      console.log(element2);
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
 
-      gsap.to(window, {
-        scrollTo: scrollToHere,
-        duration: 2
-      });
-    });
-  });
-    // SCROLL TO location
-    document.querySelectorAll(".nav-link.location, .cta-link.location").forEach((element) => {
-      element.addEventListener("click", function (e) {
-        e.preventDefault();
-        let scrollContainer = document.querySelector(".track");
-        const id = this.getAttribute("href").split("#")[1];
-  
-        const targetElement = document.getElementById(id);
-        const element2 = targetElement.offsetWidth / 20;
-  
-        const scrollToHere =
-          (targetElement.offsetLeft + element2) /
-          (scrollContainer.scrollWidth /
-            (scrollContainer.scrollWidth - window.innerWidth));
-  
-        console.log(scrollToHere);
-        console.log(element2);
-  
-        gsap.to(window, {
-          scrollTo: scrollToHere,
-          duration: 2
-        });
-      });
-    });
-  // SCROLL TO murals
-  document.querySelectorAll(".nav-link.murals, .cta-link.murals").forEach((element) => {
-    element.addEventListener("click", function (e) {
-      e.preventDefault();
-      let scrollContainer = document.querySelector(".track");
-      const id = this.getAttribute("href").split("#")[1];
+  //       console.log(scrollToHere);
+  //       console.log(element2);
 
-      const targetElement = document.getElementById(id);
-      const element2 = targetElement.offsetWidth / 12;
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO artwork
+  // document
+  //   .querySelectorAll(".nav-link.artwork, .cta-link.artwork")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
 
-      const scrollToHere =
-        (targetElement.offsetLeft + element2) /
-        (scrollContainer.scrollWidth /
-          (scrollContainer.scrollWidth - window.innerWidth));
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 15;
 
-      console.log(scrollToHere);
-      console.log(element2);
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
 
-      gsap.to(window, {
-        scrollTo: scrollToHere,
-        duration: 2
-      });
-    });
-  });
+  //       console.log(scrollToHere);
+  //       console.log(element2);
+
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO shop
+  // document
+  //   .querySelectorAll(".nav-link.shop, .cta-link.shop")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
+
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 30;
+
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
+
+  //       console.log(scrollToHere);
+  //       console.log(element2);
+
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO gallery
+  // document
+  //   .querySelectorAll(".nav-link.gallery, .cta-link.gallery")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
+
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 20;
+
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
+
+  //       console.log(scrollToHere);
+  //       console.log(element2);
+
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO location
+  // document
+  //   .querySelectorAll(".nav-link.location, .cta-link.location")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
+
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 20;
+
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
+
+  //       console.log(scrollToHere);
+  //       console.log(element2);
+
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
+  // // SCROLL TO murals
+  // document
+  //   .querySelectorAll(".nav-link.murals, .cta-link.murals")
+  //   .forEach((element) => {
+  //     element.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       let scrollContainer = document.querySelector(".track");
+  //       const id = this.getAttribute("href").split("#")[1];
+
+  //       const targetElement = document.getElementById(id);
+  //       const element2 = targetElement.offsetWidth / 12;
+
+  //       const scrollToHere =
+  //         (targetElement.offsetLeft + element2) /
+  //         (scrollContainer.scrollWidth /
+  //           (scrollContainer.scrollWidth - window.innerWidth));
+
+  //       console.log(scrollToHere);
+  //       console.log(element2);
+
+  //       gsap.to(window, {
+  //         scrollTo: scrollToHere,
+  //         duration: 2,
+  //       });
+  //     });
+  //   });
 
   // Animations ______
-  // Nav Color 1
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".about-section",
-        containerAnimation: tlMain,
-        start: "left 50%",
-        end: "right left",
-        toggleActions: "play none none reverse"
-        //markers: true
-      }
-    })
-    .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
-    .to(
-      ".nav-ball",
-      { backgroundColor: "#120902", duration: 0.3, ease: "none" },
-      0
-    );
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".artwork-full-section",
-        containerAnimation: tlMain,
-        start: "left 50%",
-        end: "right left",
-        toggleActions: "play none none reverse"
-        //markers: true
-      }
-    })
-    .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
-    .to(
-      ".nav-ball",
-      { backgroundColor: "#120902", duration: 0.3, ease: "none" },
-      0
-    );
-  // Nav Color 2
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".gallery-section",
-        containerAnimation: tlMain,
-        start: "left 50%",
-        end: "right left",
-        toggleActions: "play none none reverse"
-        //markers: true
-      }
-    })
-    .to(".nav", { color: "white", duration: 0.3, ease: "none" })
-    .to(
-      ".nav-ball",
-      { backgroundColor: "white", duration: 0.3, ease: "none" },
-      0
-    );
-  // Nav Color 3
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".location-section",
-        containerAnimation: tlMain,
-        start: "left 50%",
-        end: "right left",
-        toggleActions: "play none none reverse"
-        //markers: true
-      }
-    })
-    .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
-    .to(
-      ".nav-ball",
-      { backgroundColor: "#120902", duration: 0.3, ease: "none" },
-      0
-    );
-  // NAV BALL HOME -------
-  let navHome = $("#nav-home").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".hero-section",
-        containerAnimation: tlMain,
-        start: "left left+=150",
-        end: "right left",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo("#nav-home", { pointerEvents: "auto" }, { pointerEvents: "none" })
-    .to(
-      navHome,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-about").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
-  // NAV BALL ABOUT -------
-  let navAbout = $("#nav-about").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".about-section",
-        containerAnimation: tlMain,
-        start: "left left",
-        end: "right left",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo("#nav-about", { pointerEvents: "auto" }, { pointerEvents: "none" })
-    .to(
-      navAbout,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-about").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
-  // NAV BALL ARTWORK -------
-  let navArtwork = $("#nav-artwork").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".artwork-full-section",
-        containerAnimation: tlMain,
-        start: "left left",
-        end: "right left",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo(
-      "#nav-artwork",
-      { pointerEvents: "auto" },
-      { pointerEvents: "none" }
-    )
-    .to(
-      navArtwork,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-artwork").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
-  // NAV BALL GALLERY -------
-  let navGallery = $("#nav-gallery").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".gallery-full-section",
-        containerAnimation: tlMain,
-        start: "left left",
-        end: "right left",
-        // markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo("#nav-gallery", { pointerEvents: "auto" }, { pointerEvents: "none" })
-    .to(
-      navGallery,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-gallery").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
-  // NAV BALL SHOP -------
-  let navShop = $("#nav-shop").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".shop-section",
-        containerAnimation: tlMain,
-        start: "left left",
-        end: "right left",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo(
-      "#nav-shop",
-      { pointerEvents: "auto" },
-      { pointerEvents: "none" }
-    )
-    .to(
-      navShop,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-shop").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
-    // NAV BALL Location -------
-    let navLocation = $("#nav-location").find(".nav-ball");
+  // Check if the current page is the homepage
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    // Nav Color 1
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".about-section",
+          containerAnimation: tlMain,
+          start: "left 50%",
+          end: "right left",
+          toggleActions: "play none none reverse",
+          //markers: true
+        },
+      })
+      .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
+      .to(
+        ".nav-ball",
+        { backgroundColor: "#120902", duration: 0.3, ease: "none" },
+        0
+      );
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".artwork-full-section",
+          containerAnimation: tlMain,
+          start: "left 50%",
+          end: "right left",
+          toggleActions: "play none none reverse",
+          //markers: true
+        },
+      })
+      .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
+      .to(
+        ".nav-ball",
+        { backgroundColor: "#120902", duration: 0.3, ease: "none" },
+        0
+      );
+    // Nav Color 2
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".gallery-section",
+          containerAnimation: tlMain,
+          start: "left 50%",
+          end: "right left",
+          toggleActions: "play none none reverse",
+          //markers: true
+        },
+      })
+      .to(".nav", { color: "white", duration: 0.3, ease: "none" })
+      .to(
+        ".nav-ball",
+        { backgroundColor: "white", duration: 0.3, ease: "none" },
+        0
+      );
+    // Nav Color 3
     gsap
       .timeline({
         scrollTrigger: {
           trigger: ".location-section",
           containerAnimation: tlMain,
-          start: "left left",
+          start: "left 50%",
           end: "right left",
-          //markers: true,
-          toggleActions: "play reverse play reverse"
-        }
+          toggleActions: "play none none reverse",
+          //markers: true
+        },
       })
-      .fromTo(
-        "#nav-location",
-        { pointerEvents: "auto" },
-        { pointerEvents: "none" }
-      )
+      .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
       .to(
-        navLocation,
-        { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+        ".nav-ball",
+        { backgroundColor: "#120902", duration: 0.3, ease: "none" },
         0
       );
-    // Click to make the ball stay in the correct place
-    $("#nav-location").on("click", function () {
-      $(".nav-link").css("pointer-events", "auto");
-      setTimeout(() => {
-        $(this).css("pointer-events", "none");
-      }, 100);
+  } else {
+    // Nav Color for additional pages
+    gsap.set(".nav", { color: "#120902" });
+    gsap.set(".nav-ball", { backgroundColor: "#120902" });
+
+    // Remove horizontal scroll functionality
+    // You may need to remove or adjust other horizontal scroll related code as well
+  }
+
+  // NAV BALLS
+  // Check if we're on the homepage
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  ) {
+    const navConfig = [
+      { id: "#nav-home", trigger: ".hero-section" },
+      { id: "#nav-about", trigger: ".about-section" },
+      { id: "#nav-artwork", trigger: ".artwork-full-section" },
+      { id: "#nav-gallery", trigger: ".gallery-full-section" },
+      { id: "#nav-shop", trigger: ".shop-section" },
+      { id: "#nav-location", trigger: ".location-section" },
+      { id: "#nav-murals", trigger: ".murals-section" },
+    ];
+
+    navConfig.forEach(({ id, trigger }) => {
+      const navBall = $(id).find(".nav-ball");
+
+      // Scroll-triggered animation
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: trigger,
+            containerAnimation: tlMain,
+            start: "left left",
+            end: "right left",
+            toggleActions: "play reverse play reverse",
+          },
+        })
+        .fromTo(id, { pointerEvents: "auto" }, { pointerEvents: "none" })
+        .to(
+          navBall,
+          { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+          0
+        );
+
+      // Click event for setting pointer events
+      $(id).on("click", function () {
+        $(".nav-link").css("pointer-events", "auto");
+        setTimeout(() => {
+          $(this).css("pointer-events", "none");
+        }, 100);
+      });
     });
-  // NAV BALL MURALS -------
-  let navMurals = $("#nav-murals").find(".nav-ball");
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".murals-section",
-        containerAnimation: tlMain,
-        start: "left left",
-        end: "right left",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-    .fromTo(
-      "#nav-murals",
-      { pointerEvents: "auto" },
-      { pointerEvents: "none" }
-    )
-    .to(
-      navMurals,
-      { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
-      0
-    );
-  // Click to make the ball stay in the correct place
-  $("#nav-murals").on("click", function () {
-    $(".nav-link").css("pointer-events", "auto");
-    setTimeout(() => {
-      $(this).css("pointer-events", "none");
-    }, 100);
-  });
+
+    // // NAV BALL HOME -------
+    // let navHome = $("#nav-home").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".hero-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left+=150",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo("#nav-home", { pointerEvents: "auto" }, { pointerEvents: "none" })
+    //   .to(
+    //     navHome,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-about").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL ABOUT -------
+    // let navAbout = $("#nav-about").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".about-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo(
+    //     "#nav-about",
+    //     { pointerEvents: "auto" },
+    //     { pointerEvents: "none" }
+    //   )
+    //   .to(
+    //     navAbout,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-about").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL ARTWORK -------
+    // let navArtwork = $("#nav-artwork").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".artwork-full-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo(
+    //     "#nav-artwork",
+    //     { pointerEvents: "auto" },
+    //     { pointerEvents: "none" }
+    //   )
+    //   .to(
+    //     navArtwork,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-artwork").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL GALLERY -------
+    // let navGallery = $("#nav-gallery").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".gallery-full-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       // markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo(
+    //     "#nav-gallery",
+    //     { pointerEvents: "auto" },
+    //     { pointerEvents: "none" }
+    //   )
+    //   .to(
+    //     navGallery,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-gallery").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL SHOP -------
+    // let navShop = $("#nav-shop").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".shop-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo("#nav-shop", { pointerEvents: "auto" }, { pointerEvents: "none" })
+    //   .to(
+    //     navShop,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-shop").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL Location -------
+    // let navLocation = $("#nav-location").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".location-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo(
+    //     "#nav-location",
+    //     { pointerEvents: "auto" },
+    //     { pointerEvents: "none" }
+    //   )
+    //   .to(
+    //     navLocation,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-location").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+
+    // // NAV BALL MURALS -------
+    // let navMurals = $("#nav-murals").find(".nav-ball");
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".murals-section",
+    //       containerAnimation: tlMain,
+    //       start: "left left",
+    //       end: "right left",
+    //       //markers: true,
+    //       toggleActions: "play reverse play reverse",
+    //     },
+    //   })
+    //   .fromTo(
+    //     "#nav-murals",
+    //     { pointerEvents: "auto" },
+    //     { pointerEvents: "none" }
+    //   )
+    //   .to(
+    //     navMurals,
+    //     { x: "-100%", opacity: 1, duration: 0.35, ease: "power1.out" },
+    //     0
+    //   );
+    // // Click to make the ball stay in the correct place
+    // $("#nav-murals").on("click", function () {
+    //   $(".nav-link").css("pointer-events", "auto");
+    //   setTimeout(() => {
+    //     $(this).css("pointer-events", "none");
+    //   }, 100);
+    // });
+  } else {
+    const currentPath = window.location.pathname;
+    const pageToNavMap = {
+      "/about": "#nav-about",
+      "/artwork": "#nav-artwork",
+      "/gallery": "#nav-gallery",
+      "/shop": "#nav-shop",
+      "/location": "#nav-location",
+      "/murals": "#nav-murals",
+    };
+
+    const relevantNavId = pageToNavMap[currentPath];
+    if (relevantNavId) {
+      const navBall = $(relevantNavId).find(".nav-ball");
+
+      // Reset any existing transformations and opacity
+      $(relevantNavId).find(".nav-ball").css("rotate", "1");
+
+      // Ensure the nav link is not clickable
+      $(relevantNavId).css("pointer-events", "none");
+    }
+  }
   // EXPAND IMAGE ----------
   // Z-INDEX
   $(".ap-img-a-1, .ap-img-a-2, .ap-img-a-3, .ap-img-a-4").on(
@@ -829,7 +1006,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-full-screen-1",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   function backFlip() {
@@ -842,7 +1019,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-a-1",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   // click anywhere to flip
@@ -867,7 +1044,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-full-screen-2",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   function backFlip2() {
@@ -880,7 +1057,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-a-2",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   // click anywhere to flip
@@ -905,7 +1082,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-full-screen-3",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   function backFlip3() {
@@ -918,7 +1095,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-a-3",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   // click anywhere to flip
@@ -943,7 +1120,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-full-screen-4",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   function backFlip4() {
@@ -956,7 +1133,7 @@ horizontalM.add("(min-width: 991px)", () => {
       targets: ".ap-img-a-4",
       absolute: true,
       zIndex: 1100,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
     });
   }
   // click anywhere to flip
@@ -977,9 +1154,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "left left",
         end: "right right",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .to(".gallery-component", { xPercent: 100, ease: "none" });
   gsap
@@ -989,15 +1166,15 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "10% left",
         end: "right right",
-        scrub: true
+        scrub: true,
         //toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".gallery-background-video", {
       width: "100%",
       height: "100%",
-      marginTop: 0
+      marginTop: 0,
     });
   gsap
     .timeline({
@@ -1006,16 +1183,16 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "10% left",
         end: "20% left",
-        scrub: true
+        scrub: true,
         //toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".gallery-top", {
       y: "-50%",
       rotationX: "60_cw",
       opacity: 0,
-      ease: "none"
+      ease: "none",
     })
     .to(
       ".gallery-bottom",
@@ -1031,9 +1208,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "left left",
         end: "right right",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .to(".location-sticky", { x: "100vw", ease: "none" })
     .to(".location-update-line", { height: "100%", ease: "none" }, 0);
@@ -1046,15 +1223,15 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "18% left",
         end: "right right",
         //scrub: true,
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".location-info-wrap.n1", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
-      duration: 1
+      duration: 1,
     })
     .to(
       ".location-info-wrap.n2",
@@ -1069,15 +1246,15 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "36% left",
         end: "right right",
         //scrub: true,
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".location-info-wrap.n2", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
-      duration: 1
+      duration: 1,
     })
     .to(
       ".location-info-wrap.n3",
@@ -1104,9 +1281,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "left left",
         end: "right right",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .to(".murals-anda", { x: "100vw", ease: "none" });
   gsap
@@ -1116,9 +1293,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "left left",
         end: "right right",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .to(".scroll-track", { y: "-" + trackHeight, ease: "none" });
   // END MURALS
@@ -1133,8 +1310,8 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "0% right-=150",
         end: "right right",
         //markers: true,
-        toggleActions: "play none none reverse"
-      }
+        toggleActions: "play none none reverse",
+      },
     });
     tlwords.from(targetElement, {
       opacity: 0,
@@ -1142,8 +1319,8 @@ horizontalM.add("(min-width: 991px)", () => {
       stagger: {
         amount: 0.8,
         ease: "none",
-        from: "random"
-      }
+        from: "random",
+      },
     });
   });
 
@@ -1160,29 +1337,29 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "0% right-=150",
         end: "right right",
         //markers: true,
-        toggleActions: "play none none reverse"
-      }
+        toggleActions: "play none none reverse",
+      },
     });
     tlImg.fromTo(
       castanho,
       {
-        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
       },
       {
         duration: 0.7,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        ease: "power1.out"
+        ease: "power1.out",
       }
     );
     tlImg.fromTo(
       targetElement,
       {
-        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+        clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
       },
       {
         duration: 0.7,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        ease: "power1.out"
+        ease: "power1.out",
       },
       0.5
     );
@@ -1198,9 +1375,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "left left",
         end: "right left",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .fromTo(".hero-img-background", { x: "0%" }, { x: "30%" });
   // GALLERY Image
@@ -1211,9 +1388,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "50% left",
         end: "right left",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .fromTo(".gallery-background-video", { x: "0%" }, { x: "30%" });
   // LOCATION Image
@@ -1224,9 +1401,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "40% left",
         end: "right left",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .fromTo(".location-big-img", { x: "-20%" }, { x: "20%" });
   // FOOTER
@@ -1237,9 +1414,9 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "25% left",
         end: "right 99%",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .from(".inquire-section", { y: "-60%" })
     .from(".inquire-background-img", { y: "30%" }, 0);
@@ -1292,8 +1469,8 @@ function textInquire() {
       stagger: {
         amount: 0.8,
         ease: "none",
-        from: "random"
-      }
+        from: "random",
+      },
     });
   });
 }
@@ -1364,9 +1541,9 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".about-section",
         start: "top top",
         end: "bottom bottom",
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".nav", { color: "#120902", duration: 0.3, ease: "none" });
   // Nav Color 2
@@ -1376,9 +1553,9 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".gallery-section",
         start: "top top",
         end: "bottom bottom",
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".nav", { color: "white", duration: 0.3, ease: "none" });
   // Nav Color 3
@@ -1388,9 +1565,9 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".location-section",
         start: "top top",
         end: "bottom bottom",
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".nav", { color: "#120902", duration: 0.3, ease: "none" });
   // END MOBILE GSAP
@@ -1404,8 +1581,8 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "top 90%",
         end: "bottom bottom",
         //markers: true,
-        toggleActions: "play none none reverse"
-      }
+        toggleActions: "play none none reverse",
+      },
     });
     tlwords.from(targetElement, {
       opacity: 0,
@@ -1413,8 +1590,8 @@ horizontalM.add("(max-width: 991px)", () => {
       stagger: {
         amount: 0.8,
         ease: "none",
-        from: "random"
-      }
+        from: "random",
+      },
     });
   });
   // LOCATION ------
@@ -1424,9 +1601,9 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".location-section",
         start: "top top",
         end: "80% bottom",
-        scrub: true
+        scrub: true,
         //markers: true
-      }
+      },
     })
     .to(".location-update-line", { width: "100%", ease: "none" });
 
@@ -1436,15 +1613,15 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".location-section",
         start: "15% top",
         end: "bottom bottom",
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".location-info-wrap.n1", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
-      duration: 1
+      duration: 1,
     })
     .to(
       ".location-info-wrap.n2",
@@ -1458,15 +1635,15 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "30% top",
         end: "bottom bottom",
         //scrub: true,
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
         //markers: true
-      }
+      },
     })
     .to(".location-info-wrap.n2", {
       //scale: 0.5,
       opacity: 0,
       ease: "power1.inOut",
-      duration: 1
+      duration: 1,
     })
     .to(
       ".location-info-wrap.n3",
@@ -1482,9 +1659,9 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: ".hero-section",
         start: "top top",
         end: "bottom top",
-        scrub: true
+        scrub: true,
         // markers: true
-      }
+      },
     })
     .fromTo(".hero-img-background", { y: "0%" }, { y: "15%" });
   // END IMAGE PARALLAX --------
@@ -1498,19 +1675,19 @@ $("#bagira-img, #gallery-img").each(function () {
   let animation1 = gsap.fromTo(
     targetElement1,
     {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     },
     {
       paused: true,
       duration: 0.75,
       clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
-      ease: "power1.out"
+      ease: "power1.out",
     }
   );
   let animation2 = gsap.fromTo(
     targetElement2,
     {
-      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
     },
     {
       paused: true,
@@ -1520,25 +1697,25 @@ $("#bagira-img, #gallery-img").each(function () {
       onComplete: () => {
         animation1gallery.progress(0).pause();
         animation2gallery.progress(0).pause();
-      }
+      },
     }
   );
   let animation1gallery = gsap.fromTo(
     targetElement2,
     {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     },
     {
       paused: true,
       duration: 0.75,
       clipPath: "polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%)",
-      ease: "power1.out"
+      ease: "power1.out",
     }
   );
   let animation2gallery = gsap.fromTo(
     targetElement1,
     {
-      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"
+      clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
     },
     {
       paused: true,
@@ -1548,7 +1725,7 @@ $("#bagira-img, #gallery-img").each(function () {
       onComplete: () => {
         animation1.progress(0).pause();
         animation2.progress(0).pause();
-      }
+      },
     }
   );
   // Problemas na animaÃ§Ã£o- facil resoluÃ§Ã£o

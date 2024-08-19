@@ -3793,6 +3793,23 @@ figcaption {
   overflow: hidden;
 }
 
+.page-element {
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+}
+
 .track {
   flex: none;
   height: 100%;
@@ -3805,6 +3822,15 @@ figcaption {
   flex: none;
   width: 100vw;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-section {
+  color: var(--white);
+  flex: none;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -3829,6 +3855,17 @@ figcaption {
   position: relative;
 }
 
+.page-component {
+  z-index: 5;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
 .s-page-padding {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -3847,13 +3884,32 @@ figcaption {
 }
 
 .hero-logo {
-  width: 6em;
-  height: 7.6875em;
+  /* width: 6em; */
+  width: 7.6875em;
+  /* height: 7.6875em; */
   position: absolute;
   top: 0%;
   bottom: auto;
   left: 0%;
   right: auto;
+}
+
+.page-logo {
+  mix-blend-mode: difference;
+  width: 7.6875em;
+  /* height: 7.6875em; */
+  /* position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto; */
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  /* left: 0%; */
+  /* right: 0%; */
+  /* overflow: hidden; */
 }
 
 .hero-title-component {
@@ -4531,7 +4587,7 @@ figcaption {
   display: flex;
 }
 
-.shop-ball {
+.location-ball {
   background-color: var(--black);
   border-radius: 100vh;
   flex: none;
@@ -4557,7 +4613,7 @@ figcaption {
   display: flex;
   position: relative;
   transform: none;
-  width: 100%
+  width: 100%;
 }
 
 .location-update {
@@ -6357,6 +6413,13 @@ figcaption {
     overflow: visible;
   }
 
+  .page-element {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    overflow: visible;
+  }
+
   .track {
     height: auto;
   }
@@ -6371,6 +6434,16 @@ figcaption {
     display: flex;
   }
 
+  .page-section {
+    flex-direction: column;
+    flex: 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+  }
+
   .track-flex {
     flex-direction: column;
     height: auto;
@@ -6382,8 +6455,18 @@ figcaption {
     min-height: 570px;
   }
 
+  .page-component {
+    height: 100%;
+    min-height: 570px;
+  }
+
   .hero-logo {
-    width: 4.4875em;
+    /* width: 4.4875em; */
+    height: 5.75em;
+  }
+
+  .page-logo {
+    /* width: 4.4875em; */
     height: 5.75em;
   }
 
@@ -6695,7 +6778,7 @@ figcaption {
   .gallery-sub-title {
     margin-top: 1.25em;
     width: 100%;
-    height:2.6rem;
+    height: 2.6rem;
   }
 
   .gallery-text {
