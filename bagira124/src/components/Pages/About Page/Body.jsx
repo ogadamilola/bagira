@@ -48,7 +48,7 @@ const Body = () => {
         </div>
         <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
           <div class="text-center mb-[1.875em]">
-            <h2 class="josefin-400-26">Let's Talk</h2>
+            <h2 class="josefin-400-26">Let’s Talk</h2>
           </div>
           <div class="page-hero-title mb-[1.875em]">
             <h1 class="jost-700-122 ">I WANT MY OWN BAGIRA PIECE</h1>
