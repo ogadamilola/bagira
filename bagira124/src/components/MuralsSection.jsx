@@ -118,7 +118,7 @@ const MuralsSection = () => {
                     <a
                       href="https://www.instagram.com/theonlybagirayouknow/"
                       target="_blank"
-                      className=" max-w-full h-full inline-block"
+                      className="cta-link inquire max-w-full h-full inline-block"
                     >
                       <div
                         data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
