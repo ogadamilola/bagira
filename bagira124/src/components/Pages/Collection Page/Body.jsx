@@ -119,7 +119,7 @@ const Body = () => {
           <div className="page-hero-title mb-[1.875rem]">
             <h1 className="jost-700-122">{availableCollections.subtitle}</h1>
           </div>
-          <div className={`mb-[1.875rem] grid grid-cols-${availableCollections.gridColumns} gap-[1rem] w-full`}>
+          <div className={`mb-[1.875rem] grid grid-cols-4 gap-[1rem] w-full`}>
             {artworkElements}
           </div>
         </div>

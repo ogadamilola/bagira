@@ -296,7 +296,7 @@ const Body = () => {
           <div class="page-hero-title mb-[1.875rem]">
             <h1 class="jost-700-122 ">Collection</h1>
           </div>
-          <div class={`mb-[1.875rem] grid grid-cols-${availableCollections.gridColumns} gap-[1rem] w-full`}>
+          <div class={`mb-[1.875rem] grid grid-cols-4 gap-[1rem] w-full`}>
             {collectionGrid}
           </div>
           <div class=" mb-[1.875rem]">
@@ -353,7 +353,7 @@ const Body = () => {
           <div class="page-hero-title mb-[1.875rem]">
             <h1 class="jost-700-122 ">Recently sold</h1>
           </div>
-          <div class={`mb-[1.875rem] grid grid-cols-${recentlySoldArtwork.gridColumns} gap-y-[1rem] gap-x-[10rem] w-full`}>
+          <div class={`mb-[1.875rem] grid grid-cols-3 gap-y-[1rem] gap-x-[10rem] w-full`}>
             {soldArtworkGrid}
           </div>
         </div>
