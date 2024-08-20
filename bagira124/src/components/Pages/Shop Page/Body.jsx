@@ -4,7 +4,7 @@ const Body = () => {
   return (
     <section id="shop" class="page-section">
       <div class="page-padding">
-        {/* <section id="shop" class="shop-section panel">
+        {/* <section id="shop" class="flex-col justify-start flex panel">
 
 
         

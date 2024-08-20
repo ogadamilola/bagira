@@ -14,13 +14,13 @@ const HomeSection = () => {
 
           <div class="hero-title-component">
             <div class="hero-title">
-              <h1 load="anim" split="words" class="jost-700-122 mb-40">
+              <h1 load="anim" split="words" class="jost-700-122 ">
                 Life without art is just ‘meh’
               </h1>
             </div>
 
             <div class="hero-sub-title">
-              <h2 class="josefin-400-26 mb-16">
+              <h2 class="josefin-400-26 ">
                 BAGIRA , visual artist of Curaçao
               </h2>
             </div>
@@ -102,7 +102,7 @@ const HomeSection = () => {
               <a
                 data-w-id="cd947534-154b-d008-a35f-bce9f4afa8aa"
                 href="#about"
-                class="big-cta w-inline-block"
+                class="big-cta max-w-full h-full inline-block"
               >
                 <div class="big-cta-text">
                   <div class="josefin-400-13">scroll</div>

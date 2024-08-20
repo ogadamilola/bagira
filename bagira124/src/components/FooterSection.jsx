@@ -6,7 +6,7 @@ const FooterSection = () => {
       <div class="inquire-component">
         <div class="inquire-top">
           <div class="inquire-title">
-            <h2 anim="1" split="words" class="jost-300-122 mb-40">
+            <h2 anim="1" split="words" class="jost-300-122 ">
               inquire today
             </h2>
           </div>
@@ -18,7 +18,7 @@ const FooterSection = () => {
             <a
               data-w-id="cd947534-154b-d008-a35f-bce9f4afa8aa"
               href="#"
-              class="big-cta home w-inline-block"
+              class="big-cta home max-w-full h-full inline-block"
             >
               <div class="big-cta-text">
                 <div class="josefin-400-13">Schedule</div>
@@ -77,7 +77,7 @@ const FooterSection = () => {
                 data-w-id="3638706f-c714-bc5e-1f07-65fdb402a816"
                 href="http://bagicreatives.com/"
                 target="_blank"
-                class="bagira-link w-inline-block"
+                class="bagira-link max-w-full h-full inline-block"
               >
                 <img
                   src="/images/63d3bab7fb9a02f1f85b4adf_exclusive.webp"

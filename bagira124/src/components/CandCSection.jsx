@@ -11,7 +11,7 @@ const CandCSection = () => {
           <div class="candc-info">
             <div class="ap-info-bottom">
               <div class="candc-sub-title">
-                <div anim="3" split="words" class="jost-300-50 mb-40">
+                <div anim="3" split="words" class="jost-300-50 ">
                   Collection
                 </div>
               </div>
@@ -26,7 +26,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="/artwork" class="cta-link artwork[x] w-inline-block">
+                <a href="/artwork" class="cta-link artwork[x] max-w-full h-full inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"
@@ -89,7 +89,7 @@ const CandCSection = () => {
           <div class="candc-info-bottom">
             <div class="ap-info-bottom">
               <div class="candc-sub-title">
-                <div anim="3" split="words" class="jost-300-50 mb-40">
+                <div anim="3" split="words" class="jost-300-50 ">
                   Commission
                 </div>
               </div>
@@ -104,7 +104,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-cta">
-                <a href="/artwork" class="cta-link artwork[x] w-inline-block">
+                <a href="/artwork" class="cta-link artwork[x] max-w-full h-full inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"

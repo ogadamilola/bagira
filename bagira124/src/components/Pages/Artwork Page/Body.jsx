@@ -1,17 +1,179 @@
 import React from "react";
 
+// Object for Available Collections
+const availableCollections = {
+  title: "Available for purchase",
+  subtitle: "Collection",
+  gridColumns: 4,
+  items: [
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Collection Item 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Collection Item 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Collection Item 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Collection Item 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Collection Item 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Collection Item 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Collection Item 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Collection Item 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    // ... Add more items as needed, up to 8 for the given layout
+  ],
+  cta: {
+    text: "explore collection",
+    href: "/artwork/collection",
+  },
+};
+
+// Object for Recently Sold Artwork
+const recentlySoldArtwork = {
+  title: "Artwork",
+  subtitle: "Recently sold",
+  gridColumns: 3,
+  items: [
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Sold Artwork 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_3.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_3-p-500.webp 500w, images/IMAGE_3-p-800.webp 800w, images/IMAGE_3-p-1080.webp 1080w, images/IMAGE_3-p-1600.webp 1600w, images/IMAGE_3-p-2000.webp 2000w, images/IMAGE_3.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Sold Artwork 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_3.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_3-p-500.webp 500w, images/IMAGE_3-p-800.webp 800w, images/IMAGE_3-p-1080.webp 1080w, images/IMAGE_3-p-1600.webp 1600w, images/IMAGE_3-p-2000.webp 2000w, images/IMAGE_3.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_1.webp",
+      alt: "Sold Artwork 1",
+      srcSet:
+        "/images/IMAGE_1-p-500.webp 500w, images/IMAGE_1-p-800.webp 800w, images/IMAGE_1-p-1080.webp 1080w, images/IMAGE_1-p-1600.webp 1600w, images/IMAGE_1-p-2000.webp 2000w, images/IMAGE_1.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_2.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w",
+    },
+    {
+      src: "/images/IMAGE_3.webp",
+      alt: "Sold Artwork 2",
+      srcSet:
+        "/images/IMAGE_3-p-500.webp 500w, images/IMAGE_3-p-800.webp 800w, images/IMAGE_3-p-1080.webp 1080w, images/IMAGE_3-p-1600.webp 1600w, images/IMAGE_3-p-2000.webp 2000w, images/IMAGE_3.webp 2500w",
+    },
+    // ... Add more items as needed, up to 9 for the given layout
+  ],
+};
+
 const Body = () => {
+  // Map for Available Collections
+  const collectionGrid = availableCollections.items.map((item, index) => (
+    <div
+      key={index}
+      className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
+    >
+      <img
+        className="cursor-pointer object-cover w-full h-full relative"
+        src={item.src}
+        alt={item.alt}
+        data-flip-id="1"
+        img-anim="1"
+        loading="lazy"
+        srcSet={item.srcSet}
+      />
+    </div>
+  ));
+
+  // Map for Recently Sold Artwork
+  const soldArtworkGrid = recentlySoldArtwork.items.map((item, index) => (
+    <div
+      key={index}
+      className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
+    >
+      <img
+        className="cursor-pointer object-cover w-full h-full relative"
+        src={item.src}
+        alt={item.alt}
+        data-flip-id="1"
+        img-anim="1"
+        loading="lazy"
+        srcSet={item.srcSet}
+      />
+    </div>
+  ));
+
   return (
     <div id="shop" class="page-section">
       <section id="shop" class="page-section">
-        <div class="page-div">
-          <div class="page-title page-mb">
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-26">Commission Pieces</h2>
           </div>
-          <div class="page-hero-title page-mb">
-            <h1 class="jost-700-122 mb-40">How does it work?</h1>
+          <div class="page-hero-title mb-[1.875rem]">
+            <h1 class="jost-700-122 ">How does it work?</h1>
           </div>
-          <div class="page-mb page-row">
+          <div class="mb-[1.875rem] page-row">
             <h2 class="josefin-400-20  page-multi">
               Thinking about commissioning a painting? YES you can.
               <br />
@@ -38,8 +200,8 @@ const Body = () => {
         <div class="horizontal-line-wrap">
           <div class="horizontal-line grey"></div>
         </div>
-        <div class="page-div">
-          <div class="page-title page-mb">
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-26">Recent Commission Pieces</h2>
           </div>
           <div class="pages-commission-component">
@@ -51,13 +213,13 @@ const Body = () => {
                 <div img-castanho="1" class="img-background"></div>
                 <img
                   class="pages-img-a-1"
-                  src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
+                  src="/images/IMAGE_2.webp"
                   alt="BAGIRA"
                   sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                   data-flip-id="1"
                   img-anim="1"
                   loading="lazy"
-                  srcset="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+                  srcset="/images/IMAGE_2-p-500.webp 500w, images/IMAGE_2-p-800.webp 800w, images/IMAGE_2-p-1080.webp 1080w, images/IMAGE_2-p-1600.webp 1600w, images/IMAGE_2-p-2000.webp 2000w, images/IMAGE_2.webp 2500w"
                 />
               </div>
             </div>
@@ -127,157 +289,22 @@ const Body = () => {
         <div class="horizontal-line-wrap">
           <div class="horizontal-line grey"></div>
         </div>
-        <div class="page-div">
-          <div class="page-title page-mb">
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-26">Available for purchase</h2>
           </div>
-          <div class="page-hero-title page-mb">
-            <h1 class="jost-700-122 mb-40">Collection</h1>
+          <div class="page-hero-title mb-[1.875rem]">
+            <h1 class="jost-700-122 ">Collection</h1>
           </div>
-          <section id="shop" class="shop-section panel">
-            <div class="shop-component">
-              <div class="ap-img-wrap-shop">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-
-              <div class="ap-img-wrap-shop">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_1.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-
-              <div class="ap-img-wrap-shop">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_2.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-
-              <div class="ap-img-wrap-shop">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_3.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="shop-component">
-              <div class="ap-img-wrap-shop bottom">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_4.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-
-              <div class="ap-img-wrap-shop bottom">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_5.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-
-              <div class="ap-img-wrap-shop bottom">
-                <div
-                  // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-                  class="ap-img-1-shop"
-                >
-                  {/* <div img-castanho="1" class="img-background"></div> */}
-                  <img
-                    class="ap-img-a-shop"
-                    src="/images/Background_6.webp"
-                    alt="BAGIRA"
-                    // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                    data-flip-id="1"
-                    img-anim="1"
-                    loading="lazy"
-                    // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          <div class=" page-mb">
+          <div class={`mb-[1.875rem] grid grid-cols-${availableCollections.gridColumns} gap-[1rem] w-full`}>
+            {collectionGrid}
+          </div>
+          <div class=" mb-[1.875rem]">
             <div class="">
               <a
                 href="/artwork/collection"
                 // target="_blank"
-                class="cta-link w-inline-block"
+                class="cta-link max-w-full h-full inline-block"
               >
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
@@ -319,12 +346,15 @@ const Body = () => {
         <div class="horizontal-line-wrap">
           <div class="horizontal-line grey"></div>
         </div>
-        <div class="page-div">
-          <div class="page-title page-mb">
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-26">Artwork</h2>
           </div>
-          <div class="page-hero-title page-mb">
-            <h1 class="jost-700-122 mb-40">Recently sold</h1>
+          <div class="page-hero-title mb-[1.875rem]">
+            <h1 class="jost-700-122 ">Recently sold</h1>
+          </div>
+          <div class={`mb-[1.875rem] grid grid-cols-${recentlySoldArtwork.gridColumns} gap-y-[1rem] gap-x-[10rem] w-full`}>
+            {soldArtworkGrid}
           </div>
         </div>
       </section>

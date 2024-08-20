@@ -102,7 +102,7 @@ export default function Home() {
               <a
                 id="close-inquire"
                 href="#"
-                className="nav-link inquire-close w-inline-block"
+                className="nav-link inquire-close max-w-full h-full inline-block"
               >
                 <div className="josefin-400-13">close</div>
 
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="inquire-open-component">
               <div className="inquire-open-left">
                 <div className="inquire-open-title">
-                  <h2 className="jost-300-122 mb-40">
+                  <h2 className="jost-300-122">
                     INQUIRE
                     <br />
                     NOW
@@ -130,7 +130,7 @@ export default function Home() {
                       <a
                         href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                         target="_blank"
-                        className="jost-300-26 hover-links mb-13"
+                        className="jost-300-26 hover-links "
                       >
                         19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
                         <br />
@@ -155,7 +155,7 @@ export default function Home() {
                         >
                           <a
                             href="tel:+351291147686"
-                            className="jost-300-26 hover-links mb-13"
+                            className="jost-300-26 hover-links "
                           >
                             +351 291 147 686
                           </a>
@@ -180,7 +180,7 @@ export default function Home() {
                         >
                           <a
                             href="tel:+351967182444"
-                            className="jost-300-26 hover-links mb-13"
+                            className="jost-300-26 hover-links "
                           >
                             +351 967 182 444
                           </a>
@@ -369,7 +369,7 @@ export default function Home() {
                       <input
                         type="submit"
                         data-wait=""
-                        className="form-botton w-button"
+                        className="form-botton text-white cursor-pointer bg-blue-500 rounded-none no-underline inline-block"
                         value="SUBMIT"
                       />
                     </div>
@@ -393,7 +393,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="jost-300-98 mb-40">THANK YOU</div>
+                      <div className="jost-300-98">THANK YOU</div>
                     </div>
                   </div>
 

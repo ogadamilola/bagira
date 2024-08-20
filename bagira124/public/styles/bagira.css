@@ -2228,6 +2228,7 @@ textarea.w-select {
   --grey: #7e7e7e;
   --form-grey: #969696;
   --form-error: #eb473b;
+  font-size: 16px;
 }
 
 .w-embed-youtubevideo {
@@ -3363,6 +3364,14 @@ figcaption {
   grid-auto-columns: 1fr;
   width: 100%;
   display: grid;
+}
+
+.div-block, .three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div-block, .four {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .manual-title {

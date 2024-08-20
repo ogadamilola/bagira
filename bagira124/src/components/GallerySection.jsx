@@ -12,7 +12,7 @@ const GallerySection = () => {
           </div> */}
 
             <div class="gallery-sub-title">
-              <div anim="1" split="words" class="jost-300-122 mb-40">
+              <div anim="1" split="words" class="jost-300-122 ">
                 {/* THE GALLERY */}
                 <img
                   class="ap-img-a-candc"
@@ -30,7 +30,7 @@ const GallerySection = () => {
 
           <div class="gallery-bottom">
             <div class="gallery-sub-title-2">
-              <div anim="1" split="words" class="jost-300-122 mb-40">
+              <div anim="1" split="words" class="jost-300-122 ">
                 IN KURA HULANDA
               </div>
             </div>

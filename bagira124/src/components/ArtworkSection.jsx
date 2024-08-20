@@ -61,13 +61,13 @@ const ArtworkSection = () => {
               </div>
 
               <div class="artwork-sub-title">
-                <div anim="3" split="words" class="jost-300-50 mb-40">
+                <div anim="3" split="words" class="jost-300-50 ">
                   Paintings for sale and custom orders
                 </div>
               </div>
 
               <div class="artwork-cta">
-                <a href="#artwork" class="cta-link artwork w-inline-block">
+                <a href="#artwork" class="cta-link artwork max-w-full h-full inline-block">
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     class="cta"

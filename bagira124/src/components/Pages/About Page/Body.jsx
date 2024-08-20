@@ -4,9 +4,9 @@ const Body = () => {
   return (
     <div id="shop" class="page-section">
       <section id="shop" class="page-section">
-        <div class="page-div">
-          <div class="page-hero-title page-mb">
-            <h1 class="jost-700-122 mb-40">About the Artist</h1>
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="page-hero-title mb-[1.875em]">
+            <h1 class="jost-700-122 ">About the Artist</h1>
           </div>
           <img
             src="/images/IMG_8061.webp"
@@ -14,15 +14,15 @@ const Body = () => {
             sizes="60vh"
             srcset="/images/IMG_8061-p-500.webp 500w, images/IMG_8061-p-800.webp 800w, images/IMG_8061-p-1080.webp 1080w, images/IMG_8061-p-1600.webp 1600w, images/IMG_8061-p-2000.webp 2000w, images/IMG_8061.webp 2161w"
             alt="BAGIRA"
-            class="page-mb"
+            class="mb-[1.875em]"
           />
-          <div class="gallery-sub-title-2 page-mb">
-            <div anim="1" split="words" class="jost-300-122 mb-40">
+          <div class="gallery-sub-title-2 mb-[1.875em]">
+            <div anim="1" split="words" class="jost-300-122 ">
               BAGIRA
             </div>
           </div>
-          <div class="page-title page-mb">
-            <div anim="1" split="words" class="jost-300-40 mb-32 normal">
+          <div class="text-center mb-[1.875em]">
+            <div anim="1" split="words" class="jost-300-40  normal-case">
               BAGIRA is a 28 year-old selftaught artist based in Curaçao. She
               quit job as a sales agent at an accountant firm 2 weeks after she
               discovered her talent and decided to paint full time based on
@@ -46,22 +46,22 @@ const Body = () => {
         <div class="horizontal-line-wrap">
           <div class="horizontal-line grey"></div>
         </div>
-        <div class="page-div">
-          <div class="page-title page-mb">
+        <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
+          <div class="text-center mb-[1.875em]">
             <h2 class="josefin-400-26">Let's Talk</h2>
           </div>
-          <div class="page-hero-title page-mb">
-            <h1 class="jost-700-122 mb-40">I WANT MY OWN BAGIRA PIECE</h1>
+          <div class="page-hero-title mb-[1.875em]">
+            <h1 class="jost-700-122 ">I WANT MY OWN BAGIRA PIECE</h1>
           </div>
-          <div class="page-title page-mb">
+          <div class="text-center mb-[1.875em]">
             <h2 class="josefin-400-20">
               Schedule a free consultation with our team and let’s make things
               happen!
             </h2>
           </div>
-          <div class=" page-mb">
+          <div class=" mb-[1.875em]">
             <div class="">
-              <a href="" class="cta-link w-inline-block">
+              <a href="" class="cta-link max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"

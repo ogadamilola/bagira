@@ -16,7 +16,7 @@ const ShopSection = () => {
 
           <div class="ap-info-bottom">
             <div class="shop-sub-title">
-              <div anim="3" split="words" class="jost-300-50 mb-40">
+              <div anim="3" split="words" class="jost-300-50 ">
                 Collection
               </div>
             </div>
@@ -30,7 +30,7 @@ const ShopSection = () => {
             </div>
 
             <div class="shop-cta">
-              <a href="#shop" class="cta-link artwork w-inline-block">
+              <a href="#shop" class="cta-link artwork max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"
@@ -174,7 +174,7 @@ const ShopSection = () => {
           {/* <div class="shop-info-bottom">
           <div class="ap-info-bottom">
             <div class="shop-sub-title">
-              <div anim="3" split="words" class="jost-300-50 mb-40">
+              <div anim="3" split="words" class="jost-300-50 ">
                 Commission
               </div>
             </div>
@@ -189,7 +189,7 @@ const ShopSection = () => {
             </div>
 
             <div class="shop-cta">
-              <a href="#shop" class="cta-link artwork w-inline-block">
+              <a href="#shop" class="cta-link artwork max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"
@@ -305,7 +305,7 @@ const ShopSection = () => {
 
           <div class="ap-img-wrap-shop bottom">
             <div class="artwork-cta">
-              <a href="/artwork/collection" class="cta-link artwork[x] w-inline-block">
+              <a href="/artwork/collection" class="cta-link artwork[x] max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   class="cta"

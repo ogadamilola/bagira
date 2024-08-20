@@ -19,7 +19,7 @@ const MuralsSection = () => {
                   <h3
                     anim="1"
                     split="words"
-                    class="jost-300-98 mb-40 mb-line-h-1"
+                    class="jost-300-98  mb-line-h-1"
                   >
                     Discover Amazing Brand Identity- Transforming spaces,
                     elevating brands. We specialize in crafting bespoke mural
@@ -35,7 +35,7 @@ const MuralsSection = () => {
                   <a
                     href="https://api.whatsapp.com/send?phone=+59996863862"
                     target="_blank"
-                    class="download-brochure-link w-inline-block"
+                    class="download-brochure-link max-w-full h-full inline-block"
                   >
                     <div
                       data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
@@ -76,7 +76,7 @@ const MuralsSection = () => {
 
                   <div class="murals-cta-space">
                     <div class="cta-black">
-                      <a href="#" class="cta-link inquire w-inline-block">
+                      <a href="#" class="cta-link inquire max-w-full h-full inline-block">
                         <div
                           data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                           class="cta"
@@ -118,7 +118,7 @@ const MuralsSection = () => {
                     <a
                       href="https://www.instagram.com/theonlybagirayouknow/"
                       target="_blank"
-                      class="download-brochure-link w-inline-block"
+                      class="download-brochure-link max-w-full h-full inline-block"
                     >
                       <div
                         data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
@@ -158,7 +158,7 @@ const MuralsSection = () => {
 
                   <div class="murals-cta-space">
                     <div class="cta-black">
-                      <a href="#" class="cta-link inquire w-inline-block">
+                      <a href="#" class="cta-link inquire max-w-full h-full inline-block">
                         <div
                           data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                           class="cta"

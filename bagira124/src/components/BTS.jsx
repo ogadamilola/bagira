@@ -14,13 +14,13 @@ const BTS = () => {
                 id="privacidade"
                 href="https://cdn.prod.website-files.com/63d3a5c57af3481dbebbb1a2/6422b19e9dfab9e106a3c1e6_Privacy%20Policy.pdf"
                 target="_blank"
-                class="privacidade w-inline-block"
+                class="privacidade max-w-full h-full inline-block"
               ></a>
               <a
                 id="privacidadePT"
                 href="https://cdn.prod.website-files.com/63d3a5c57af3481dbebbb1a2/6422b19e9dfab9e106a3c1e6_Privacy%20Policy.pdf"
                 target="_blank"
-                class="privacidade-pt w-inline-block"
+                class="privacidade-pt max-w-full h-full inline-block"
               ></a>
             </div>
           </div>

@@ -28,21 +28,21 @@ const LocationSection = () => {
               <div class="location-marquee-repete">
                 <div class="location-ball"></div>
                 <div class="location-marquee-text">
-                  <div class="jost-300-50 mb-40">bagira</div>
+                  <div class="jost-300-50 ">bagira</div>
                 </div>
               </div>
 
               <div class="location-marquee-repete">
                 <div class="location-ball"></div>
                 <div class="location-marquee-text">
-                  <div class="jost-300-50 mb-40">art</div>
+                  <div class="jost-300-50 ">art</div>
                 </div>
               </div>
 
               <div class="location-marquee-repete">
                 <div class="location-ball"></div>
                 <div class="location-marquee-text">
-                  <div class="jost-300-50 mb-40">commissions</div>
+                  <div class="jost-300-50 ">commissions</div>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const LocationSection = () => {
               <div class="location-info-anim">
                 <div class="location-info-wrap n1">
                   <div class="location-title">
-                    <h3 anim="1" split="words" class="jost-300-50 mb-40">
+                    <h3 anim="1" split="words" class="jost-300-50 ">
                       Kura Hulanda Village,
                       <span class="main-color">curaçao</span>
                     </h3>
@@ -91,7 +91,7 @@ const LocationSection = () => {
 
                 <div class="location-info-wrap n2">
                   <div class="location-title">
-                    <h3 class="jost-300-50 mb-40">
+                    <h3 class="jost-300-50 ">
                       <span class="main-color">whiteglove delivery</span> to
                       Your <span class="main-color">doorstep</span>
                     </h3>
@@ -112,7 +112,7 @@ const LocationSection = () => {
 
                 <div class="location-info-wrap n3">
                   <div class="location-title">
-                    <h3 class="jost-300-50 mb-40">
+                    <h3 class="jost-300-50 ">
                       Comissions <span class="main-color">& murals</span>
                     </h3>
                   </div>
@@ -138,7 +138,7 @@ const LocationSection = () => {
               <a
                 href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                 target="_blank"
-                class="cta-link w-inline-block"
+                class="cta-link max-w-full h-full inline-block"
               >
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
