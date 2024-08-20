@@ -53,7 +53,7 @@ const Body = () => {
       </div>
       <div className="shop-title">
         <h2 anim="2" split="" className="josefin-400-13">
-          '{products[item.id].title}' {products[item.id].size}
+          &apos;{products[item.id].title}&apos; {products[item.id].size}
           <br />
           {products[item.id].price}
         </h2>
