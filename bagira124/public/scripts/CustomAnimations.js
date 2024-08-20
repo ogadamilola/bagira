@@ -395,7 +395,7 @@ horizontalM.add("(min-width: 991px)", () => {
 
   document
     .querySelectorAll(
-      ".nav-link.home, .cta-link.home, .nav-link.about, .big-cta.home, .cta-link.about, .nav-link.artwork, .cta-link.artwork, .nav-link.shop, .cta-link.shop, .nav-link.gallery, .cta-link.gallery, .nav-link.location, .cta-link.location, .nav-link.murals, .cta-link.murals"
+      ".nav-link.home, .cta-link.home, .nav-link.about, .big-cta.about, .big-cta.home, .cta-link.about, .nav-link.artwork, .cta-link.artwork, .nav-link.shop, .cta-link.shop, .nav-link.gallery, .cta-link.gallery, .nav-link.location, .cta-link.location, .nav-link.murals, .cta-link.murals"
     )
     .forEach((element) => {
       element.addEventListener("click", handleNavLinkClick);

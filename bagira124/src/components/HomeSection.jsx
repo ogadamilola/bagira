@@ -102,7 +102,7 @@ const HomeSection = () => {
               <a
                 data-w-id="cd947534-154b-d008-a35f-bce9f4afa8aa"
                 href="#about"
-                class="big-cta max-w-full h-full inline-block"
+                class="big-cta about max-w-full h-full inline-block"
               >
                 <div class="big-cta-text">
                   <div class="josefin-400-13">scroll</div>
