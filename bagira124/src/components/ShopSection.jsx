@@ -27,7 +27,7 @@ const ShopSection = () => {
       </div>
 
       <section id="shop" className="shop-section panel">
-        <div className="h-full w-full grid grid-cols-1 lg:grid-cols-4 justify-start gap-x-[3.25em] py-[1.125em] px-[1em] lg:py-[0] lg:pr-[7.1875em] lg:pl-[1.25em]">
+        {/* <div className="h-full w-full grid grid-cols-1 lg:grid-cols-4 justify-start gap-x-[3.25em] py-[1.125em] px-[1em] lg:py-[0] lg:pr-[7.1875em] lg:pl-[1.25em]">
           {artwork &&
             artwork.slice(0, 7).map((item, index) => (
               <Link
@@ -98,6 +98,34 @@ const ShopSection = () => {
               </a>
             </div>
           </div>
+        </div> */}
+        <div className="shop-component xl:min-w-[124.884rem]">
+          {artwork &&
+            artwork.slice(0, 4).map((item, index) => (
+              <Link
+                key={index}
+                href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+                className="ap-img-wrap-shop"
+              >
+                <div className="ap-img-1-shop">
+                  <img
+                    className="ap-img-a-shop"
+                    src={`${item.image}`}
+                    alt={item.title}
+                    data-flip-id="1"
+                    img-anim="1"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="shop-title">
+                  <h2 anim="2" split="" className="josefin-400-13">
+                    &apos;{item.title}&apos; {item.size}
+                    <br />
+                    ƒ {item.price.toFixed(3)}
+                  </h2>
+                </div>
+              </Link>
+            ))}
           {/* <a
             href={`/artwork/collection/tur-shimaruku-ta-hechu`}
             className="ap-img-wrap-shop"
@@ -140,9 +168,9 @@ const ShopSection = () => {
                 <br />F 8.500
               </h2>
             </div>
-          </a> */}
+          </a>
 
-          {/* <a
+          <a
             href={`/artwork/collection/sisters-2`}
             className="ap-img-wrap-shop"
           >
@@ -184,8 +212,34 @@ const ShopSection = () => {
           </a> */}
         </div>
 
-        {/* <div className="shop-component">
-          <a
+        <div className="shop-component xl:min-w-[124.884rem]">
+        {artwork &&
+            artwork.slice(4, 7).map((item, index) => (
+              <Link
+                key={index}
+                href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+                className="ap-img-wrap-shop bottom"
+              >
+                <div className="ap-img-1-shop">
+                  <img
+                    className="ap-img-a-shop"
+                    src={`${item.image}`}
+                    alt={item.title}
+                    data-flip-id="1"
+                    img-anim="1"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="shop-title">
+                  <h2 anim="2" split="" className="josefin-400-13">
+                    &apos;{item.title}&apos; {item.size}
+                    <br />
+                    ƒ {item.price.toFixed(3)}
+                  </h2>
+                </div>
+              </Link>
+            ))}
+          {/* <a
             href={`/artwork/collection/rooted-in-curacao`}
             className="ap-img-wrap-shop bottom"
           >
@@ -249,7 +303,7 @@ const ShopSection = () => {
                 <br />F 9.000
               </h2>
             </div>
-          </a>
+          </a> */}
 
           <div className="ap-img-wrap-shop bottom">
             <div className="artwork-cta">
@@ -295,7 +349,7 @@ const ShopSection = () => {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
     </>
   );

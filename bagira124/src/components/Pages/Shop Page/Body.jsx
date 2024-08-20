@@ -93,7 +93,7 @@ const Body = ({
             </h2>
           </a>
         </div>
-        <div className="justify-center items-start flex relative flex-col xl:flex-row w-full h-full gap-x-[3.125rem]">
+        <div className="justify-center items-start flex relative flex-col xl:flex-row w-full h-full gap-x-[3.125rem] xl:min-h-[45.797rem]">
           <div className="justify-center items-start flex relative flex-col max-w-full h-full gap-y-[2rem]">
             <div className="justify-center items-center flex relative flex-col max-w-full w-[39.125rem] h-[39.125rem]">
               <img
@@ -225,7 +225,7 @@ const Body = ({
           <div className="horizontal-line grey"></div>
         </div>
         <div
-          className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full`}
+          className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full xl:min-h-[22.65rem]`}
         >
           {suggestedShop}
         </div>
