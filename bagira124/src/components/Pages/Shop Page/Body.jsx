@@ -31,6 +31,20 @@ const suggestedShop = {
       },
       title: "'Muhammad ali' 124 X 148 CM",
       price: "F 8.500",
+      images: [
+        {
+          src: "/images/Background",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 22",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 23",
+          alt: "BAGIRA",
+        },
+      ],
     },
     {
       image: {
@@ -39,6 +53,20 @@ const suggestedShop = {
       },
       title: "'SISTERS' 110 X 140 CM",
       price: "F 5.500",
+      images: [
+        {
+          src: "/images/Background",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 22",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 23",
+          alt: "BAGIRA",
+        },
+      ],
     },
     {
       image: {
@@ -47,6 +75,20 @@ const suggestedShop = {
       },
       title: "'SISTERS' 110 X 140 CM",
       price: "F 4.500",
+      images: [
+        {
+          src: "/images/Background",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 22",
+          alt: "BAGIRA",
+        },
+        {
+          src: "/images/image 23",
+          alt: "BAGIRA",
+        },
+      ],
     },
   ],
 };
