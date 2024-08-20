@@ -83,7 +83,7 @@ const Body = () => {
 
   return (
     <div id="shop" className="page-section">
-      <div className="relative overflow-hidden flex-col justify-center items-start flex w-full">
+      <div className="relative flex-col justify-center items-start flex w-full">
         <div class="text-start mb-[1.875rem]">
           <a href="/artwork">
             <h2 class="josefin-400-20">
