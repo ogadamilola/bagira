@@ -16,6 +16,7 @@ export async function getArtwork() {
         year,
         size,
         description,
+        availability,
         "image": image.asset->url,
         "images": images[].asset->url
     }
