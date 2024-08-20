@@ -3,57 +3,57 @@ import React from "react";
 const ShopSection = () => {
   return (
     <>
-      <div class="vertical-line-wrap">
-        <div class="vertical-line"></div>
+      <div className="vertical-line-wrap">
+        <div className="vertical-line"></div>
       </div>
-      <section id="shop" class="shop-section panel">
-        {/* <div class="vertical-line-wrap">
-        <div class="vertical-line"></div>
+      <section id="shop" className="shop-section panel">
+        {/* <div className="vertical-line-wrap">
+        <div className="vertical-line"></div>
       </div> */}
 
-        <div class="shop-component">
-          {/* <div class="shop-info">
+        <div className="shop-component">
+          {/* <div className="shop-info">
 
-          <div class="ap-info-bottom">
-            <div class="shop-sub-title">
-              <div anim="3" split="words" class="jost-300-50 ">
+          <div className="ap-info-bottom">
+            <div className="shop-sub-title">
+              <div anim="3" split="words" className="jost-300-50 ">
                 Collection
               </div>
             </div>
 
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 BAGIRA's collection are paintings she created based on her
                 inspiration. These pieces are for sale and available at the
                 Gallery in Kura Hulanda Village and can be shipped worldwide.
               </h2>
             </div>
 
-            <div class="shop-cta">
-              <a href="#shop" class="cta-link artwork max-w-full h-full inline-block">
+            <div className="shop-cta">
+              <a href="#shop" className="cta-link artwork max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                  class="cta"
+                  className="cta"
                 >
-                  <div class="josefin-400-13">Learn More</div>
+                  <div className="josefin-400-13">Learn More</div>
 
-                  <div class="cta-ball">
-                    <div class="seta-cta-wrap">
-                      <div class="seta-cta-anda-1">
+                  <div className="cta-ball">
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
 
-                      <div class="seta-cta-anda-2">
+                      <div className="seta-cta-anda-2">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
                     </div>
@@ -61,7 +61,7 @@ const ShopSection = () => {
 
                   <div
                     data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                    class="cta-hover-sticky"
+                    className="cta-hover-sticky"
                   ></div>
                 </div>
               </a>
@@ -69,118 +69,121 @@ const ShopSection = () => {
           </div>
         </div> */}
 
-          <div class="ap-img-wrap-shop">
+          <a
+            href={`/artwork/collection/tur-shimaruku-ta-hechu`}
+            className="ap-img-wrap-shop"
+          >
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘tur shimaruku ta hechu’ 185 X 140 cm
                 <br />F 9.200
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop">
+          <a href={`/artwork/collection/muhammad-ali`} className="ap-img-wrap-shop">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_1.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘Muhammad ali’ 124 X 148 CM
                 <br />F 8.500
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop">
+          <a href={`/artwork/collection/sisters-2`} className="ap-img-wrap-shop">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_2.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘SISTERS’ 110 X 140 CM
                 <br />F 5.500
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop">
+          <a href={`/artwork/collection/sisters`} className="ap-img-wrap-shop">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_3.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘SISTERS’ 100 X 100 CM
                 <br />F 4.500
               </h2>
             </div>
-          </div>
+          </a>
         </div>
 
-        <div class="shop-component">
-          {/* <div class="shop-info-bottom">
-          <div class="ap-info-bottom">
-            <div class="shop-sub-title">
-              <div anim="3" split="words" class="jost-300-50 ">
+        <div className="shop-component">
+          {/* <div className="shop-info-bottom">
+          <div className="ap-info-bottom">
+            <div className="shop-sub-title">
+              <div anim="3" split="words" className="jost-300-50 ">
                 Commission
               </div>
             </div>
 
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 Custom paintings, in other words, commission are pieces that are
                 created based on the client's request. These pieces are
                 customizable based on design, material, color-scheme and size
@@ -188,31 +191,31 @@ const ShopSection = () => {
               </h2>
             </div>
 
-            <div class="shop-cta">
-              <a href="#shop" class="cta-link artwork max-w-full h-full inline-block">
+            <div className="shop-cta">
+              <a href="#shop" className="cta-link artwork max-w-full h-full inline-block">
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                  class="cta"
+                  className="cta"
                 >
-                  <div class="josefin-400-13">Learn More</div>
+                  <div className="josefin-400-13">Learn More</div>
 
-                  <div class="cta-ball">
-                    <div class="seta-cta-wrap">
-                      <div class="seta-cta-anda-1">
+                  <div className="cta-ball">
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
 
-                      <div class="seta-cta-anda-2">
+                      <div className="seta-cta-anda-2">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
                     </div>
@@ -220,7 +223,7 @@ const ShopSection = () => {
 
                   <div
                     data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                    class="cta-hover-sticky"
+                    className="cta-hover-sticky"
                   ></div>
                 </div>
               </a>
@@ -228,107 +231,112 @@ const ShopSection = () => {
           </div>
         </div> */}
 
-          <div class="ap-img-wrap-shop bottom">
+          <a href={`/artwork/collection/rooted-in-curacao`} className="ap-img-wrap-shop bottom">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_4.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+                // srcSet="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘rOOTED IN CURACAO’ 110 X 140 CM
                 <br />F 5.000
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop bottom">
+          <a href={`/artwork/collection/still-dreaming`} className="ap-img-wrap-shop bottom">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_5.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+                // srcSet="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘STILL DREAMING’ 90 X 120 CM
                 <br />F 4.000
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop bottom">
+          <a href={`/artwork/collection/eew-people`} className="ap-img-wrap-shop bottom">
             <div
               // data-w-id="a73df8eb-83c9-2dec-9465-c9e49a05816c"
-              class="ap-img-1-shop"
+              className="ap-img-1-shop"
             >
-              {/* <div img-castanho="1" class="img-background"></div> */}
+              {/* <div img-castanho="1" className="img-background"></div> */}
               <img
-                class="ap-img-a-shop"
+                className="ap-img-a-shop"
                 src="/images/Background_6.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                // srcset="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
+                // srcSet="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
               />
             </div>
-            <div class="shop-title">
-              <h2 anim="2" split="" class="josefin-400-13">
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
                 ‘EEW, PEOPLE’ 145 X 255 CM
                 <br />F 9.000
               </h2>
             </div>
-          </div>
+          </a>
 
-          <div class="ap-img-wrap-shop bottom">
-            <div class="artwork-cta">
-              <a href="/artwork/collection" class="cta-link artwork[x] max-w-full h-full inline-block">
+          <div className="ap-img-wrap-shop bottom">
+            <div className="artwork-cta">
+              <a
+                href="/artwork/collection"
+                className="cta-link artwork[x] max-w-full h-full inline-block"
+              >
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                  class="cta"
+                  className="cta"
                 >
-                  <div class="josefin-400-13">See All Available Artwork</div>
+                  <div className="josefin-400-13">
+                    See All Available Artwork
+                  </div>
 
-                  <div class="cta-ball">
-                    <div class="seta-cta-wrap">
-                      <div class="seta-cta-anda-1">
+                  <div className="cta-ball">
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta-redirect"
+                          className="seta-cta-redirect"
                         />
                       </div>
 
-                      <div class="seta-cta-anda-2">
+                      <div className="seta-cta-anda-2">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta-redirect"
+                          className="seta-cta-redirect"
                         />
                       </div>
                     </div>
@@ -336,7 +344,7 @@ const ShopSection = () => {
 
                   <div
                     data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                    class="cta-hover-sticky"
+                    className="cta-hover-sticky"
                   ></div>
                 </div>
               </a>

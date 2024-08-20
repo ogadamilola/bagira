@@ -3,40 +3,40 @@ import GalleryCircleSection from "./GalleryCircleSection";
 
 const GallerySection = () => {
   return (
-    <div class="gallery-full-section">
-      <div id="gallery" class="gallery-section panel">
-        <div class="gallery-component">
-          <div class="gallery-top">
-            {/* <div class="gallery-title">
-            <h2 class="josefin-400-13">the gallery</h2>
+    <div className="gallery-full-section">
+      <div id="gallery" className="gallery-section panel">
+        <div className="gallery-component">
+          <div className="gallery-top">
+            {/* <div className="gallery-title">
+            <h2 className="josefin-400-13">the gallery</h2>
           </div> */}
 
-            <div class="gallery-sub-title">
-              <div anim="1" split="words" class="jost-300-122 ">
+            <div className="gallery-sub-title">
+              <div anim="1" split="words" className="jost-300-122 ">
                 {/* THE GALLERY */}
                 <img
-                  class="ap-img-a-candc"
+                  className="ap-img-a-candc"
                   src="/images/the-gallery.webp"
                   alt="BAGIRA"
                   // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                   data-flip-id="1"
                   img-anim="1"
                   loading="lazy"
-                  // srcset="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
+                  // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
                 />
               </div>
             </div>
           </div>
 
-          <div class="gallery-bottom">
-            <div class="gallery-sub-title-2">
-              <div anim="1" split="words" class="jost-300-122 ">
+          <div className="gallery-bottom">
+            <div className="gallery-sub-title-2">
+              <div anim="1" split="words" className="jost-300-122 ">
                 IN KURA HULANDA
               </div>
             </div>
 
-            {/* <div class="gallery-text">
-            <p class="josefin-400-13">
+            {/* <div className="gallery-text">
+            <p className="josefin-400-13">
               BAGIRA&apos;s collection are paintings she created based on her
               inspiration. These pieces are for sale and available at the
               Gallery in Kura Hulanda Village and can be shipped worldwide.
@@ -46,7 +46,7 @@ const GallerySection = () => {
 
             <p>YES you can.</p>
 
-            <p class="josefin-400-13">
+            <p className="josefin-400-13">
               BAGIRA IS NOW KNOWN AS AN ESTABLISHED ARTIST OF CURAÇAO, MOSTLY
               BECAUSE OF HER MURALS AND CAPTIVATING PORTRAITS. HER WORK CAN BE
               SEEN AROUND THE ISLAND, IN RESTAURANTS, HOTELS, BEACHES, IN THE
@@ -57,7 +57,7 @@ const GallerySection = () => {
 
             <p></p>
 
-            <p class="josefin-400-12">
+            <p className="josefin-400-12">
               {" "}
               With 8 years of artistic expertise, BAGIRA creates a digital
               version of the design so you can first see what to expect in terms
@@ -67,14 +67,14 @@ const GallerySection = () => {
           </div> */}
           </div>
 
-          <div class="gallery-background">
+          <div className="gallery-background">
             <div
               // data-poster-url="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-poster-00001.jpg"
               // data-video-urls="https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.mp4,https://assets-global.website-files.com/63d3a5c57af34837d7bbb1a0/6407644d418722e08e114c7e_ilha-madeira-transcode.webm"
               data-autoplay="true"
               data-loop="true"
               data-wf-ignore="true"
-              class="gallery-background-video w-background-video w-background-video-atom"
+              className="gallery-background-video w-background-video w-background-video-atom"
             >
               <video
                 id="6988ffef-990c-7d4a-a94f-500697e81823-video"

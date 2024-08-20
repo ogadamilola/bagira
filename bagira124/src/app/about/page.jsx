@@ -18,7 +18,7 @@ export default function Home() {
                 src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
                 loading="lazy"
                 alt="Logo BAGIRA"
-                class="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
+                className="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
               />
             </a>
             <div className="page-element page-padding">

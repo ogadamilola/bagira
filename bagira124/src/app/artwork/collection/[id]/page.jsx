@@ -1,10 +1,36 @@
 "use client";
+import { products } from "@/data/products";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Body from "@/components/Pages/Shop Page/Body";
 import PagesFooterSection from "@/components/PagesFooterSection";
 import SmoothScrolling from "@/components/SmoothScrolling";
 
-export default function Home() {
+export default function Home({ params }) {
+  const id = params.id;
+  const [product, setProduct] = useState(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const productData = products[id];
+    if (!productData) {
+      router.push("/artwork/collection");
+    } else {
+      setProduct(productData);
+    }
+  }, [id, router]);
+
+  if (!product) {
+    // Return null or a loading state while waiting for the product data
+    return null;
+  }
+
+  // // If product data is not found, you can render a 404 page or a message
+  // if (!product) {
+  //   return router.push("/artwork/collection");
+  // }
+
   return (
     <SmoothScrolling>
       <div className="page-wrapper">
@@ -18,11 +44,11 @@ export default function Home() {
                 src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
                 loading="lazy"
                 alt="Logo BAGIRA"
-                class="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
+                className="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
               />
             </a>
             <div className="page-element page-padding">
-              <Body />
+              <Body product={product} />
             </div>
 
             <PagesFooterSection />

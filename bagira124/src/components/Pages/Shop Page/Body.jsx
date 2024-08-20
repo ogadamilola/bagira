@@ -3,151 +3,89 @@ const suggestedShop = {
   gridColumns: 4,
   items: [
     {
-      image: {
-        src: "/images/Background",
-        alt: "BAGIRA",
-      },
-      title: "'tur shimaruku ta hechu' 185 X 140 cm",
-      price: "F 9.200",
-      images: [
-        {
-          src: "/images/Background",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 22",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 23",
-          alt: "BAGIRA",
-        },
-      ],
+      id: "tur-shimaruku-ta-hechu",
     },
     {
-      image: {
-        src: "/images/Background_1",
-        alt: "BAGIRA",
-      },
-      title: "'Muhammad ali' 124 X 148 CM",
-      price: "F 8.500",
-      images: [
-        {
-          src: "/images/Background",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 22",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 23",
-          alt: "BAGIRA",
-        },
-      ],
+      id: "muhammad-ali",
     },
     {
-      image: {
-        src: "/images/Background_2",
-        alt: "BAGIRA",
-      },
-      title: "'SISTERS' 110 X 140 CM",
-      price: "F 5.500",
-      images: [
-        {
-          src: "/images/Background",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 22",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 23",
-          alt: "BAGIRA",
-        },
-      ],
+      id: "sisters-2",
     },
     {
-      image: {
-        src: "/images/Background_3",
-        alt: "BAGIRA",
-      },
-      title: "'SISTERS' 110 X 140 CM",
-      price: "F 4.500",
-      images: [
-        {
-          src: "/images/Background",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 22",
-          alt: "BAGIRA",
-        },
-        {
-          src: "/images/image 23",
-          alt: "BAGIRA",
-        },
-      ],
+      id: "sisters",
     },
   ],
 };
 
+import { useSearchParams } from "next/navigation";
+import { products } from "@/data/products";
+import Link from "next/link";
 // Component using the data object
 import React from "react";
 
-const Body = () => {
+const Body = ({ product }) => {
   const suggestedShopElements = suggestedShop.items.map((item, index) => (
-    <div
+    <Link
       key={index}
+      href={`/artwork/collection/${encodeURIComponent(item.id)}`}
       className="justify-center items-center flex relative flex-col w-full h-full"
     >
       <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
         <img
           className="cursor-pointer object-cover w-full h-full relative"
-          src={`${item.image.src}.webp`}
-          alt={item.image.alt}
+          src={`${products[item.id].image.src}.webp`}
+          alt={products[item.id].image.alt}
           data-flip-id="1"
           img-anim="1"
           loading="lazy"
-          srcSet={`${item.image.src}-p-500.webp 500w, ${item.image.src}-p-800.webp 800w, ${item.image.src}-p-1080.webp 1080w, ${item.image.src}-p-1600.webp 1600w, ${item.image.src}-p-2000.webp 2000w, ${item.image.src}.webp 2500w`}
+          srcSet={`${products[item.id].image.src}-p-500.webp 500w, ${
+            products[item.id].image.src
+          }-p-800.webp 800w, ${
+            products[item.id].image.src
+          }-p-1080.webp 1080w, ${
+            products[item.id].image.src
+          }-p-1600.webp 1600w, ${
+            products[item.id].image.src
+          }-p-2000.webp 2000w, ${products[item.id].image.src}.webp 2500w`}
         />
       </div>
       <div className="shop-title">
         <h2 anim="2" split="" className="josefin-400-13">
-          {item.title}
+          '{products[item.id].title}' {products[item.id].size}
           <br />
-          {item.price}
+          {products[item.id].price}
         </h2>
       </div>
-    </div>
+    </Link>
   ));
 
   return (
     <div id="shop" className="page-section">
       <div className="relative flex-col justify-center items-start flex w-full">
-        <div class="text-start mb-[1.875rem]">
-          <a href="/artwork">
-            <h2 class="josefin-400-20">
+        <div className="text-start mb-[1.875rem]">
+          <a href="/artwork/collection">
+            <h2 className="josefin-400-20">
               {"<- Back to view all available artwork"}
             </h2>
           </a>
         </div>
         <div className="justify-center items-start flex relative flex-col xl:flex-row w-full h-full gap-x-[3.125rem]">
-          <div className="justify-center items-start flex relative flex-col h-full gap-y-[2rem]">
-            <div className="justify-center items-center flex relative flex-col w-[39.125rem] h-[39.125rem]">
+          <div className="justify-center items-start flex relative flex-col max-w-full h-full gap-y-[2rem]">
+            <div className="justify-center items-center flex relative flex-col max-w-full w-[39.125rem] h-[39.125rem]">
               <img
                 className="cursor-pointer object-cover w-full h-full relative"
-                src={`${suggestedShop.items[0].image.src}.webp`}
-                alt={suggestedShop.items[0].image.alt}
+                src={`${product.image.src}.webp`}
+                alt={product.image.alt}
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                srcSet={`${suggestedShop.items[0].image.src}-p-500.webp 500w, ${suggestedShop.items[0].image.src}-p-800.webp 800w, ${suggestedShop.items[0].image.src}-p-1080.webp 1080w, ${suggestedShop.items[0].image.src}-p-1600.webp 1600w, ${suggestedShop.items[0].image.src}-p-2000.webp 2000w, ${suggestedShop.items[0].image.src}.webp 2500w`}
+                srcSet={`${product.image.src}-p-500.webp 500w, ${product.image.src}-p-800.webp 800w, ${product.image.src}-p-1080.webp 1080w, ${product.image.src}-p-1600.webp 1600w, ${product.image.src}-p-2000.webp 2000w, ${product.image.src}.webp 2500w`}
               />
             </div>
-            <div className={`mb-[1.875rem] grid grid-flow-col gap-[1rem]`}>
-              {suggestedShop.items[0].images.map((item, index) => (
+            <div
+              className={`mb-[1.875rem] grid grid-flow-col gap-[1rem] max-w-full overflow-scroll`}
+            >
+              {product.images.map((item, index) => (
                 <div
                   key={index}
                   className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]"
@@ -166,52 +104,54 @@ const Body = () => {
             </div>
           </div>
           <div className="justify-center items-start flex relative flex-col w-full h-full  mb-[1.875rem]">
-            <div class="text-start relative mb-[1.875rem]">
-              <div class="jost-300-122 text-ellipsis">{suggestedShop.items[0].title}</div>
+            <div className="text-start relative mb-[1.875rem] md:mb-[10.875rem]">
+              <div className="jost-300-122 text-ellipsis">{product.title}</div>
             </div>
-            <div className="justify-between items-start flex relative flex-col xl:flex-row mb-[1.875rem] w-full gap-y-[1.875rem]">
+            <div className="justify-between items-start flex relative flex-col mb-[1.875rem] w-full gap-y-[1.875rem]">
               <div className="justify-start items-center flex relative flex-row gap-x-[0.875rem]">
-                <div class="text-center">
-                  <h2 class="josefin-400-26">{suggestedShop.items[0].price}</h2>
+                <div className="text-center">
+                  <h2 className="josefin-400-26">{product.price}</h2>
                 </div>
-                <div class="justify-center items-center flex background-color-main rounded-full px-[1.25rem] py-[0.75rem]">
-                  <div class="justify-center items-center flex relative">
-                    <h2 class="josefin text-[0.8125rem] font-normal mt-[0.3rem] text-white">
-                      SOLD
-                    </h2>
+                {product.availability === "sold" && (
+                  <div className="justify-center items-center flex background-color-main rounded-full px-[1.25rem] py-[0.75rem]">
+                    <div className="justify-center items-center flex relative">
+                      <h2 className="josefin text-[0.8125rem] font-normal mt-[0.3rem] text-white">
+                        SOLD
+                      </h2>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               <a
                 href="https://api.whatsapp.com/send?phone=+59996863862"
                 target="_blank"
-                class="download-brochure-link max-w-full h-full inline-block"
+                className=" max-w-full h-full inline-block"
               >
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                  class="cta"
+                  className="cta"
                 >
-                  <div class="josefin-400-13">
+                  <div className="josefin-400-13">
                     Message me on Whatsapp +5999 68 63 62
                   </div>
 
-                  <div class="cta-ball">
-                    <div class="seta-cta-wrap">
-                      <div class="seta-cta-anda-1">
+                  <div className="cta-ball">
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
 
-                      <div class="seta-cta-anda-2">
+                      <div className="seta-cta-anda-2">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
                     </div>
@@ -219,38 +159,33 @@ const Body = () => {
 
                   <div
                     data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                    class="cta-hover-sticky"
+                    className="cta-hover-sticky"
                   ></div>
                 </div>
               </a>
             </div>
 
             <div className="justify-center items-center flex relative flex-row">
-              <div class="text-start">
-                <h2 class="jost-300-16  mb-[0.75rem]">2023</h2>
-                <h2 class="jost-300-16  mb-[0.75rem]">
-                  145 x 255cm (57 x 100.4")
-                </h2>
-                <h2 class="jost-300-16  mb-[0.75rem]">
-                  Acrylic on canvas, with black frame
-                </h2>
-                <h2 class="jost-300-16  mb-[0.75rem]">
-                  Abstract piece inspired by jazz
+              <div className="text-start">
+                <h2 className="jost-300-16  mb-[0.75rem]">{product.year}</h2>
+                <h2 className="jost-300-16  mb-[0.75rem]">{product.size}</h2>
+                <h2 className="jost-300-16  mb-[0.75rem]">
+                  {product.description}
                 </h2>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="text-start mb-[1.875rem]">
-          <a href="/artwork">
-            <h2 class="josefin-400-20">
+        <div className="text-start mb-[1.875rem]">
+          <a href="/artwork/collection">
+            <h2 className="josefin-400-20">
               {"<- Back to view all available artwork"}
             </h2>
           </a>
         </div>
-        <div class="horizontal-line-wrap mb-[1.875rem]">
-          <div class="horizontal-line grey"></div>
+        <div className="horizontal-line-wrap mb-[1.875rem]">
+          <div className="horizontal-line grey"></div>
         </div>
         <div
           className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full`}

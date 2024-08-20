@@ -2,21 +2,21 @@ import React from "react";
 
 const LocationSection = () => {
   return (
-    <div id="location" class="location-section panel">
-      <div class="location-trigger"></div>
+    <div id="location" className="location-section panel">
+      <div className="location-trigger"></div>
 
-      <div class="location-sticky">
-        <div class="location-width"></div>
+      <div className="location-sticky">
+        <div className="location-width"></div>
 
-        <div class="location-marquee">
+        <div className="location-marquee">
           <div
             data-w-id="a69e3c76-4a04-0ceb-2f87-e329ebd28016"
-            class="location-anda"
+            className="location-anda"
           >
-            <div class="location-track">
-              <div class="location-marquee-repete">
-                <div class="location-ball"></div>
-                <div class="location-marquee-text">
+            <div className="location-track">
+              <div className="location-marquee-repete">
+                <div className="location-ball"></div>
+                <div className="location-marquee-text">
                   <img
                     src="/images/6405cdaf4aff8b98974c7362_Logo-NVVV.png"
                     loading="lazy"
@@ -25,60 +25,60 @@ const LocationSection = () => {
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-ball"></div>
-                <div class="location-marquee-text">
-                  <div class="jost-300-50 ">bagira</div>
+              <div className="location-marquee-repete">
+                <div className="location-ball"></div>
+                <div className="location-marquee-text">
+                  <div className="jost-300-50 ">bagira</div>
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-ball"></div>
-                <div class="location-marquee-text">
-                  <div class="jost-300-50 ">art</div>
+              <div className="location-marquee-repete">
+                <div className="location-ball"></div>
+                <div className="location-marquee-text">
+                  <div className="jost-300-50 ">art</div>
                 </div>
               </div>
 
-              <div class="location-marquee-repete">
-                <div class="location-ball"></div>
-                <div class="location-marquee-text">
-                  <div class="jost-300-50 ">commissions</div>
+              <div className="location-marquee-repete">
+                <div className="location-ball"></div>
+                <div className="location-marquee-text">
+                  <div className="jost-300-50 ">commissions</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="location-update">
-          <div class="vertical-line-wrap mb-none">
-            <div class="vertical-line"></div>
+        <div className="location-update">
+          <div className="vertical-line-wrap mb-none">
+            <div className="vertical-line"></div>
           </div>
 
-          <div class="horizontal-line-wrap mb-block">
-            <div class="horizontal-line grey"></div>
+          <div className="horizontal-line-wrap mb-block">
+            <div className="horizontal-line grey"></div>
           </div>
 
-          <div class="location-update-line"></div>
+          <div className="location-update-line"></div>
         </div>
 
-        <div class="location-info">
-          <div class="location-info-component">
-            <div class="location-info-wrap relative">
-              <div class="location-sub-title">
-                <div class="josefin-400-13">location</div>
+        <div className="location-info">
+          <div className="location-info-component">
+            <div className="location-info-wrap relative">
+              <div className="location-sub-title">
+                <div className="josefin-400-13">location</div>
               </div>
 
-              <div class="location-info-anim">
-                <div class="location-info-wrap n1">
-                  <div class="location-title">
-                    <h3 anim="1" split="words" class="jost-300-50 ">
+              <div className="location-info-anim">
+                <div className="location-info-wrap n1">
+                  <div className="location-title">
+                    <h3 anim="1" split="words" className="jost-300-50 ">
                       Kura Hulanda Village,
-                      <span class="main-color">curaçao</span>
+                      <span className="main-color">curaçao</span>
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
-                    <p class="josefin-400-13">
+                  <div className="location-paragraph">
+                    <p className="josefin-400-13">
                       commercial murals Transforming spaces, elevating brands We
                       specialize in crafting bespoke mural experiences that
                       transcend conventional aesthetics. Elevate your business
@@ -86,19 +86,19 @@ const LocationSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div className="location-background"></div>
                 </div>
 
-                <div class="location-info-wrap n2">
-                  <div class="location-title">
-                    <h3 class="jost-300-50 ">
-                      <span class="main-color">whiteglove delivery</span> to
-                      Your <span class="main-color">doorstep</span>
+                <div className="location-info-wrap n2">
+                  <div className="location-title">
+                    <h3 className="jost-300-50 ">
+                      <span className="main-color">whiteglove delivery</span> to
+                      Your <span className="main-color">doorstep</span>
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
-                    <p class="josefin-400-13">
+                  <div className="location-paragraph">
+                    <p className="josefin-400-13">
                       Oftentimes clients request a special painting that would
                       fit in their interior and about. You can directly
                       collaborate with the artist to bring your about to
@@ -107,18 +107,18 @@ const LocationSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div className="location-background"></div>
                 </div>
 
-                <div class="location-info-wrap n3">
-                  <div class="location-title">
-                    <h3 class="jost-300-50 ">
-                      Comissions <span class="main-color">& murals</span>
+                <div className="location-info-wrap n3">
+                  <div className="location-title">
+                    <h3 className="jost-300-50 ">
+                      Comissions <span className="main-color">& murals</span>
                     </h3>
                   </div>
 
-                  <div class="location-paragraph">
-                    <p class="josefin-400-13">
+                  <div className="location-paragraph">
+                    <p className="josefin-400-13">
                       We believe in collaboration as the key to creating
                       exceptional murals. Our design process involves continuous
                       communication with you, incorporating your feedback to
@@ -127,42 +127,42 @@ const LocationSection = () => {
                     </p>
                   </div>
 
-                  <div class="location-background"></div>
+                  <div className="location-background"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="location-cta mb-none">
-            <div class="location-cta-wrap">
+          <div className="location-cta mb-none">
+            <div className="location-cta-wrap">
               <a
                 href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
                 target="_blank"
-                class="cta-link max-w-full h-full inline-block"
+                className="cta-link max-w-full h-full inline-block"
               >
                 <div
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                  class="cta"
+                  className="cta"
                 >
-                  <div class="josefin-400-13">see Location</div>
+                  <div className="josefin-400-13">see Location</div>
 
-                  <div class="cta-ball">
-                    <div class="seta-cta-wrap">
-                      <div class="seta-cta-anda-1">
+                  <div className="cta-ball">
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
 
-                      <div class="seta-cta-anda-2">
+                      <div className="seta-cta-anda-2">
                         <img
                           src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                           loading="lazy"
                           alt=""
-                          class="seta-cta"
+                          className="seta-cta"
                         />
                       </div>
                     </div>
@@ -170,7 +170,7 @@ const LocationSection = () => {
 
                   <div
                     data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                    class="cta-hover-sticky"
+                    className="cta-hover-sticky"
                   ></div>
                 </div>
               </a>
@@ -178,15 +178,15 @@ const LocationSection = () => {
           </div>
         </div>
 
-        <div class="location-big-img-wrap">
-          <div class="img-background"></div>
+        <div className="location-big-img-wrap">
+          <div className="img-background"></div>
           <img
             src="/images/64070b5af80a800a9c6bf1d9_big-img.webp"
             loading="lazy"
             sizes="100vw"
-            srcset="/images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
+            srcSet="/images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
             alt="EDIFICIO BAGIRA"
-            class="location-big-img"
+            className="location-big-img"
           />
         </div>
       </div>

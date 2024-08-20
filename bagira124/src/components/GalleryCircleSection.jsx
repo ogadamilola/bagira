@@ -67,12 +67,12 @@ const GalleryCircleSection = () => {
     loadGSAP();
   }, []);
   return (
-    <div id="gallery" class="gallery-circle-section panel">
-      <div class="gallery-circle-component">
+    <div id="gallery" className="gallery-circle-section panel">
+      <div className="gallery-circle-component">
 
 
         <div
-            class="gallery-circle"
+            className="gallery-circle"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -104,7 +104,7 @@ const GalleryCircleSection = () => {
 
             <a
               href="/the-gallery"
-              class="gallery-circle-a"
+              className="gallery-circle-a"
             >
               <Image
                 alt=""
@@ -112,14 +112,14 @@ const GalleryCircleSection = () => {
                 objectFit="cover"
                 height={100}
                 width={100}
-                class="gallery-circle-image"
+                className="gallery-circle-image"
               />
               <video
                 src="/media/BagiraGallery Opening Event.mov"
                 autoPlay
                 loop
                 muted
-                class="gallery-circle-video"
+                className="gallery-circle-video"
               />
             </a>
           </div>

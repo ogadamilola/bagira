@@ -3,23 +3,23 @@ import FooterSection from "@/components/FooterSection";
 
 const MuralsSection = () => {
   return (
-    <div id="murals" class="murals-section panel">
-      <div class="murals-scroll-absolute"></div>
+    <div id="murals" className="murals-section panel">
+      <div className="murals-scroll-absolute"></div>
 
-      <div class="murals-anda">
-        <div class="murals-scroll">
-          <div class="scroll-track">
-            <div class="scroll-track-margin">
-              <div class="murals-component">
-                <div class="murals-title">
-                  <h2 class="josefin-400-13">Commercial murals</h2>
+      <div className="murals-anda">
+        <div className="murals-scroll">
+          <div className="scroll-track">
+            <div className="scroll-track-margin">
+              <div className="murals-component">
+                <div className="murals-title">
+                  <h2 className="josefin-400-13">Commercial murals</h2>
                 </div>
 
-                <div class="murals-sub-title">
+                <div className="murals-sub-title">
                   <h3
                     anim="1"
                     split="words"
-                    class="jost-300-98  mb-line-h-1"
+                    className="jost-300-98  mb-line-h-1"
                   >
                     Discover Amazing Brand Identity- Transforming spaces,
                     elevating brands. We specialize in crafting bespoke mural
@@ -27,41 +27,41 @@ const MuralsSection = () => {
                   </h3>
                 </div>
 
-                <div class="horizontal-line-wrap">
-                  <div class="horizontal-line grey"></div>
+                <div className="horizontal-line-wrap">
+                  <div className="horizontal-line grey"></div>
                 </div>
 
-                <div class="murals-cta-component">
+                <div className="murals-cta-component">
                   <a
                     href="https://api.whatsapp.com/send?phone=+59996863862"
                     target="_blank"
-                    class="download-brochure-link max-w-full h-full inline-block"
+                    className=" max-w-full h-full inline-block"
                   >
                     <div
                       data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                      class="cta"
+                      className="cta"
                     >
-                      <div class="josefin-400-13">
+                      <div className="josefin-400-13">
                         Message me on Whatsapp +5999 68 63 62
                       </div>
 
-                      <div class="cta-ball">
-                        <div class="seta-cta-wrap">
-                          <div class="seta-cta-anda-1">
+                      <div className="cta-ball">
+                        <div className="seta-cta-wrap">
+                          <div className="seta-cta-anda-1">
                             <img
                               src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                               loading="lazy"
                               alt=""
-                              class="seta-cta"
+                              className="seta-cta"
                             />
                           </div>
 
-                          <div class="seta-cta-anda-2">
+                          <div className="seta-cta-anda-2">
                             <img
                               src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                               loading="lazy"
                               alt=""
-                              class="seta-cta"
+                              className="seta-cta"
                             />
                           </div>
                         </div>
@@ -69,37 +69,37 @@ const MuralsSection = () => {
 
                       <div
                         data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                        class="cta-hover-sticky"
+                        className="cta-hover-sticky"
                       ></div>
                     </div>
                   </a>
 
-                  <div class="murals-cta-space">
-                    <div class="cta-black">
-                      <a href="#" class="cta-link inquire max-w-full h-full inline-block">
+                  <div className="murals-cta-space">
+                    <div className="cta-black">
+                      <a href="#" className="cta-link inquire max-w-full h-full inline-block">
                         <div
                           data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                          class="cta"
+                          className="cta"
                         >
-                          <div class="josefin-400-13">SHOP THE GALLErY</div>
+                          <div className="josefin-400-13">SHOP THE GALLErY</div>
 
-                          <div class="cta-ball">
-                            <div class="seta-cta-wrap">
-                              <div class="seta-cta-anda-1">
+                          <div className="cta-ball">
+                            <div className="seta-cta-wrap">
+                              <div className="seta-cta-anda-1">
                                 <img
                                   src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
-                                  class="seta-cta"
+                                  className="seta-cta"
                                 />
                               </div>
 
-                              <div class="seta-cta-anda-2">
+                              <div className="seta-cta-anda-2">
                                 <img
                                   src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
-                                  class="seta-cta"
+                                  className="seta-cta"
                                 />
                               </div>
                             </div>
@@ -107,42 +107,42 @@ const MuralsSection = () => {
 
                           <div
                             data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                            class="cta-hover-sticky"
+                            className="cta-hover-sticky"
                           ></div>
                         </div>
                       </a>
                     </div>
                   </div>
 
-                  <div class="murals-cta-space">
+                  <div className="murals-cta-space">
                     <a
                       href="https://www.instagram.com/theonlybagirayouknow/"
                       target="_blank"
-                      class="download-brochure-link max-w-full h-full inline-block"
+                      className=" max-w-full h-full inline-block"
                     >
                       <div
                         data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                        class="cta"
+                        className="cta"
                       >
-                        <div class="josefin-400-13">follow me on instagram</div>
+                        <div className="josefin-400-13">follow me on instagram</div>
 
-                        <div class="cta-ball">
-                          <div class="seta-cta-wrap">
-                            <div class="seta-cta-anda-1">
+                        <div className="cta-ball">
+                          <div className="seta-cta-wrap">
+                            <div className="seta-cta-anda-1">
                               <img
                                 src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                 loading="lazy"
                                 alt=""
-                                class="seta-cta"
+                                className="seta-cta"
                               />
                             </div>
 
-                            <div class="seta-cta-anda-2">
+                            <div className="seta-cta-anda-2">
                               <img
                                 src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                 loading="lazy"
                                 alt=""
-                                class="seta-cta"
+                                className="seta-cta"
                               />
                             </div>
                           </div>
@@ -150,38 +150,38 @@ const MuralsSection = () => {
 
                         <div
                           data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                          class="cta-hover-sticky"
+                          className="cta-hover-sticky"
                         ></div>
                       </div>
                     </a>
                   </div>
 
-                  <div class="murals-cta-space">
-                    <div class="cta-black">
-                      <a href="#" class="cta-link inquire max-w-full h-full inline-block">
+                  <div className="murals-cta-space">
+                    <div className="cta-black">
+                      <a href="#" className="cta-link inquire max-w-full h-full inline-block">
                         <div
                           data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                          class="cta"
+                          className="cta"
                         >
-                          <div class="josefin-400-13">send me an email</div>
+                          <div className="josefin-400-13">send me an email</div>
 
-                          <div class="cta-ball">
-                            <div class="seta-cta-wrap">
-                              <div class="seta-cta-anda-1">
+                          <div className="cta-ball">
+                            <div className="seta-cta-wrap">
+                              <div className="seta-cta-anda-1">
                                 <img
                                   src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
-                                  class="seta-cta"
+                                  className="seta-cta"
                                 />
                               </div>
 
-                              <div class="seta-cta-anda-2">
+                              <div className="seta-cta-anda-2">
                                 <img
                                   src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
                                   loading="lazy"
                                   alt=""
-                                  class="seta-cta"
+                                  className="seta-cta"
                                 />
                               </div>
                             </div>
@@ -189,7 +189,7 @@ const MuralsSection = () => {
 
                           <div
                             data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                            class="cta-hover-sticky"
+                            className="cta-hover-sticky"
                           ></div>
                         </div>
                       </a>

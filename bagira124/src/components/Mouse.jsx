@@ -3,33 +3,33 @@ import React from "react";
 const Mouse = () => {
   return (
     <>
-      <div class="mouse-anda">
-        <div class="mouse-wrap">
-          <div class="mouse"></div>
+      <div className="mouse-anda">
+        <div className="mouse-wrap">
+          <div className="mouse"></div>
 
-          <div class="expand-text">
-            <div class="expand-text-none">
-              <div class="josefin-400-13">expand</div>
+          <div className="expand-text">
+            <div className="expand-text-none">
+              <div className="josefin-400-13">expand</div>
             </div>
           </div>
 
-          <div class="glass-block"></div>
+          <div className="glass-block"></div>
 
-          <div class="ap-img-full-close">
-            <div class="glass-block-close"></div>
+          <div className="ap-img-full-close">
+            <div className="glass-block-close"></div>
 
-            <div class="ap-img-full-close-wrap">
-              <div class="close-line _2"></div>
+            <div className="ap-img-full-close-wrap">
+              <div className="close-line _2"></div>
 
-              <div class="close-line"></div>
+              <div className="close-line"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="mouse-outro"></div>
+      <div className="mouse-outro"></div>
 
-      <div class="mouse-outro-2"></div>
+      <div className="mouse-outro-2"></div>
     </>
   );
 };
