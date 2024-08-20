@@ -3769,6 +3769,10 @@ figcaption {
   line-height: 1.2;
 }
 
+.josefin {
+  font-family: Josefin Sans, sans-serif;
+}
+
 .jost-300-26 {
   font-family: Jost, sans-serif;
   font-size: 1.625rem;
