@@ -17,7 +17,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-title">
-                <h2 anim="2" split="lines" class="josefin-400-13">
+                <h2 anim="2"  class="josefin-400-13">
                   BAGIRA&apos;s collection are paintings she created based on
                   her inspiration. These pieces are for sale and available at
                   the Gallery in Kura Hulanda Village and can be shipped
@@ -95,7 +95,7 @@ const CandCSection = () => {
               </div>
 
               <div class="candc-title">
-                <h2 anim="2" split="lines" class="josefin-400-13">
+                <h2 anim="2"  class="josefin-400-13">
                   Custom paintings, in other words, commission are pieces that
                   are created based on the client&apos;s request. These pieces
                   are customizable based on design, material, color-scheme and

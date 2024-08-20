@@ -3,9 +3,8 @@ import React from "react";
 const Body = () => {
   return (
     <div id="shop" class="page-section">
-      <section id="shop" class="page-section">
         <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
-          <div class="page-hero-title mb-[1.875em]">
+          <div class="page-hero-title mb-[1.875rem]">
             <h1 class="jost-700-122 ">About the Artist</h1>
           </div>
           <img
@@ -14,14 +13,14 @@ const Body = () => {
             sizes="60vh"
             srcset="/images/IMG_8061-p-500.webp 500w, images/IMG_8061-p-800.webp 800w, images/IMG_8061-p-1080.webp 1080w, images/IMG_8061-p-1600.webp 1600w, images/IMG_8061-p-2000.webp 2000w, images/IMG_8061.webp 2161w"
             alt="BAGIRA"
-            class="mb-[1.875em]"
+            class="mb-[1.875rem]"
           />
-          <div class="gallery-sub-title-2 mb-[1.875em]">
+          <div class="gallery-sub-title-2 mb-[1.875rem]">
             <div anim="1" split="words" class="jost-300-122 ">
               BAGIRA
             </div>
           </div>
-          <div class="text-center mb-[1.875em]">
+          <div class="text-center mb-[1.875rem]">
             <div anim="1" split="words" class="jost-300-40  normal-case">
               BAGIRA is a 28 year-old selftaught artist based in Curaçao. She
               quit job as a sales agent at an accountant firm 2 weeks after she
@@ -43,23 +42,23 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div class="horizontal-line-wrap">
+        <div class="horizontal-line-wrap mb-[1.875rem]">
           <div class="horizontal-line grey"></div>
         </div>
         <div class="relative overflow-hidden flex-col justify-center items-center flex w-full">
-          <div class="text-center mb-[1.875em]">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-26">Let’s Talk</h2>
           </div>
-          <div class="page-hero-title mb-[1.875em]">
+          <div class="page-hero-title mb-[1.875rem]">
             <h1 class="jost-700-122 ">I WANT MY OWN BAGIRA PIECE</h1>
           </div>
-          <div class="text-center mb-[1.875em]">
+          <div class="text-center mb-[1.875rem]">
             <h2 class="josefin-400-20">
               Schedule a free consultation with our team and let’s make things
               happen!
             </h2>
           </div>
-          <div class=" mb-[1.875em]">
+          <div class=" mb-[1.875rem]">
             <div class="">
               <a href="" class="cta-link max-w-full h-full inline-block">
                 <div
@@ -99,7 +98,6 @@ const Body = () => {
             </div>
           </div>
         </div>
-      </section>
     </div>
   );
 };

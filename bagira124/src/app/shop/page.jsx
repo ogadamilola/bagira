@@ -9,12 +9,6 @@ export default function Home() {
       <main className="main-wrapper">
         <section className="shop-page">
           <div className="page-element page-padding">
-            <img
-              src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
-              loading="lazy"
-              alt="Logo BAGIRA"
-              class="page-logo"
-            />
             <Body />
           </div>
 
