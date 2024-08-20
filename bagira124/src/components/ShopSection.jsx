@@ -16,7 +16,7 @@ const ShopSection = () => {
 
   useEffect(() => {
     if (artwork) {
-      console.log(artwork); // This will log the artwork data after it has been fetched and state is updated.
+      // console.log(artwork); // This will log the artwork data after it has been fetched and state is updated.
     }
   }, [artwork]);
 

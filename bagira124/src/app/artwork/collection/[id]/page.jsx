@@ -52,8 +52,8 @@ export default function Home({ params }) {
     if (product) {
       // console.log("Matched Product: ", product); // Log the matched product
       // console.log("Description: ", flattenRichText(product.description)); // Log the product description
-      console.log("Variant Images: ", product.images); // Log the product variant images
-      console.log("Availability: ", product.availability);
+      // console.log("Variant Images: ", product.images); // Log the product variant images
+      // console.log("Availability: ", product.availability);
     }
   }, [product]);
 
