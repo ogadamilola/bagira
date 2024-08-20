@@ -1,63 +1,87 @@
-// Data object for Available Collections
-const suggestedShop = {
-  gridColumns: 4,
-  items: [
-    {
-      id: "tur-shimaruku-ta-hechu",
-    },
-    {
-      id: "muhammad-ali",
-    },
-    {
-      id: "sisters-2",
-    },
-    {
-      id: "sisters",
-    },
-  ],
-};
-
 import { useSearchParams } from "next/navigation";
 import { products } from "@/data/products";
+import React, { useEffect, useState } from "react";
+import { getArtwork } from "../../../../sanity/sanity-utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 // Component using the data object
-import React from "react";
+const Body = ({
+  title,
+  price,
+  year,
+  size,
+  description,
+  availability,
+  image,
+  images,
+}) => {
+  const pathname = usePathname();
+  const id = pathname.split("/")[3];
+  const [artwork, setArtwork] = useState(null);
+  const [product, setProduct] = useState(null);
+  const [suggestedShop, setSuggestedShop] = useState(null);
 
-const Body = ({ product }) => {
-  const suggestedShopElements = suggestedShop.items.map((item, index) => (
-    <Link
-      key={index}
-      href={`/artwork/collection/${encodeURIComponent(item.id)}`}
-      className="justify-center items-center flex relative flex-col w-full h-full"
-    >
-      <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
-        <img
-          className="cursor-pointer object-cover w-full h-full relative"
-          src={`${products[item.id].image.src}.webp`}
-          alt={products[item.id].image.alt}
-          data-flip-id="1"
-          img-anim="1"
-          loading="lazy"
-          srcSet={`${products[item.id].image.src}-p-500.webp 500w, ${
-            products[item.id].image.src
-          }-p-800.webp 800w, ${
-            products[item.id].image.src
-          }-p-1080.webp 1080w, ${
-            products[item.id].image.src
-          }-p-1600.webp 1600w, ${
-            products[item.id].image.src
-          }-p-2000.webp 2000w, ${products[item.id].image.src}.webp 2500w`}
-        />
-      </div>
-      <div className="shop-title">
-        <h2 anim="2" split="" className="josefin-400-13">
-          &apos;{products[item.id].title}&apos; {products[item.id].size}
-          <br />
-          {products[item.id].price}
-        </h2>
-      </div>
-    </Link>
-  ));
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getArtwork();
+      setArtwork(response);
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (artwork) {
+      // console.log("Artwork data: ", artwork);
+      // console.log("URL id: ", id); // Log the id to ensure it's correct
+
+      const matchedProduct = artwork.find((item) => item.id === id); // Ensure exact match with id
+      if (matchedProduct) {
+        setProduct(matchedProduct);
+      } else {
+        console.error(`No product found with id: ${id}`);
+      }
+    }
+  }, [id, artwork]);
+
+  useEffect(() => {
+    if (product) {
+      // console.log(artwork[0].id);
+      // console.log("Matched Product: ", product); // Log the matched product
+      // console.log(product.images);
+    }
+  }, [product]);
+
+  useEffect(() => {
+    if (artwork) {
+      setSuggestedShop(
+        artwork.slice(0, 4).map((item, index) => (
+          <Link
+            key={index}
+            href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            className="justify-center items-center flex relative flex-col w-full h-full"
+          >
+            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
+              <img
+                className="cursor-pointer object-cover w-full h-full relative"
+                src={`${item.image}`}
+                alt={item.title}
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+              />
+            </div>
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
+                &apos;{item.title}&apos; {item.size}
+                <br />ƒ {item.price.toFixed(3)}
+              </h2>
+            </div>
+          </Link>
+        ))
+      );
+    }
+  }, [artwork]);
 
   return (
     <div id="shop" className="page-section">
@@ -74,45 +98,60 @@ const Body = ({ product }) => {
             <div className="justify-center items-center flex relative flex-col max-w-full w-[39.125rem] h-[39.125rem]">
               <img
                 className="cursor-pointer object-cover w-full h-full relative"
-                src={`${product.image.src}.webp`}
-                alt={product.image.alt}
+                src={`${image}`}
+                alt={title}
                 data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
-                srcSet={`${product.image.src}-p-500.webp 500w, ${product.image.src}-p-800.webp 800w, ${product.image.src}-p-1080.webp 1080w, ${product.image.src}-p-1600.webp 1600w, ${product.image.src}-p-2000.webp 2000w, ${product.image.src}.webp 2500w`}
               />
             </div>
             <div
               className={`mb-[1.875rem] grid grid-flow-col gap-[1rem] max-w-full overflow-scroll`}
             >
-              {product.images.map((item, index) => (
+              {images ? (
+                <>
+                  {images.map((item, index) => (
+                    <div
+                      key={index}
+                      className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]"
+                    >
+                      <img
+                        className="cursor-pointer object-cover w-full h-full relative"
+                        src={`${item}`}
+                        alt={title}
+                        data-flip-id="1"
+                        img-anim="1"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </>
+              ) : (
                 <div
-                  key={index}
                   className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]"
                 >
                   <img
                     className="cursor-pointer object-cover w-full h-full relative"
-                    src={`${item.src}.webp`}
-                    alt={item.alt}
+                    src={`${image}`}
+                    alt={title}
                     data-flip-id="1"
                     img-anim="1"
                     loading="lazy"
-                    srcSet={`${item.src}-p-500.webp 500w, ${item.src}-p-800.webp 800w, ${item.src}-p-1080.webp 1080w, ${item.src}-p-1600.webp 1600w, ${item.src}-p-2000.webp 2000w, ${item.src}.webp 2500w`}
                   />
                 </div>
-              ))}
+              )}
             </div>
           </div>
           <div className="justify-center items-start flex relative flex-col w-full h-full  mb-[1.875rem]">
             <div className="text-start relative mb-[1.875rem] md:mb-[10.875rem]">
-              <div className="jost-300-122 text-ellipsis">{product.title}</div>
+              <div className="jost-300-122 text-ellipsis">{title}</div>
             </div>
             <div className="justify-between items-start flex relative flex-col mb-[1.875rem] w-full gap-y-[1.875rem]">
               <div className="justify-start items-center flex relative flex-row gap-x-[0.875rem]">
                 <div className="text-center">
-                  <h2 className="josefin-400-26">{product.price}</h2>
+                  <h2 className="josefin-400-26">ƒ {price.toFixed(3)}</h2>
                 </div>
-                {product.availability === "sold" && (
+                {!availability && (
                   <div className="justify-center items-center flex background-color-main rounded-full px-[1.25rem] py-[0.75rem]">
                     <div className="justify-center items-center flex relative">
                       <h2 className="josefin text-[0.8125rem] font-normal mt-[0.3rem] text-white">
@@ -167,11 +206,9 @@ const Body = ({ product }) => {
 
             <div className="justify-center items-center flex relative flex-row">
               <div className="text-start">
-                <h2 className="jost-300-16  mb-[0.75rem]">{product.year}</h2>
-                <h2 className="jost-300-16  mb-[0.75rem]">{product.size}</h2>
-                <h2 className="jost-300-16  mb-[0.75rem]">
-                  {product.description}
-                </h2>
+                <h2 className="jost-300-16  mb-[0.75rem]">{year}</h2>
+                <h2 className="jost-300-16  mb-[0.75rem]">{size}</h2>
+                <h2 className="jost-300-16  mb-[0.75rem]">{description}</h2>
               </div>
             </div>
           </div>
@@ -190,7 +227,7 @@ const Body = ({ product }) => {
         <div
           className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full`}
         >
-          {suggestedShopElements}
+          {suggestedShop}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -552,13 +552,19 @@ export default function RootLayout({
           type="text/javascript"
           // strategy="beforeInteractive"
         ></Script>
+
+        <Script
+          src="/scripts/flow.7341b0d66.js"
+          type="text/javascript"
+          // strategy="beforeInteractive"
+        ></Script>
       </head>
 
       <body className={inter.className}>
         {/* <NextScript/> */}
-        <Navbar />
-        <Mouse />
-        <FlowScript />
+        {/* <Navbar />
+        <Mouse /> */}
+        {/* <FlowScript /> */}
         {/* <BTS /> */}
         {children}
         {/* <FooterSection /> */}

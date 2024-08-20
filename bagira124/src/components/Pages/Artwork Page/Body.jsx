@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // Object for Available Collections
 const availableCollections = {
@@ -111,32 +111,50 @@ const recentlySoldArtwork = {
 };
 
 import { products } from "@/data/products";
+import { getArtwork } from "../../../../sanity/sanity-utils";
 
 const Body = () => {
-  // Map for Available Collections
-  const collectionGrid = availableCollections.items.map((item, index) => (
-    <Link
-      key={index}
-      href={`/artwork/collection/${encodeURIComponent(item.id)}`}
-      className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
-    >
-      <img
-        className=" object-cover w-full h-full relative"
-        src={`${products[item.id].image.src}.webp`}
-        alt={products[item.id].image.alt}
-        data-flip-id="1"
-        img-anim="1"
-        loading="lazy"
-        srcSet={`${products[item.id].image.src}-p-500.webp 500w, ${
-          products[item.id].image.src
-        }-p-800.webp 800w, ${products[item.id].image.src}-p-1080.webp 1080w, ${
-          products[item.id].image.src
-        }-p-1600.webp 1600w, ${
-          products[item.id].image.src
-        }-p-2000.webp 2000w, ${products[item.id].image.src}.webp 2500w`}
-      />
-    </Link>
-  ));
+  const [artwork, setArtwork] = useState(null);
+  const [paintings, setPaintings] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getArtwork();
+      setArtwork(response);
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (artwork) {
+      console.log("Artwork data: ", artwork);
+    }
+  }, [artwork]);
+
+  useEffect(() => {
+    if (artwork) {
+      setPaintings(
+        artwork.map((item, index) => (
+          <Link
+            key={index}
+            href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
+          >
+            <img
+              className=" object-cover w-full h-full relative"
+              src={`${item.image}`}
+              alt={item.title}
+              data-flip-id="1"
+              img-anim="1"
+              loading="lazy"
+            />
+          </Link>
+        ))
+      );
+    }
+  }, [artwork]);
+
 
   // Map for Recently Sold Artwork
   const soldArtworkGrid = recentlySoldArtwork.items.map((item, index) => (
@@ -290,7 +308,7 @@ const Body = () => {
         <div
           className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-[1rem] w-full`}
         >
-          {collectionGrid}
+          {paintings}
         </div>
         <div className=" mb-[1.875rem]">
           <div className="">

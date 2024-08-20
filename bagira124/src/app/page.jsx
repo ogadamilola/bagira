@@ -11,6 +11,8 @@ import LocationSection from "@/components/LocationSection";
 import MuralsSection from "@/components/MuralsSection";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Mouse from "@/components/Mouse";
 
 export default function Home() {
   const router = useRouter();
@@ -42,6 +44,8 @@ export default function Home() {
 
   return (
     <div className="page-wrapper">
+      <Navbar />
+      <Mouse />
       <main className="main-wrapper">
         <section className="section-height">
           <div className="sticky-element">

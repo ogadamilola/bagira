@@ -1,39 +1,86 @@
 "use client";
 import { products } from "@/data/products";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Body from "@/components/Pages/Shop Page/Body";
 import PagesFooterSection from "@/components/PagesFooterSection";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import Navbar from "@/components/Navbar";
+import Mouse from "@/components/Mouse";
+import { getArtwork } from "../../../../../sanity/sanity-utils";
 
 export default function Home({ params }) {
-  const id = params.id;
-  const [product, setProduct] = useState(null);
+  // const id = params.id;
+  // const [product, setProduct] = useState(null);
   const router = useRouter();
 
-  useEffect(() => {
-    const productData = products[id];
-    if (!productData) {
-      router.push("/artwork/collection");
-    } else {
-      setProduct(productData);
-    }
-  }, [id, router]);
-
-  if (!product) {
-    // Return null or a loading state while waiting for the product data
-    return null;
-  }
-
-  // // If product data is not found, you can render a 404 page or a message
   // if (!product) {
-  //   return router.push("/artwork/collection");
+  //   // Return null or a loading state while waiting for the product data
+  //   return null;
   // }
+  const pathname = usePathname();
+  const id = pathname.split("/")[3];
+  const [artwork, setArtwork] = useState(null);
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getArtwork();
+      setArtwork(response);
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (artwork) {
+      // console.log("Artwork data: ", artwork);
+      // console.log("URL id: ", id); // Log the id to ensure it's correct
+
+      const matchedProduct = artwork.find((item) => item.id === id); // Ensure exact match with id
+      if (matchedProduct) {
+        setProduct(matchedProduct);
+      } else {
+        router.push("/artwork/collection");
+        console.error(`No product found with id: ${id}`);
+      }
+    }
+  }, [id, artwork]);
+
+  useEffect(() => {
+    if (product) {
+      // console.log("Matched Product: ", product); // Log the matched product
+      // console.log("Description: ", flattenRichText(product.description)); // Log the product description
+      console.log("Variant Images: ", product.images); // Log the product variant images
+    }
+  }, [product]);
+
+  const flattenRichText = (richTextData) => {
+    let flattenedText = "";
+
+    const traverse = (node) => {
+      if (Array.isArray(node)) {
+        node.forEach(traverse);
+      } else if (typeof node === "object") {
+        if (node && node.children) {
+          traverse(node.children);
+        }
+        if (node && node.text) {
+          flattenedText += node.text;
+        }
+      }
+    };
+
+    traverse(richTextData);
+    return flattenedText.trim();
+  };
 
   return (
     <SmoothScrolling>
       <div className="page-wrapper">
+        <Navbar />
+        <Mouse />
         <main className="main-wrapper">
           <section className="collection-page">
             <a
@@ -48,7 +95,18 @@ export default function Home({ params }) {
               />
             </a>
             <div className="page-element page-padding">
-              <Body product={product} />
+              {product && (
+                <Body
+                  title={product.title}
+                  price={product.price}
+                  year={product.year}
+                  size={product.size}
+                  description={flattenRichText(product.description)}
+                  availability={product.availability}
+                  image={product.image}
+                  images={product.images}
+                />
+              )}
             </div>
 
             <PagesFooterSection />

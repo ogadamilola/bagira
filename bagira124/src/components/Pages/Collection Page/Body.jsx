@@ -2,64 +2,61 @@
 const availableCollections = {
   title: "Available for purchase",
   subtitle: "Paintings",
-  gridColumns: 4,
-  items: [
-    {
-      id: "tur-shimaruku-ta-hechu",
-    },
-    {
-      id: "muhammad-ali",
-    },
-    {
-      id: "sisters-2",
-    },
-    {
-      id: "sisters",
-    },
-    {
-      id: "rooted-in-curacao",
-    },
-    {
-      id: "still-dreaming",
-    },
-    {
-      id: "eew-people",
-    },
-  ],
 };
 
 import Link from "next/link";
-import { products } from "@/data/products";
-// Component using the data object
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getArtwork } from "../../../../sanity/sanity-utils";
 
 const Body = () => {
-  const artworkElements = availableCollections.items.map((item, index) => (
-    <Link
-      key={index}
-      href={`/artwork/collection/${encodeURIComponent(item.id)}`}
-      className="justify-center items-center flex relative flex-col w-full h-full"
-    >
-      <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
-        <img
-          className="cursor-pointer object-cover w-full h-full relative"
-          src={`${products[item.id].image.src}.webp`}
-          alt={products[item.id].image.alt}
-          data-flip-id="1"
-          img-anim="1"
-          loading="lazy"
-          srcSet={`${products[item.id].image.src}-p-500.webp 500w, ${products[item.id].image.src}-p-800.webp 800w, ${products[item.id].image.src}-p-1080.webp 1080w, ${products[item.id].image.src}-p-1600.webp 1600w, ${products[item.id].image.src}-p-2000.webp 2000w, ${products[item.id].image.src}.webp 2500w`}
-        />
-      </div>
-      <div className="shop-title">
-        <h2 anim="2" split="" className="josefin-400-13">
-          &apos;{products[item.id].title}&apos; {products[item.id].size}
-          <br />
-          {products[item.id].price}
-        </h2>
-      </div>
-    </Link>
-  ));
+  const [artwork, setArtwork] = useState(null);
+  const [paintings, setPaintings] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getArtwork();
+      setArtwork(response);
+    };
+
+    fetchData();
+  }, []);
+
+  // useEffect(() => {
+  //   if (artwork) {
+  //     console.log("Artwork data: ", artwork);
+  //   }
+  // }, [artwork]);
+
+  useEffect(() => {
+    if (artwork) {
+      setPaintings(
+        artwork.map((item, index) => (
+          <Link
+            key={index}
+            href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            className="justify-center items-center flex relative flex-col w-full h-full"
+          >
+            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
+              <img
+                className="cursor-pointer object-cover w-full h-full relative"
+                src={`${item.image}`}
+                alt={item.title}
+                data-flip-id="1"
+                img-anim="1"
+                loading="lazy"
+              />
+            </div>
+            <div className="shop-title">
+              <h2 anim="2" split="" className="josefin-400-13">
+                &apos;{item.title}&apos; {item.size}
+                <br />ƒ {item.price.toFixed(3)}
+              </h2>
+            </div>
+          </Link>
+        ))
+      );
+    }
+  }, [artwork]);
 
   return (
     <div id="shop" className="page-section">
@@ -73,13 +70,11 @@ const Body = () => {
         <div
           className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full`}
         >
-          {artworkElements}
+          {paintings}
         </div>
         <div className="text-start mb-[1.875rem]">
           <a href="/artwork">
-            <h2 className="josefin-400-20">
-              {"<- Back to artwork"}
-            </h2>
+            <h2 className="josefin-400-20">{"<- Back to artwork"}</h2>
           </a>
         </div>
       </div>

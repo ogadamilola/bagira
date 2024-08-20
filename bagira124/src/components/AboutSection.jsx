@@ -43,7 +43,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="about-title">
+      <div className="about-title ap-info-bottom">
         <div anim="1" split="words" className="jost-300-40 ">
           <span id="bagira-img" className="about-hover-text">
             BAGIRA
@@ -65,7 +65,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="artwork-cta">
+      <div className="artwork-cta ap-info-bottom">
         <a href="/about" className="cta-link artwork[x] max-w-full h-full inline-block">
           <div data-w-id="e458047e-b02a-b003-344d-013e414fafd4" className="cta">
             <div className="josefin-400-13">Learn More</div>

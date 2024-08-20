@@ -3,11 +3,15 @@ import Image from "next/image";
 import Body from "@/components/Pages/About Page/Body";
 import PagesFooterSection from "@/components/PagesFooterSection";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import Navbar from "@/components/Navbar";
+import Mouse from "@/components/Mouse";
 
 export default function Home() {
   return (
     <SmoothScrolling>
       <div className="page-wrapper">
+      <Navbar />
+      <Mouse />
         <main className="main-wrapper">
           <section className="about-page">
             <a
