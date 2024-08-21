@@ -1372,7 +1372,9 @@ textarea.w-select {
   width: 1rem;
   height: 1rem;
   margin: 0 3px 0.5rem;
-  transition: background-color 0.1s, color 0.1s;
+  transition:
+    background-color 0.1s,
+    color 0.1s;
   display: inline-block;
   position: relative;
 }
@@ -1555,7 +1557,13 @@ textarea.w-select {
   -webkit-tap-highlight-color: transparent;
   background: rgba(0, 0, 0, 0.9);
   outline: 0;
-  font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Ubuntu,
+    Segoe UI,
+    Verdana,
+    sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -3690,7 +3698,9 @@ figcaption {
 }
 
 .josefin-400-26 {
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
   font-size: 1.625rem;
   font-weight: 400;
   line-height: 1.03846;
@@ -3698,7 +3708,9 @@ figcaption {
 
 .josefin-400-13 {
   z-index: 5;
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.23077;
@@ -3707,7 +3719,9 @@ figcaption {
 }
 
 .josefin-600-122 {
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
   font-size: 7.625rem;
   font-weight: 600;
   line-height: 0.868852;
@@ -3763,14 +3777,18 @@ figcaption {
 }
 
 .josefin-400-20 {
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .josefin {
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
 }
 
 .jost-300-26 {
@@ -3783,7 +3801,9 @@ figcaption {
 .josefin-400-10 {
   justify-content: flex-start;
   align-items: flex-end;
-  font-family: Josefin Sans, sans-serif;
+  font-family:
+    Josefin Sans,
+    sans-serif;
   font-size: 0.625rem;
   font-weight: 400;
   line-height: 1.27;
@@ -3821,6 +3841,7 @@ figcaption {
 }
 
 .page-element {
+  background-color: var(--floral-white-background);
   z-index: 5;
   flex-direction: column;
   justify-content: flex-start;
@@ -3829,7 +3850,7 @@ figcaption {
   height: 100%;
   display: flex;
   /* position: -webkit-sticky; */
-  /* position: sticky; */
+  position: relative;
   top: 0%;
   bottom: auto;
   left: 0%;
@@ -3837,7 +3858,7 @@ figcaption {
   overflow: hidden;
 }
 
-.track {
+.trackY {
   flex: none;
   height: 100%;
   position: relative;
@@ -5019,7 +5040,8 @@ figcaption {
   align-items: center;
   width: 9.6875rem;
   height: 1.875rem;
-  transition: background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+  transition:
+    background-color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
     color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
 }
@@ -5230,7 +5252,9 @@ figcaption {
   font-size: 6.125rem;
   font-weight: 300;
   line-height: 0.9;
-  transition: color 0.5s, background-color 0.2s;
+  transition:
+    color 0.5s,
+    background-color 0.2s;
   overflow: visible;
 }
 
@@ -5329,7 +5353,9 @@ figcaption {
 .c-error-message {
   opacity: 0;
   margin-top: -16px;
-  transition: opacity 0.2s, margin-top 0.2s;
+  transition:
+    opacity 0.2s,
+    margin-top 0.2s;
   display: none;
   position: relative;
   top: auto;
@@ -5595,7 +5621,11 @@ figcaption {
   border-radius: 100vh;
   width: 0.5625rem;
   height: 0.5625rem;
-  transition: opacity 0.1s, height 0.5s, width 0.5s, background-color 0.2s;
+  transition:
+    opacity 0.1s,
+    height 0.5s,
+    width 0.5s,
+    background-color 0.2s;
 }
 
 .mouse.hover {
@@ -5643,7 +5673,10 @@ figcaption {
   border-radius: 100vh;
   justify-content: flex-start;
   align-items: center;
-  transition: padding 0.5s, height 0.5s, transform 0.5s;
+  transition:
+    padding 0.5s,
+    height 0.5s,
+    transform 0.5s;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -5669,7 +5702,9 @@ figcaption {
   color: var(--white);
   justify-content: flex-start;
   align-items: center;
-  transition: opacity 0.5s, transform 0.5s;
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
   display: flex;
   transform: translate(-70%);
 }
@@ -5872,7 +5907,9 @@ figcaption {
   align-items: center;
   width: 2.9375rem;
   height: 2.9375rem;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
   display: flex;
   position: absolute;
   top: 0%;
@@ -5956,6 +5993,10 @@ figcaption {
   display: block;
 }
 
+.close-fullscreen.visible {
+  display: block;
+}
+
 .ap-img-full-screen-3 {
   z-index: 1500;
   cursor: pointer;
@@ -6023,6 +6064,7 @@ figcaption {
 .ap-img-a-1,
 .ap-img-a-2,
 .ap-img-a-3,
+.click-to-fullscreen,
 .ap-img-a-candc,
 .ap-img-a-shop,
 .pages-img-a-1,
@@ -6634,7 +6676,7 @@ figcaption {
     overflow: visible;
   }
 
-  .track {
+  .trackY {
     height: auto;
   }
 
@@ -7433,7 +7475,8 @@ figcaption {
 
   .ap-img-full-screen-1,
   .ap-img-full-screen-3,
-  .ap-img-full-screen-4 {
+  .ap-img-full-screen-4,
+  .close-fullscreen {
     display: none;
   }
 
@@ -7454,6 +7497,7 @@ figcaption {
   .ap-img-a-1,
   .ap-img-a-2,
   .ap-img-a-3,
+  .click-to-fullscreen,
   .ap-img-a-candc,
   .ap-img-a-shop,
   .pages-img-a-1,

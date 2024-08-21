@@ -13,10 +13,10 @@ export default function Home() {
       <Navbar />
       <Mouse />
         <main className="main-wrapper">
-          <section className="artwork-page">
+          <section className="artwork-page section-width">
             <a
               href="/"
-              className="z-[9999] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0"
+              className="z-[9999] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0 logo-section"
             >
               <img
                 src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
@@ -25,7 +25,7 @@ export default function Home() {
                 className="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
               />
             </a>
-            <div className="page-element page-padding">
+            <div className="page-element page-padding trackX">
               <Body />
             </div>
 

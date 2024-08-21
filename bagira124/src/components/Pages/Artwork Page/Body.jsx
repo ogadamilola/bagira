@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { ArtworkContext } from "@/contexts/ArtworkContext";
 
 // Object for Available Collections
 const availableCollections = {
@@ -110,27 +111,15 @@ const recentlySoldArtwork = {
   ],
 };
 
-import { products } from "@/data/products";
-import { getArtwork } from "../../../../sanity/sanity-utils";
-
 const Body = () => {
-  const [artwork, setArtwork] = useState(null);
+  const { artwork, loading, error } = useContext(ArtworkContext);
   const [paintings, setPaintings] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await getArtwork();
-      setArtwork(response);
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    if (artwork) {
-      console.log("Artwork data: ", artwork);
-    }
-  }, [artwork]);
+  // useEffect(() => {
+  //   if (artwork) {
+  //     console.log("Artwork data: ", artwork);
+  //   }
+  // }, [artwork]);
 
   useEffect(() => {
     if (artwork) {
@@ -139,13 +128,17 @@ const Body = () => {
           <Link
             key={index}
             href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default Next.js behavior
+              window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
+            }}
             className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
           >
             <img
               className=" object-cover w-full h-full relative"
               src={`${item.image}`}
               alt={item.title}
-              data-flip-id="1"
+              // data-flip-id="1"
               img-anim="1"
               loading="lazy"
             />
@@ -155,22 +148,32 @@ const Body = () => {
     }
   }, [artwork]);
 
-
   // Map for Recently Sold Artwork
   const soldArtworkGrid = recentlySoldArtwork.items.map((item, index) => (
     <div
       key={index}
       className="justify-center items-center flex relative flex-col w-[25.625rem] h-[32.5rem]"
     >
-      <img
-        className="object-cover w-full h-full relative"
+      <div className="">
+        <img
+          className="object-cover w-full h-full relative"
+          src={`${item.image.src}.webp`}
+          alt={item.image.alt}
+          data-flip-id={item.id}
+          img-anim="1"
+          loading="lazy"
+          srcSet={`${item.image.src}-p-500.webp 500w, ${item.image.src}-p-800.webp 800w, ${item.image.src}-p-1080.webp 1080w, ${item.image.src}-p-1600.webp 1600w, ${item.image.src}-p-2000.webp 2000w, ${item.image.src}.webp 2500w`}
+        />
+      </div>
+      {/* <img
+        className="cursor-pointer object-cover justify-center items-center w-screen h-full hidden fixed top-0 bottom-0 left-0 right-0 z-[1500] close-fullscreen"
         src={`${item.image.src}.webp`}
         alt={item.image.alt}
-        data-flip-id="1"
-        img-anim="1"
+        sizes="100vw"
+        data-flip-id={item.id}
         loading="lazy"
         srcSet={`${item.image.src}-p-500.webp 500w, ${item.image.src}-p-800.webp 800w, ${item.image.src}-p-1080.webp 1080w, ${item.image.src}-p-1600.webp 1600w, ${item.image.src}-p-2000.webp 2000w, ${item.image.src}.webp 2500w`}
-      />
+      /> */}
     </div>
   ));
 
@@ -238,7 +241,7 @@ const Body = () => {
               <div className="flex-row flex h-[50%]">
                 <div
                   data-w-id="f4d26d49-92af-d486-a74b-7d193be0f3cf"
-                  className="w-full relative"
+                  className="w-full relative "
                 >
                   <div img-castanho="1" className="img-background"></div>
                   <img
@@ -257,7 +260,7 @@ const Body = () => {
               <div className="flex-row flex h-[50%]">
                 <div
                   data-w-id="8723ecf7-b2b8-e2e7-b748-04bad19eb8c8"
-                  className="w-full relative"
+                  className="w-full relative "
                 >
                   <div img-castanho="1" className="img-background"></div>
                   <img
@@ -278,7 +281,7 @@ const Body = () => {
           <div className="justify-start items-center flex relative">
             <div
               data-w-id="7f46befa-00a7-d96f-bd9d-84f4ae6e2e2c"
-              className="items-center h-full flex relative"
+              className="items-center h-full flex relative "
             >
               <div img-castanho="1" className="img-background"></div>
               <img

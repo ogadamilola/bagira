@@ -6,34 +6,25 @@ const availableCollections = {
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { getArtwork } from "../../../../sanity/sanity-utils";
+import { Skeleton } from "@/components/ui/skeleton";
 
-const Body = () => {
-  const [artwork, setArtwork] = useState(null);
-  const [paintings, setPaintings] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await getArtwork();
-      setArtwork(response);
-    };
-
-    fetchData();
-  }, []);
-
-  // useEffect(() => {
-  //   if (artwork) {
-  //     console.log("Artwork data: ", artwork);
-  //   }
-  // }, [artwork]);
+const Body = ({ artwork }) => {
+  const [paintings, setPaintings] = useState([]);
 
   useEffect(() => {
-    if (artwork) {
+    // Check if the artwork data is in localStorage
+    const storedArtwork = localStorage.getItem("artwork");
+    if (storedArtwork) {
+      const artworkData = JSON.parse(storedArtwork);
       setPaintings(
-        artwork.map((item, index) => (
+        artworkData.map((item, index) => (
           <Link
             key={index}
             href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default Next.js behavior
+              window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
+            }}
             className="justify-center items-center flex relative flex-col w-full h-full"
           >
             <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
@@ -55,17 +46,42 @@ const Body = () => {
           </Link>
         ))
       );
+    } else {
+      // Display skeleton elements by default
+      setPaintings(
+        Array.from({ length: 8 }, (_, index) => (
+          <div
+            key={index}
+            className="justify-center items-center flex relative flex-col w-full h-full"
+          >
+            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
+              <Skeleton className="w-full h-[23.125rem] rounded" />
+            </div>
+            <div className="shop-title">
+              <Skeleton className="w-full h-[20px] rounded" />
+            </div>
+          </div>
+        ))
+      );
     }
-  }, [artwork]);
+  }, []);
 
   return (
     <div id="shop" className="page-section">
       <div className="relative overflow-hidden flex-col justify-center items-start flex w-full">
         <div className="text-center w-full mb-[1.875rem]">
-          <h2 className="josefin-400-26">{availableCollections.title}</h2>
+          {availableCollections.title ? (
+            <h2 className="josefin-400-26">{availableCollections.title}</h2>
+          ) : (
+            <Skeleton className="w-full h-[26px] rounded" />
+          )}
         </div>
         <div className="text-center normal-case w-full mb-[1.875rem]">
-          <h1 className="jost-700-122">{availableCollections.subtitle}</h1>
+          {availableCollections.subtitle ? (
+            <h1 className="jost-700-122">{availableCollections.subtitle}</h1>
+          ) : (
+            <Skeleton className="w-full h-[122px] rounded" />
+          )}
         </div>
         <div
           className={`mb-[1.875rem] grid grid-cols-1 sm:grid-cols-4 gap-[1rem] w-full`}

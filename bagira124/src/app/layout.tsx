@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -8,6 +7,8 @@ import Mouse from "@/components/Mouse";
 import BTS from "@/components/BTS";
 import FlowScript from "@/scripts/FlowScript";
 import FooterSection from "@/components/FooterSection";
+
+import { ArtworkProvider } from "@/contexts/ArtworkContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -566,7 +567,10 @@ export default function RootLayout({
         <Mouse /> */}
         {/* <FlowScript /> */}
         {/* <BTS /> */}
+
+        <ArtworkProvider>
         {children}
+        </ArtworkProvider>
         {/* <FooterSection /> */}
       </body>
     </html>

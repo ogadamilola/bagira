@@ -49,7 +49,7 @@ export default function Home() {
       <main className="main-wrapper">
         <section className="section-height">
           <div className="sticky-element">
-            <div id="panels" className="track">
+            <div id="panels" className="trackY">
               <div id="panels-container" className="track-flex">
                 <HomeSection />
                 <AboutSection />

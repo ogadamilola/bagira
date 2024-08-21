@@ -1,3 +1,7 @@
+const isHomePage =
+  window.location.pathname === "/" ||
+  window.location.pathname === "/index.html";
+
 // Page Transition  ----------
 // Image Load Animation
 let loadTarget4 = $(".transition-img.n1");
@@ -105,10 +109,7 @@ function endLoaderAnimation() {
 }
 
 // Check if the current page is the homepage
-if (
-  window.location.pathname === "/" ||
-  window.location.pathname === "/index.html"
-) {
+if (isHomePage) {
   $("body").addClass("no-scroll-transition");
   let tlLoad = gsap.timeline({
     onComplete: endLoaderAnimation,
@@ -253,7 +254,7 @@ gsap.ticker.add(() => {
 
 // MOUSE
 $(
-  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, [href]"
 )
   .not(".nav-link, .small-links")
   .mouseenter(function () {
@@ -262,7 +263,7 @@ $(
     $(".mouse-outro-2").addClass("hover");
   });
 $(
-  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, [href]"
 )
   .not(".nav-link, .small-links")
   .mouseleave(function () {
@@ -280,16 +281,20 @@ $(".nav-link, .small-links, .accept").mouseleave(function () {
   $(".mouse-outro").removeClass("nav-hover");
   $(".mouse-outro-2").removeClass("nav-hover");
 });
-$(".ap-img-1, .ap-img-center, .ap-img-4").mouseenter(function () {
-  $(".mouse-outro").addClass("nav-hover");
-  $(".mouse-outro-2").addClass("nav-hover");
-});
-$(".ap-img-1, .ap-img-center, .ap-img-4").mouseleave(function () {
-  $(".mouse-outro").removeClass("nav-hover");
-  $(".mouse-outro-2").removeClass("nav-hover");
-});
+$(".ap-img-1, .ap-img-center, .ap-img-4, .click-to-fullscreen").mouseenter(
+  function () {
+    $(".mouse-outro").addClass("nav-hover");
+    $(".mouse-outro-2").addClass("nav-hover");
+  }
+);
+$(".ap-img-1, .ap-img-center, .ap-img-4, .click-to-fullscreen").mouseleave(
+  function () {
+    $(".mouse-outro").removeClass("nav-hover");
+    $(".mouse-outro-2").removeClass("nav-hover");
+  }
+);
 $(
-  ".ap-img-full-screen-1, .ap-img-full-screen-2, .ap-img-full-screen-3, .ap-img-full-screen-4"
+  ".ap-img-full-screen-1, .ap-img-full-screen-2, .ap-img-full-screen-3, .ap-img-full-screen-4, .close-fullscreen"
 ).mouseenter(function () {
   $(".ap-img-full-close").addClass("close");
   $(".mouse-wrap").addClass("close");
@@ -299,7 +304,7 @@ $(
   $(".mouse-outro-2").addClass("nav-hover");
 });
 $(
-  ".ap-img-full-screen-1, .ap-img-full-screen-2, .ap-img-full-screen-3, .ap-img-full-screen-4"
+  ".ap-img-full-screen-1, .ap-img-full-screen-2, .ap-img-full-screen-3, .ap-img-full-screen-4, .close-fullscreen"
 ).mouseleave(function () {
   $(".ap-img-full-close").removeClass("close");
   $(".mouse-wrap").removeClass("close");
@@ -308,22 +313,26 @@ $(
   $(".mouse-outro").removeClass("nav-hover");
   $(".mouse-outro-2").removeClass("nav-hover");
 });
-$(".ap-img-1, .ap-img-50, .ap-img-4").mouseenter(function () {
-  $(".mouse").addClass("expand");
-  $(".mouse-wrap").addClass("expand");
-  $(".expand-text").addClass("expand");
-  $(".expand-text-none").addClass("expand");
-  $(".glass-block").addClass("expand");
-});
-$(".ap-img-1, .ap-img-50, .ap-img-4").mouseleave(function () {
-  $(".mouse").removeClass("expand");
-  $(".mouse-wrap").removeClass("expand");
-  $(".expand-text").removeClass("expand");
-  $(".expand-text-none").removeClass("expand");
-  $(".glass-block").removeClass("expand");
-});
+$(".ap-img-1, .ap-img-50, .ap-img-4, .click-to-fullscreen").mouseenter(
+  function () {
+    $(".mouse").addClass("expand");
+    $(".mouse-wrap").addClass("expand");
+    $(".expand-text").addClass("expand");
+    $(".expand-text-none").addClass("expand");
+    $(".glass-block").addClass("expand");
+  }
+);
+$(".ap-img-1, .ap-img-50, .ap-img-4, .click-to-fullscreen").mouseleave(
+  function () {
+    $(".mouse").removeClass("expand");
+    $(".mouse-wrap").removeClass("expand");
+    $(".expand-text").removeClass("expand");
+    $(".expand-text-none").removeClass("expand");
+    $(".glass-block").removeClass("expand");
+  }
+);
 $(
-  ".about-section, .artwork-section, .candc-section, .shop-section, .location-section, .murals-section, .hero-scroll, .murals-component, .about-page, .artwork-page, .collection-page, .shop-page, .page-section"
+  ".about-section, .artwork-section, .candc-section, .shop-section, .location-section, .murals-section, .hero-scroll, .murals-component, .about-page, .artwork-page, .collection-page, .shop-page, .page-section, .page-element"
 ).mouseenter(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").addClass("black");
 });
@@ -331,7 +340,7 @@ $(".hero-scroll").mouseleave(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
 });
 $(
-  ".gallery-section, .gallery-circle-section, .hero-section, .inquire-open, .inquire-section"
+  ".gallery-section, .gallery-circle-section, .hero-section, .inquire-open, .inquire-section, .inquire-component, .hero-img-gradient, .hero-component"
 ).mouseenter(function () {
   $(".mouse, .mouse-outro, .mouse-outro-2").removeClass("black");
 });
@@ -351,7 +360,7 @@ horizontalM.add("(min-width: 991px)", () => {
   // Makes scroll timing feel more natural
   function setTrackHeights() {
     $(".section-height").each(function (index) {
-      let trackWidth = $(this).find(".track").outerWidth();
+      let trackWidth = $(this).find(".trackY").outerWidth();
       $(this).height(trackWidth);
     });
   }
@@ -360,20 +369,40 @@ horizontalM.add("(min-width: 991px)", () => {
     setTrackHeights();
   });
 
-  // Horizontal scroll
-  let tlMain = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: ".section-height",
-        start: "top top",
-        end: "98% bottom", //"+=15000" "98% bottom"
-        scrub: 3,
-      },
-    })
-    .to(".track", {
-      xPercent: -100,
-      ease: "none",
-    });
+  let tlMain;
+
+  if (isHomePage) {
+    // Horizontal scroll
+    tlMain = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".section-height",
+          start: "top top",
+          end: "98% bottom", //"+=15000" "98% bottom"
+          scrub: 3,
+        },
+      })
+      .to(".trackY", {
+        xPercent: -100,
+        ease: "none",
+      });
+  } else {
+    // Vertical scroll
+    // tlMain = gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".section-width",
+    //       start: "top top",
+    //       end: "bottom bottom",
+    //       scrub: 3,
+    //       horizontal: false,
+    //     },
+    //   })
+    //   .to(".trackX", {
+    //     y: "-100%",
+    //     ease: "none",
+    //   });
+  }
 
   // SCROLL TO sections
   function handleNavLinkClick(e) {
@@ -402,7 +431,7 @@ horizontalM.add("(min-width: 991px)", () => {
     });
 
   function scrollToSection(clickedLink) {
-    let scrollContainer = document.querySelector(".track");
+    let scrollContainer = document.querySelector(".trackY");
     const id = clickedLink.getAttribute("href").split("#")[1];
     const targetElement = document.getElementById(id);
 
@@ -442,7 +471,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -468,7 +497,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -494,7 +523,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -520,7 +549,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -546,7 +575,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -572,7 +601,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -598,7 +627,7 @@ horizontalM.add("(min-width: 991px)", () => {
   //   .forEach((element) => {
   //     element.addEventListener("click", function (e) {
   //       e.preventDefault();
-  //       let scrollContainer = document.querySelector(".track");
+  //       let scrollContainer = document.querySelector(".trackY");
   //       const id = this.getAttribute("href").split("#")[1];
 
   //       const targetElement = document.getElementById(id);
@@ -621,10 +650,7 @@ horizontalM.add("(min-width: 991px)", () => {
 
   // Animations ______
   // Check if the current page is the homepage
-  if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html"
-  ) {
+  if (isHomePage) {
     // Nav Color 1
     gsap
       .timeline({
@@ -634,7 +660,7 @@ horizontalM.add("(min-width: 991px)", () => {
           start: "left 50%",
           end: "right left",
           toggleActions: "play none none reverse",
-          //markers: true
+          // markers: true
         },
       })
       .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
@@ -651,7 +677,7 @@ horizontalM.add("(min-width: 991px)", () => {
           start: "left 50%",
           end: "right left",
           toggleActions: "play none none reverse",
-          //markers: true
+          // markers: true
         },
       })
       .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
@@ -669,7 +695,7 @@ horizontalM.add("(min-width: 991px)", () => {
           start: "left 50%",
           end: "right left",
           toggleActions: "play none none reverse",
-          //markers: true
+          // markers: true
         },
       })
       .to(".nav", { color: "white", duration: 0.3, ease: "none" })
@@ -687,7 +713,7 @@ horizontalM.add("(min-width: 991px)", () => {
           start: "left 50%",
           end: "right left",
           toggleActions: "play none none reverse",
-          //markers: true
+          // markers: true
         },
       })
       .to(".nav", { color: "#120902", duration: 0.3, ease: "none" })
@@ -707,10 +733,7 @@ horizontalM.add("(min-width: 991px)", () => {
 
   // NAV BALLS
   // Check if we're on the homepage
-  if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html"
-  ) {
+  if (isHomePage) {
     const navConfig = [
       { id: "#nav-home", trigger: ".hero-section" },
       { id: "#nav-about", trigger: ".about-section" },
@@ -783,16 +806,14 @@ horizontalM.add("(min-width: 991px)", () => {
   }
   // EXPAND IMAGE ----------
   // Z-INDEX
-  $(".ap-img-a-1, .ap-img-a-2, .ap-img-a-3, .ap-img-a-4").on(
-    "click",
-    function () {
-      $(".ap-img-a-1, .ap-img-a-2, .ap-img-a-3, .ap-img-a-4").css(
-        "z-index",
-        "2"
-      );
-      $(this).css("z-index", "20");
-    }
-  );
+  $(
+    ".ap-img-a-1, .ap-img-a-2, .ap-img-a-3, .ap-img-a-4, .image-is-fullscreen"
+  ).on("click", function () {
+    $(
+      ".ap-img-a-1, .ap-img-a-2, .ap-img-a-3, .ap-img-a-4, .image-is-fullscreen"
+    ).css("z-index", "2");
+    $(this).css("z-index", "20");
+  });
   // Animation FLIP
   const img1 = $(".ap-img-a-1");
   const img1back = $(".ap-img-full-screen-1");
@@ -945,6 +966,44 @@ horizontalM.add("(min-width: 991px)", () => {
     $("body").removeClass("no-scroll-transition");
     backFlip4();
   });
+  // EXPAND IMAGE
+  const imgToFullscreen = $(".image-is-fullscreen");
+  const imgBackFullscreen = $(".close-fullscreen");
+  function doFlip() {
+    // Get the initial state
+    const state = Flip.getState(imgToFullscreen);
+    // Animate from the initial state to the end state
+    $(".close-fullscreen").addClass("visible");
+    Flip.from(state, {
+      duration: 1,
+      targets: ".close-fullscreen",
+      absolute: true,
+      zIndex: 1100,
+      ease: "power2.inOut",
+    });
+  }
+  function backFlip() {
+    // Get the initial state
+    const state = Flip.getState(imgBackFullscreen, { props: "z, index" });
+    $(".close-fullscreen").removeClass("visible");
+    // Animate from the initial state to the end state
+    Flip.from(state, {
+      duration: 1,
+      targets: ".image-is-fullscreen",
+      absolute: true,
+      zIndex: 1100,
+      ease: "power2.inOut",
+    });
+  }
+  // click anywhere to flip
+  $(".image-is-fullscreen").on("click", function () {
+    $("body").addClass("no-scroll-transition");
+    doFlip();
+  });
+  $(".close-fullscreen").on("click", function () {
+    $("body").removeClass("no-scroll-transition");
+    backFlip();
+  });
   // END EXPAND IMAGE
   // THE GALLERY ------
   gsap
@@ -955,7 +1014,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "left left",
         end: "right right",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .to(".gallery-component", { xPercent: 100, ease: "none" });
@@ -968,7 +1027,7 @@ horizontalM.add("(min-width: 991px)", () => {
         end: "right right",
         scrub: true,
         //toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".gallery-background-video", {
@@ -985,7 +1044,7 @@ horizontalM.add("(min-width: 991px)", () => {
         end: "20% left",
         scrub: true,
         //toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".gallery-top", {
@@ -1009,7 +1068,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "left left",
         end: "right right",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-sticky", { x: "100vw", ease: "none" })
@@ -1024,7 +1083,7 @@ horizontalM.add("(min-width: 991px)", () => {
         end: "right right",
         //scrub: true,
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-info-wrap.n1", {
@@ -1047,7 +1106,7 @@ horizontalM.add("(min-width: 991px)", () => {
         end: "right right",
         //scrub: true,
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-info-wrap.n2", {
@@ -1082,7 +1141,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "left left",
         end: "right right",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .to(".murals-anda", { x: "100vw", ease: "none" });
@@ -1094,38 +1153,65 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "left left",
         end: "right right",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .to(".scroll-track", { y: "-" + trackHeight, ease: "none" });
   // END MURALS
   // TEXT ANIMATION -----------
-  $("[anim=1]").each(function (index) {
-    let triggerElement = $(this);
-    let targetElement = $(this).find(".chars");
-    let tlwords = gsap.timeline({
-      scrollTrigger: {
-        trigger: triggerElement,
-        containerAnimation: tlMain,
-        start: "0% right-=150",
-        end: "right right",
-        //markers: true,
-        toggleActions: "play none none reverse",
-      },
+  if (isHomePage) {
+    $("[anim=1]").each(function (index) {
+      let triggerElement = $(this);
+      let targetElement = $(this).find(".chars");
+      let tlwords = gsap.timeline({
+        scrollTrigger: {
+          trigger: triggerElement,
+          containerAnimation: tlMain,
+          start: "0% right-=150",
+          end: "right right",
+          // markers: true,
+          toggleActions: "play none none reverse",
+        },
+      });
+      tlwords.from(targetElement, {
+        opacity: 0,
+        duration: 1,
+        stagger: {
+          amount: 0.8,
+          ease: "none",
+          from: "random",
+        },
+      });
     });
-    tlwords.from(targetElement, {
-      opacity: 0,
-      duration: 1,
-      stagger: {
-        amount: 0.8,
-        ease: "none",
-        from: "random",
-      },
+  } else {
+    // Vertical text animation
+    $("[anim=1]").each(function (index) {
+      let triggerElement = $(this);
+      let targetElement = $(this).find(".chars");
+      let tlwords = gsap.timeline({
+        scrollTrigger: {
+          trigger: triggerElement,
+          containerAnimation: tlMain,
+          start: "0% bottom-=150",
+          end: "bottom bottom",
+          // markers: true,
+          toggleActions: "play none none reverse",
+        },
+      });
+      tlwords.from(targetElement, {
+        opacity: 0,
+        duration: 1,
+        stagger: {
+          amount: 0.8,
+          ease: "none",
+          from: "random",
+        },
+      });
     });
-  });
+  }
 
   // END Title
-  // IMAGEM APARECE
+  // IMAGE APPEARS
   $(".about-img-wrap").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(this);
@@ -1136,7 +1222,7 @@ horizontalM.add("(min-width: 991px)", () => {
         containerAnimation: tlMain,
         start: "0% right-=150",
         end: "right right",
-        //markers: true,
+        // markers: true,
         toggleActions: "play none none reverse",
       },
     });
@@ -1176,7 +1262,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "left left",
         end: "right left",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .fromTo(".hero-img-background", { x: "0%" }, { x: "30%" });
@@ -1189,7 +1275,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "50% left",
         end: "right left",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .fromTo(".gallery-background-video", { x: "0%" }, { x: "30%" });
@@ -1202,7 +1288,7 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "40% left",
         end: "right left",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .fromTo(".location-big-img", { x: "-20%" }, { x: "20%" });
@@ -1215,11 +1301,38 @@ horizontalM.add("(min-width: 991px)", () => {
         start: "25% left",
         end: "right 99%",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .from(".inquire-section", { y: "-60%" })
     .from(".inquire-background-img", { y: "30%" }, 0);
+  // END IMAGE PARALLAX -------
+  // FOOTER VERTICAL
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".page-section",
+        containerAnimation: tlMain,
+        start: "bottom 85%", // Start the animation a bit earlier
+        end: "bottom 15%", // End it a bit later for a smoother transition
+        scrub: 1, // Reduce the scrub value for smoother animation
+        // markers: true,
+      },
+    })
+    .from(".pages-inquire-section", {
+      y: "-60%",
+      ease: "power2.out", // Use a smoother easing function
+      duration: 1.5, // Increase the duration for a slower, smoother effect
+    })
+    .from(
+      ".inquire-background-img",
+      {
+        y: "30%",
+        ease: "power2.out", // Same easing function for consistency
+        duration: 1.5, // Same duration for synchronization
+      },
+      0
+    );
   // END IMAGE PARALLAX -------
 });
 // END HORIZONTAL SCROLL ----------
@@ -1342,7 +1455,7 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "top top",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".nav", { color: "#120902", duration: 0.3, ease: "none" });
@@ -1354,7 +1467,7 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "top top",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".nav", { color: "white", duration: 0.3, ease: "none" });
@@ -1366,7 +1479,7 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "top top",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".nav", { color: "#120902", duration: 0.3, ease: "none" });
@@ -1380,7 +1493,7 @@ horizontalM.add("(max-width: 991px)", () => {
         trigger: triggerElement,
         start: "top 90%",
         end: "bottom bottom",
-        //markers: true,
+        // markers: true,
         toggleActions: "play none none reverse",
       },
     });
@@ -1402,7 +1515,7 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "top top",
         end: "80% bottom",
         scrub: true,
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-update-line", { width: "100%", ease: "none" });
@@ -1414,7 +1527,7 @@ horizontalM.add("(max-width: 991px)", () => {
         start: "15% top",
         end: "bottom bottom",
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-info-wrap.n1", {
@@ -1436,7 +1549,7 @@ horizontalM.add("(max-width: 991px)", () => {
         end: "bottom bottom",
         //scrub: true,
         toggleActions: "play none none reverse",
-        //markers: true
+        // markers: true
       },
     })
     .to(".location-info-wrap.n2", {

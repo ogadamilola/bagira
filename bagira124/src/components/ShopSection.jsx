@@ -105,6 +105,10 @@ const ShopSection = () => {
               <Link
                 key={index}
                 href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default Next.js behavior
+                  window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
+                }}
                 className="ap-img-wrap-shop"
               >
                 <div className="ap-img-1-shop">
@@ -112,7 +116,7 @@ const ShopSection = () => {
                     className="ap-img-a-shop"
                     src={`${item.image}`}
                     alt={item.title}
-                    data-flip-id="1"
+                    // data-flip-id="1"
                     img-anim="1"
                     loading="lazy"
                   />
@@ -120,8 +124,7 @@ const ShopSection = () => {
                 <div className="shop-title">
                   <h2 anim="2" split="" className="josefin-400-13">
                     &apos;{item.title}&apos; {item.size}
-                    <br />
-                    ƒ {item.price.toFixed(3)}
+                    <br />ƒ {item.price.toFixed(3)}
                   </h2>
                 </div>
               </Link>
@@ -213,11 +216,15 @@ const ShopSection = () => {
         </div>
 
         <div className="shop-component xl:min-w-[124.884rem]">
-        {artwork &&
+          {artwork &&
             artwork.slice(4, 7).map((item, index) => (
               <Link
                 key={index}
                 href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default Next.js behavior
+                  window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
+                }}
                 className="ap-img-wrap-shop bottom"
               >
                 <div className="ap-img-1-shop">
@@ -225,7 +232,7 @@ const ShopSection = () => {
                     className="ap-img-a-shop"
                     src={`${item.image}`}
                     alt={item.title}
-                    data-flip-id="1"
+                    // data-flip-id="1"
                     img-anim="1"
                     loading="lazy"
                   />
@@ -233,8 +240,7 @@ const ShopSection = () => {
                 <div className="shop-title">
                   <h2 anim="2" split="" className="josefin-400-13">
                     &apos;{item.title}&apos; {item.size}
-                    <br />
-                    ƒ {item.price.toFixed(3)}
+                    <br />ƒ {item.price.toFixed(3)}
                   </h2>
                 </div>
               </Link>

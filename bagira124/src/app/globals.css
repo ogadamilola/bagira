@@ -2,76 +2,142 @@
 @tailwind components;
 @tailwind utilities;
 
-.gallery-circle {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30vw;  /* Increased from 15vw */
-    height: 30vw; /* Increased from 15vw */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
 
-.gallery-circle-svg {
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.gallery-circle {
   position: absolute;
-  width: 160%;
-  height: 160%;
-  animation: spin 20s linear infinite;
-  transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;  /* Increased from 15vw */
+  height: 30vw; /* Increased from 15vw */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.gallery-circle-svg {
+position: absolute;
+width: 160%;
+height: 160%;
+animation: spin 20s linear infinite;
+transition: all 500ms;
 }
 
 .gallery-circle:hover .gallery-circle-svg {
-  width: 140%;
-  height: 140%;
+width: 140%;
+height: 140%;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
 }
 
 .gallery-circle-a {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 9999px;
-  overflow: hidden;
-  transition: all 500ms;
+position: absolute;
+display: flex;
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
+background-color: white;
+border-radius: 9999px;
+overflow: hidden;
+transition: all 500ms;
 }
 
 .gallery-circle:hover .gallery-circle-a {
-  background-color: transparent;
+background-color: transparent;
 }
 
 .gallery-circle-image {
-  transition: all 500ms;
+transition: all 500ms;
 }
 
 .gallery-circle:hover .gallery-circle-image {
-  opacity: 0;
+opacity: 0;
 }
 
 .gallery-circle-video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: all 500ms;
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0;
+transition: all 500ms;
 }
 
 .gallery-circle:hover .gallery-circle-video {
-  opacity: 1;
+opacity: 1;
 }

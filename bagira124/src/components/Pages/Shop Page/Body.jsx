@@ -1,9 +1,8 @@
-import { useSearchParams } from "next/navigation";
-import { products } from "@/data/products";
-import React, { useEffect, useState } from "react";
-import { getArtwork } from "../../../../sanity/sanity-utils";
+import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { ArtworkContext } from "@/contexts/ArtworkContext";
+import { usePathname, useRouter } from "next/navigation";
+
 // Component using the data object
 const Body = ({
   title,
@@ -15,42 +14,8 @@ const Body = ({
   image,
   images,
 }) => {
-  const pathname = usePathname();
-  const id = pathname.split("/")[3];
-  const [artwork, setArtwork] = useState(null);
-  const [product, setProduct] = useState(null);
+  const { artwork, loading, error } = useContext(ArtworkContext);
   const [suggestedShop, setSuggestedShop] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await getArtwork();
-      setArtwork(response);
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    if (artwork) {
-      // console.log("Artwork data: ", artwork);
-      // console.log("URL id: ", id); // Log the id to ensure it's correct
-
-      const matchedProduct = artwork.find((item) => item.id === id); // Ensure exact match with id
-      if (matchedProduct) {
-        setProduct(matchedProduct);
-      } else {
-        console.error(`No product found with id: ${id}`);
-      }
-    }
-  }, [id, artwork]);
-
-  useEffect(() => {
-    if (product) {
-      // console.log(artwork[0].id);
-      // console.log("Matched Product: ", product); // Log the matched product
-      // console.log(product.images);
-    }
-  }, [product]);
 
   useEffect(() => {
     if (artwork) {
@@ -59,6 +24,10 @@ const Body = ({
           <Link
             key={index}
             href={`/artwork/collection/${encodeURIComponent(item.id)}`}
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default Next.js behavior
+              window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
+            }}
             className="justify-center items-center flex relative flex-col w-full h-full"
           >
             <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
@@ -127,9 +96,7 @@ const Body = ({
                   ))}
                 </>
               ) : (
-                <div
-                  className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]"
-                >
+                <div className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]">
                   <img
                     className="cursor-pointer object-cover w-full h-full relative"
                     src={`${image}`}

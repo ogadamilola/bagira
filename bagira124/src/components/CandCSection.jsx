@@ -17,7 +17,7 @@ const CandCSection = () => {
               </div>
 
               <div className="candc-title">
-                <h2 anim="2"  className="josefin-400-13">
+                <h2 anim="2" className="josefin-400-13">
                   BAGIRA&apos;s collection are paintings she created based on
                   her inspiration. These pieces are for sale and available at
                   the Gallery in Kura Hulanda Village and can be shipped
@@ -26,7 +26,10 @@ const CandCSection = () => {
               </div>
 
               <div className="candc-cta">
-                <a href="/artwork" className="cta-link artwork[x] max-w-full h-full inline-block">
+                <a
+                  href="/artwork"
+                  className="cta-link artwork[x] max-w-full h-full inline-block"
+                >
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     className="cta"
@@ -76,12 +79,15 @@ const CandCSection = () => {
                 src="/images/IMG_8093-784x1024.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                data-flip-id="1"
+                // data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
                 // srcSet="/images/IMG_8093-784x1024.webp 500w, images/IMG_8093-784x1024.webp 800w, images/IMG_8093-784x1024.webp 1080w, images/IMG_8093-784x1024.webp 1600w, images/IMG_8093-784x1024.webp 2000w, images/IMG_8093-784x1024.webp 2500w"
               />
             </div>
+          </div>
+          <div className="horizontal-line-wrap mb-block mt-[1.375rem]">
+            <div className="horizontal-line grey"></div>
           </div>
         </div>
 
@@ -95,7 +101,7 @@ const CandCSection = () => {
               </div>
 
               <div className="candc-title">
-                <h2 anim="2"  className="josefin-400-13">
+                <h2 anim="2" className="josefin-400-13">
                   Custom paintings, in other words, commission are pieces that
                   are created based on the client&apos;s request. These pieces
                   are customizable based on design, material, color-scheme and
@@ -104,7 +110,10 @@ const CandCSection = () => {
               </div>
 
               <div className="candc-cta">
-                <a href="/artwork" className="cta-link artwork[x] max-w-full h-full inline-block">
+                <a
+                  href="/artwork"
+                  className="cta-link artwork[x] max-w-full h-full inline-block"
+                >
                   <div
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     className="cta"
@@ -154,12 +163,15 @@ const CandCSection = () => {
                 src="/images/IMG_8080-892x1024.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
-                data-flip-id="1"
+                // data-flip-id="1"
                 img-anim="1"
                 loading="lazy"
                 // srcSet="/images/IMG_8080-892x1024.webp 500w, images/IMG_8080-892x1024.webp 800w, images/IMG_8080-892x1024.webp 1080w, images/IMG_8080-892x1024.webp 1600w, images/IMG_8080-892x1024.webp 2000w, images/IMG_8080-892x1024.webp 2500w"
               />
             </div>
+          </div>
+          <div className="horizontal-line-wrap mb-block mt-[1.375rem]">
+            <div className="horizontal-line grey"></div>
           </div>
         </div>
       </section>

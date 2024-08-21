@@ -1,6 +1,6 @@
 "use client";
 import { products } from "@/data/products";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Body from "@/components/Pages/Shop Page/Body";
@@ -9,35 +9,18 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import { getArtwork } from "../../../../../sanity/sanity-utils";
+import { ArtworkContext } from "@/contexts/ArtworkContext";
 
 export default function Home({ params }) {
-  // const id = params.id;
-  // const [product, setProduct] = useState(null);
   const router = useRouter();
 
-  // if (!product) {
-  //   // Return null or a loading state while waiting for the product data
-  //   return null;
-  // }
   const pathname = usePathname();
   const id = pathname.split("/")[3];
-  const [artwork, setArtwork] = useState(null);
+  const { artwork, loading, error } = useContext(ArtworkContext);
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await getArtwork();
-      setArtwork(response);
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
     if (artwork) {
-      // console.log("Artwork data: ", artwork);
-      // console.log("URL id: ", id); // Log the id to ensure it's correct
-
       const matchedProduct = artwork.find((item) => item.id === id); // Ensure exact match with id
       if (matchedProduct) {
         setProduct(matchedProduct);
@@ -47,15 +30,6 @@ export default function Home({ params }) {
       }
     }
   }, [id, artwork]);
-
-  useEffect(() => {
-    if (product) {
-      // console.log("Matched Product: ", product); // Log the matched product
-      // console.log("Description: ", flattenRichText(product.description)); // Log the product description
-      // console.log("Variant Images: ", product.images); // Log the product variant images
-      // console.log("Availability: ", product.availability);
-    }
-  }, [product]);
 
   const flattenRichText = (richTextData) => {
     let flattenedText = "";
@@ -79,14 +53,14 @@ export default function Home({ params }) {
 
   return (
     <SmoothScrolling>
-      <div className="page-wrapper">
+      <div id="shop" className="page-wrapper">
         <Navbar />
         <Mouse />
         <main className="main-wrapper">
-          <section className="collection-page">
+          <section className="collection-page section-width">
             <a
               href="/"
-              className="z-[9999] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0"
+              className="z-[9999] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0 logo-section"
             >
               <img
                 src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
@@ -95,7 +69,7 @@ export default function Home({ params }) {
                 className="absolute top-0 bottom-auto left-0 right-auto ml-[1rem] sm:ml-[2.5rem] w-auto h-[5.75rem] sm:w-[7.6875rem]"
               />
             </a>
-            <div className="page-element page-padding">
+            <div className="page-element page-padding trackX">
               {product && (
                 <Body
                   title={product.title}
