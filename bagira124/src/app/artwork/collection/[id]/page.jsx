@@ -60,7 +60,7 @@ export default function Home({ params }) {
           <section className="collection-page section-width">
             <a
               href="/"
-              className="z-[9999] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0 logo-section"
+              className="z-[1000] flex fixed top-0 bottom-auto mix-blend-difference w-full left-0 logo-section"
             >
               <img
                 src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
