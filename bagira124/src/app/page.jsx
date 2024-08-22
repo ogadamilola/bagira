@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import { ArtworkProvider } from "@/contexts/ArtworkContext";
+import Head from "next/head";
 
 export default function Home() {
   const router = useRouter();
@@ -44,138 +45,139 @@ export default function Home() {
   }, [router.isReady, router.query, router]);
 
   return (
-    <ArtworkProvider isHomePage={true}>
-      <div className="page-wrapper">
-        <Navbar />
-        <Mouse />
-        <main className="main-wrapper">
-          <section className="section-height">
-            <div className="sticky-element">
-              <div id="panels" className="trackY">
-                <div id="panels-container" className="track-flex">
-                  <HomeSection />
-                  <AboutSection />
-                  <ArtworkSection />
-                  {/* <CandCSection /> */}
-                  <ShopSection />
-                  <GallerySection />
-                  {/* <GalleryCircleSection /> */}
-                  <LocationSection />
-                  <MuralsSection />
+    <>
+      <ArtworkProvider isHomePage={true}>
+        <div className="page-wrapper">
+          <Navbar />
+          <Mouse />
+          <main className="main-wrapper">
+            <section className="section-height">
+              <div className="sticky-element">
+                <div id="panels" className="trackY">
+                  <div id="panels-container" className="track-flex">
+                    <HomeSection />
+                    <AboutSection />
+                    <ArtworkSection />
+                    {/* <CandCSection /> */}
+                    <ShopSection />
+                    <GallerySection />
+                    {/* <GalleryCircleSection /> */}
+                    <LocationSection />
+                    <MuralsSection />
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <img
-            className="ap-img-full-screen-1"
-            src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
-            alt="BAGIRA"
-            sizes="100vw"
-            data-flip-id="1"
-            loading="lazy"
-            srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
-          />
-          <img
-            className="ap-img-full-screen-2"
-            src="/images/640623a3a5bff942b070fac8_apartment-2.webp"
-            alt="BAGIRA"
-            sizes="100vw"
-            data-flip-id="2"
-            loading="lazy"
-            srcSet="/images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
-          />
-          <img
-            className="ap-img-full-screen-3"
-            src="/images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
-            alt="BAGIRA"
-            sizes="100vw"
-            data-flip-id="3"
-            loading="lazy"
-            srcSet="/images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
-          />
-          <img
-            className="ap-img-full-screen-4"
-            src="/images/640623a37b5c66566c701f67_apartment-4.webp"
-            alt="BAGIRA"
-            sizes="100vw"
-            data-flip-id="4"
-            loading="lazy"
-            srcSet="/images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
-          ></img>
-          <div className="inquire-open close">
-            <div className="inquire-wrap close">
-              <div className="inquire-open-close">
-                <a
-                  id="close-inquire"
-                  href="#"
-                  className="nav-link inquire-close max-w-full h-full inline-block"
-                >
-                  <div className="josefin-400-13">close</div>
+            </section>
+            <img
+              className="ap-img-full-screen-1"
+              src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
+              alt="BAGIRA"
+              sizes="100vw"
+              data-flip-id="1"
+              loading="lazy"
+              srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+            />
+            <img
+              className="ap-img-full-screen-2"
+              src="/images/640623a3a5bff942b070fac8_apartment-2.webp"
+              alt="BAGIRA"
+              sizes="100vw"
+              data-flip-id="2"
+              loading="lazy"
+              srcSet="/images/640623a3a5bff942b070fac8_apartment-2-p-500.webp 500w, images/640623a3a5bff942b070fac8_apartment-2-p-800.webp 800w, images/640623a3a5bff942b070fac8_apartment-2-p-1080.webp 1080w, images/640623a3a5bff942b070fac8_apartment-2-p-1600.webp 1600w, images/640623a3a5bff942b070fac8_apartment-2-p-2000.webp 2000w, images/640623a3a5bff942b070fac8_apartment-2.webp 2500w"
+            />
+            <img
+              className="ap-img-full-screen-3"
+              src="/images/640623a3c2a727a3d26ebd2d_apartment-3.webp"
+              alt="BAGIRA"
+              sizes="100vw"
+              data-flip-id="3"
+              loading="lazy"
+              srcSet="/images/640623a3c2a727a3d26ebd2d_apartment-3-p-500.webp 500w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-800.webp 800w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1080.webp 1080w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-1600.webp 1600w, images/640623a3c2a727a3d26ebd2d_apartment-3-p-2000.webp 2000w, images/640623a3c2a727a3d26ebd2d_apartment-3.webp 2500w"
+            />
+            <img
+              className="ap-img-full-screen-4"
+              src="/images/640623a37b5c66566c701f67_apartment-4.webp"
+              alt="BAGIRA"
+              sizes="100vw"
+              data-flip-id="4"
+              loading="lazy"
+              srcSet="/images/640623a37b5c66566c701f67_apartment-4-p-500.webp 500w, images/640623a37b5c66566c701f67_apartment-4-p-800.webp 800w, images/640623a37b5c66566c701f67_apartment-4-p-1080.webp 1080w, images/640623a37b5c66566c701f67_apartment-4-p-1600.webp 1600w, images/640623a37b5c66566c701f67_apartment-4-p-2000.webp 2000w, images/640623a37b5c66566c701f67_apartment-4.webp 2500w"
+            ></img>
+            <div className="inquire-open close">
+              <div className="inquire-wrap close">
+                <div className="inquire-open-close">
+                  <a
+                    id="close-inquire"
+                    href="#"
+                    className="nav-link inquire-close max-w-full h-full inline-block"
+                  >
+                    <div className="josefin-400-13">close</div>
 
-                  <div className="nav-ball white"></div>
-                </a>
-              </div>
+                    <div className="nav-ball white"></div>
+                  </a>
+                </div>
 
-              <div className="inquire-open-component">
-                <div className="inquire-open-left">
-                  <div className="inquire-open-title">
-                    <h2 className="jost-300-122">
-                      INQUIRE
-                      <br />
-                      NOW
-                    </h2>
-                  </div>
+                <div className="inquire-open-component">
+                  <div className="inquire-open-left">
+                    <div className="inquire-open-title">
+                      <h2 className="jost-300-122">
+                        INQUIRE
+                        <br />
+                        NOW
+                      </h2>
+                    </div>
 
-                  <div className="inquire-open-info">
-                    <div className="inquire-open-info-top">
+                    <div className="inquire-open-info">
+                      <div className="inquire-open-info-top">
+                        <div className="inquire-open-info-title">
+                          <div className="josefin-400-13">WHERE</div>
+                        </div>
+
+                        <div className="inquire-open-info-links">
+                          <a
+                            href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
+                            target="_blank"
+                            className="jost-300-26 hover-links "
+                          >
+                            19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
+                            <br />
+                            Willemstad, Curaçao
+                          </a>
+                        </div>
+                      </div>
+
                       <div className="inquire-open-info-title">
-                        <div className="josefin-400-13">WHERE</div>
+                        <div className="josefin-400-13">CONTACTS</div>
                       </div>
 
                       <div className="inquire-open-info-links">
-                        <a
-                          href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
-                          target="_blank"
-                          className="jost-300-26 hover-links "
-                        >
-                          19 IJzerstraat, BAGIRA ARTIST AND GALLERY,
-                          <br />
-                          Willemstad, Curaçao
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="inquire-open-info-title">
-                      <div className="josefin-400-13">CONTACTS</div>
-                    </div>
-
-                    <div className="inquire-open-info-links">
-                      <div className="collection-numero w-dyn-list">
-                        <div
-                          role="list"
-                          className="collection-numero w-dyn-items"
-                        >
+                        <div className="collection-numero w-dyn-list">
                           <div
-                            role="listitem"
-                            className="collection-numero w-dyn-item"
+                            role="list"
+                            className="collection-numero w-dyn-items"
                           >
-                            <a
-                              href="tel:+59996863862"
-                              className="jost-300-26 hover-links "
+                            <div
+                              role="listitem"
+                              className="collection-numero w-dyn-item"
                             >
-                              +5999 68 63862
-                            </a>
+                              <a
+                                href="tel:+59996863862"
+                                className="jost-300-26 hover-links "
+                              >
+                                +5999 68 63862
+                              </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div className="mobile-frase">
-                        <div className="josefin-400-10">
-                          Local call, fees may apply
+                        <div className="mobile-frase">
+                          <div className="josefin-400-10">
+                            Local call, fees may apply
+                          </div>
                         </div>
-                      </div>
 
-                      {/* <div className="collection-numero w-dyn-list">
+                        {/* <div className="collection-numero w-dyn-list">
                       <div
                         role="list"
                         className="collection-numero w-dyn-items"
@@ -199,12 +201,12 @@ export default function Home() {
                         Local call, fees may apply
                       </div>
                     </div> */}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="inquire-open-right">
-                  {/* <div className="c-form_block w-form">
+                  <div className="inquire-open-right">
+                    {/* <div className="c-form_block w-form">
                   <form
                     id="email-form"
                     name="email-form"
@@ -409,88 +411,88 @@ export default function Home() {
                     </div>
                   </div>
                 </div> */}
-                </div>
+                  </div>
 
-                <div className="form-please">
-                  <div className="form-please-wrap">
-                    <div className="josefin-400-10">
-                      PLEASE FILL IN THIS FIELD.
+                  <div className="form-please">
+                    <div className="form-please-wrap">
+                      <div className="josefin-400-10">
+                        PLEASE FILL IN THIS FIELD.
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* <section className="name-section">
+            {/* <section className="name-section">
           <div className="page-padding">
             <div className="name-component"></div>
           </div>
         </section> */}
 
-          <div className="transition">
-            <div className="transition-wrap">
-              <div className="transition-component">
-                <div className="transition-img-wrap">
-                  <img
-                    src="/images/FullSizeRender.webp"
-                    loading="lazy"
-                    sizes="100vw"
-                    srcSet="/images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
-                    alt="Edificio BAGIRA"
-                    className="transition-img n1"
-                  />
-                  <img
-                    src="/images/64061e47a47c5fe13ae8f44c_img-2.webp"
-                    loading="lazy"
-                    sizes="100vw"
-                    srcSet="/images/64061e47a47c5fe13ae8f44c_img-2-p-500.webp 500w, images/64061e47a47c5fe13ae8f44c_img-2-p-800.webp 800w, images/64061e47a47c5fe13ae8f44c_img-2-p-1080.webp 1080w, images/64061e47a47c5fe13ae8f44c_img-2-p-1600.webp 1600w, images/64061e47a47c5fe13ae8f44c_img-2.webp 1662w"
-                    alt="BAGIRA"
-                    className="transition-img n2"
-                  />
-                  <img
-                    src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
-                    loading="lazy"
-                    sizes="100vw"
-                    srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
-                    alt="BAGIRA"
-                    className="transition-img n3"
-                  />
-                </div>
-
-                <div className="transition-bottom">
-                  <div className="transition-loading">
-                    <div className="josefin-400-13">loading</div>
-
-                    <div className="transition-point-1">
-                      <div className="josefin-400-13">.</div>
-                    </div>
-
-                    <div className="transition-point-2">
-                      <div className="josefin-400-13">.</div>
-                    </div>
-
-                    <div className="transition-point-3">
-                      <div className="josefin-400-13">.</div>
-                    </div>
+            <div className="transition">
+              <div className="transition-wrap">
+                <div className="transition-component">
+                  <div className="transition-img-wrap">
+                    <img
+                      src="/images/FullSizeRender.webp"
+                      loading="lazy"
+                      sizes="100vw"
+                      srcSet="/images/FullSizeRender-p-500.webp 500w, images/FullSizeRender-p-800.webp 800w, images/FullSizeRender-p-1080.webp 1080w, images/FullSizeRender-p-1600.webp 1600w, images/FullSizeRender-p-2000.webp 2000w, images/FullSizeRender.webp 2161w"
+                      alt="Edificio BAGIRA"
+                      className="transition-img n1"
+                    />
+                    <img
+                      src="/images/64061e47a47c5fe13ae8f44c_img-2.webp"
+                      loading="lazy"
+                      sizes="100vw"
+                      srcSet="/images/64061e47a47c5fe13ae8f44c_img-2-p-500.webp 500w, images/64061e47a47c5fe13ae8f44c_img-2-p-800.webp 800w, images/64061e47a47c5fe13ae8f44c_img-2-p-1080.webp 1080w, images/64061e47a47c5fe13ae8f44c_img-2-p-1600.webp 1600w, images/64061e47a47c5fe13ae8f44c_img-2.webp 1662w"
+                      alt="BAGIRA"
+                      className="transition-img n2"
+                    />
+                    <img
+                      src="/images/640623a27b5c66fa68701f66_apartment-1.webp"
+                      loading="lazy"
+                      sizes="100vw"
+                      srcSet="/images/640623a27b5c66fa68701f66_apartment-1-p-500.webp 500w, images/640623a27b5c66fa68701f66_apartment-1-p-800.webp 800w, images/640623a27b5c66fa68701f66_apartment-1-p-1080.webp 1080w, images/640623a27b5c66fa68701f66_apartment-1-p-1600.webp 1600w, images/640623a27b5c66fa68701f66_apartment-1-p-2000.webp 2000w, images/640623a27b5c66fa68701f66_apartment-1.webp 2500w"
+                      alt="BAGIRA"
+                      className="transition-img n3"
+                    />
                   </div>
 
-                  <div className="transition-number">
-                    <div className="jost-300-32" progress="text">
-                      0
+                  <div className="transition-bottom">
+                    <div className="transition-loading">
+                      <div className="josefin-400-13">loading</div>
+
+                      <div className="transition-point-1">
+                        <div className="josefin-400-13">.</div>
+                      </div>
+
+                      <div className="transition-point-2">
+                        <div className="josefin-400-13">.</div>
+                      </div>
+
+                      <div className="transition-point-3">
+                        <div className="josefin-400-13">.</div>
+                      </div>
+                    </div>
+
+                    <div className="transition-number">
+                      <div className="jost-300-32" progress="text">
+                        0
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div
-              data-w-id="46e54662-91a6-7c69-9b8c-5f6213f41109"
-              className="transition-trigger"
-            ></div>
-          </div>
-        </main>
-        {/* <div className="design-system">
+              <div
+                data-w-id="46e54662-91a6-7c69-9b8c-5f6213f41109"
+                className="transition-trigger"
+              ></div>
+            </div>
+          </main>
+          {/* <div className="design-system">
         <a href="tel:+59996863862" className="hover-links">
           +351 291 �&nbsp;147 686
           <br />
@@ -506,7 +508,7 @@ export default function Home() {
           This is some text inside of a div block.
         </div>
       </div> */}
-        {/* <div className="combo-classes">
+          {/* <div className="combo-classes">
         <div className="form-field-label cc-error"></div>
 
         <div className="c-error-message cc-shown"></div>
@@ -575,7 +577,8 @@ export default function Home() {
 
         <div className="murals-button grey"></div>
       </div> */}
-      </div>
-    </ArtworkProvider>
+        </div>
+      </ArtworkProvider>
+    </>
   );
 }

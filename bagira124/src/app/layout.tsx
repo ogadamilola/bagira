@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { MetadataTitle, MetadataDescription } from "@/contexts/MetadataContext";
 import Navbar from "@/components/Navbar";
 import Mouse from "@/components/Mouse";
 import BTS from "@/components/BTS";
@@ -23,33 +24,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let metadataTitle = MetadataTitle;
+  let metadataDescription = MetadataDescription;
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>BAGIRA | Visual Artist of Curaçao</title>
+        <title>{`${metadataTitle}`}</title>
+        <meta property="og:title" content={`${metadataTitle}`} />
         <meta
           name="description"
-          content="BAGIRA is a 28-year old Algerian – Hungarian self-taught artist who moved to Curaçao, discovered her talent at 21 years old, she quit her job 2 weeks later to pursue art full-time. Recently opening her own art gallery in Kura Hulanda."
+          content={`${metadataDescription}`}
         />
-        <meta property="og:title" content="BAGIRA | Visual Artist of Curaçao" />
         <meta
           property="og:description"
-          content="BAGIRA is a 28-year old Algerian – Hungarian self-taught artist who moved to Curaçao, discovered her talent at 21 years old, she quit her job 2 weeks later to pursue art full-time. Recently opening her own art gallery in Kura Hulanda."
+          content={`${metadataDescription}`}
         />
-        <meta
-          property="og:image"
-          content="/images/FullSizeRender.webp"
-        />
-        <meta property="twitter:title" content="Bagira | Artist" />
+
+        <meta property="og:image" content="/images/FullSizeRender.webp" />
+        <meta property="twitter:title" content={`${metadataTitle}`} />
         <meta
           property="twitter:description"
-          content="BAGIRA is a 28-year old Algerian – Hungarian self-taught artist who moved to Curaçao, discovered her talent at 21 years old, she quit her job 2 weeks later to pursue art full-time. Recently opening her own art gallery in Kura Hulanda."
+          content={`${metadataDescription}`}
         />
-        <meta
-          property="twitter:image"
-          content="/images/FullSizeRender.webp"
-        />
+        <meta property="twitter:image" content="/images/FullSizeRender.webp" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

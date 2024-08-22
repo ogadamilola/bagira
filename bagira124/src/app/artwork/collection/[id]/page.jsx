@@ -49,6 +49,7 @@ export default function Home({ params }) {
   };
 
   return (
+    <>
       <SmoothScrolling>
         <div id="shop" className="page-wrapper">
           <Navbar />
@@ -164,5 +165,6 @@ export default function Home({ params }) {
           </main>
         </div>
       </SmoothScrolling>
+    </>
   );
 }
