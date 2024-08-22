@@ -99,7 +99,7 @@ const ShopSection = () => {
             </div>
           </div>
         </div> */}
-        <div className="shop-component xl:min-w-[124.884rem]">
+        <div className="shop-component xl:min-w-[108.65292825768667642752562225476vw]">
           {artwork &&
             artwork.slice(0, 4).map((item, index) => (
               <Link
@@ -109,7 +109,7 @@ const ShopSection = () => {
                   e.preventDefault(); // Prevent default Next.js behavior
                   window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
                 }}
-                className="ap-img-wrap-shop"
+                className="ap-img-wrap-shop transition-all duration-200 hover:brightness-[110%] image-selection"
               >
                 <div className="ap-img-1-shop">
                   <img
@@ -215,7 +215,7 @@ const ShopSection = () => {
           </a> */}
         </div>
 
-        <div className="shop-component xl:min-w-[124.884rem]">
+        <div className="shop-component xl:min-w-[108.65292825768667642752562225476vw]">
           {artwork &&
             artwork.slice(4, 7).map((item, index) => (
               <Link
@@ -225,7 +225,7 @@ const ShopSection = () => {
                   e.preventDefault(); // Prevent default Next.js behavior
                   window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
                 }}
-                className="ap-img-wrap-shop bottom"
+                className="ap-img-wrap-shop bottom transition-all duration-200 hover:brightness-[110%] image-selection"
               >
                 <div className="ap-img-1-shop">
                   <img
@@ -311,7 +311,7 @@ const ShopSection = () => {
             </div>
           </a> */}
 
-          <div className="ap-img-wrap-shop bottom">
+          <div className="ap-img-wrap-shop bottom xl:w-[20vw]">
             <div className="artwork-cta">
               <a
                 href="/artwork/collection"
