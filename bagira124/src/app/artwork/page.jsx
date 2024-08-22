@@ -89,10 +89,10 @@ export default function Home() {
                             className="collection-numero w-dyn-item"
                           >
                             <a
-                              href="tel:+351291147686"
+                              href="tel:+59996863862"
                               className="jost-300-26 hover-links "
                             >
-                              +351 291 147 686
+                              +5999 68 63862
                             </a>
                           </div>
                         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="collection-numero w-dyn-list">
+                      {/* <div className="collection-numero w-dyn-list">
                         <div
                           role="list"
                           className="collection-numero w-dyn-items"
@@ -127,7 +127,7 @@ export default function Home() {
                         <div className="josefin-400-10">
                           Local call, fees may apply
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

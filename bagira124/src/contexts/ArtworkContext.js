@@ -15,20 +15,26 @@ export const ArtworkProvider = ({ children }) => {
       try {
         // Check if the artwork data is in localStorage
         const storedArtwork = localStorage.getItem("artwork");
-        if (storedArtwork) {
+        const storedTimestamp = localStorage.getItem("artworkTimestamp");
+        
+        if (storedArtwork && storedTimestamp) {
           console.log("Got 'artwork' from localStorage");
           setArtwork(JSON.parse(storedArtwork));
           setLoading(false);
-          return;
         }
 
         // Fetch the artwork data from the CMS
         const response = await getArtwork();
-        setArtwork(response);
-        console.log("Fetch CMS: ", response);
-
-        // Store the artwork data in localStorage
-        localStorage.setItem("artwork", JSON.stringify(response));
+        
+        // Check if the CMS data is different from the stored data
+        if (JSON.stringify(response) !== storedArtwork) {
+          console.log("Updating artwork from CMS");
+          setArtwork(response);
+          localStorage.setItem("artwork", JSON.stringify(response));
+          localStorage.setItem("artworkTimestamp", Date.now().toString());
+        } else {
+          console.log("Artwork is up to date");
+        }
 
         setLoading(false);
       } catch (err) {
@@ -37,8 +43,14 @@ export const ArtworkProvider = ({ children }) => {
       }
     };
 
-    // Fetch the artwork data only once
+    // Fetch the artwork data
     fetchArtwork();
+
+    // Set up an interval to check for updates (e.g., every 5 minutes)
+    const intervalId = setInterval(fetchArtwork, 5 * 60 * 1000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
