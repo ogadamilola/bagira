@@ -33,7 +33,7 @@ export default defineType({
     }),
     defineField({
       name: "id",
-      title: "ID (Slug)",
+      title: "ID (Slug) - Click 'Generate'",
       type: "slug",
       options: {
         source: "title",
