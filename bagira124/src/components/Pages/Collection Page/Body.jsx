@@ -25,11 +25,11 @@ const Body = ({ artwork }) => {
               e.preventDefault(); // Prevent default Next.js behavior
               window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
             }}
-            className="justify-center items-center flex relative flex-col w-full h-full"
+            className="justify-center items-center flex relative flex-col w-full h-full image-selection"
           >
-            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
+            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem] transition-all duration-200 hover:brightness-[110%] image-selection">
               <img
-                className="cursor-pointer object-cover w-full h-full relative"
+                className="cursor-pointer object-cover w-full h-full relative image-selection"
                 src={`${item.image}`}
                 alt={item.title}
                 data-flip-id="1"
@@ -55,10 +55,10 @@ const Body = ({ artwork }) => {
             className="justify-center items-center flex relative flex-col w-full h-full"
           >
             <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
-              <Skeleton className="w-full h-[23.125rem] rounded" />
+              <Skeleton className="w-full h-[23.125rem] rounded bg-[#e81d5a]" />
             </div>
             <div className="shop-title">
-              <Skeleton className="w-full h-[20px] rounded" />
+              <Skeleton className="w-full h-[20px] rounded bg-[#e81d5a]" />
             </div>
           </div>
         ))
@@ -73,14 +73,14 @@ const Body = ({ artwork }) => {
           {availableCollections.title ? (
             <h2 className="josefin-400-26">{availableCollections.title}</h2>
           ) : (
-            <Skeleton className="w-full h-[26px] rounded" />
+            <Skeleton className="w-full h-[26px] rounded bg-[#e81d5a]" />
           )}
         </div>
         <div className="text-center normal-case w-full mb-[1.875rem]">
           {availableCollections.subtitle ? (
             <h1 className="jost-700-122">{availableCollections.subtitle}</h1>
           ) : (
-            <Skeleton className="w-full h-[122px] rounded" />
+            <Skeleton className="w-full h-[122px] rounded bg-[#e81d5a]" />
           )}
         </div>
         <div

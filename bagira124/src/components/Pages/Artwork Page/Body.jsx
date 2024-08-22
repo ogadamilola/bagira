@@ -132,10 +132,10 @@ const Body = () => {
               e.preventDefault(); // Prevent default Next.js behavior
               window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
             }}
-            className="justify-center items-center flex relative flex-col w-full h-[32.5rem]"
+            className="justify-center items-center flex relative flex-col w-full h-[32.5rem] transition-all duration-200 hover:brightness-[110%] image-selection"
           >
             <img
-              className=" object-cover w-full h-full relative"
+              className=" object-cover w-full h-full relative image-selection"
               src={`${item.image}`}
               alt={item.title}
               // data-flip-id="1"

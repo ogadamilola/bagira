@@ -16,11 +16,18 @@ const Body = ({
 }) => {
   const { artwork, loading, error } = useContext(ArtworkContext);
   const [suggestedShop, setSuggestedShop] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(image); // Initialize with the primary image
 
   useEffect(() => {
+    // Check if the artwork data is in localStorage
     if (artwork) {
+      // Shuffle the artwork array and select 4 random items
+      const randomArtworks = artwork
+        .sort(() => 0.5 - Math.random()) // Shuffle the array
+        .slice(0, 4); // Pick the first 4 items
+
       setSuggestedShop(
-        artwork.slice(0, 4).map((item, index) => (
+        randomArtworks.map((item, index) => (
           <Link
             key={index}
             href={`/artwork/collection/${encodeURIComponent(item.id)}`}
@@ -28,7 +35,7 @@ const Body = ({
               e.preventDefault(); // Prevent default Next.js behavior
               window.location.href = `/artwork/collection/${encodeURIComponent(item.id)}`; // Trigger full page reload
             }}
-            className="justify-center items-center flex relative flex-col w-full h-full"
+            className="justify-center items-center flex relative flex-col w-full h-full transition-all duration-200 hover:brightness-[110%]"
           >
             <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
               <img
@@ -49,6 +56,23 @@ const Body = ({
           </Link>
         ))
       );
+    } else {
+      // Display skeleton elements by default
+      setSuggestedShop(
+        Array.from({ length: 4 }, (_, index) => (
+          <div
+            key={index}
+            className="justify-center items-center flex relative flex-col w-full h-full"
+          >
+            <div className="justify-center items-center flex relative flex-col w-full h-[23.125rem]">
+              <Skeleton className="w-full h-full relative rounded bg-[#e81d5a]" />
+            </div>
+            <div className="shop-title">
+              <Skeleton className="w-full h-[20px] rounded bg-[#e81d5a]" />
+            </div>
+          </div>
+        ))
+      );
     }
   }, [artwork]);
 
@@ -66,8 +90,8 @@ const Body = ({
           <div className="justify-center items-start flex relative flex-col max-w-full h-full gap-y-[2rem]">
             <div className="justify-center items-center flex relative flex-col max-w-full w-[39.125rem] h-[39.125rem]">
               <img
-                className="cursor-pointer object-cover w-full h-full relative"
-                src={`${image}`}
+                className="object-cover w-full h-full relative"
+                src={`${selectedImage}`}
                 alt={title}
                 data-flip-id="1"
                 img-anim="1"
@@ -79,13 +103,29 @@ const Body = ({
             >
               {images ? (
                 <>
+                  <div
+                    className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#e81d5a]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
+                    onClick={() => setSelectedImage(image)} // Update selected image on click
+                  >
+                    <img
+                      className="cursor-pointer object-cover w-full h-full relative image-selection"
+                      src={`${image}`}
+                      alt={title}
+                      data-flip-id="1"
+                      img-anim="1"
+                      loading="lazy"
+                    />
+                  </div>
                   {images.map((item, index) => (
                     <div
                       key={index}
-                      className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]"
+                      className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] 
+                      ${selectedImage === item ? "border-4 border-[#e81d5a]" : ""}
+                      transition-all duration-200 hover:brightness-[110%] image-selection`}
+                      onClick={() => setSelectedImage(item)} // Update selected image on click
                     >
                       <img
-                        className="cursor-pointer object-cover w-full h-full relative"
+                        className="cursor-pointer object-cover w-full h-full relative image-selection"
                         src={`${item}`}
                         alt={title}
                         data-flip-id="1"
@@ -96,9 +136,11 @@ const Body = ({
                   ))}
                 </>
               ) : (
-                <div className="justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem]">
+                <div
+                  className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#e81d5a]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
+                >
                   <img
-                    className="cursor-pointer object-cover w-full h-full relative"
+                    className="cursor-pointer object-cover w-full h-full relative image-selection"
                     src={`${image}`}
                     alt={title}
                     data-flip-id="1"

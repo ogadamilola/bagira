@@ -2876,6 +2876,13 @@ figcaption {
   font-weight: 400;
 }
 
+.section-width {
+  display: block; /* Default value for block-level elements */
+  max-height: 100%; /* Ensure height doesn't exceed content */
+  overflow: hidden; /* Prevent content from overflowing */
+  box-sizing: border-box; /* Include padding and border in the height and width calculations */
+}
+
 .padding-section-small {
   padding-top: 3rem;
   padding-bottom: 3rem;

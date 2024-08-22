@@ -1,11 +1,18 @@
 // ArtworkContext.js
 "use client";
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 import { getArtwork } from "../../sanity/sanity-utils";
 
 export const ArtworkContext = createContext();
 
-export const ArtworkProvider = ({ children }) => {
+const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+
+export const ArtworkProvider = ({
+  children,
+  isLayout = false,
+  isHomePage = false,
+}) => {
+  const parentContext = useContext(ArtworkContext);
   const [artwork, setArtwork] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,27 +20,34 @@ export const ArtworkProvider = ({ children }) => {
   useEffect(() => {
     const fetchArtwork = async () => {
       try {
-        // Check if the artwork data is in localStorage
         const storedArtwork = localStorage.getItem("artwork");
         const storedTimestamp = localStorage.getItem("artworkTimestamp");
-        
-        if (storedArtwork && storedTimestamp) {
-          console.log("Got 'artwork' from localStorage");
-          setArtwork(JSON.parse(storedArtwork));
-          setLoading(false);
-        }
+        const currentTime = Date.now();
 
-        // Fetch the artwork data from the CMS
-        const response = await getArtwork();
-        
-        // Check if the CMS data is different from the stored data
-        if (JSON.stringify(response) !== storedArtwork) {
-          console.log("Updating artwork from CMS");
+        if (isHomePage) {
+          // Fetch from CMS on homepage
+          console.log("HomePage: Fetching artwork from CMS");
+          const response = await getArtwork();
           setArtwork(response);
           localStorage.setItem("artwork", JSON.stringify(response));
-          localStorage.setItem("artworkTimestamp", Date.now().toString());
-        } else {
-          console.log("Artwork is up to date");
+          localStorage.setItem("artworkTimestamp", currentTime.toString());
+        } else if (isLayout) {
+          // For layout, use cached data or fetch if expired
+          if (
+            storedArtwork &&
+            currentTime - parseInt(storedTimestamp) < CACHE_DURATION
+          ) {
+            console.log("Layout: Using valid cached artwork data");
+            setArtwork(JSON.parse(storedArtwork));
+          } else {
+            console.log(
+              "Layout: Fetching artwork from CMS (cache expired or not found)"
+            );
+            const response = await getArtwork();
+            setArtwork(response);
+            localStorage.setItem("artwork", JSON.stringify(response));
+            localStorage.setItem("artworkTimestamp", currentTime.toString());
+          }
         }
 
         setLoading(false);
@@ -43,15 +57,28 @@ export const ArtworkProvider = ({ children }) => {
       }
     };
 
-    // Fetch the artwork data
-    fetchArtwork();
+    // Only fetch if there's no parent context (to avoid double fetching)
+    if (!parentContext) {
+      fetchArtwork();
+    } else if (isHomePage) {
+      fetchArtwork();
+    } else {
+      // If there's a parent context, use its values
+      setArtwork(parentContext.artwork);
+      setLoading(parentContext.loading);
+      setError(parentContext.error);
+    }
+  }, [isLayout, isHomePage, parentContext]);
 
-    // Set up an interval to check for updates (e.g., every 5 minutes)
-    const intervalId = setInterval(fetchArtwork, 5 * 60 * 1000);
+  // If it's the home page, skip the layout's provider logic
+  if (isHomePage && isLayout) {
+    return <>{children}</>;
+  }
 
-    // Clean up the interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
+  // If there's a parent context, just pass through its values
+  if (parentContext) {
+    return <>{children}</>;
+  }
 
   return (
     <ArtworkContext.Provider value={{ artwork, loading, error }}>

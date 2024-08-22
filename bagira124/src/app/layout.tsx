@@ -39,7 +39,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="/images/63d3f9ba4c4c44c7c6346fb6_OpenGraph.webp"
+          content="/images/FullSizeRender.webp"
         />
         <meta property="twitter:title" content="Bagira | Artist" />
         <meta
@@ -48,7 +48,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="/images/63d3f9ba4c4c44c7c6346fb6_OpenGraph.webp"
+          content="/images/FullSizeRender.webp"
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -567,10 +567,7 @@ export default function RootLayout({
         <Mouse /> */}
         {/* <FlowScript /> */}
         {/* <BTS /> */}
-
-        <ArtworkProvider>
-        {children}
-        </ArtworkProvider>
+        <ArtworkProvider isLayout={true}>{children}</ArtworkProvider>
         {/* <FooterSection /> */}
       </body>
     </html>

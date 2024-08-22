@@ -254,7 +254,7 @@ gsap.ticker.add(() => {
 
 // MOUSE
 $(
-  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, [href]"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, .image-selection, [href]"
 )
   .not(".nav-link, .small-links")
   .mouseenter(function () {
@@ -263,7 +263,7 @@ $(
     $(".mouse-outro-2").addClass("hover");
   });
 $(
-  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, [href]"
+  ".cta, .big-cta, .pages-big-cta, .murals-button, .about-hover-text, .form-botton, .bagira-link, .inquire-open-info-links, .c-form_field, .form-accept, .decline, .cookies-link, .logo-section, .image-selection, [href]"
 )
   .not(".nav-link, .small-links")
   .mouseleave(function () {
