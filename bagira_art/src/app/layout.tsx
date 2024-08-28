@@ -35,11 +35,23 @@ export default function RootLayout({
           property="twitter:description"
           content={`${metadataDescription}`}
         />
-        <meta property="twitter:image" content="/images/BAGI-FullSizeRender.webp" />
+        <meta
+          property="twitter:image"
+          content="/images/BAGI-FullSizeRender.webp"
+        />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+        <link
+          href="/svgs/m.svg"
+          rel="shortcut icon"
+          type="image/x-icon"
+        />
+        <link
+          href="/svgs/m.svg"
+          rel="apple-touch-icon"
+        />
       </head>
       <body className={`${inter.className} cursor-none`}>
         <div className="hidden md:block z-[99999999]">
