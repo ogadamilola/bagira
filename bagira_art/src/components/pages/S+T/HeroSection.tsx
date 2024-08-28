@@ -58,6 +58,7 @@ function HeroSection() {
         e.preventDefault();
         const href = el.getAttribute("href");
         const id = href?.slice(2); // Slice to remove "/#"
+        if (!href) return; // Check if href is null
         if (!id) return;
 
         const currentUrl = window.location.pathname;
