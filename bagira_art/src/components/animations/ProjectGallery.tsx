@@ -203,7 +203,7 @@ function Modal({
 }
 
 const styles = {
-    main: "flex h-[100vh] items-center justify-center",
+    main: "flex h-[100dvh] items-center justify-center",
     body: "w-[1000px] flex flex-col items-center justify-center",
     project: {
       display: "flex",

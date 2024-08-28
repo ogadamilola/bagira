@@ -104,8 +104,8 @@
 // }
 
 // const styles = {
-//   container: "h-[300vh] w-full relative",
-//   sticky: "sticky top-0 h-[100vh] w-full overflow-hidden",
+//   container: "h-[300dvh] w-full relative",
+//   sticky: "sticky top-0 h-[100dvh] w-full overflow-hidden",
 //   element: "w-full h-full absolute top-0 flex items-center justify-center",
 //   imageContainer: "relative",
 // };

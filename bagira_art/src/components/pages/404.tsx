@@ -199,7 +199,7 @@ export default function Body({ className ,videos = Videos }: ComponentProps) {
   }, []);
 
   return (
-    <section className={`${className} relative flex flex-col items-center justify-center w-[100vw] h-[100vh] overflow-hidden bg-black`}>
+    <section className={`${className} relative flex flex-col items-center justify-center w-[100vw] h-[100dvh] overflow-hidden bg-black`}>
       <div className="absolute flex flex-col items-start justify-center text-white left-0 bottom-1/2  text-2xl large-text font-black ml-4 sm:ml-10 mix-blend-difference uppercase max-w-[10ch] z-10 leading-none">
         404
         <a
@@ -226,7 +226,7 @@ export default function Body({ className ,videos = Videos }: ComponentProps) {
         </a>
       </div>
       {/* <motion.div
-        className="relative flex w-[100vh] sm:w-[100vw] h-[100vw] sm:h-[100vh] rotate-90 sm:rotate-0 overflow-hidden"
+        className="relative flex w-[100dvh] sm:w-[100vw] h-[100vw] sm:h-[100dvh] rotate-90 sm:rotate-0 overflow-hidden"
         // style={{ y: positiveY }}
 
         data-speed="0.25"
@@ -237,7 +237,7 @@ export default function Body({ className ,videos = Videos }: ComponentProps) {
           loop={false} // Do not loop the video to allow cycling to the next one
           muted // Ensure video element starts muted
           playsInline // Ensure video plays inline
-          className="w-[100vh] sm:w-[100vw] h-[100vw] sm:h-[100vh] object-cover pointer-events-none"
+          className="w-[100dvh] sm:w-[100vw] h-[100vw] sm:h-[100dvh] object-cover pointer-events-none"
         />
       </motion.div>
       <button

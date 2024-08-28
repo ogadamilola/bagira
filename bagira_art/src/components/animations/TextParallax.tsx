@@ -43,7 +43,7 @@ export default function TextParallax({
 
   return (
     <main className={`overflow-hidden ${className}`}>
-      <div className="h-[100vh]"></div>
+      <div className="h-[100dvh]"></div>
       <div ref={container}>
         {phrases.map((phrase, index) => (
           <Slide
@@ -55,7 +55,7 @@ export default function TextParallax({
           />
         ))}
       </div>
-      <div className="h-[100vh]"></div>
+      <div className="h-[100dvh]"></div>
     </main>
   );
 }

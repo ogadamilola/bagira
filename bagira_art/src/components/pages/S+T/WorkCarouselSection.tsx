@@ -164,7 +164,7 @@ function WorkCarouselSection() {
             {Article.map((article, index) => (
               <article
                 key={index}
-                className="group [@media(min-width:960px)]:flex-[0_0_75vh] [@media(min-width:960px)]:max-w-[55.109rem] cursor-view-hover"
+                className="group [@media(min-width:960px)]:flex-[0_0_75dvh] [@media(min-width:960px)]:max-w-[55.109rem] cursor-view-hover"
               >
                 <picture className="relative block rounded-[.625rem] mb-[1.5625rem] overflow-hidden">
                   <img

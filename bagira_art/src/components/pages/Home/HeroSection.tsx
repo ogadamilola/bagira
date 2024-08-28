@@ -52,7 +52,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="relative flex flex-col size-full min-h-[70vh] justify-end">
+    <div className="relative flex flex-col size-full min-h-[70dvh] justify-end">
       <div className="size-full absolute -z-[1]" data-speed="0.5">
         {/* <video
           src="/videos/IMG_6271.mov"

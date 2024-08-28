@@ -84,13 +84,13 @@ function ServiceCarouselSection() {
       className="size-full overflow-hidden 
     [@media(min-width:960px)]:grid
     [@media(min-width:960px)]:grid-cols-3 
-    [@media(min-width:960px)]:min-h-[100vh]"
+    [@media(min-width:960px)]:min-h-[100dvh]"
     >
       {Card.map((card, index) => (
         <div
           key={index}
           className="relative group flex flex-col flex-[1] text-[#0E0F11] bg-[#F7F4EF] cursor-pointer 
-          [@media(min-width:960px)]:min-h-[100vh]
+          [@media(min-width:960px)]:min-h-[100dvh]
           [@media(min-width:960px)]:bg-transparent"
           onClick={() => (window.location.href = card.href)}
         >
@@ -115,16 +115,16 @@ function ServiceCarouselSection() {
           [@media(min-width:960px)]:order-2 
           [@media(min-width:960px)]:[clip-path:polygon(50%_0,_50%_0,_50%_100%,_50%_100%)]
           group-hover:[@media(min-width:960px)]:[clip-path:polygon(0_0,_100%_0,_100%_100%,_0_100%)] 
-          overflow-hidden bg-bagiRed max-h-[35vh]
+          overflow-hidden max-h-[35dvh]
           "
           >
             <div
-              className="size-full [@media(min-width:960px)]:h-[30vh]"
+              className="size-full [@media(min-width:960px)]:h-[30dvh]"
               data-speed="0.9"
             >
               <img
                 src={card.src}
-                className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block [aspect-ratio:360/240] object-cover [@media(min-width:960px)]:max-h-[30vh]"
+                className="w-full scale-125 -translate-y-[7.5dvh] lg:-translate-y-[6dvh] block [aspect-ratio:360/240] object-cover [@media(min-width:960px)]:max-h-[30dvh]"
               />
             </div>
           </picture>
@@ -162,7 +162,7 @@ function ServiceCarouselSection() {
           [@media(min-width:960px)]:text-white 
             [@media(min-width:960px)]:mix-blend-difference 
             [@media(min-width:960px)]:relative 
-            group-hover:[@media(min-width:960px)]:-translate-y-[30vh] 
+            group-hover:[@media(min-width:960px)]:-translate-y-[30dvh] 
             [@media(min-width:960px)]:[transition:transform_.4s_ease-in-out]
             "
             >
