@@ -1,11 +1,11 @@
 export const NavLinks = [
     {
       title: "Work",
-      href: "/work",
+      href: "/#work",
     },
     {
       title: "Services",
-      href: "/services",
+      href: "/#services",
     },
     {
       title: "Careers",

@@ -53,7 +53,7 @@ function HeroSection() {
 
   return (
     <section className="relative flex flex-col lg:flex-row pt-[9.375rem] size-full">
-      <div className=" z-10 mix-blend-difference text-[#fff] flex flex-col min-h-[60dvh] lg:min-h-[70dvh] justify-end flex-[0_0_50%] lg:max-w-[50%] [padding:0_1rem_2.5rem] lg:[padding:0_8.438rem_2.344rem]">
+      <div className=" z-10 mix-blend-difference text-[#fff] flex flex-col min-h-[60vh] lg:min-h-[70vh] justify-end flex-[0_0_50%] lg:max-w-[50%] [padding:0_1rem_2.5rem] lg:[padding:0_8.438rem_2.344rem]">
         <div className="jost relative w-screen -translate-x-[8.438rem] font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[20.625rem] mt-[auto] mb-5 pointer-events-none z-10 lg:mx-[0] lg:my-[auto]">
           <ScrollingBanner
             baseVelocity={-20}
@@ -101,14 +101,14 @@ function HeroSection() {
       </div>
       <div className="flex-[0_0_50%] lg:max-w-[50%]">
         <div className="relative overflow-hidden">
-          <div className="opacity-15 bg-[#E81D5A] size-full min-h-[100dvh] -mt-[9.375rem] absolute z-10"></div>
+          <div className="opacity-15 bg-[#E81D5A] size-full min-h-[100vh] -mt-[9.375rem] absolute z-10"></div>
           <div
-            className="size-full min-h-[100dvh] -mt-[9.375rem]"
+            className="size-full min-h-[100vh] -mt-[9.375rem]"
             data-speed="0.75"
           >
             <img
               src="/images/hero.png"
-              className="h-[100dvh] object-cover"
+              className="h-[100vh] object-cover"
             ></img>
           </div>
         </div>

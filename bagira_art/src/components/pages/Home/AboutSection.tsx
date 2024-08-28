@@ -74,7 +74,7 @@ function AboutSection() {
         </div>
       </div>
       <div
-        className="relative bg-black size-full flex flex-col items-center justify-end min-h-[70dvh] followerchangetext overflow-hidden"
+        className="relative bg-black size-full flex flex-col items-center justify-end min-h-[70vh] followerchangetext overflow-hidden"
         data-follower-text="View"
       >
         <a href="/about" className="flex size-full">

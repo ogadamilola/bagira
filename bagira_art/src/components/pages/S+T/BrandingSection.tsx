@@ -102,7 +102,7 @@ function BrandingSection() {
             <div className="size-full" data-speed="1.1">
               <img
                 src="/images/article1.jpg"
-                className="w-full scale-125 translate-y-[7.5dvh] lg:translate-y-[6dvh] block object-cover"
+                className="w-full scale-125 translate-y-[7.5vh] lg:translate-y-[6vh] block object-cover"
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ function BrandingSection() {
             <div className="size-full" data-speed="0.9">
               <img
                 src="/images/article2.jpg"
-                className="w-full scale-125 -translate-y-[7.5dvh] lg:-translate-y-[6dvh] block object-cover"
+                className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block object-cover"
               />
             </div>
           </div>
