@@ -254,6 +254,7 @@ const Header: React.FC<HeaderProps> = ({ navigation }) => {
       el.addEventListener("click", (e) => {
         e.preventDefault();
         const href = el.getAttribute("href");
+        if (!href) return; // Check if href is null
         const id = href?.slice(2); // Slice to remove "/#"
         if (!id) return;
   
