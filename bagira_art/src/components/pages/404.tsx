@@ -225,7 +225,7 @@ export default function Body({ className ,videos = Videos }: ComponentProps) {
           </div>
         </a>
       </div>
-      <motion.div
+      {/* <motion.div
         className="relative flex w-[100vh] sm:w-[100vw] h-[100vw] sm:h-[100vh] rotate-90 sm:rotate-0 overflow-hidden"
         // style={{ y: positiveY }}
 
@@ -310,7 +310,7 @@ export default function Body({ className ,videos = Videos }: ComponentProps) {
             <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
           </svg>
         )}
-      </button>
+      </button> */}
     </section>
   );
 }

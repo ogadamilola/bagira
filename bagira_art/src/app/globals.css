@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("/fonts/Jost/stylesheet.css");
+@import url("/fonts/Josefin Sans/stylesheet.css");
+
+:root {
+  font-size: max(16px, calc(0.0083333333333 * 100vw));
+}
+
+
+
 .small-text {
   font-size: 3vw;
 }
@@ -87,40 +96,6 @@
   position: fixed;
 }
 
-/* Import Josefin Sans Fonts */
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../../public/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../../public/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* Import Jost Fonts */
-@font-face {
-  font-family: "Jost";
-  src: url("../../public/fonts/Jost/Jost-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Jost";
-  src: url("../../public/fonts/Jost/Jost-Italic-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
 .josefin-sans {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -135,7 +110,7 @@ body {
 
 @keyframes spin {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .spin-slow {
@@ -144,3 +119,4 @@ body {
 .spin-fast {
   animation: spin 3s linear infinite;
 }
+

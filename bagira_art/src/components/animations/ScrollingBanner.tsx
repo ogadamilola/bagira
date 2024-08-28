@@ -15,7 +15,7 @@ interface ScrollingBannerProps {
   children: React.ReactNode;
   baseVelocity?: number;
   length?: number;
-  banner?: string;
+  className?: string;
   child?: string;
   innerChild?: string;
   slowOnHover?: boolean;
@@ -25,7 +25,7 @@ export default function ScrollingBanner({
   children,
   baseVelocity = 300,
   length = 180,
-  banner,
+  className,
   child,
   innerChild,
   slowOnHover = false,
@@ -66,14 +66,14 @@ export default function ScrollingBanner({
 
   const styles = {
     banner:
-      " relative m-0 flex flex-nowrap items-center overflow-hidden whitespace-nowrap",
+      " relative m-0 flex flex-nowrap items-center whitespace-nowrap",
     child: " flex flex-row flex-nowrap items-center whitespace-nowrap",
     innerChild: " mx-4",
   };
 
   return (
     <div
-      className={banner + styles.banner}
+      className={className + styles.banner}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

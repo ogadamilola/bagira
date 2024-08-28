@@ -5,12 +5,12 @@ import React, { useEffect, useRef } from "react";
 
 function AboutSection() {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    // target: ref,
-    offset: ["start start", "end start"],
-  });
-  const negativeY = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
-  const positiveY = useTransform(scrollYProgress, [0, 1], ["0%", "450%"]);
+  // const { scrollYProgress } = useScroll({
+  //   // target: ref,
+  //   offset: ["start start", "end start"],
+  // });
+  // const negativeY = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
+  // const positiveY = useTransform(scrollYProgress, [0, 1], ["0%", "450%"]);
 
   // GSAP Animations
   useEffect(() => {

@@ -4,27 +4,36 @@ import gsap from "gsap";
 
 export default function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement | null>(null); // Define type for cursorRef
+  const innerDotRef = useRef(null);
   const followerTextRef = useRef<HTMLSpanElement | null>(null); // Define type for followerTextRef
 
   useEffect(() => {
     // Initialize cursor hidden and centered
     if (cursorRef.current) {
-      gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
+      gsap.set(cursorRef.current, { xPercent: -50, yPercent: 150 });
+    }
+    if (innerDotRef.current) {
+      gsap.set(innerDotRef.current, { xPercent: -50, yPercent: 1920 });
     }
 
     // Smoothly follow the mouse
     const xTo = gsap.quickTo(cursorRef.current, "x", {
-        duration: 0.5,
+        duration: 0.25,
         ease: "power3.out",
       }),
       yTo = gsap.quickTo(cursorRef.current, "y", {
-        duration: 0.5,
+        duration: 0.25,
         ease: "power3.out",
       });
 
     const moveCursor = (e: MouseEvent) => {
       xTo(e.clientX);
       yTo(e.clientY);
+
+      // Move inner dot instantly
+      if (innerDotRef.current) {
+        gsap.set(innerDotRef.current, { x: e.clientX, y: e.clientY });
+      }
     };
 
     window.addEventListener("mousemove", moveCursor);
@@ -32,7 +41,86 @@ export default function CustomCursor() {
       if (cursorRef.current) {
         gsap.to(cursorRef.current, { autoAlpha: 0 });
       }
+      if (innerDotRef.current) {
+        gsap.to(innerDotRef.current, { autoAlpha: 0 });
+      }
     }); // Hide cursor on mouse leave
+
+    // Hover over elements that change the cursor (scale & background color)
+    document
+      .querySelectorAll<HTMLElement>(".cursor-select-hover")
+      .forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          const scale = el.getAttribute("data-scale") || "0.4"; // Default scale or custom
+
+          gsap.to(cursorRef.current, {
+            scale: parseFloat(scale), // Use the custom scale
+            backgroundColor: "white",
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+
+        el.addEventListener("mouseleave", () => {
+          gsap.to(cursorRef.current, {
+            scale: 1, // Revert to original size
+            backgroundColor: "transparent", // Revert background color
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+      });
+
+    // Hover over elements that change the cursor (scale & background color & text)
+    document
+      .querySelectorAll<HTMLElement>(".cursor-view-hover")
+      .forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          const text = el.getAttribute("data-follower-text") || "View"; // Fallback text
+          const scale = el.getAttribute("data-scale") || "1.7"; // Default scale or custom
+          if (followerTextRef.current) {
+            followerTextRef.current.innerHTML = `${text}`; // Set text
+          }
+          gsap.to(cursorRef.current, {
+            scale: parseFloat(scale), // Use the custom scale
+            backgroundColor: "white",
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+          gsap.to(innerDotRef.current, {
+            ease: "power3.out",
+            autoAlpha: 0,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+
+        el.addEventListener("mouseleave", () => {
+          if (followerTextRef.current) {
+            followerTextRef.current.innerHTML = ""; // Clear text
+          }
+          gsap.to(cursorRef.current, {
+            scale: 1, // Revert to original size
+            backgroundColor: "transparent", // Revert background color
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+          gsap.to(innerDotRef.current, {
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+      });
 
     // Hover over elements that change the cursor (scale)
     document
@@ -110,16 +198,23 @@ export default function CustomCursor() {
   }, []);
 
   return (
-    <div
-      ref={cursorRef}
-      className="fixed pointer-events-none flex items-center justify-center rounded-full text-white"
-      style={{ zIndex: 999 }}
-    >
-      <span
-        ref={followerTextRef}
-        className="absolute josefin-sans text-lg text-white"
-      ></span>
-      {/* Dynamic text */}
-    </div>
+    <>
+      <div
+        ref={cursorRef}
+        className="fixed pointer-events-none flex items-center justify-center rounded-full text-white border border-white mix-blend-difference size-[4.688rem]"
+        style={{ zIndex: 9999 }}
+      >
+        <span
+          ref={followerTextRef}
+          className="absolute josefin-sans text-lg text-white mix-blend-difference"
+        ></span>
+        {/* Dynamic text */}
+      </div>
+      <div
+        ref={innerDotRef}
+        className="fixed pointer-events-none rounded-full bg-white mix-blend-difference size-[0.469rem]"
+        style={{ zIndex: 1000 }}
+      ></div>
+    </>
   );
 }

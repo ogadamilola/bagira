@@ -3,9 +3,11 @@ import React, { ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Inner from "@/components/layout/transitions/inner";
 import { usePathname } from "next/navigation";
-import Header from "@/components/animations/NavigationMenu";
+// import Header from "@/components/animations/NavigationMenu";
+import Header from "@/components/pages/S+T/Header";
 import { NavLinks } from "@/data/navLinks";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
+import Footer from "@/components/pages/S+T/Footer";
 
 export const perspective = {
   initial: {
@@ -39,6 +41,18 @@ export const slide = {
   },
 };
 
+export const exitSlide = {
+  initial: {
+    y: "0vh",
+  },
+  enter: {
+    y: "100vh",
+  },
+  exit: {
+    y: "0vh",
+  },
+};
+
 export const opacity = {
   initial: {
     opacity: 0,
@@ -63,8 +77,8 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
 
   return (
     <div id="template" className="relative size-full bg-bagiBlack">
-      <motion.div
-        className="w-full h-full fixed left-0 top-0 bg-black z-10 cursor-wait"
+      {/* <motion.div
+        className="w-full h-full fixed left-0 top-0 bg-bagiBlack z-[9999999] cursor-wait"
         variants={slide}
         initial={slide.initial}
         exit={slide.exit}
@@ -73,9 +87,8 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
           duration: 1,
           ease: [0.76, 0, 0.24, 1],
         }}
-      />
-      <motion.div
-        className="bg-black w-full h-full"
+      /> */}
+      {/* <motion.div
         variants={perspective}
         initial={perspective.initial}
         exit={perspective.exit}
@@ -84,8 +97,9 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
           duration: 1.2,
           ease: [0.76, 0, 0.24, 1],
         }}
-      >
-        <motion.div
+      > */}
+      {/* <motion.div
+          className="relative"
           variants={opacity}
           initial={opacity.initial}
           exit={opacity.exit}
@@ -93,12 +107,24 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
           transition={{
             duration: 0.2,
           }}
-        >
-          <Header navigation={NavLinks} />
-          {children}
-          <Footer className="z-10" />
-        </motion.div>
-      </motion.div>
+        > */}
+      <motion.div
+        className="w-full h-full fixed left-0 top-0 bg-[#0E0F11] z-[9999999] cursor-wait"
+        variants={exitSlide}
+        initial={exitSlide.initial}
+        exit={exitSlide.exit}
+        animate={exitSlide.enter}
+        transition={{
+          duration: 1,
+          ease: [0.76, 0, 0.24, 1],
+        }}
+      />
+      <Header navigation={NavLinks} />
+      {children}
+      <Footer />
+
+      {/* </motion.div> */}
+      {/* </motion.div> */}
     </div>
   );
 };

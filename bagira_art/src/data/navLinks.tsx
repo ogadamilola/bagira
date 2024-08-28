@@ -1,30 +1,30 @@
 export const NavLinks = [
     {
-      title: "About",
-      href: "/about",
+      title: "Work",
+      href: "/work",
     },
     {
-      title: "Paintings",
-      href: "/paintings",
+      title: "Services",
+      href: "/services",
     },
     {
-      title: "Murals",
-      href: "/murals",
+      title: "Careers",
+      href: "/careers",
     },
-    {
-      title: "BAGI",
-      href: "/bagi",
-    },
-    {
-      title: "Shop",
-      href: "/shop",
-    },
-    {
-      title: "The Gallery",
-      href: "/the-gallery",
-    },
-    {
-      title: "Legal",
-      href: "/legal",
-    },
+    // {
+    //   title: "BAGI",
+    //   href: "/bagi",
+    // },
+    // {
+    //   title: "Shop",
+    //   href: "/shop",
+    // },
+    // {
+    //   title: "The Gallery",
+    //   href: "/the-gallery",
+    // },
+    // {
+    //   title: "Legal",
+    //   href: "/legal",
+    // },
   ];

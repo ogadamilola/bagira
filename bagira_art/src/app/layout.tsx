@@ -19,8 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <div className="hidden md:block z-[999]">
+      <head>
+        <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body className={`${inter.className} cursor-none`}>
+        <div className="hidden md:block z-[99999999]">
           <CustomCursor />
         </div>
         <PreloaderProvider>

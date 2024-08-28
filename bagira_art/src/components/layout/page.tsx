@@ -1,10 +1,7 @@
 // layout/page.tsx
 "use client";
 import React, { ReactNode, useEffect } from "react";
-import {
-  PreloaderProvider,
-  usePreloader,
-} from "@/contexts/PreloaderContext";
+import { PreloaderProvider, usePreloader } from "@/contexts/PreloaderContext";
 import Preloader from "@/components/Preloader";
 
 interface PageProps {
