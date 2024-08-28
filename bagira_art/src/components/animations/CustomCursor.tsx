@@ -122,79 +122,79 @@ export default function CustomCursor() {
         });
       });
 
-    // Hover over elements that change the cursor (scale)
-    document
-      .querySelectorAll<HTMLElement>(".followerchangetext")
-      .forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          const text = el.getAttribute("data-follower-text") || ""; // Fallback text
-          const scale = el.getAttribute("data-scale") || "1.5"; // Default scale or custom
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = `
-            <div class="relative size-full flex flex-row items-center justify-center border-2 rounded-full p-10">
-              <div class="absolute flex flex-row gap-1 items-center justify-center rotate-[45deg]">
-                ${text}
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </div>
-            </div>`; // Set text
-          }
-          gsap.to(cursorRef.current, {
-            scale: parseFloat(scale), // Use the custom scale
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.2,
-            overwrite: "auto",
-          });
-        });
+    // // Hover over elements that change the cursor (scale)
+    // document
+    //   .querySelectorAll<HTMLElement>(".followerchangetext")
+    //   .forEach((el) => {
+    //     el.addEventListener("mouseenter", () => {
+    //       const text = el.getAttribute("data-follower-text") || ""; // Fallback text
+    //       const scale = el.getAttribute("data-scale") || "1.5"; // Default scale or custom
+    //       if (followerTextRef.current) {
+    //         followerTextRef.current.innerHTML = `
+    //         <div class="relative size-full flex flex-row items-center justify-center border-2 rounded-full p-10">
+    //           <div class="absolute flex flex-row gap-1 items-center justify-center rotate-[45deg]">
+    //             ${text}
+    //             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+    //               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+    //             </svg>
+    //           </div>
+    //         </div>`; // Set text
+    //       }
+    //       gsap.to(cursorRef.current, {
+    //         scale: parseFloat(scale), // Use the custom scale
+    //         ease: "power3.out",
+    //         autoAlpha: 1,
+    //         duration: 0.2,
+    //         overwrite: "auto",
+    //       });
+    //     });
 
-        el.addEventListener("mouseleave", () => {
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = ""; // Clear text
-          }
-          gsap.to(cursorRef.current, {
-            scale: 1, // Revert to original size
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.2,
-            overwrite: "auto",
-          });
-        });
-      });
+    //     el.addEventListener("mouseleave", () => {
+    //       if (followerTextRef.current) {
+    //         followerTextRef.current.innerHTML = ""; // Clear text
+    //       }
+    //       gsap.to(cursorRef.current, {
+    //         scale: 1, // Revert to original size
+    //         ease: "power3.out",
+    //         autoAlpha: 1,
+    //         duration: 0.2,
+    //         overwrite: "auto",
+    //       });
+    //     });
+    //   });
 
-    // Hover over elements that change the cursor shape (text fields)
-    document
-      .querySelectorAll<HTMLElement>(".text-field-hover")
-      .forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          gsap.to(cursorRef.current, {
-            width: "5px", // Width of the rectangle
-            height: "36px", // Height of the rectangle
-            borderRadius: "3px", // Adjust for slightly rounded corners
-            ease: "power3.out",
-            autoAlpha: 0.5,
-            duration: 0.2,
-            overwrite: "auto",
-          });
-        });
+    // // Hover over elements that change the cursor shape (text fields)
+    // document
+    //   .querySelectorAll<HTMLElement>(".text-field-hover")
+    //   .forEach((el) => {
+    //     el.addEventListener("mouseenter", () => {
+    //       gsap.to(cursorRef.current, {
+    //         width: "5px", // Width of the rectangle
+    //         height: "36px", // Height of the rectangle
+    //         borderRadius: "3px", // Adjust for slightly rounded corners
+    //         ease: "power3.out",
+    //         autoAlpha: 0.5,
+    //         duration: 0.2,
+    //         overwrite: "auto",
+    //       });
+    //     });
 
-        el.addEventListener("mouseleave", () => {
-          gsap.to(cursorRef.current, {
-            width: "24px", // Original width of the cursor
-            height: "24px", // Original height of the cursor
-            borderRadius: "50%", // Back to circle shape
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.2,
-            overwrite: "auto",
-          });
-        });
-      });
+    //     el.addEventListener("mouseleave", () => {
+    //       gsap.to(cursorRef.current, {
+    //         width: "24px", // Original width of the cursor
+    //         height: "24px", // Original height of the cursor
+    //         borderRadius: "50%", // Back to circle shape
+    //         ease: "power3.out",
+    //         autoAlpha: 1,
+    //         duration: 0.2,
+    //         overwrite: "auto",
+    //       });
+    //     });
+    //   });
 
-    return () => {
-      window.removeEventListener("mousemove", moveCursor);
-    };
+    // return () => {
+    //   window.removeEventListener("mousemove", moveCursor);
+    // };
   }, []);
 
   return (

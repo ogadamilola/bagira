@@ -1,9 +1,56 @@
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
-import React from "react";
+import React, { useEffect } from "react";
 
 function BrandingSection() {
+  // GSAP Animations
+  useEffect(() => {
+    const loadGSAP = async () => {
+      const { gsap } = await import("gsap");
+      const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+      gsap.registerPlugin(ScrollTrigger);
+
+      let effectElements = gsap.utils.toArray("[data-speed]");
+      effectElements.forEach((el: any) => {
+        let speed = parseFloat(el.getAttribute("data-speed"));
+        gsap.fromTo(
+          el,
+          { y: 0 },
+          {
+            y: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: el,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+              onRefresh: (self) => {
+                let start = Math.max(0, self.start); // ensure no negative values
+                let distance = self.end - start;
+                let end = start + distance / speed;
+                (self as any).setPositions(start, end);
+                if (self.animation) {
+                  // Check if self.animation is defined
+                  (self as any).animation.vars.y = (end - start) * (1 - speed);
+                  self.animation
+                    .invalidate()
+                    .progress(1)
+                    .progress(self.progress);
+                }
+              },
+            },
+          }
+        );
+      });
+
+      return () => {
+        ScrollTrigger.getAll().forEach((st) => st.kill());
+      };
+    };
+
+    loadGSAP();
+  }, []);
   return (
-    <section className="text-[#fff] size-full pt-[7.8125rem] pb-[3.125rem] overflow-hidden lg:py-[6.5625rem]">
+    <section className="text-[#fff] size-full pt-[7.8125rem] pb-[3.125rem] overflow-hidden lg:pt-[6.5625rem] lg:pb-[18.75rem]">
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
         <div className="jost relative w-screen left-2/4 -translate-x-1/2 overflow-hidden font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[25.313rem]">
           <ScrollingBanner
@@ -15,7 +62,12 @@ function BrandingSection() {
         </div>
         <div className="mt-[4.688rem] ml-[4.688rem] mb-[4.688rem] lg:ml-auto lg:max-w-[72rem]">
           <div className="text-[.875rem] leading-[1.31] lg:text-[1.688rem] lg:[column-count:2] lg:gap-x-[3.4375rem]">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a. Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate
+            sagittis a massa netus pretium quis quisque tellus torquent. Dis
+            maecenas dis nascetur rhoncus, eleifend conubia a. Lorem ipsum odor
+            amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus
+            pretium quis quisque tellus torquent. Dis maecenas dis nascetur
+            rhoncus, eleifend conubia a.
           </div>
           <div className="mt-[1.875rem] text-right">
             <a
@@ -47,10 +99,26 @@ function BrandingSection() {
         </div>
         <div className="lg:flex lg:items-start lg:gap-[8.125rem]">
           <div className="mb-[.8125rem] max-w-[45vw] lg:m-0 lg:w-[27vw] lg:max-w-[31.313rem]">
-            <img src="/images/article1.jpg"/>
+            <img
+              data-speed="1.1"
+              src="/images/article1.jpg"
+              className="hidden lg:block"
+            />
+            <img
+              src="/images/article1.jpg"
+              className="block lg:hidden"
+            />
           </div>
           <div className="lg:mt-[8.125rem] lg:w-[43vw] lg:max-w-[49.219rem]">
-            <img src="/images/article2.jpg"/>
+            <img
+              data-speed="0.9"
+              src="/images/article2.jpg"
+              className="hidden lg:block"
+            />
+            <img
+              src="/images/article2.jpg"
+              className="block lg:hidden"
+            />
           </div>
         </div>
       </div>

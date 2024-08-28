@@ -183,7 +183,7 @@ const Preloader: React.FC<PreloaderProps> = ({
           <img
             src="/svgs/m.svg"
             alt="Loading"
-            className="w-[7.5%] mix-blend-difference"
+            className="w-[9.375rem] mix-blend-difference"
           />
           {/* <div
             ref={maskRef}
