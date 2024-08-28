@@ -2,7 +2,7 @@ import React from "react";
 
 function IntroSection() {
   return (
-    <section className="relative size-full overflow-hidden pt-[5.625rem] px-[0] pb-10 lg:pt-[9.375rem] lg:px-[0] lg:pb-[3.75rem]">
+    <section id="intro" className="relative size-full overflow-hidden pt-[5.625rem] px-[0] pb-10 lg:pt-[9.375rem] lg:px-[0] lg:pb-[3.75rem]">
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
         <h2 className="josefin-sans text-white text-[2rem] leading-[1.15] font-thin text-center lg:text-[5.25rem]">
           BAGI creative studio is a{" "}

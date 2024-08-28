@@ -51,6 +51,46 @@ function HeroSection() {
     loadGSAP();
   }, []);
 
+  useEffect(() => {
+    // Fix for id links
+    document.querySelectorAll('a[href^="/#"]').forEach((el) => {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        const href = el.getAttribute("href");
+        const id = href?.slice(2); // Slice to remove "/#"
+        if (!id) return;
+
+        const currentUrl = window.location.pathname;
+        const targetUrl = href.split("#")[0] || "/";
+
+        if (currentUrl === targetUrl) {
+          // Target element is on the same page
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Navigate to the correct URL with the hash
+          window.location.href = `${targetUrl}#${id}`;
+        }
+      });
+    });
+
+    // Check for anchor in URL on page load
+    window.addEventListener("load", () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const id = hash.slice(1); // Remove the "#"
+          const target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100); // Adjust the delay as necessary
+      }
+    });
+  }, []);
+
   return (
     <section className="relative flex flex-col lg:flex-row pt-[9.375rem] size-full">
       <div className=" z-10 mix-blend-difference text-[#fff] flex flex-col min-h-[60vh] lg:min-h-[70vh] justify-end flex-[0_0_50%] lg:max-w-[50%] [padding:0_1rem_2.5rem] lg:[padding:0_8.438rem_2.344rem]">
@@ -68,7 +108,10 @@ function HeroSection() {
           </span>
         </h1>
         <div>
-          <button className="group josefin-sans inline-flex text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover">
+          <a
+            href="/#intro"
+            className="group josefin-sans inline-flex text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover"
+          >
             <span className="relative flex [transition:.4s_ease-in-out] [transition-property:background,color] ">
               <span className="relative flex flex-col overflow-hidden">
                 <span className="group-hover:-translate-y-[1.4875rem] [transition:transform_.2s_ease-in-out]">
@@ -96,7 +139,7 @@ function HeroSection() {
                 stroke-width=".851"
               ></path>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex-[0_0_50%] lg:max-w-[50%]">
