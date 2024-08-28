@@ -98,27 +98,21 @@ function BrandingSection() {
           </div>
         </div>
         <div className="lg:flex lg:items-start lg:gap-[8.125rem]">
-          <div className="mb-[.8125rem] max-w-[45vw] lg:m-0 lg:w-[27vw] lg:max-w-[31.313rem]">
-            <img
-              data-speed="1.1"
-              src="/images/article1.jpg"
-              className="hidden lg:block"
-            />
-            <img
-              src="/images/article1.jpg"
-              className="block lg:hidden"
-            />
+          <div className="mb-[.8125rem] max-w-[45vw] lg:m-0 lg:w-[27vw] lg:max-w-[31.313rem] overflow-hidden">
+            <div className="size-full" data-speed="1.1">
+              <img
+                src="/images/article1.jpg"
+                className="w-full scale-125 translate-y-[7.5vh] lg:translate-y-[6vh] block object-cover"
+              />
+            </div>
           </div>
-          <div className="lg:mt-[8.125rem] lg:w-[43vw] lg:max-w-[49.219rem]">
-            <img
-              data-speed="0.9"
-              src="/images/article2.jpg"
-              className="hidden lg:block"
-            />
-            <img
-              src="/images/article2.jpg"
-              className="block lg:hidden"
-            />
+          <div className="lg:mt-[8.125rem] lg:w-[43vw] lg:max-w-[49.219rem]  overflow-hidden">
+            <div className="size-full" data-speed="0.9">
+              <img
+                src="/images/article2.jpg"
+                className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
