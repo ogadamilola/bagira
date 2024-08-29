@@ -121,7 +121,7 @@ function HeroSection() {
             baseVelocity={-20}
             className="inline-block whitespace-nowrap pr-[.2em] align-top"
           >
-            Life Without Art is Just &quot;Meh&quot;
+            Good design is good business*
           </ScrollingBanner>
         </div>
         <h1 className="font-light text-[1.125rem] leading-[1.2] mt-[0] mx-[0] mb-[1.875rem] tracking-[-.01em] max-w-[70%] lg:text-[2.25rem] lg:max-w-full lg:leading-[2.1875rem]">
@@ -165,7 +165,7 @@ function HeroSection() {
         </div>
       </div>
       <div
-        className={`relative transition-all duration-400 ease-in-out ${
+        className={`relative transition-all duration-400 ease-in-out overflow-hidden ${
           isExpanded
             ? "flex-[0_0_100%] w-[100vw] z-[999]"
             : "flex-[0_0_50%] lg:max-w-[50%]"
@@ -183,9 +183,9 @@ function HeroSection() {
             }`}
           ></div>
           <div
-            className={`size-full min-h-[100vh] -mt-[9.375rem] ${
+            className={`size-full [@media(min-width:960px)]:min-h-[100vh] [@media(min-width:960px)]:-mt-[9.375rem] ${
               isExpanded
-                ? "fixed inset-x-[0] bg-black bg-opacity-80 backdrop-blur-md"
+                ? "fixed inset-y-0 [@media(min-width:960px)]:mt-[0rem] [@media(min-width:960px)]:inset-x-[0] flex items-center bg-black bg-opacity-80 backdrop-blur-md"
                 : ""
             }`}
             // data-speed="0.75"
@@ -207,10 +207,10 @@ function HeroSection() {
               loop
               muted={!isExpanded}
               playsInline
-              className={`object-cover transition-all duration-500 ${
+              className={`object-cover transition-opacity [@media(min-width:960px)]:transition-all duration-500 ${
                 isExpanded
-                  ? "fixed inset-x-[0] scale-100 opacity-100 z-50 max-h-screen max-w-screen mx-auto "
-                  : "h-[100vh] min-w-[50vw] translate-x-[50vw] opacity-0 -z-10"
+                  ? "fixed scale-75 [@media(min-width:960px)]:inset-x-[0] [@media(min-width:960px)]:scale-100 opacity-100 z-50 max-h-screen max-w-screen [@media(min-width:960px)]:mx-auto"
+                  : "h-[100vh] [@media(min-width:960px)]:min-w-[50vw] [@media(min-width:960px)]:translate-x-[50vw] opacity-0 -z-10"
               }`}
             />
           </div>
