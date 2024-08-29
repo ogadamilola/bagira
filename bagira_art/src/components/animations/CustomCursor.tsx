@@ -122,6 +122,72 @@ export default function CustomCursor() {
         });
       });
 
+    let isClosed = false; // Track the state
+
+    // Hover over elements that change the cursor (scale & background color & text)
+    document
+      .querySelectorAll<HTMLElement>(".cursor-play-hover")
+      .forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          const text = el.getAttribute("data-follower-text") || "Play"; // Fallback text
+          const scale = el.getAttribute("data-scale") || "1.7"; // Default scale or custom
+          if (followerTextRef.current) {
+            followerTextRef.current.innerHTML = `${text}`; // Set text
+          }
+          gsap.to(cursorRef.current, {
+            scale: parseFloat(scale), // Use the custom scale
+            backgroundColor: "white",
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+          gsap.to(innerDotRef.current, {
+            ease: "power3.out",
+            autoAlpha: 0,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+
+        el.addEventListener("mouseleave", () => {
+          if (followerTextRef.current) {
+            followerTextRef.current.innerHTML = ""; // Clear text
+          }
+          gsap.to(cursorRef.current, {
+            scale: 1, // Revert to original size
+            backgroundColor: "transparent", // Revert background color
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+          gsap.to(innerDotRef.current, {
+            ease: "power3.out",
+            autoAlpha: 1,
+            duration: 0.4,
+            overwrite: "auto",
+          });
+        });
+
+        // Add click event listener
+        el.addEventListener("click", () => {
+          if (followerTextRef.current) {
+            // Toggle text between "Play" and "Close"
+            if (isClosed) {
+              followerTextRef.current.innerHTML = "Play";
+            } else {
+              followerTextRef.current.innerHTML = "Close";
+            }
+            isClosed = !isClosed; // Update state
+            console.log(followerTextRef.current.innerHTML);
+          }
+          gsap.to(cursorRef.current, {
+            // Optionally add animations or effects for the click
+          });
+        });
+      });
+
     // // Hover over elements that change the cursor (scale)
     // document
     //   .querySelectorAll<HTMLElement>(".followerchangetext")

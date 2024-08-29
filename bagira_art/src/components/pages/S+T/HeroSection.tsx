@@ -1,8 +1,29 @@
-import { FlipLink } from "@/components/animations/RevealLinks";
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function HeroSection() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const videoRef = useRef(null);
+  const containerRef = useRef(null);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+    if (!isExpanded) {
+      videoRef.current.play();
+      videoRef.current.muted = false;
+      document.body.style.overflow = "hidden";
+    } else {
+      videoRef.current.muted = true;
+      document.body.style.overflow = "";
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   // GSAP Animations
   useEffect(() => {
     const loadGSAP = async () => {
@@ -143,17 +164,55 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="flex-[0_0_50%] lg:max-w-[50%]">
-        <div className="relative overflow-hidden">
-          <div className="opacity-15 bg-[#E81D5A] size-full min-h-[100vh] -mt-[9.375rem] absolute z-10"></div>
+      <div
+        className={`relative transition-all duration-400 ease-in-out ${
+          isExpanded
+            ? "flex-[0_0_100%] w-[100vw] z-[999]"
+            : "flex-[0_0_50%] lg:max-w-[50%]"
+        }`}
+      >
+        <div
+          ref={containerRef}
+          // className="relative overflow-hidden cursor-play-hover"
+          className={`relative cursor-play-hover bg-black`}
+          onClick={toggleExpanded}
+        >
           <div
-            className="size-full min-h-[100vh] -mt-[9.375rem]"
-            data-speed="0.75"
+            className={`opacity-10 bg-[#E81D5A] size-full min-h-[100vh] absolute z-10 pointer-events-none ${
+              isExpanded ? "hidden" : ""
+            }`}
+          ></div>
+          <div
+            className={`size-full min-h-[100vh] -mt-[9.375rem] ${
+              isExpanded
+                ? "fixed inset-x-[0] bg-black bg-opacity-80 backdrop-blur-md"
+                : ""
+            }`}
+            // data-speed="0.75"
           >
-            <img
-              src="/images/hero.png"
-              className="h-[100vh] object-cover"
-            ></img>
+            <video
+              src="/videos/hero-video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className={`absolute object-cover transition-transform duration-500 h-[100vh] min-w-[50vw] ${
+                isExpanded ? "hidden" : ""
+              }`}
+            />
+            <video
+              ref={videoRef}
+              src="/videos/hero-video.mp4"
+              autoPlay
+              loop
+              muted={!isExpanded}
+              playsInline
+              className={`object-cover transition-all duration-500 ${
+                isExpanded
+                  ? "fixed inset-x-[0] scale-100 opacity-100 z-50 max-h-screen max-w-screen mx-auto "
+                  : "h-[100vh] min-w-[50vw] translate-x-[50vw] opacity-0 -z-10"
+              }`}
+            />
           </div>
         </div>
       </div>
