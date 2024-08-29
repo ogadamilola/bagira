@@ -3,16 +3,17 @@ import React, { useEffect, useRef, useState } from "react";
 
 function HeroSection() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef(null);
 
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
-    if (!isExpanded) {
+    if (!isExpanded && videoRef.current) {
       videoRef.current.play();
       videoRef.current.muted = false;
       document.body.style.overflow = "hidden";
     } else {
+      if(videoRef.current)
       videoRef.current.muted = true;
       document.body.style.overflow = "";
     }
