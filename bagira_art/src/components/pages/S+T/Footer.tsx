@@ -6,7 +6,7 @@ function Footer() {
       className="relative overflow-hidden h-[100dvh]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <footer className="fixed top-[0] left-[0] w-screen min-h-screen pt-[1.5625rem] px-[0] pb-[2.1875rem] bg-[#f6f6f3] text-[#0E0F11] pt-[calc(var(--header-primary-height) + 1.875rem)]">
+      <footer className="fixed top-[0] left-[0] w-screen min-h-screen pt-[1.5625rem] px-[0] pb-[2.1875rem] bg-[#f6f6f3] text-[#0E0F11] [padding-top:calc(4.063rem_+_1.5625rem)]">
         <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
           <div className="mb-10 flex items-end justify-between">
             <div className="jost overflow-hidden mt-[0] mx-[0] mb-5 tracking-[-.04em] leading-none text-[4.5rem] lg:text-[17.625rem] lg:m-0 lg:translate-y-[.12em] font-light">
