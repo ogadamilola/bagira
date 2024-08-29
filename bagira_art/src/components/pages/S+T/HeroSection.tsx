@@ -168,7 +168,7 @@ function HeroSection() {
         className={`relative transition-all duration-400 ease-in-out overflow-hidden ${
           isExpanded
             ? "flex-[0_0_100%] w-[100vw] z-[999]"
-            : "flex-[0_0_50%] lg:max-w-[50%]"
+            : "flex-[0_0_50%] max-h-[50vh] lg:max-w-[50%] lg:max-h-[100%]"
         }`}
       >
         <div
