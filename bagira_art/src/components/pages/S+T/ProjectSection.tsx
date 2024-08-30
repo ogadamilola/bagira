@@ -740,12 +740,12 @@ function ProjectSection({
           <div className="ReviewWidget_block__eBBwG">
             <blockquote className="bg-[rgba(84,84,84,.2)] mt-[0] mx-[0] mb-[1.6875rem] rounded-2xl px-[2.625rem] py-9">
               <p className="leading-[1.4] !text-[1.688rem]">
-                "It was refreshing that they really took the time to understand
-                our brand and business, and listen to what we really wanted
-                acheive from our website. It was good balance between BAGI
-                Creatives being receptive to our ideas, but also really
+                &quot;It was refreshing that they really took the time to
+                understand our brand and business, and listen to what we really
+                wanted acheive from our website. It was good balance between
+                BAGI Creatives being receptive to our ideas, but also really
                 suggesting ways to improve on them and translate it for maximum
-                impact."
+                impact.&quot;
               </p>
               <footer className="mt-[1.9375rem] !text-[1.125rem] leading-[1.26]">
                 — Lorena Watson, Job Title
