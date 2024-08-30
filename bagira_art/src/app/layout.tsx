@@ -42,7 +42,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+        {/* <link href="/styles/main.css" rel="stylesheet" type="text/css" /> */}
         <link
           href="/svgs/m.svg"
           rel="shortcut icon"

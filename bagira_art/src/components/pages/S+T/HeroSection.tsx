@@ -133,7 +133,7 @@ function HeroSection() {
         <div>
           <a
             href="/#intro"
-            className="group josefin-sans inline-flex text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover"
+            className="group josefin-sans inline-flex text-[0.8125rem] lg:text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover"
           >
             <span className="relative flex [transition:.4s_ease-in-out] [transition-property:background,color] ">
               <span className="relative flex flex-col overflow-hidden">
@@ -184,9 +184,9 @@ function HeroSection() {
             }`}
           ></div>
           <div
-            className={`size-full [@media(min-width:960px)]:min-h-[100vh] [@media(min-width:960px)]:-mt-[9.375rem] ${
+            className={`size-full [@media(min-width:1024px)]:min-h-[100vh] [@media(min-width:1024px)]:-mt-[9.375rem] ${
               isExpanded
-                ? "fixed inset-y-0 [@media(min-width:960px)]:mt-[0rem] [@media(min-width:960px)]:inset-x-[0] flex items-center bg-black bg-opacity-80 backdrop-blur-md"
+                ? "fixed inset-y-0 [@media(min-width:1024px)]:mt-[0rem] [@media(min-width:1024px)]:inset-x-[0] flex items-center bg-black bg-opacity-80 backdrop-blur-md"
                 : ""
             }`}
             // data-speed="0.75"
@@ -197,7 +197,7 @@ function HeroSection() {
               loop
               muted
               playsInline
-              className={`absolute object-cover transition-transform duration-500 h-[100vh] min-w-[50vw] ${
+                className={`absolute object-cover transition-transform duration-500 h-[100vh] min-w-[100vw] lg:min-w-[50vw] ${
                 isExpanded ? "hidden" : ""
               }`}
             />
@@ -208,10 +208,10 @@ function HeroSection() {
               loop
               muted={!isExpanded}
               playsInline
-              className={`object-cover transition-opacity [@media(min-width:960px)]:transition-all duration-500 ${
+              className={`object-cover transition-opacity [@media(min-width:1024px)]:transition-all duration-500 ${
                 isExpanded
-                  ? "fixed scale-75 [@media(min-width:960px)]:inset-x-[0] [@media(min-width:960px)]:scale-100 opacity-100 z-50 max-h-screen max-w-screen [@media(min-width:960px)]:mx-auto"
-                  : "h-[100vh] [@media(min-width:960px)]:min-w-[50vw] [@media(min-width:960px)]:translate-x-[50vw] opacity-0 -z-10"
+                  ? "fixed scale-75 [@media(min-width:1024px)]:inset-x-[0] [@media(min-width:1024px)]:scale-100 opacity-100 z-50 max-h-screen max-w-screen [@media(min-width:1024px)]:mx-auto"
+                  : "h-[100vh] [@media(min-width:1024px)]:min-w-[50vw] [@media(min-width:1024px)]:translate-x-[50vw] opacity-0 -z-10"
               }`}
             />
           </div>

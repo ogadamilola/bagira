@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+// import "@/app/api/loader.js";
 
 const REPEATED_CLASSNAMES = [
-  "jost text-[1.688rem] leading-[1.48] mb-[1.875rem] mt-[3.3125rem] lg:mb-[2.1875rem] lg:mt-[5.125rem]",
+  "jost text-[1.688rem] leading-[1.48] mb-[1.875rem] mt-[3.3125rem]",
   "relative mb-[1.875rem]",
   "relative flex text-[1.219rem] rounded-none border-[none] h-14 whitespace-nowrap p-0 text-[hsla(300,6%,94%,.89)] items-center appearance-none bg-none outline-[none] [transition:border-color_.4s_ease-in-out] w-full cursor-select-hover bg-transparent",
   "jost text-[2.344rem] tracking-[-.01625rem] leading-none mb-[3.4375rem]",
@@ -9,7 +10,7 @@ const REPEATED_CLASSNAMES = [
   "absolute -left-[624.9375rem]",
   "relative block overflow-hidden rounded-[4.375rem] cursor-select-hover",
   "relative flex rounded-[4.375rem] border-[0.125rem] border-[solid] border-[hsla(0,0%,100%,.06)] bg-[#191920] h-[6.375rem] px-[2.344rem] py-[1.406rem] items-center cursor-pointer overflow-hidden",
-  "grid gap-[1.125rem_2.344rem] [@media(min-width:960px)]:grid-cols-[repeat(auto-fit,minmax(19.375rem,1fr))] text-[1.406rem] relative lg:text-[1.313rem]",
+  "grid gap-[1.125rem_2.344rem] [@media(min-width:1024px)]:grid-cols-[repeat(auto-fit,minmax(19.375rem,1fr))] text-[1.406rem] relative lg:text-[1.313rem]",
   "[transition:transform_.2s_ease-in-out]",
 ];
 
@@ -95,6 +96,20 @@ function ProjectSection({
     // console.log("Exit: " + isExit);
     // console.log("Visible: " + isVisible);
   }, [isEnter, isExit, isVisible]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      console.log(Math.max(16, (1 / 120) * window.innerWidth), "px");
+    };
+
+    handleResize();
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [window.innerWidth, window.innerHeight]);
 
   const validateInitialFields = (formData: FormData): FormErrors => {
     let errors: FormErrors = {};
@@ -246,7 +261,7 @@ function ProjectSection({
 
   return (
     <section
-      className={`fixed top-0 w-full h-full bg-[#0E0F11] text-[#f0eef0] overflow-auto px-[2.344rem] py-[1.406rem] lg:px-[2.8125rem] lg:py-[0] enter-done z-[999] [transition:transform_.5s_ease-in-out] 
+      className={`fixed top-0 w-full h-full bg-[#0E0F11] text-[#f0eef0] overflow-auto px-[2.344rem] py-[1.406rem] lg:px-[4.219rem] lg:py-[0] enter-done z-[999] [transition:transform_.5s_ease-in-out] 
         ${
           isExit
             ? "!translate-x-[-100vw]"
@@ -257,8 +272,8 @@ function ProjectSection({
         ${isVisible ? "" : "hidden"}`}
       data-lenis-prevent="true"
     >
-      <div className="josefin-sans [@media(min-width:960px)]:flex [@media(min-width:960px)]:h-full [@media(min-width:960px)]:overflow-auto [@media(min-width:960px)]:px-10 [@media(min-width:960px)]:py-[3.75rem] [@media(min-width:960px)]:-mx-[2.5rem] [@media(min-width:960px)]:my-[0] [@media(min-width:960px)]:justify-between">
-        <div className="[@media(min-width:960px)]:flex-[0_0_60.938rem]">
+      <div className="josefin-sans [@media(min-width:1024px)]:flex [@media(min-width:1024px)]:h-full [@media(min-width:1024px)]:overflow-auto [@media(min-width:1024px)]:px-[3.75rem] [@media(min-width:1024px)]:py-[5.625rem] [@media(min-width:1024px)]:-mx-[3.75rem] [@media(min-width:1024px)]:my-[0] [@media(min-width:1024px)]:justify-between">
+        <div className="[@media(min-width:1024px)]:flex-[0_0_60.938rem]">
           <button
             className="group cursor-select-hover inline-flex text-[1.219rem] text-[#fff] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer relative flex px-[2.063rem] py-[0] bg-none border-[0.125rem] border-[solid] border-[hsla(0,0%,85%,.19)] leading-[1.2] rounded-[1.875rem] items-center h-[2.8125rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color]"
             onClick={() => {
@@ -291,7 +306,7 @@ function ProjectSection({
           <div
             className={`${
               isSubmitted ? "" : "hidden"
-            } mt-[1.1875rem] text-[1.313rem] font-light leading-[1.6] tracking-[-.0175rem] mb-[6.375rem] max-w-xs`}
+            } mt-[1.1875rem] text-[1.313rem] font-light leading-[1.6] tracking-[-.0175rem] mb-[6.375rem] max-w-[35.625rem]`}
           >
             Thanks for your interest in working with us. Please complete your
             details and we&apos;ll get back to you within 48 hours.
@@ -390,9 +405,7 @@ function ProjectSection({
                 </div>
 
                 <h6 className={REPEATED_CLASSNAMES[0]}>3. Project budget *</h6>
-                <div
-                  className={`${REPEATED_CLASSNAMES[8]} FormFields_inCol__XNeth`}
-                >
+                <div className={`${REPEATED_CLASSNAMES[8]} !grid-cols-[1fr]`}>
                   {[
                     "£20,000 - £44,999",
                     "£45,000 - £69,999",
@@ -736,7 +749,7 @@ function ProjectSection({
             </div>
           )}
         </div>
-        <div className="hidden [@media(min-width:960px)]:block [@media(min-width:960px)]:flex-[0_0_43.594rem] [@media(min-width:960px)]:ml-auto [@media(min-width:960px)]:sticky [@media(min-width:960px)]:top-[0] [@media(min-width:960px)]:mt-[7.1875rem]">
+        <div className="hidden [@media(min-width:1024px)]:block [@media(min-width:1024px)]:flex-[0_0_43.594rem] [@media(min-width:1024px)]:ml-auto [@media(min-width:1024px)]:sticky [@media(min-width:1024px)]:top-[0] [@media(min-width:1024px)]:mt-[10.781rem]">
           <div className="ReviewWidget_block__eBBwG">
             <blockquote className="bg-[rgba(84,84,84,.2)] mt-[0] mx-[0] mb-[1.6875rem] rounded-2xl px-[2.625rem] py-9">
               <p className="leading-[1.4] !text-[1.688rem]">

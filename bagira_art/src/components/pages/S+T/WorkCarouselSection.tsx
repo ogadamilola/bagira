@@ -101,7 +101,7 @@ function WorkCarouselSection() {
     };
 
     const handleResize = () => {
-      if (window.innerWidth < 960) {
+      if (window.innerWidth < 1024) {
         removeAnimation();
       } else {
         removeAnimation(); // Clear any existing animation
@@ -124,13 +124,13 @@ function WorkCarouselSection() {
   return (
     <section
       id="work"
-      className="relative size-full pt-10 px-[0] pb-20 [@media(min-width:960px)]:pt-[5.625rem] [@media(min-width:960px)]:px-[0] [@media(min-width:960px)]:pb-[12.656rem] max-w-[100vw]"
+      className="relative size-full pt-10 px-[0] pb-20 [@media(min-width:1024px)]:pt-[5.625rem] [@media(min-width:1024px)]:px-[0] [@media(min-width:1024px)]:pb-[12.656rem] max-w-[100vw]"
     >
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
-        <div className="mb-10 [@media(min-width:960px)]:flex [@media(min-width:960px)]:justify-between [@media(min-width:960px)]:items-end [@media(min-width:960px)]:mb-20">
-          <h2 className="text-[6.875rem] tracking-[-.03em] leading-[.81] m-0 [@media(min-width:960px)]:text-[18.75rem] [@media(min-width:960px)]:tracking-[-.02em]">
+        <div className="mb-10 [@media(min-width:1024px)]:flex [@media(min-width:1024px)]:justify-between [@media(min-width:1024px)]:items-end [@media(min-width:1024px)]:mb-20">
+          <h2 className="text-[6.875rem] tracking-[-.03em] leading-[.81] m-0 [@media(min-width:1024px)]:text-[18.75rem] [@media(min-width:1024px)]:tracking-[-.02em]">
             <span className="jost font-light text-white">Our Work</span>
-            <em className="jost text-white inline-block overflow-hidden text-[1.125rem] tracking-[-.04em] not-italic align-middle -mt-[4.1em] ml-[1em] [@media(min-width:960px)]:-mt-[13.5em]">
+            <em className="jost text-white inline-block overflow-hidden text-[1.125rem] tracking-[-.04em] not-italic align-middle -mt-[4.1em] ml-[1em] [@media(min-width:1024px)]:-mt-[13.5em]">
               [{Article.length.toString().padStart(2, "0")}]
             </em>
           </h2>
@@ -164,12 +164,12 @@ function WorkCarouselSection() {
         <div ref={sectionRef} className="sticky top-0 flex flex-row gap-10">
           <div
             ref={carouselRef}
-            className="flex flex-col [@media(min-width:960px)]:flex-row gap-10"
+            className="flex flex-col [@media(min-width:1024px)]:flex-row gap-10"
           >
             {Article.map((article, index) => (
               <article
                 key={index}
-                className="group [@media(min-width:960px)]:flex-[0_0_75vh] [@media(min-width:960px)]:max-w-[55.109rem] cursor-view-hover"
+                className="group [@media(min-width:1024px)]:flex-[0_0_75vh] [@media(min-width:1024px)]:max-w-[55.109rem] cursor-view-hover"
               >
                 <picture className="relative block rounded-[.625rem] mb-[1.5625rem] overflow-hidden">
                   <img

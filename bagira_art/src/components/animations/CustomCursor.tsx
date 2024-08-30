@@ -13,7 +13,7 @@ export default function CustomCursor() {
       gsap.set(cursorRef.current, { xPercent: -50, yPercent: 150 });
     }
     if (innerDotRef.current) {
-      gsap.set(innerDotRef.current, { xPercent: -50, yPercent: 1920 });
+      gsap.set(innerDotRef.current, { xPercent: -50, yPercent: 1950 });
     }
 
     // Smoothly follow the mouse

@@ -53,6 +53,8 @@ interface LinkDetails {
 
 interface NavProps {
   links: LinkDetails[];
+  setIsEnter: Dispatch<SetStateAction<boolean>>;
+  setIsExit: Dispatch<SetStateAction<boolean>>;
 }
 
 interface BodyProps {
@@ -68,6 +70,12 @@ interface FooterProps {}
 interface ImageProps {
   src: string;
   isActive: boolean;
+}
+
+interface ProjectButtonProps {
+  className?: string;
+  setIsEnter: Dispatch<SetStateAction<boolean>>;
+  setIsExit: Dispatch<SetStateAction<boolean>>;
 }
 
 interface HeaderProps {
@@ -96,7 +104,7 @@ export const getChars = (word: string) => {
   return chars;
 };
 
-const Nav: React.FC<NavProps> = ({ links }) => {
+const Nav: React.FC<NavProps> = ({ links, setIsEnter, setIsExit }) => {
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
@@ -108,10 +116,10 @@ const Nav: React.FC<NavProps> = ({ links }) => {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="overflow-hidden flex flex-row items-start justify-end size-full text-white px-[1rem] lg:px-[2.813rem] absolute bg-[#0E0F11] top-[4.063rem] lg:top-[9.375rem] z-[-10]"
+      className="overflow-y-scroll [@media(min-height:960px)]:overflow-hidden max-h-[100vh] flex flex-row items-start justify-end size-full text-white px-[1rem] lg:px-[2.813rem] absolute bg-[#0E0F11] top-[4.063rem] lg:top-[9.375rem] z-[-10]"
     >
       <div className="flex flex-col items-end justify-between size-full">
-        <div className="flex flex-wrap mt-10 justify-end">
+        <div className="flex flex-col mt-10 justify-end">
           {links.map((link, index) => (
             <Link key={`l_${index}`} href={link.href} passHref>
               <motion.p
@@ -123,13 +131,20 @@ const Nav: React.FC<NavProps> = ({ links }) => {
                     ? "open"
                     : "closed"
                 }
-                className="m-0 flex overflow-hidden large-text sm:text-[10vw] md:text-[3vw] pl-8 pt-2 font-light "
+                className="m-0 flex overflow-hidden large-text justify-end sm:text-[10vw] lg:text-[3vw] pl-8 pt-2 font-light "
               >
                 {getChars(link.title)}
               </motion.p>
             </Link>
           ))}
         </div>
+
+        <PojectButton
+          className="inline-flex mt-[2.1875rem] lg:mt-[3.281rem]"
+          setIsEnter={setIsEnter}
+          setIsExit={setIsExit}
+        />
+
         <Footer />
       </div>
       {links[selectedLink.index].src && (
@@ -147,7 +162,7 @@ const Nav: React.FC<NavProps> = ({ links }) => {
 const Footer: React.FC<FooterProps> = () => {
   return (
     <div className="flex flex-wrap mt-10 mb-20 small-text uppercase gap-10 text-white">
-      <ul className="w-full md:w-auto mt-2 list-none p-0">
+      <ul className="w-full lg:w-auto mt-2 list-none p-0">
         <motion.li
           custom={[0.3, 0]}
           variants={translate}
@@ -160,7 +175,7 @@ const Footer: React.FC<FooterProps> = () => {
           @relaydigitalmktg
         </motion.li>
       </ul>
-      <ul className="w-full md:w-auto mt-2 list-none p-0">
+      <ul className="w-full lg:w-auto mt-2 list-none p-0">
         <motion.li
           custom={[0.3, 0]}
           variants={translate}
@@ -215,6 +230,44 @@ const ImageModal: React.FC<ImageProps> = ({ src, isActive }) => {
         </motion.div>
       )}
     </>
+  );
+};
+
+const PojectButton: React.FC<ProjectButtonProps> = ({
+  className,
+  setIsEnter,
+  setIsExit,
+}) => {
+  return (
+    <button
+      className={`${className} group text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover`}
+      onClick={() => {
+        setIsEnter(true);
+        setIsExit(false);
+        // setIsVisible(true);
+      }}
+    >
+      <span className="relative flex  bg-white leading-[1.2] rounded-full items-center px-[1.5625rem] py-[0] h-[2.8125rem] [@media(min-width:1024px)]:px-[2.344rem] [@media(min-width:1024px)]:py-[0] [@media(min-width:1024px)]:h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color]">
+        <span className="relative flex flex-col overflow-hidden">
+          <span className="group-hover:-translate-y-[1.4875rem] [transition:transform_.2s_ease-in-out]">
+            Start a project
+          </span>
+          <span className="absolute translate-y-[1.4875rem] group-hover:translate-y-[0] [transition:transform_.2s_ease-in-out]">
+            Start a project
+          </span>
+        </span>
+      </span>
+      <i className="flex justify-center items-center text-[2.8125rem] [@media(min-width:1024px)]:text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white [transition:.4s_ease-in-out] [transition-property:background,color]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1024 1024"
+          fill="currentColor"
+          className="fill-current w-[1.219rem] h-[1.219rem] [transition:transform_.2s_ease-in-out] rotate-[135deg] group-hover:rotate-[180deg]"
+        >
+          <path d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
+        </svg>
+      </i>
+    </button>
   );
 };
 
@@ -310,7 +363,7 @@ const Header: React.FC<HeaderProps> = ({
         isActive ? "" : "mix-blend-differences"
       }`}
     >
-      <div className="relative flex size-full items-center justify-between gap-[1.875rem] px-[1rem] lg:px-[2.813rem] h-[4.063rem] lg:h-[9.375rem]">
+      <div className="relative flex size-full items-center justify-between gap-[1.875rem] px-[1rem] lg:px-[2.813rem] h-[6.25rem] lg:h-[9.375rem]">
         <Link
           href={"/"}
           className="mr-auto overflow-hidden cursor-select-hover"
@@ -326,7 +379,7 @@ const Header: React.FC<HeaderProps> = ({
         <div
           className={`${
             isActive ? "opacity-0 pointer-events-none" : ""
-          } hidden transition-all duration-1000 md:flex gap-[1.5625rem]`}
+          } hidden transition-all duration-1000 lg:flex gap-[1.5625rem]`}
         >
           {navigation.map((nav, index) => (
             <div
@@ -356,43 +409,19 @@ const Header: React.FC<HeaderProps> = ({
             </div>
           ))}
         </div>
-        <button
-          className="group hidden lg:inline-flex text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
-          onClick={() => {
-            setIsEnter(true);
-            setIsExit(false);
-            // setIsVisible(true);
-          }}
-        >
-          <span className="relative flex px-[2.344rem] py-[0] bg-white leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
-            <span className="relative flex flex-col overflow-hidden">
-              <span className="group-hover:-translate-y-[1.4875rem] [transition:transform_.2s_ease-in-out]">
-                Start a project
-              </span>
-              <span className="absolute translate-y-[1.4875rem] group-hover:translate-y-[0] [transition:transform_.2s_ease-in-out]">
-                Start a project
-              </span>
-            </span>
-          </span>
-          <i className="flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white [transition:.4s_ease-in-out] [transition-property:background,color]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1024 1024"
-              fill="currentColor"
-              className="fill-current w-[1.219rem] h-[1.219rem] [transition:transform_.2s_ease-in-out] rotate-[135deg] group-hover:rotate-[180deg]"
-            >
-              <path d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
-            </svg>
-          </i>
-        </button>
+        <PojectButton
+          className="hidden lg:inline-flex"
+          setIsEnter={setIsEnter}
+          setIsExit={setIsExit}
+        />
 
         <button
           onClick={() => {
             setIsActive(!isActive);
           }}
-          className="group flex md:hidden text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline"
+          className="group flex lg:hidden text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline"
         >
-          <div className="relative flex px-[1.5625rem] py-[0] bg-white leading-[1.2] rounded-[1.875rem] items-center h-[2.8125rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color]">
+          <div className="relative flex bg-white leading-[1.2] rounded-[1.875rem] items-center px-[1.5625rem] py-[0] h-[2.8125rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color]">
             <motion.p
               variants={opacity}
               animate={!isActive ? "open" : "closed"}
@@ -410,7 +439,7 @@ const Header: React.FC<HeaderProps> = ({
           </div>
           <i className="relative flex flex-col justify-center items-center text-[2.8125rem] w-[1em] h-[1em] rounded-[50%] bg-white">
             <svg
-              className={`w-20 h-20 cursor-pointer ham8 fill-none ${
+              className={`cursor-pointer ham8 fill-none ${
                 isActive ? "[transform:rotate(45deg)]" : ""
               }`}
               viewBox="0 0 100 100"
@@ -444,7 +473,13 @@ const Header: React.FC<HeaderProps> = ({
         className="absolute bg-transparent backdrop-blur-lg opacity-50 size-full top-full left-0"
       /> */}
       <AnimatePresence>
-        {isActive && <Nav links={navigation} />}
+        {isActive && (
+          <Nav
+            links={navigation}
+            setIsEnter={setIsEnter}
+            setIsExit={setIsExit}
+          />
+        )}
       </AnimatePresence>
     </div>
   );
