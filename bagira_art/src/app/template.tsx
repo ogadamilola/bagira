@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Inner from "@/components/layout/transitions/inner";
 import { usePathname } from "next/navigation";
@@ -8,6 +8,7 @@ import Header from "@/components/pages/S+T/Header";
 import { NavLinks } from "@/data/navLinks";
 // import Footer from "@/components/Footer";
 import Footer from "@/components/pages/S+T/Footer";
+import ProjectSection from "@/components/pages/S+T/ProjectSection";
 
 export const perspective = {
   initial: {
@@ -74,6 +75,9 @@ interface TemplateProps {
 
 const Template: React.FC<TemplateProps> = ({ children }) => {
   const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(true);
+  const [isEnter, setIsEnter] = useState(false);
+  const [isExit, setIsExit] = useState(false);
 
   return (
     <div id="template" className="relative size-full bg-bagiBlack">
@@ -119,9 +123,21 @@ const Template: React.FC<TemplateProps> = ({ children }) => {
           ease: [0.76, 0, 0.24, 1],
         }}
       />
-      <Header navigation={NavLinks} />
+      <Header
+        navigation={NavLinks}
+        setIsEnter={setIsEnter}
+        setIsExit={setIsExit}
+      />
+      <ProjectSection
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+        isExit={isExit}
+        setIsExit={setIsExit}
+        isEnter={isEnter}
+        setIsEnter={setIsEnter}
+      />
       {children}
-      <Footer />
+      <Footer setIsEnter={setIsEnter} setIsExit={setIsExit} />
 
       {/* </motion.div> */}
       {/* </motion.div> */}

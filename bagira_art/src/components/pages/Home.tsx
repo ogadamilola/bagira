@@ -8,10 +8,11 @@ import React, { useEffect, useState } from "react";
 // import PaintingSection from "./Home/PaintingSection";
 // import ContactSection from "./Home/ContactSection";
 import HeroSection from "@/components/pages/S+T/HeroSection";
-import IntroSection from "./S+T/IntroSection";
-import WorkCarouselSection from "./S+T/WorkCarouselSection";
-import ServiceCarouselSection from "./S+T/ServiceCarouselSection";
-import BrandingSection from "./S+T/BrandingSection";
+import IntroSection from "@/components/pages/S+T/IntroSection";
+import WorkCarouselSection from "@/components/pages/S+T/WorkCarouselSection";
+import ServiceCarouselSection from "@/components/pages/S+T/ServiceCarouselSection";
+import BrandingSection from "@/components/pages/S+T/BrandingSection";
+import ProjectSection from "@/components/pages/S+T/ProjectSection";
 
 export default function Body() {
   return (
@@ -21,6 +22,7 @@ export default function Body() {
       <WorkCarouselSection />
       <ServiceCarouselSection />
       <BrandingSection />
+      
       {/* <TheGallerySection /> */}
       {/* <AboutSection /> */}
       {/* <WorkSection /> */}

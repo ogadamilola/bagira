@@ -121,27 +121,27 @@ const Phrase: React.FC<PhraseProps> = ({ text, src }) => {
 const phrases = [
     {
       items: [
-        { text: "empathetic", src: "/images/1.jpg" },
-        { text: "useful", src: "/images/2.jpg" },
-        { text: "intuitive", src: "/images/3.jpg" },
+        { text: "empathetic", src: "/images/1.webp" },
+        { text: "useful", src: "/images/2.webp" },
+        { text: "intuitive", src: "/images/3.webp" },
       ],
       direction: "left",
       left: "-40%",
     },
     {
       items: [
-        { text: "empathetic", src: "/images/4.jpg" },
-        { text: "useful", src: "/images/5.jpg" },
-        { text: "intuitive", src: "/images/6.jpg" },
+        { text: "empathetic", src: "/images/4.webp" },
+        { text: "useful", src: "/images/5.webp" },
+        { text: "intuitive", src: "/images/6.webp" },
       ],
       direction: "right",
       left: "-25%",
     },
     {
       items: [
-        { text: "empathetic", src: "/images/7.jpg" },
-        { text: "useful", src: "/images/8.jpg" },
-        { text: "intuitive", src: "/images/9.jpg" },
+        { text: "empathetic", src: "/images/7.webp" },
+        { text: "useful", src: "/images/8.webp" },
+        { text: "intuitive", src: "/images/9.webp" },
       ],
       direction: "left",
       left: "-70%",

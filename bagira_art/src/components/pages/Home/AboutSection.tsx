@@ -82,7 +82,7 @@ function AboutSection() {
             className="size-full absolute h-[250%] -bottom-[5%]"
             data-speed="0.5"
           >
-            <Image src="/images/IMG_4263.jpg" alt="" objectFit="cover" fill />
+            <Image src="/images/IMG_4263.webp" alt="" objectFit="cover" fill />
           </div>
           <div className="absolute bg-gradient-to-b from-transparent from-0% via-black/70 via-50% to-black to-90% size-full top-0 left-0" />
           <div className="flex flex-col items-start justify-end size-full p-20 z-10">

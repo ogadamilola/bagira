@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+function Footer({ setIsEnter, setIsExit }: any) {
   return (
     <div
       className="relative overflow-hidden h-[100dvh]"
@@ -14,7 +14,11 @@ function Footer() {
             </div>
             <a
               className="group hidden lg:inline-flex text-[1.031rem] text-[#f6f6f3] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
-              href="/contact"
+              onClick={() => {
+                setIsEnter(true);
+                setIsExit(false);
+                // setIsVisible(true);
+              }}
             >
               <span className="relative flex px-[2.344rem] py-[0] bg-[#0E0F11] leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
                 <span className="relative flex flex-col overflow-hidden">

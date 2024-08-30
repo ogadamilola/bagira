@@ -13,35 +13,35 @@ interface CarouselArticle {
 
 const Article: CarouselArticle[] = [
   {
-    src: "/images/article1.jpg",
+    src: "/images/article1.webp",
     title: "Lorem",
     tags: ["branding", "web & digital", "energy & utilities"],
     heading:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
   },
   {
-    src: "/images/article2.jpg",
+    src: "/images/article2.webp",
     title: "Lorem",
     tags: ["web & digital", "property"],
     heading:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
   },
   {
-    src: "/images/article3.jpg",
+    src: "/images/article3.webp",
     title: "Lorem",
     tags: ["web & digital", "SaaS"],
     heading:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
   },
   {
-    src: "/images/article4.jpg",
+    src: "/images/article4.webp",
     title: "Lorem",
     tags: ["energy & utilities", "branding"],
     heading:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
   },
   {
-    src: "/images/article5.jpg",
+    src: "/images/article5.webp",
     title: "Lorem",
     tags: ["investments"],
     heading:
@@ -83,7 +83,8 @@ function WorkCarouselSection() {
           onUpdate: (self) => {
             gsap.to(carousel, {
               x: -distanceToScroll * self.progress,
-              ease: "none",
+              ease: "power2.out", // Changed this line
+              duration: 0.75, // Added this line
             });
           },
         });
@@ -121,15 +122,16 @@ function WorkCarouselSection() {
   }, [Article.length]);
 
   return (
-    <section id="work" className="relative size-full pt-10 px-[0] pb-20 [@media(min-width:960px)]:pt-[5.625rem] [@media(min-width:960px)]:px-[0] [@media(min-width:960px)]:pb-[12.656rem] max-w-[100vw]">
+    <section
+      id="work"
+      className="relative size-full pt-10 px-[0] pb-20 [@media(min-width:960px)]:pt-[5.625rem] [@media(min-width:960px)]:px-[0] [@media(min-width:960px)]:pb-[12.656rem] max-w-[100vw]"
+    >
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
         <div className="mb-10 [@media(min-width:960px)]:flex [@media(min-width:960px)]:justify-between [@media(min-width:960px)]:items-end [@media(min-width:960px)]:mb-20">
           <h2 className="text-[6.875rem] tracking-[-.03em] leading-[.81] m-0 [@media(min-width:960px)]:text-[18.75rem] [@media(min-width:960px)]:tracking-[-.02em]">
             <span className="jost font-light text-white">Our Work</span>
             <em className="jost text-white inline-block overflow-hidden text-[1.125rem] tracking-[-.04em] not-italic align-middle -mt-[4.1em] ml-[1em] [@media(min-width:960px)]:-mt-[13.5em]">
-              [
-              {Article.length.toString().padStart(2, "0")}
-              ]
+              [{Article.length.toString().padStart(2, "0")}]
             </em>
           </h2>
           <a
@@ -160,7 +162,10 @@ function WorkCarouselSection() {
         </div>
 
         <div ref={sectionRef} className="sticky top-0 flex flex-row gap-10">
-          <div ref={carouselRef} className="flex flex-col [@media(min-width:960px)]:flex-row gap-10">
+          <div
+            ref={carouselRef}
+            className="flex flex-col [@media(min-width:960px)]:flex-row gap-10"
+          >
             {Article.map((article, index) => (
               <article
                 key={index}

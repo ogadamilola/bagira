@@ -109,7 +109,7 @@ function TheGallerySection() {
           >
             <Image
               alt=""
-              src="/images/The_gallery_logo_white.png"
+              src="/images/The_gallery_logo_white.webp"
               objectFit="cover"
               height={100}
               width={100}

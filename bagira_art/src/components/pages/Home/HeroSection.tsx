@@ -63,7 +63,7 @@ function HeroSection() {
           className="size-full object-cover pointer-events-none"
         /> */}
         <Image
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt=""
           objectFit="cover"
           fill

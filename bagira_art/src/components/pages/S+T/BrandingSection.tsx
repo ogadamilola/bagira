@@ -101,7 +101,7 @@ function BrandingSection() {
           <div className="mb-[.8125rem] max-w-[45vw] lg:m-0 lg:w-[27vw] lg:max-w-[31.313rem] overflow-hidden">
             <div className="size-full" data-speed="1.1">
               <img
-                src="/images/article1.jpg"
+                src="/images/article1.webp"
                 className="w-full scale-125 translate-y-[7.5vh] lg:translate-y-[6vh] block object-cover"
               />
             </div>
@@ -109,7 +109,7 @@ function BrandingSection() {
           <div className="lg:mt-[8.125rem] lg:w-[43vw] lg:max-w-[49.219rem]  overflow-hidden">
             <div className="size-full" data-speed="0.9">
               <img
-                src="/images/article2.jpg"
+                src="/images/article2.webp"
                 className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block object-cover"
               />
             </div>

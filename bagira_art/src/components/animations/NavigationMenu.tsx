@@ -242,7 +242,7 @@ const Header: React.FC<HeaderProps> = ({ navigation }) => {
             </AnimatePresence> */}
           <Link href={"/"} className="size-full" passHref>
             <img
-              src="/images/BAGIRA_LOGO_WHITE.png"
+              src="/images/BAGIRA_LOGO_WHITE.webp"
               alt="Loading"
               className=""
             />

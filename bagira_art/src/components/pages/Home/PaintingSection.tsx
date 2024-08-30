@@ -73,7 +73,7 @@ function PaintingSection() {
         <div className="flex flex-col items-start justify-between w-1/2">
           <Image
             alt=""
-            src="/images/The_gallery_logo_white.png"
+            src="/images/The_gallery_logo_white.webp"
             objectFit="cover"
             height={150}
             width={150}
