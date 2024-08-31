@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import HeroSection from "@/components/pages/Work/Work/HeroSection";
+import HeroSection from "@/components/pages/CaseStudy/HeroSection";
 
 export default function Body() {
   return (

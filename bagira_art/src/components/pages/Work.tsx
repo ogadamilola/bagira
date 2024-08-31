@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import HeroSection from "@/components/pages/Work/HeroSection";
-import WorkListSection from "@/components/pages/Work/WorkListSection";
+import HeroSection from "@/components/pages/WorkPage/HeroSection";
+import WorkListSection from "@/components/pages/WorkPage/WorkListSection";
 
 export default function Body() {
   return (

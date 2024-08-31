@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 // import "@/app/api/loader.js";
 
@@ -105,7 +106,7 @@ function ProjectSection({
       div = 37;
     }
     const handleResize = () => {
-      console.log(window.innerWidth / div, "px");
+      // console.log(window.innerWidth / div, "px");
     };
 
     handleResize();
