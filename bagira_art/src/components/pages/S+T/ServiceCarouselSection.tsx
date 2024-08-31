@@ -1,3 +1,4 @@
+import { Service } from "@/data/services";
 import React, { useEffect } from "react";
 
 interface ServiceCard {
@@ -6,30 +7,6 @@ interface ServiceCard {
   href: string;
   description: string;
 }
-
-const Card: ServiceCard[] = [
-  {
-    src: "/images/murals.webp",
-    title: "Commercial Murals",
-    href: "/",
-    description:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/branding.webp",
-    title: "Business Branding",
-    href: "/",
-    description:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/dev.webp",
-    title: "Webdev & Digital Marketing",
-    href: "/",
-    description:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-];
 
 function ServiceCarouselSection() {
   // GSAP Animations
@@ -87,7 +64,7 @@ function ServiceCarouselSection() {
     lg:grid-cols-3 
     lg:min-h-[100vh]"
     >
-      {Card.map((card, index) => (
+      {Service.map((card, index) => (
         <div
           key={index}
           className="relative group flex flex-col flex-[1] text-[#0E0F11] bg-[#F7F4EF] cursor-pointer 
@@ -119,10 +96,7 @@ function ServiceCarouselSection() {
           overflow-hidden max-h-[35vh]
           "
           >
-            <div
-              className="size-full lg:h-[30vh]"
-              data-speed="0.9"
-            >
+            <div className="size-full lg:h-[30vh]" data-speed="0.9">
               <img
                 src={card.src}
                 className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block [aspect-ratio:360/240] object-cover lg:max-h-[30vh]"

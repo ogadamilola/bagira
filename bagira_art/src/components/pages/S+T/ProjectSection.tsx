@@ -32,7 +32,7 @@ interface FormData {
 const initialFormData: FormData = {
   projectType: ["Branding"],
   existingBrand: "Yes",
-  projectBudget: "£20,000 - £44,999",
+  projectBudget: "ƒ20,000 - ƒ44,999",
   brief: null,
   firstName: "",
   lastName: "",
@@ -98,8 +98,14 @@ function ProjectSection({
   }, [isEnter, isExit, isVisible]);
 
   useEffect(() => {
+    let div: number;
+    if (window.innerWidth > 1024) {
+      div = 120;
+    } else {
+      div = 37;
+    }
     const handleResize = () => {
-      console.log(Math.max(16, (1 / 120) * window.innerWidth), "px");
+      console.log(window.innerWidth / div, "px");
     };
 
     handleResize();
@@ -407,10 +413,10 @@ function ProjectSection({
                 <h6 className={REPEATED_CLASSNAMES[0]}>3. Project budget *</h6>
                 <div className={`${REPEATED_CLASSNAMES[8]} !grid-cols-[1fr]`}>
                   {[
-                    "£20,000 - £44,999",
-                    "£45,000 - £69,999",
-                    "£70,000 - £99,999",
-                    "£100,000 +",
+                    "ƒ20,000 - ƒ44,999",
+                    "ƒ45,000 - ƒ69,999",
+                    "ƒ70,000 - ƒ99,999",
+                    "ƒ100,000 +",
                   ].map((budget) => (
                     <label key={budget} className={REPEATED_CLASSNAMES[4]}>
                       <input
@@ -778,7 +784,7 @@ function ProjectSection({
               <a
                 className="cursor-select-hover text-[1.219rem] text-[#fff] opacity-[.89] underline leading-[1.26] tracking-[.01625rem]"
                 target="_blank"
-                href=""
+                href="https://www.google.com"
               >
                 View all reviews ›
               </a>

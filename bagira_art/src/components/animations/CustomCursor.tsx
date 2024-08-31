@@ -1,267 +1,200 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { usePathname } from "next/navigation";
 
 export default function CustomCursor() {
-  const cursorRef = useRef<HTMLDivElement | null>(null); // Define type for cursorRef
-  const innerDotRef = useRef(null);
-  const followerTextRef = useRef<HTMLSpanElement | null>(null); // Define type for followerTextRef
+  const cursorRef = useRef<HTMLDivElement | null>(null);
+  const innerDotRef = useRef<HTMLDivElement | null>(null);
+  const followerTextRef = useRef<HTMLSpanElement | null>(null);
+  const [isClosed, setIsClosed] = useState(false);
+
+  const pathname = usePathname();
 
   useEffect(() => {
+    if (!cursorRef.current || !innerDotRef.current || !followerTextRef.current)
+      return;
+
     // Initialize cursor hidden and centered
-    if (cursorRef.current) {
-      gsap.set(cursorRef.current, { xPercent: -50, yPercent: 150 });
-    }
-    if (innerDotRef.current) {
-      gsap.set(innerDotRef.current, { xPercent: -50, yPercent: 1950 });
-    }
+    gsap.set(cursorRef.current, { xPercent: -50, yPercent: 150 });
+    gsap.set(innerDotRef.current, { xPercent: -50, yPercent: 1950 });
 
     // Smoothly follow the mouse
     const xTo = gsap.quickTo(cursorRef.current, "x", {
-        duration: 0.25,
-        ease: "power3.out",
-      }),
-      yTo = gsap.quickTo(cursorRef.current, "y", {
-        duration: 0.25,
-        ease: "power3.out",
-      });
+      duration: 0.25,
+      ease: "power3.out",
+    });
+    const yTo = gsap.quickTo(cursorRef.current, "y", {
+      duration: 0.25,
+      ease: "power3.out",
+    });
 
     const moveCursor = (e: MouseEvent) => {
       xTo(e.clientX);
       yTo(e.clientY);
-
-      // Move inner dot instantly
-      if (innerDotRef.current) {
-        gsap.set(innerDotRef.current, { x: e.clientX, y: e.clientY });
-      }
+      gsap.set(innerDotRef.current, { x: e.clientX, y: e.clientY });
     };
 
+    const handleMouseLeave = () => {
+      gsap.to(cursorRef.current, { autoAlpha: 0 });
+      gsap.to(innerDotRef.current, { autoAlpha: 0 });
+    };
+
+    const handleMouseEnter = () => {
+      gsap.to(cursorRef.current, { autoAlpha: 1 });
+      gsap.to(innerDotRef.current, { autoAlpha: 1 });
+    };
+
+    const handleSelectHover = (e: MouseEvent) => {
+      const target = e.currentTarget as HTMLElement;
+      const scale = target.getAttribute("data-scale") || "0.4";
+      gsap.to(cursorRef.current, {
+        scale: parseFloat(scale),
+        backgroundColor: "white",
+        ease: "power3.out",
+        autoAlpha: 1,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+    };
+
+    const handleViewHover = (e: MouseEvent) => {
+      const target = e.currentTarget as HTMLElement;
+      const text = target.getAttribute("data-follower-text") || "View";
+      const scale = target.getAttribute("data-scale") || "1.7";
+      if (followerTextRef.current) {
+        followerTextRef.current.innerHTML = text;
+      }
+      gsap.to(cursorRef.current, {
+        scale: parseFloat(scale),
+        backgroundColor: "white",
+        ease: "power3.out",
+        autoAlpha: 1,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+      gsap.to(innerDotRef.current, {
+        ease: "power3.out",
+        autoAlpha: 0,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+    };
+
+    const handlePlayHover = (e: MouseEvent) => {
+      const target = e.currentTarget as HTMLElement;
+      const text = isClosed ? "Close" : "Play";
+      const scale = target.getAttribute("data-scale") || "1.7";
+      if (followerTextRef.current) {
+        followerTextRef.current.innerHTML = text;
+      }
+      gsap.to(cursorRef.current, {
+        scale: parseFloat(scale),
+        backgroundColor: "white",
+        ease: "power3.out",
+        autoAlpha: 1,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+      gsap.to(innerDotRef.current, {
+        ease: "power3.out",
+        autoAlpha: 0,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+    };
+
+    const handleMouseLeaveReset = () => {
+      if (followerTextRef.current) {
+        followerTextRef.current.innerHTML = "";
+      }
+      gsap.to(cursorRef.current, {
+        scale: 1,
+        backgroundColor: "transparent",
+        ease: "power3.out",
+        autoAlpha: 1,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+      gsap.to(innerDotRef.current, {
+        ease: "power3.out",
+        autoAlpha: 1,
+        duration: 0.4,
+        overwrite: "auto",
+      });
+    };
+
+    const handlePlayClick = () => {
+      setIsClosed(!isClosed);
+    };
+
+    // Setup event listeners
     window.addEventListener("mousemove", moveCursor);
-    window.addEventListener("mouseleave", () => {
-      if (cursorRef.current) {
-        gsap.to(cursorRef.current, { autoAlpha: 0 });
-      }
-      if (innerDotRef.current) {
-        gsap.to(innerDotRef.current, { autoAlpha: 0 });
-      }
-    }); // Hide cursor on mouse leave
+    window.addEventListener("mouseleave", handleMouseLeave);
+    window.addEventListener("mouseenter", handleMouseEnter);
 
-    // Hover over elements that change the cursor (scale & background color)
-    document
-      .querySelectorAll<HTMLElement>(".cursor-select-hover")
-      .forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          const scale = el.getAttribute("data-scale") || "0.4"; // Default scale or custom
-
-          gsap.to(cursorRef.current, {
-            scale: parseFloat(scale), // Use the custom scale
-            backgroundColor: "white",
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
+    // Function to set up element-specific listeners
+    const setupElementListeners = () => {
+      document
+        .querySelectorAll<HTMLElement>(".cursor-select-hover")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", handleSelectHover);
+          el.addEventListener("mouseleave", handleMouseLeaveReset);
         });
 
-        el.addEventListener("mouseleave", () => {
-          gsap.to(cursorRef.current, {
-            scale: 1, // Revert to original size
-            backgroundColor: "transparent", // Revert background color
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
+      document
+        .querySelectorAll<HTMLElement>(".cursor-view-hover")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", handleViewHover);
+          el.addEventListener("mouseleave", handleMouseLeaveReset);
         });
+
+      document
+        .querySelectorAll<HTMLElement>(".cursor-play-hover")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", handlePlayHover);
+          el.addEventListener("mouseleave", handleMouseLeaveReset);
+          el.addEventListener("click", handlePlayClick);
+        });
+    };
+
+    // Initial setup
+    setupElementListeners();
+
+    // Setup a MutationObserver to watch for DOM changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === "childList") {
+          setupElementListeners();
+        }
       });
+    });
 
-    // Hover over elements that change the cursor (scale & background color & text)
-    document
-      .querySelectorAll<HTMLElement>(".cursor-view-hover")
-      .forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          const text = el.getAttribute("data-follower-text") || "View"; // Fallback text
-          const scale = el.getAttribute("data-scale") || "1.7"; // Default scale or custom
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = `${text}`; // Set text
-          }
-          gsap.to(cursorRef.current, {
-            scale: parseFloat(scale), // Use the custom scale
-            backgroundColor: "white",
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-          gsap.to(innerDotRef.current, {
-            ease: "power3.out",
-            autoAlpha: 0,
-            duration: 0.4,
-            overwrite: "auto",
-          });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mouseleave", handleMouseLeave);
+      window.removeEventListener("mouseenter", handleMouseEnter);
+      observer.disconnect();
+
+      document
+        .querySelectorAll<HTMLElement>(
+          ".cursor-select-hover, .cursor-view-hover, .cursor-play-hover"
+        )
+        .forEach((el) => {
+          el.removeEventListener("mouseenter", handleSelectHover);
+          el.removeEventListener("mouseenter", handleViewHover);
+          el.removeEventListener("mouseenter", handlePlayHover);
+          el.removeEventListener("mouseleave", handleMouseLeaveReset);
+          el.removeEventListener("click", handlePlayClick);
         });
-
-        el.addEventListener("mouseleave", () => {
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = ""; // Clear text
-          }
-          gsap.to(cursorRef.current, {
-            scale: 1, // Revert to original size
-            backgroundColor: "transparent", // Revert background color
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-          gsap.to(innerDotRef.current, {
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-        });
-      });
-
-    let isClosed = false; // Track the state
-
-    // Hover over elements that change the cursor (scale & background color & text)
-    document
-      .querySelectorAll<HTMLElement>(".cursor-play-hover")
-      .forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-          const text = el.getAttribute("data-follower-text") || "Play"; // Fallback text
-          const scale = el.getAttribute("data-scale") || "1.7"; // Default scale or custom
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = `${text}`; // Set text
-          }
-          gsap.to(cursorRef.current, {
-            scale: parseFloat(scale), // Use the custom scale
-            backgroundColor: "white",
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-          gsap.to(innerDotRef.current, {
-            ease: "power3.out",
-            autoAlpha: 0,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-        });
-
-        el.addEventListener("mouseleave", () => {
-          if (followerTextRef.current) {
-            followerTextRef.current.innerHTML = ""; // Clear text
-          }
-          gsap.to(cursorRef.current, {
-            scale: 1, // Revert to original size
-            backgroundColor: "transparent", // Revert background color
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-          gsap.to(innerDotRef.current, {
-            ease: "power3.out",
-            autoAlpha: 1,
-            duration: 0.4,
-            overwrite: "auto",
-          });
-        });
-
-        // Add click event listener
-        el.addEventListener("click", () => {
-          if (followerTextRef.current) {
-            // Toggle text between "Play" and "Close"
-            if (isClosed) {
-              followerTextRef.current.innerHTML = "Play";
-            } else {
-              followerTextRef.current.innerHTML = "Close";
-            }
-            isClosed = !isClosed; // Update state
-            console.log(followerTextRef.current.innerHTML);
-          }
-          gsap.to(cursorRef.current, {
-            // Optionally add animations or effects for the click
-          });
-        });
-      });
-
-    // // Hover over elements that change the cursor (scale)
-    // document
-    //   .querySelectorAll<HTMLElement>(".followerchangetext")
-    //   .forEach((el) => {
-    //     el.addEventListener("mouseenter", () => {
-    //       const text = el.getAttribute("data-follower-text") || ""; // Fallback text
-    //       const scale = el.getAttribute("data-scale") || "1.5"; // Default scale or custom
-    //       if (followerTextRef.current) {
-    //         followerTextRef.current.innerHTML = `
-    //         <div class="relative size-full flex flex-row items-center justify-center border-2 rounded-full p-10">
-    //           <div class="absolute flex flex-row gap-1 items-center justify-center rotate-[45deg]">
-    //             ${text}
-    //             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-    //               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-    //             </svg>
-    //           </div>
-    //         </div>`; // Set text
-    //       }
-    //       gsap.to(cursorRef.current, {
-    //         scale: parseFloat(scale), // Use the custom scale
-    //         ease: "power3.out",
-    //         autoAlpha: 1,
-    //         duration: 0.2,
-    //         overwrite: "auto",
-    //       });
-    //     });
-
-    //     el.addEventListener("mouseleave", () => {
-    //       if (followerTextRef.current) {
-    //         followerTextRef.current.innerHTML = ""; // Clear text
-    //       }
-    //       gsap.to(cursorRef.current, {
-    //         scale: 1, // Revert to original size
-    //         ease: "power3.out",
-    //         autoAlpha: 1,
-    //         duration: 0.2,
-    //         overwrite: "auto",
-    //       });
-    //     });
-    //   });
-
-    // // Hover over elements that change the cursor shape (text fields)
-    // document
-    //   .querySelectorAll<HTMLElement>(".text-field-hover")
-    //   .forEach((el) => {
-    //     el.addEventListener("mouseenter", () => {
-    //       gsap.to(cursorRef.current, {
-    //         width: "5px", // Width of the rectangle
-    //         height: "36px", // Height of the rectangle
-    //         borderRadius: "3px", // Adjust for slightly rounded corners
-    //         ease: "power3.out",
-    //         autoAlpha: 0.5,
-    //         duration: 0.2,
-    //         overwrite: "auto",
-    //       });
-    //     });
-
-    //     el.addEventListener("mouseleave", () => {
-    //       gsap.to(cursorRef.current, {
-    //         width: "24px", // Original width of the cursor
-    //         height: "24px", // Original height of the cursor
-    //         borderRadius: "50%", // Back to circle shape
-    //         ease: "power3.out",
-    //         autoAlpha: 1,
-    //         duration: 0.2,
-    //         overwrite: "auto",
-    //       });
-    //     });
-    //   });
-
-    // return () => {
-    //   window.removeEventListener("mousemove", moveCursor);
-    // };
-  }, []);
+    };
+  }, [pathname, isClosed]);
 
   return (
     <>
@@ -274,7 +207,6 @@ export default function CustomCursor() {
           ref={followerTextRef}
           className="absolute josefin-sans text-lg text-white mix-blend-difference"
         ></span>
-        {/* Dynamic text */}
       </div>
       <div
         ref={innerDotRef}

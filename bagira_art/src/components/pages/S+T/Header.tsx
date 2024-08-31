@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { FlipLink } from "@/components/animations/RevealLinks";
+import { useHandleClick } from "@/contexts/HandleNavigation";
 
 const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
 
@@ -284,6 +285,7 @@ const Header: React.FC<HeaderProps> = ({
 
   const [showHeader, setShowHeader] = useState(true); // New state to manage header visibility
   const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
+  const handleClick = useHandleClick();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -365,9 +367,10 @@ const Header: React.FC<HeaderProps> = ({
     >
       <div className="relative flex size-full items-center justify-between gap-[1.875rem] px-[1rem] lg:px-[2.813rem] h-[6.25rem] lg:h-[9.375rem]">
         <Link
-          href={"/"}
+          href={""}
           className="mr-auto overflow-hidden cursor-select-hover"
           passHref
+          onClick={handleClick("/")}
         >
           <img
             src="/svgs/m.svg"
@@ -387,7 +390,12 @@ const Header: React.FC<HeaderProps> = ({
               className="text-[1.313rem] font-normal text-white text-nowrap  transition-all duration-300 mx-4 cursor-select-hover"
             >
               {/* <a href={nav.href}>{nav.title}</a> */}
-              <Link key={`l_${index}`} href={nav.href} passHref>
+              <Link
+                key={`l_${index}`}
+                href={""}
+                onClick={handleClick(nav.href)}
+                passHref
+              >
                 {/* <motion.p
                     onMouseOver={() =>
                       setSelectedLink({ isActive: true, index })

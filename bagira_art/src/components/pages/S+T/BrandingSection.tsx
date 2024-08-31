@@ -1,7 +1,10 @@
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
+import { useHandleClick } from "@/contexts/HandleNavigation";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 function BrandingSection() {
+  const handleClick = useHandleClick();
   // GSAP Animations
   useEffect(() => {
     const loadGSAP = async () => {
@@ -70,9 +73,10 @@ function BrandingSection() {
             rhoncus, eleifend conubia a.
           </div>
           <div className="mt-[1.875rem] text-right">
-            <a
+            <Link
               className="group inline-flex text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
               href="/contact"
+              onClick={handleClick("/contact")}
             >
               <span className="relative flex px-[2.344rem] py-[0] bg-white leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
                 <span className="relative flex flex-col overflow-hidden">
@@ -94,7 +98,7 @@ function BrandingSection() {
                   <path d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
                 </svg>
               </i>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="lg:flex lg:items-start lg:gap-[8.125rem]">

@@ -1,5 +1,5 @@
 import Page from "@/components/layout/page";
-import Body from "@/components/pages/Work";
+import Body from "@/components/pages/Work/Work";
 
 export default function Home() {
   return (

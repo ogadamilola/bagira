@@ -1,6 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useHandleClick } from "@/contexts/HandleNavigation";
+import { Article } from "@/data/articles";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,47 +15,10 @@ interface CarouselArticle {
   heading: string;
 }
 
-const Article: CarouselArticle[] = [
-  {
-    src: "/images/article1.webp",
-    title: "Lorem",
-    tags: ["branding", "web & digital", "energy & utilities"],
-    heading:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/article2.webp",
-    title: "Lorem",
-    tags: ["web & digital", "property"],
-    heading:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/article3.webp",
-    title: "Lorem",
-    tags: ["web & digital", "SaaS"],
-    heading:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/article4.webp",
-    title: "Lorem",
-    tags: ["energy & utilities", "branding"],
-    heading:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-  {
-    src: "/images/article5.webp",
-    title: "Lorem",
-    tags: ["investments"],
-    heading:
-      "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
-  },
-];
-
 function WorkCarouselSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
+  const handleClick = useHandleClick();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -74,7 +41,7 @@ function WorkCarouselSection() {
         ScrollTrigger.create({
           trigger: section,
           start: "-70 0",
-          end: () => `+=${900 * Article.length}rem`,
+          end: () => `+=${900 * 4}rem`,
           pin: !0,
           anticipatePin: 1,
           scrub: 1,
@@ -83,8 +50,8 @@ function WorkCarouselSection() {
           onUpdate: (self) => {
             gsap.to(carousel, {
               x: -distanceToScroll * self.progress,
-              ease: "power2.out", // Changed this line
-              duration: 0.75, // Added this line
+              ease: "power2.out",
+              duration: 0.75,
             });
           },
         });
@@ -131,12 +98,14 @@ function WorkCarouselSection() {
           <h2 className="text-[6.875rem] tracking-[-.03em] leading-[.81] m-0 [@media(min-width:1024px)]:text-[18.75rem] [@media(min-width:1024px)]:tracking-[-.02em]">
             <span className="jost font-light text-white">Our Work</span>
             <em className="jost text-white inline-block overflow-hidden text-[1.125rem] tracking-[-.04em] not-italic align-middle -mt-[4.1em] ml-[1em] [@media(min-width:1024px)]:-mt-[13.5em]">
-              [{Article.length.toString().padStart(2, "0")}]
+              ({Article.length.toString().padStart(2, "0")})
             </em>
           </h2>
-          <a
+          <Link
+            href={""}
             className="group hidden lg:inline-flex text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
-            href="/case-study"
+            onClick={handleClick("/work")}
+            passHref
           >
             <span className="relative flex px-[2.344rem] py-[0] bg-white leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
               <span className="relative flex flex-col overflow-hidden">
@@ -158,7 +127,7 @@ function WorkCarouselSection() {
                 <path d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
               </svg>
             </i>
-          </a>
+          </Link>
         </div>
 
         <div ref={sectionRef} className="sticky top-0 flex flex-row gap-10">
@@ -166,7 +135,7 @@ function WorkCarouselSection() {
             ref={carouselRef}
             className="flex flex-col [@media(min-width:1024px)]:flex-row gap-10"
           >
-            {Article.map((article, index) => (
+            {Article.slice(0, 5).map((article, index) => (
               <article
                 key={index}
                 className="group [@media(min-width:1024px)]:flex-[0_0_75vh] [@media(min-width:1024px)]:max-w-[55.109rem] cursor-view-hover"
