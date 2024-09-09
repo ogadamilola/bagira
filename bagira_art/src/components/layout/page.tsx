@@ -1,6 +1,7 @@
 // layout/page.tsx
 "use client";
 import React, { ReactNode, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { PreloaderProvider, usePreloader } from "@/contexts/PreloaderContext";
 import Preloader from "@/components/Preloader";
 
@@ -9,6 +10,9 @@ interface PageProps {
 }
 
 const Page = ({ children }: PageProps) => {
+  const pathname = usePathname();
+  const isAdminPage = pathname.startsWith("/admin");
+
   const { isLoaded, finishLoading, isAnimating, finishAnimation } =
     usePreloader();
 
@@ -22,7 +26,7 @@ const Page = ({ children }: PageProps) => {
     <PreloaderProvider>
       <div className="relative flex size-full min-h-screen flex-col items-center justify-start overflow-hidden">
         {/* Splash Screen Overlay */}
-        {(!isLoaded || isAnimating) && (
+        {!isAdminPage && (!isLoaded || isAnimating) && (
           <Preloader
             finishLoading={finishLoading}
             finishAnimation={finishAnimation}

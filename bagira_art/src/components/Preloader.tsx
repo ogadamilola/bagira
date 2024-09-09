@@ -94,12 +94,12 @@ const Preloader: React.FC<PreloaderProps> = ({
             gsap.to(imageRef.current, {
               scale: 0,
               opacity: 0,
-              duration: 0.75,
+              duration: (duration/1000)/5 ,
               ease: "power1.inOut",
             });
             gsap.to(".splash-screen", {
               clipPath: "inset(0% 0% 100% 0%)",
-              duration: 1,
+              duration: (duration/1000)/4,
               ease: "power4.inOut",
               onComplete: () => {
                 setTimeout(finishAnimation, duration);
@@ -114,7 +114,7 @@ const Preloader: React.FC<PreloaderProps> = ({
           {
             y: 0,
             opacity: 1,
-            duration: 0.5,
+            duration: (duration/1000)/(duration/1000 * 4),
             ease: "power4.out",
             stagger: 0.075,
           }
@@ -122,7 +122,7 @@ const Preloader: React.FC<PreloaderProps> = ({
           .to(chars, {
             y: -25,
             opacity: 0,
-            duration: 0.5,
+            duration: (duration/1000)/(duration/1000 * 2),
             ease: "power4.in",
           })
           .fromTo(
@@ -131,23 +131,23 @@ const Preloader: React.FC<PreloaderProps> = ({
             {
               scale: 1.1,
               opacity: 1,
-              duration: 0.5,
+              duration: (duration/1000)/(duration/1000 * 2),
               ease: "power1.inOut",
             }
           )
           .to(imageRef.current, {
             scale: 0.95, // Pulsate smaller
-            duration: 0.3,
+            duration: (duration/1000)/15,
             ease: "power1.inOut",
           })
           .to(imageRef.current, {
             scale: 1.05, // Pulsate larger again
-            duration: 0.3,
+            duration: (duration/1000)/15,
             ease: "power1.inOut",
           })
           .to(imageRef.current, {
             scale: 1, // Return to original size
-            duration: 0.3,
+            duration: (duration/1000)/15,
             ease: "power1.inOut",
           });
       }
@@ -167,10 +167,10 @@ const Preloader: React.FC<PreloaderProps> = ({
     <div className="fixed inset-0 overflow-hidden z-[99999] flex flex-col items-center justify-center h-[100dvh] bg-[#0E0F11] cursor-wait splash-screen text-bagiWhite">
       <div className="relative z-10 select-none pointer-events-none flex flex-col items-center justify-center size-full splash-content">
         <div
-          className="relative text-lg sm:text-2xl uppercase overflow-hidden"
+          className="champagne-limos relative text-lg sm:text-2xl uppercase overflow-hidden"
           ref={textRef}
         >
-          {"BagiCreatives".split("").map((char, index) => (
+          {"@BagiCreativeStudio".split("").map((char, index) => (
             <span key={index} className="char inline-block">
               {char}
             </span>

@@ -50,11 +50,11 @@ export default function Footer({ className }: ComponentProps) {
         <ul className="relative grid grid-cols-2 gap-x-[7vw] gap-y-[15vw] md:flex md:flex-row items start justify-between w-full h-full font-medium small-text">
           {/* Site description */}
           <li className="flex flex-col items-start justify-end flex-grow max-w-[25vw] h-auto gap-y-[8vw] sm:gap-y-[2vw]">
-            <p className="josefin-sans text-sm mt-4 text-start max-w-[22ch]">
+            <p className="champagne-limos text-sm mt-4 text-start max-w-[22ch]">
               Visual artist and muralist of Curacao
             </p>
 
-            <p className="josefin-sans text-[10px] mt-4 text-start">
+            <p className="champagne-limos text-[10px] mt-4 text-start">
               ©2024BAGIRA All Rights Reserved
             </p>
             {/* <div className="relative flex flex-col gap-y-[5vw] sm:gap-y-0">
@@ -74,7 +74,7 @@ export default function Footer({ className }: ComponentProps) {
             {/* <div className="flex items-end justify-end md:justify-start w-full">
               <CurrentTime />
             </div> */}
-            <h3 className="josefin-sans text-sm max-w-[40vw] font-semibold">
+            <h3 className="champagne-limos text-sm max-w-[40vw] font-semibold">
               Quick Links
             </h3>
             <div className="text-[10px] font-normal text-white transition-all duration-300">
@@ -91,7 +91,7 @@ export default function Footer({ className }: ComponentProps) {
           </li>
           {/* Contact info */}
           <li className="flex flex-col items-start justify-start flex-grow w-auto h-auto gap-y-[5vw] sm:gap-y-[1vw] text-nowrap">
-            <h3 className="josefin-sans text-sm max-w-[40vw] font-semibold">
+            <h3 className="champagne-limos text-sm max-w-[40vw] font-semibold">
               Contact info
             </h3>
             <div className="text-[10px] font-normal text-white transition-all duration-300 w-full">
@@ -152,7 +152,7 @@ export default function Footer({ className }: ComponentProps) {
             {/* <div className="flex items-end justify-end md:justify-start w-full">
               <CurrentTime />
             </div> */}
-            <h3 className="josefin-sans text-lg max-w-[40vw] font-semibold">
+            <h3 className="champagne-limos text-lg max-w-[40vw] font-semibold">
               join our Newsletter
             </h3>
             <p className="text-[10px] font-normal text-white transition-all duration-300">

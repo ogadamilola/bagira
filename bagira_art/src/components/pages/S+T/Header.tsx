@@ -361,7 +361,7 @@ const Header: React.FC<HeaderProps> = ({
                 ? "transform translate-y-0"
                 : "transform -translate-y-full"
             }`
-      } jost z-[999] flex flex-col size-full h-auto bg-[#0E0F11] text-white transition-transform duration-500 ${
+      } z-[999] flex flex-col size-full h-auto bg-[#0E0F11] text-white transition-transform duration-500 ${
         isActive ? "" : "mix-blend-differences"
       }`}
     >
@@ -387,7 +387,7 @@ const Header: React.FC<HeaderProps> = ({
           {navigation.map((nav, index) => (
             <div
               key={index}
-              className="text-[1.313rem] font-normal text-white text-nowrap  transition-all duration-300 mx-4 cursor-select-hover"
+              className="text-[1.313rem] font-normal text-white text-nowrap  transition-all duration-300 mx-4 cursor-select-hover champagne-limos"
             >
               {/* <a href={nav.href}>{nav.title}</a> */}
               <Link

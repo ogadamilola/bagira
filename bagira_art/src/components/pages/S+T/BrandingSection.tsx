@@ -1,10 +1,13 @@
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
 import { useHandleClick } from "@/contexts/HandleNavigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 
 function BrandingSection() {
   const handleClick = useHandleClick();
+  const pathname = usePathname();
+
   // GSAP Animations
   useEffect(() => {
     const loadGSAP = async () => {
@@ -55,7 +58,7 @@ function BrandingSection() {
   return (
     <section className="text-[#fff] size-full pt-[7.8125rem] pb-[3.125rem] overflow-hidden lg:pt-[6.5625rem] lg:pb-[18.75rem]">
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
-        <div className="jost relative w-screen left-2/4 -translate-x-1/2 overflow-hidden font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[25.313rem]">
+        <div className="champagne-limos relative w-screen left-2/4 -translate-x-1/2 overflow-hidden font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[25.313rem]">
           <ScrollingBanner
             baseVelocity={-20}
             className="inline-block whitespace-nowrap pr-[.2em] align-top"
@@ -64,7 +67,7 @@ function BrandingSection() {
           </ScrollingBanner>
         </div>
         <div className="mt-[4.688rem] ml-[4.688rem] mb-[4.688rem] lg:ml-auto lg:max-w-[72rem]">
-          <div className="text-[.875rem] leading-[1.31] lg:text-[1.688rem] lg:[column-count:2] lg:gap-x-[3.4375rem]">
+          <div className="text-[.875rem] leading-[1.31] lg:text-[1.688rem] lg:[column-count:2] lg:gap-x-[3.4375rem] font-extralight">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate
             sagittis a massa netus pretium quis quisque tellus torquent. Dis
             maecenas dis nascetur rhoncus, eleifend conubia a. Lorem ipsum odor

@@ -4,7 +4,7 @@
 
 @import url("/fonts/Jost/stylesheet.css");
 @import url("/fonts/Josefin Sans/stylesheet.css");
-
+@import url("/fonts/Champagne & Limousines/stylesheet.css");
 
 :root {
   --root-size: 37;
@@ -15,8 +15,8 @@
   }
 }
 :root {
-	font-size: 14px;
-	/* width: 100vw; */
+  font-size: 14px;
+  /* width: 100vw; */
 }
 @media (min-width: 370px) {
   :root {
@@ -124,6 +124,14 @@
 
 .jost {
   font-family: "Jost", sans-serif;
+}
+
+.champagne-limos {
+  font-family: "Champagne & Limousines", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
 }
 
 body {

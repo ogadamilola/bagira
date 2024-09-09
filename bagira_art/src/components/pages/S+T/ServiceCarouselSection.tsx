@@ -1,4 +1,5 @@
 import { Service } from "@/data/services";
+import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 
 interface ServiceCard {
@@ -9,6 +10,8 @@ interface ServiceCard {
 }
 
 function ServiceCarouselSection() {
+  const pathname = usePathname();
+
   // GSAP Animations
   useEffect(() => {
     const loadGSAP = async () => {
@@ -56,6 +59,7 @@ function ServiceCarouselSection() {
 
     loadGSAP();
   }, []);
+  
   return (
     <section
       id="services"
@@ -74,7 +78,7 @@ function ServiceCarouselSection() {
         >
           {/* Left peeling part */}
           <div
-            className="hidden absolute inset-y-0 left-0 w-1/2 bg-[#F7F4EF] 
+            className="z-10 hidden absolute inset-y-0 left-0 w-[51%] bg-[#F7F4EF] 
             lg:block
             lg:[transition:transform_.4s_ease-in-out] 
             origin-left group-hover:scale-x-0 pointer-events-none"
@@ -82,19 +86,22 @@ function ServiceCarouselSection() {
 
           {/* Right peeling part */}
           <div
-            className="hidden absolute inset-y-0 right-0 w-1/2 bg-[#F7F4EF] 
+            className="z-10 hidden absolute inset-y-0 right-0 w-[51%] bg-[#F7F4EF] 
             lg:block
-            lg:[transition:transform_.4s_ease-in-out] origin-right group-hover:scale-x-0 pointer-events-none"
+            lg:[transition:transform_.4s_ease-in-out] 
+            origin-right group-hover:scale-x-0 pointer-events-none"
           />
           <picture
-            className="
+            className={`
           lg:[transition:clip-path_.4s_ease-in-out] 
           lg:[will-change:clip-path] 
           lg:order-2 
-          lg:[clip-path:polygon(50%_0,_50%_0,_50%_100%,_50%_100%)]
-          group-hover:lg:[clip-path:polygon(0_0,_100%_0,_100%_100%,_0_100%)] 
+          ${
+            /*lg:[clip-path:polygon(50%_0,_50%_0,_50%_100%,_50%_100%)]
+          group-hover:lg:[clip-path:polygon(0_0,_100%_0,_100%_100%,_0_100%)] */ ""
+          }
           overflow-hidden max-h-[35vh]
-          "
+          `}
           >
             <div className="size-full lg:h-[30vh]" data-speed="0.9">
               <img
@@ -104,16 +111,17 @@ function ServiceCarouselSection() {
             </div>
           </picture>
           <div
-            className="relative flex flex-col px-5 py-[2.8125rem] min-h-[22.1875rem] flex-grow 
+            className="z-10 relative flex flex-col px-5 pt-[2.8125rem] lg:min-h-[22.1875rem] lg:flex-grow 
           lg:pt-[7.313rem] 
           lg:px-[5.813rem] 
-          lg:pb-[3.75rem] 
-          lg:justify-end"
+          lg:justify-end
+          lg:text-white 
+            lg:mix-blend-difference"
           >
             <div
               className="
-            size-full mt-[1.0625rem] text-[.875rem] leading-[1.45] tracking-[-.01em] max-w-[19.538rem] flex-grow
-            lg:translate-y-[7.126rem] 
+            size-full my-[1.0625rem] text-[.875rem] leading-[1.45] tracking-[-.01em] max-w-[19.538rem] flex-grow
+            lg:bottom-0
             lg:[transition:clip-path_.4s_ease-in-out]
             lg:[will-change:clip-path]
             lg:flex
@@ -125,18 +133,16 @@ function ServiceCarouselSection() {
             lg:text-[.9375rem]
             lg:[clip-path:polygon(0_100%,_100%_100%,_100%_100%,_0_100%)]
             group-hover:lg:[clip-path:polygon(0_0,_100%_0,_100%_100%,_0_100%)] 
-            lg:text-white 
-            lg:mix-blend-difference
             "
             >
               {card.description}
             </div>
             <div
-              className="leading-none jost 
+              className="leading-none champagne-limos 
             lg:font-light 
           lg:text-white 
             lg:mix-blend-difference 
-            lg:relative 
+            lg:absolute 
             group-hover:lg:-translate-y-[30vh] 
             lg:[transition:transform_.4s_ease-in-out]
             "
@@ -154,6 +160,15 @@ function ServiceCarouselSection() {
                 {card.title}
               </h6>
             </div>
+          </div>
+          <div
+            className="z-10 relative flex flex-col px-5 pb-[2.8125rem]
+          lg:px-[5.813rem] 
+          lg:pb-[3.75rem] 
+          lg:justify-end
+          lg:text-white 
+            lg:mix-blend-difference"
+          >
             <div className="pt-[1.875rem]">
               <a
                 className="group text-[#F7F4EF] flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white mix-blend-difference [transition:.4s_ease-in-out] [transition-property:background,color] cursor-select-hover"

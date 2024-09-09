@@ -13,22 +13,25 @@ import WorkCarouselSection from "@/components/pages/S+T/WorkCarouselSection";
 import ServiceCarouselSection from "@/components/pages/S+T/ServiceCarouselSection";
 import BrandingSection from "@/components/pages/S+T/BrandingSection";
 import ProjectSection from "@/components/pages/S+T/ProjectSection";
+import { CaseStudyProvider } from "@/contexts/CaseStudyContext";
 
 export default function Body() {
   return (
-    <div className="relative flex w-[100vw] min-h-screen flex-col items-center justify-start bg-[#0E0F11]">
-      <HeroSection />
-      <IntroSection />
-      <WorkCarouselSection />
-      <ServiceCarouselSection />
-      <BrandingSection />
-      
-      {/* <TheGallerySection /> */}
-      {/* <AboutSection /> */}
-      {/* <WorkSection /> */}
-      {/* <ServiceSection /> */}
-      {/* <PaintingSection /> */}
-      {/* <ContactSection /> */}
-    </div>
+    <CaseStudyProvider isHomePage={true}>
+      <div className="relative flex w-[100vw] min-h-screen flex-col items-center justify-start bg-[#0E0F11] z-10">
+        <HeroSection />
+        <IntroSection />
+        <WorkCarouselSection />
+        <ServiceCarouselSection />
+        <BrandingSection />
+
+        {/* <TheGallerySection /> */}
+        {/* <AboutSection /> */}
+        {/* <WorkSection /> */}
+        {/* <ServiceSection /> */}
+        {/* <PaintingSection /> */}
+        {/* <ContactSection /> */}
+      </div>
+    </CaseStudyProvider>
   );
 }

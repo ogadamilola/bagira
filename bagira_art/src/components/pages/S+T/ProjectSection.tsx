@@ -3,15 +3,24 @@ import React, { useEffect, useState } from "react";
 // import "@/app/api/loader.js";
 
 const REPEATED_CLASSNAMES = [
-  "jost text-[1.688rem] leading-[1.48] mb-[1.875rem] mt-[3.3125rem]",
-  "relative mb-[1.875rem]",
-  "relative flex text-[1.219rem] rounded-none border-[none] h-14 whitespace-nowrap p-0 text-[hsla(300,6%,94%,.89)] items-center appearance-none bg-none outline-[none] [transition:border-color_.4s_ease-in-out] w-full cursor-select-hover bg-transparent",
-  "jost text-[2.344rem] tracking-[-.01625rem] leading-none mb-[3.4375rem]",
-  "block relative",
-  "absolute -left-[624.9375rem]",
-  "relative block overflow-hidden rounded-[4.375rem] cursor-select-hover",
-  "relative flex rounded-[4.375rem] border-[0.125rem] border-[solid] border-[hsla(0,0%,100%,.06)] bg-[#191920] h-[6.375rem] px-[2.344rem] py-[1.406rem] items-center cursor-pointer overflow-hidden",
-  "grid gap-[1.125rem_2.344rem] [@media(min-width:1024px)]:grid-cols-[repeat(auto-fit,minmax(19.375rem,1fr))] text-[1.406rem] relative lg:text-[1.313rem]",
+  "champagne-limos text-[1.688rem] leading-[1.48] mb-[1.875rem] mt-[3.3125rem]",
+
+  "champagne-limos relative mb-[1.875rem]",
+
+  "champagne-limos relative flex text-[1.219rem] rounded-none border-[none] h-14 whitespace-nowrap p-0 text-[hsla(300,6%,94%,.89)] items-center appearance-none bg-none outline-[none] [transition:border-color_.4s_ease-in-out] w-full cursor-select-hover bg-transparent",
+
+  "champagne-limos text-[2.344rem] tracking-[-.01625rem] leading-none mb-[3.4375rem]",
+
+  "champagne-limos block relative",
+
+  "champagne-limos absolute -left-[624.9375rem]",
+
+  "champagne-limos relative block overflow-hidden rounded-[4.375rem] cursor-select-hover",
+
+  "champagne-limos relative flex rounded-[4.375rem] border-[0.125rem] border-[solid] border-[hsla(0,0%,100%,.06)] bg-[#191920] h-[6.375rem] px-[2.344rem] py-[1.406rem] items-center cursor-pointer overflow-hidden",
+
+  "champagne-limos grid gap-[1.125rem_2.344rem] [@media(min-width:1024px)]:grid-cols-[repeat(auto-fit,minmax(19.375rem,1fr))] text-[1.406rem] relative lg:text-[1.313rem]",
+
   "[transition:transform_.2s_ease-in-out]",
 ];
 
@@ -100,23 +109,22 @@ function ProjectSection({
 
   useEffect(() => {
     let div: number;
-    if (window.innerWidth > 1024) {
-      div = 120;
-    } else {
-      div = 37;
+    if (typeof window !== "undefined") {
+      div = window.innerWidth > 1024 ? 120 : 37;
+
+      const handleResize = () => {
+        // console.log(window.innerWidth / div, "px");
+      };
+
+      handleResize();
+      // Add resize event listener
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     }
-    const handleResize = () => {
-      // console.log(window.innerWidth / div, "px");
-    };
-
-    handleResize();
-    // Add resize event listener
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [window.innerWidth, window.innerHeight]);
+  }, []);
 
   const validateInitialFields = (formData: FormData): FormErrors => {
     let errors: FormErrors = {};
@@ -268,6 +276,7 @@ function ProjectSection({
 
   return (
     <section
+      id="project"
       className={`fixed top-0 w-full h-full bg-[#0E0F11] text-[#f0eef0] overflow-auto px-[2.344rem] py-[1.406rem] lg:px-[4.219rem] lg:py-[0] enter-done z-[999] [transition:transform_.5s_ease-in-out] 
         ${
           isExit
@@ -279,7 +288,7 @@ function ProjectSection({
         ${isVisible ? "" : "hidden"}`}
       data-lenis-prevent="true"
     >
-      <div className="josefin-sans [@media(min-width:1024px)]:flex [@media(min-width:1024px)]:h-full [@media(min-width:1024px)]:overflow-auto [@media(min-width:1024px)]:px-[3.75rem] [@media(min-width:1024px)]:py-[5.625rem] [@media(min-width:1024px)]:-mx-[3.75rem] [@media(min-width:1024px)]:my-[0] [@media(min-width:1024px)]:justify-between">
+      <div className="[@media(min-width:1024px)]:flex [@media(min-width:1024px)]:h-full [@media(min-width:1024px)]:overflow-auto [@media(min-width:1024px)]:px-[3.75rem] [@media(min-width:1024px)]:py-[5.625rem] [@media(min-width:1024px)]:-mx-[3.75rem] [@media(min-width:1024px)]:my-[0] [@media(min-width:1024px)]:justify-between">
         <div className="[@media(min-width:1024px)]:flex-[0_0_60.938rem]">
           <button
             className="group cursor-select-hover inline-flex text-[1.219rem] text-[#fff] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer relative flex px-[2.063rem] py-[0] bg-none border-[0.125rem] border-[solid] border-[hsla(0,0%,85%,.19)] leading-[1.2] rounded-[1.875rem] items-center h-[2.8125rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color]"
@@ -307,7 +316,7 @@ function ProjectSection({
               </span>
             </span>
           </button>
-          <h2 className="jost mt-[6.875rem] mb-[2.8125rem] text-[4.375rem] leading-[.9] tracking-[-.1125rem] uppercase font-normal lg:mt-[6.281rem] lg:mb-[7.219rem] lg:text-[8.438rem]">
+          <h2 className="champagne-limos mt-[6.875rem] mb-[2.8125rem] text-[4.375rem] leading-[.9] tracking-[-.1125rem] uppercase font-normal lg:mt-[6.281rem] lg:mb-[7.219rem] lg:text-[8.438rem]">
             {isSubmitted ? "Thank you for your submission!" : "Start a Project"}
           </h2>
           <div
@@ -759,7 +768,7 @@ function ProjectSection({
         <div className="hidden [@media(min-width:1024px)]:block [@media(min-width:1024px)]:flex-[0_0_43.594rem] [@media(min-width:1024px)]:ml-auto [@media(min-width:1024px)]:sticky [@media(min-width:1024px)]:top-[0] [@media(min-width:1024px)]:mt-[10.781rem]">
           <div className="ReviewWidget_block__eBBwG">
             <blockquote className="bg-[rgba(84,84,84,.2)] mt-[0] mx-[0] mb-[1.6875rem] rounded-2xl px-[2.625rem] py-9">
-              <p className="leading-[1.4] !text-[1.688rem]">
+              <p className="champagne-limos leading-[1.4] !text-[1.688rem]">
                 &quot;It was refreshing that they really took the time to
                 understand our brand and business, and listen to what we really
                 wanted acheive from our website. It was good balance between

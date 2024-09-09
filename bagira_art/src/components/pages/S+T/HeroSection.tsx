@@ -1,10 +1,12 @@
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 
 function HeroSection() {
   const [isExpanded, setIsExpanded] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef(null);
+  const pathname = usePathname();
 
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
@@ -13,8 +15,7 @@ function HeroSection() {
       videoRef.current.muted = false;
       document.body.style.overflow = "hidden";
     } else {
-      if(videoRef.current)
-      videoRef.current.muted = true;
+      if (videoRef.current) videoRef.current.muted = true;
       document.body.style.overflow = "";
     }
   };
@@ -117,7 +118,7 @@ function HeroSection() {
   return (
     <section className="relative flex flex-col lg:flex-row pt-[9.375rem] size-full">
       <div className=" z-10 mix-blend-difference text-[#fff] flex flex-col min-h-[60vh] lg:min-h-[70vh] justify-end flex-[0_0_50%] lg:max-w-[50%] [padding:0_1rem_2.5rem] lg:[padding:0_8.438rem_2.344rem]">
-        <div className="jost relative w-screen -translate-x-[8.438rem] font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[20.625rem] mt-[auto] mb-5 pointer-events-none z-10 lg:mx-[0] lg:my-[auto]">
+        <div className="champagne-limos relative w-screen -translate-x-[8.438rem] font-light leading-none text-[6.875rem] mx-[0] my-[.2em] px-[0] py-[.1em] select-none lg:text-[20.625rem] mt-[auto] mb-5 pointer-events-none z-10 lg:mx-[0] lg:my-[auto] champagne-limos">
           <ScrollingBanner
             baseVelocity={-20}
             className="inline-block whitespace-nowrap pr-[.2em] align-top"
@@ -126,14 +127,14 @@ function HeroSection() {
           </ScrollingBanner>
         </div>
         <h1 className="font-light text-[1.125rem] leading-[1.2] mt-[0] mx-[0] mb-[1.875rem] tracking-[-.01em] max-w-[70%] lg:text-[2.25rem] lg:max-w-full lg:leading-[2.1875rem]">
-          <span className="josefin-sans">
+          <span className="champagne-limos">
             Wondering about how the process goes or previous projects?
           </span>
         </h1>
         <div>
           <a
             href="/#intro"
-            className="group josefin-sans inline-flex text-[0.8125rem] lg:text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover"
+            className="group champagne-limos inline-flex text-[0.8125rem] lg:text-[1.219rem] [font-family:inherit] select-none appearance-none border-[none] outline-[none] [box-shadow:none] cursor-pointer relative items-center bg-none leading-[1.2] tracking-[-.02em] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:color] px-[0] py-[.5rem] gap-[.375rem] content-[''] before:absolute before:left-[0] before:bottom-[0] before:w-full before:h-[.0625rem] before:bg-current cursor-select-hover"
           >
             <span className="relative flex [transition:.4s_ease-in-out] [transition-property:background,color] ">
               <span className="relative flex flex-col overflow-hidden">
@@ -197,7 +198,7 @@ function HeroSection() {
               loop
               muted
               playsInline
-                className={`absolute object-cover transition-transform duration-500 h-[100vh] min-w-[100vw] lg:min-w-[50vw] ${
+              className={`absolute object-cover transition-transform duration-500 h-[100vh] min-w-[100vw] lg:min-w-[50vw] ${
                 isExpanded ? "hidden" : ""
               }`}
             />

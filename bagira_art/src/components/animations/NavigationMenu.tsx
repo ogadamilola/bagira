@@ -226,7 +226,7 @@ const Header: React.FC<HeaderProps> = ({ navigation }) => {
   return (
     <div
       id="header"
-      className={`fixed top-0 jost z-[999] flex flex-col size-full h-auto p-8 text-white ${
+      className={`fixed top-0 champagne-limos z-[999] flex flex-col size-full h-auto p-8 text-white ${
         isActive ? "" : "mix-blend-differences"
       }`}
     >

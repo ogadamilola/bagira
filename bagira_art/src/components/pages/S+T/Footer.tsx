@@ -1,26 +1,31 @@
+import { useHandleClick } from "@/contexts/HandleNavigation";
+import Link from "next/link";
 import React from "react";
+import { NavLinks } from "@/data/navLinks";
 
 function Footer({ setIsEnter, setIsExit }: any) {
+  const handleClick = useHandleClick();
+
   return (
     <div
       className="relative overflow-hidden h-[100dvh]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <footer className="fixed top-[0] left-[0] w-screen min-h-screen pt-[1.5625rem] px-[0] pb-[2.1875rem] bg-[#f6f6f3] text-[#0E0F11] [padding-top:calc(4.063rem_+_1.5625rem)]">
-        <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
-          <div className="mb-10 flex items-end justify-between">
-            <div className="jost overflow-hidden mt-[0] mx-[0] mb-5 tracking-[-.04em] leading-none text-[4.5rem] lg:text-[17.625rem] lg:m-0 lg:translate-y-[.12em] font-light">
+      <footer className="flex flex-col bottom-[-10%] left-[0] w-screen min-h-screen pt-[1.5625rem] px-[0] pb-[2.1875rem] bg-[#f6f6f3] text-[#0E0F11] [padding-top:calc(4.063rem_+_1.5625rem)]">
+        <div className="size-full flex-grow flex flex-col justify-between px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
+          <div className="mb-10 flex flex-col lg:flex-row lg:items-end justify-between">
+            <div className="champagne-limos mt-[0] mx-[0] mb-5 tracking-[-.04em] leading-none text-[4.5rem] lg:text-[17.625rem] lg:m-0 lg:translate-y-[.12em] font-light">
               Let&apos;s Talk
             </div>
             <a
-              className="group hidden lg:inline-flex text-[1.031rem] text-[#f6f6f3] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
+              className="group inline-flex text-[1.031rem] text-[#f6f6f3] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
               onClick={() => {
                 setIsEnter(true);
                 setIsExit(false);
                 // setIsVisible(true);
               }}
             >
-              <span className="relative flex px-[2.344rem] py-[0] bg-[#0E0F11] leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
+              <span className="relative flex px-[1.5625rem] lg:px-[2.344rem] py-[0] bg-[#0E0F11] leading-[1.2] rounded-full items-center h-[2.8125rem] lg:h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
                 <span className="relative flex flex-col overflow-hidden">
                   <span className="group-hover:-translate-y-[1.4875rem] [transition:transform_.2s_ease-in-out]">
                     Start a project
@@ -30,7 +35,7 @@ function Footer({ setIsEnter, setIsExit }: any) {
                   </span>
                 </span>
               </span>
-              <i className="flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-[#0E0F11] [transition:.4s_ease-in-out] [transition-property:background,color]">
+              <i className="flex justify-center items-center text-[2.8125rem] lg:text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-[#0E0F11] [transition:.4s_ease-in-out] [transition-property:background,color]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1024 1024"
@@ -42,18 +47,16 @@ function Footer({ setIsEnter, setIsExit }: any) {
               </i>
             </a>
           </div>
-          <div className="lg:flex lg:justify-between lg:items-start lg:mt-[3.4375rem]">
+          <div className="lg:flex lg:justify-between lg:items-start lg:mt-[3.4375rem] flex-grow">
             <nav className="text-[1.25rem] leading-[-.01em] mb-[3.125rem] text-[#0E0F11] lg:text-[2.25rem]">
               <ul>
-                <li>
-                  <a className="cursor-select-hover">Work</a>
-                </li>
-                <li>
-                  <a className="cursor-select-hover">Services</a>
-                </li>
-                <li>
-                  <a className="cursor-select-hover">Careers</a>
-                </li>
+                {NavLinks.map((nav, index) => (
+                  <li key={index}>
+                    <Link href={""} onClick={handleClick(nav.href)} passHref>
+                      <span className="cursor-select-hover">{nav.title}</span>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className="grid gap-[2.8125rem_2.1875rem] grid-cols-[repeat(2,1fr)] lg:flex-[0_0_51.094rem] lg:max-w-[51.094rem]">
@@ -142,7 +145,7 @@ function Footer({ setIsEnter, setIsExit }: any) {
               </div>
             </div>
           </div>
-          <div className="mt-[1.5625rem] pt-[1.875rem] border-t-[.0625rem_solid_hsla(0,0%,96%,.11)] text-center text-[1.031rem] lg:flex lg:justify-between lg:pt-[3.75rem] lg:pb-[1.875rem]">
+          <div className="mt-[1.5625rem] pt-[1.875rem] border-t-[.0625rem] border-black text-center text-[1.031rem] lg:flex lg:justify-between lg:pt-[3.75rem] lg:pb-[1.875rem]">
             <div className="flex gap-[.5em] text-[1.0315rem] justify-center mb-[.875rem] lg:m-0">
               <a href="/privacy-cookies-policy" className="cursor-select-hover">
                 Privacy & Cookies

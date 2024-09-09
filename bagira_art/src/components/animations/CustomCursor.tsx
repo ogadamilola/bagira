@@ -205,7 +205,7 @@ export default function CustomCursor() {
       >
         <span
           ref={followerTextRef}
-          className="absolute josefin-sans text-lg text-white mix-blend-difference"
+          className="absolute champagne-limos text-lg text-white mix-blend-difference"
         ></span>
       </div>
       <div

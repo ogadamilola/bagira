@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-LightItalic.eot');
+    src: local('Champagne-&-Limousines Light Italic'), local('Champagne-&-Limousines-LightItalic'),
+        url('Champagne-&-Limousines-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-LightItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-LightItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-ExtraLight.eot');
+    src: local('Champagne-&-Limousines ExtraLight'), local('Champagne-&-Limousines-ExtraLight'),
+        url('Champagne-&-Limousines-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-ExtraLight.woff2') format('woff2'),
+        url('Champagne-&-Limousines-ExtraLight.woff') format('woff'),
+        url('Champagne-&-Limousines-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Light.eot');
+    src: local('Champagne-&-Limousines Light'), local('Champagne-&-Limousines-Light'),
+        url('Champagne-&-Limousines-Light.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Light.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Light.woff') format('woff'),
+        url('Champagne-&-Limousines-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-ExtraBoldItalic.eot');
+    src: local('Champagne-&-Limousines ExtraBold Italic'), local('Champagne-&-Limousines-ExtraBoldItalic'),
+        url('Champagne-&-Limousines-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-ExtraBoldItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-ExtraBoldItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-SemiBold.eot');
+    src: local('Champagne-&-Limousines SemiBold'), local('Champagne-&-Limousines-SemiBold'),
+        url('Champagne-&-Limousines-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-SemiBold.woff2') format('woff2'),
+        url('Champagne-&-Limousines-SemiBold.woff') format('woff'),
+        url('Champagne-&-Limousines-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Regular.eot');
+    src: local('Champagne-&-Limousines Regular'), local('Champagne-&-Limousines-Regular'),
+        url('Champagne-&-Limousines-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Regular.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Regular.woff') format('woff'),
+        url('Champagne-&-Limousines-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-BoldItalic.eot');
+    src: local('Champagne-&-Limousines Bold Italic'), local('Champagne-&-Limousines-BoldItalic'),
+        url('Champagne-&-Limousines-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-BoldItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-BoldItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-ExtraBold.eot');
+    src: local('Champagne-&-Limousines ExtraBold'), local('Champagne-&-Limousines-ExtraBold'),
+        url('Champagne-&-Limousines-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-ExtraBold.woff2') format('woff2'),
+        url('Champagne-&-Limousines-ExtraBold.woff') format('woff'),
+        url('Champagne-&-Limousines-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-MediumItalic.eot');
+    src: local('Champagne-&-Limousines Medium Italic'), local('Champagne-&-Limousines-MediumItalic'),
+        url('Champagne-&-Limousines-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-MediumItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-MediumItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-ExtraLightItalic.eot');
+    src: local('Champagne-&-Limousines ExtraLight Italic'), local('Champagne-&-Limousines-ExtraLightItalic'),
+        url('Champagne-&-Limousines-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-ExtraLightItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-ExtraLightItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Italic.eot');
+    src: local('Champagne-&-Limousines Italic'), local('Champagne-&-Limousines-Italic'),
+        url('Champagne-&-Limousines-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Italic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Italic.woff') format('woff'),
+        url('Champagne-&-Limousines-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Black.eot');
+    src: local('Champagne-&-Limousines Black'), local('Champagne-&-Limousines-Black'),
+        url('Champagne-&-Limousines-Black.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Black.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Black.woff') format('woff'),
+        url('Champagne-&-Limousines-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Bold.eot');
+    src: local('Champagne-&-Limousines Bold'), local('Champagne-&-Limousines-Bold'),
+        url('Champagne-&-Limousines-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Bold.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Bold.woff') format('woff'),
+        url('Champagne-&-Limousines-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-BlackItalic.eot');
+    src: local('Champagne-&-Limousines Black Italic'), local('Champagne-&-Limousines-BlackItalic'),
+        url('Champagne-&-Limousines-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-BlackItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-BlackItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Medium.eot');
+    src: local('Champagne-&-Limousines Medium'), local('Champagne-&-Limousines-Medium'),
+        url('Champagne-&-Limousines-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Medium.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Medium.woff') format('woff'),
+        url('Champagne-&-Limousines-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-Thin.eot');
+    src: local('Champagne-&-Limousines Thin'), local('Champagne-&-Limousines-Thin'),
+        url('Champagne-&-Limousines-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-Thin.woff2') format('woff2'),
+        url('Champagne-&-Limousines-Thin.woff') format('woff'),
+        url('Champagne-&-Limousines-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-SemiBoldItalic.eot');
+    src: local('Champagne-&-Limousines SemiBold Italic'), local('Champagne-&-Limousines-SemiBoldItalic'),
+        url('Champagne-&-Limousines-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-SemiBoldItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-SemiBoldItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('Champagne-&-Limousines-ThinItalic.eot');
+    src: local('Champagne-&-Limousines Thin Italic'), local('Champagne-&-Limousines-ThinItalic'),
+        url('Champagne-&-Limousines-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Champagne-&-Limousines-ThinItalic.woff2') format('woff2'),
+        url('Champagne-&-Limousines-ThinItalic.woff') format('woff'),
+        url('Champagne-&-Limousines-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+

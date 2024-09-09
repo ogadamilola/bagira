@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import { PreloaderProvider } from "@/contexts/PreloaderContext";
 import PageAnimatePresence from "@/components/HOC/PageAnimatePresence";
 import { MetadataTitle, MetadataDescription } from "@/contexts/MetadataContext";
+import { CaseStudyProvider } from "@/contexts/CaseStudyContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,27 +44,19 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link href="/styles/main.css" rel="stylesheet" type="text/css" /> */}
-        <link
-          href="/svgs/m.svg"
-          rel="shortcut icon"
-          type="image/x-icon"
-        />
-        <link
-          href="/svgs/m.svg"
-          rel="apple-touch-icon"
-        />
+        <link href="/svgs/m.svg" rel="shortcut icon" type="image/x-icon" />
+        <link href="/svgs/m.svg" rel="apple-touch-icon" />
       </head>
-      <body className={`${inter.className} cursor-none`}>
-        <div className="hidden md:block z-[99999999]">
-          <CustomCursor />
-        </div>
-        <PreloaderProvider>
-          {/* <Header navigation={NavLinks} /> */}
-          <SmoothScrolling>
+      <body className={`${inter.className}`}>
+        <CaseStudyProvider>
+          <PreloaderProvider>
+            {/* <Header navigation={NavLinks} /> */}
+
             <PageAnimatePresence>{children}</PageAnimatePresence>
-          </SmoothScrolling>
-          {/* <Footer /> */}
-        </PreloaderProvider>
+
+            {/* <Footer /> */}
+          </PreloaderProvider>
+        </CaseStudyProvider>
       </body>
     </html>
   );

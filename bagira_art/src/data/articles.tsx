@@ -1,7 +1,7 @@
 export const Article = [
   {
     src: "/images/ig/article (1).webp",
-    title: "Lorem",
+    title: "on the wall",
     tags: ["branding", "photography"],
     heading:
       "Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus pretium quis quisque tellus torquent. Dis maecenas dis nascetur rhoncus, eleifend conubia a.",
