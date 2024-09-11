@@ -1,3 +1,4 @@
+import LetterRevealOnScroll from "@/components/animations/LetterRevealOnScroll";
 import { Service } from "@/data/services";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
@@ -59,7 +60,7 @@ function ServiceCarouselSection() {
 
     loadGSAP();
   }, []);
-  
+
   return (
     <section
       id="services"
@@ -106,7 +107,7 @@ function ServiceCarouselSection() {
             <div className="size-full lg:h-[30vh]" data-speed="0.9">
               <img
                 src={card.src}
-                className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block [aspect-ratio:360/240] object-cover lg:max-h-[30vh]"
+                className="w-full scale-125 -translate-y-[7.5vh] lg:-translate-y-[6vh] block [aspect-ratio:360/240] object-cover lg:min-h-[30vh]"
               />
             </div>
           </picture>
@@ -156,9 +157,14 @@ function ServiceCarouselSection() {
               >
                 {(index + 1).toString().padStart(2, "0")}
               </em>
-              <h6 className="text-[1.75rem] tracking-[-.02em] uppercase leading-[.9] m-0 lg:text-[3.563rem]">
-                {card.title}
-              </h6>
+              <LetterRevealOnScroll
+                className="relative"
+                staggerDuration={0.005}
+              >
+                <h6 className="text-[1.75rem] tracking-[-.02em] uppercase leading-[.9] m-0 lg:text-[3.563rem]">
+                  {card.title}
+                </h6>
+              </LetterRevealOnScroll>
             </div>
           </div>
           <div
@@ -171,7 +177,7 @@ function ServiceCarouselSection() {
           >
             <div className="pt-[1.875rem]">
               <a
-                className="group text-[#F7F4EF] flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white mix-blend-difference [transition:.4s_ease-in-out] [transition-property:background,color] cursor-select-hover"
+                className="group text-[#F7F4EF] flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-[#0E0F11] lg:bg-white mix-blend-difference [transition:.4s_ease-in-out] [transition-property:background,color] cursor-select-hover"
                 href={card.href}
               >
                 <svg

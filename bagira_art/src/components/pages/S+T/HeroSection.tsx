@@ -1,3 +1,4 @@
+import LetterRevealOnScroll from "@/components/animations/LetterRevealOnScroll";
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
@@ -126,11 +127,13 @@ function HeroSection() {
             Good design is good business*
           </ScrollingBanner>
         </div>
-        <h1 className="font-light text-[1.125rem] leading-[1.2] mt-[0] mx-[0] mb-[1.875rem] tracking-[-.01em] max-w-[70%] lg:text-[2.25rem] lg:max-w-full lg:leading-[2.1875rem]">
-          <span className="champagne-limos">
-            Wondering about how the process goes or previous projects?
-          </span>
-        </h1>
+        <LetterRevealOnScroll className="relative" staggerDuration={0.005}>
+          <h1 className="font-light text-[1.125rem] leading-[1.2] mt-[0] mx-[0] mb-[1.875rem] tracking-[-.01em] max-w-[70%] lg:text-[2.25rem] lg:max-w-full lg:leading-[2.1875rem]">
+            <span className="champagne-limos">
+              Wondering about how the process goes or previous projects?
+            </span>
+          </h1>
+        </LetterRevealOnScroll>
         <div>
           <a
             href="/#intro"

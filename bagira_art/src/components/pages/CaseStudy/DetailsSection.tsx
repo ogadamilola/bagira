@@ -1,3 +1,5 @@
+import LetterRevealOnScroll from "@/components/animations/LetterRevealOnScroll";
+import OpacityOnScroll from "@/components/animations/OpacityOnScroll";
 import React from "react";
 
 function DetailsSection({ title, services, longDescription }: any) {
@@ -6,31 +8,41 @@ function DetailsSection({ title, services, longDescription }: any) {
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative pt-[2.1875rem] pb-[2.1875rem] lg:flex lg:gap-[3.75rem] lg:pt-[7.8125rem] lg:pb-[7.8125rem]">
         <div className="flex text-[.875rem] leading-[1.78] flex-col gap-9 mb-[2.8125rem] lg:min-w-[16.875rem] lg:text-[1.125rem] lg:gap-5 lg:m-0">
           <div className="ProjectDetails_metaItem__U0Vwm">
-            <h6 className="text-[0.75rem] opacity-[.34] mb-[.15625rem]">
-              Client
-            </h6>
-            <div>{title}</div>
+            <OpacityOnScroll start={100} end={75}>
+              <h6 className="text-[0.75rem] opacity-[.34] mb-[.15625rem]">
+                Client
+              </h6>
+
+              <div>{title}</div>
+            </OpacityOnScroll>
           </div>
           <div className="ProjectDetails_metaItem__U0Vwm capitalize">
-            <h6 className="text-[0.75rem] opacity-[.34] mb-[.15625rem]">
-              Services
-            </h6>
-            <ul>
-              {services.map((service: string, index: number) => (
-                <li key={index}>→ {service.replace(/-/g, " ")}</li>
-              ))}
-            </ul>
+            <OpacityOnScroll start={100} end={75}>
+              <h6 className="text-[0.75rem] opacity-[.34] mb-[.15625rem]">
+                Services
+              </h6>
+
+              <ul>
+                {services.map((service: string, index: number) => (
+                  <li key={index}>→ {service.replace(/-/g, " ")}</li>
+                ))}
+              </ul>
+            </OpacityOnScroll>
           </div>
         </div>
         <div className="lg:max-w-[60rem] lg:mx-[auto] lg:my-[0]">
-          <div className="text-[1.125rem] leading-[1.45] lg:text-[1.969rem] font-extralight">
-            {longDescription.split("\n").map((line: string, index: number) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-              </React.Fragment>
-            ))}
-          </div>
+          <LetterRevealOnScroll>
+            <div className="text-[1.125rem] leading-[1.45] lg:text-[1.969rem] font-extralight">
+              {longDescription
+                .split("\n")
+                .map((line: string, index: number) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+            </div>
+          </LetterRevealOnScroll>
           <a
             className="mt-[3.75rem] group hidden lg:inline-flex text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
             href=""

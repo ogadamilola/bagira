@@ -27,10 +27,12 @@ const Page = ({ children }: PageProps) => {
       <div className="relative flex size-full min-h-screen flex-col items-center justify-start overflow-hidden">
         {/* Splash Screen Overlay */}
         {!isAdminPage && (!isLoaded || isAnimating) && (
-          <Preloader
-            finishLoading={finishLoading}
-            finishAnimation={finishAnimation}
-          />
+          <>
+            <Preloader
+              finishLoading={finishLoading}
+              finishAnimation={finishAnimation}
+            />
+          </>
         )}
         {children}
       </div>

@@ -18,7 +18,7 @@ export default function OpacityOnScroll({
   const element = useRef(null);
   // Convert start and end to a percentage string format required by Framer Motion
   const offsetStart: any = `start ${start}%`;
-  const offsetEnd: any = `start ${end}%`;
+  const offsetEnd: any = `end ${end}%`;
   const { scrollYProgress } = useScroll({
     target: element,
     // offset: ["start end", "start start"], // start animation once in view, complete animation at top of view

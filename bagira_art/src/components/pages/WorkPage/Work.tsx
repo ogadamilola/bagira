@@ -8,8 +8,8 @@ import DeliverablesSection from "@/components/pages/CaseStudy/DeliverablesSectio
 import NextSection from "@/components/pages/CaseStudy/NextSection";
 
 export default function Body({ caseStudy }: any) {
-  console.log(caseStudy);
-  // console.log(caseStudy.mediaContent[0].asset.url);
+  // console.table(caseStudy);
+
   return (
     <div className="champagne-limos relative flex w-[100vw] min-h-screen flex-col items-center justify-start bg-[#0E0F11] z-10">
       <HeroSection

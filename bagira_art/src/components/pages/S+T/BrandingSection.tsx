@@ -1,12 +1,11 @@
+import OpacityOnScroll from "@/components/animations/OpacityOnScroll";
 import ScrollingBanner from "@/components/animations/ScrollingBanner";
 import { useHandleClick } from "@/contexts/HandleNavigation";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 
 function BrandingSection() {
   const handleClick = useHandleClick();
-  const pathname = usePathname();
 
   // GSAP Animations
   useEffect(() => {
@@ -55,6 +54,7 @@ function BrandingSection() {
 
     loadGSAP();
   }, []);
+
   return (
     <section className="text-[#fff] size-full pt-[7.8125rem] pb-[3.125rem] overflow-hidden lg:pt-[6.5625rem] lg:pb-[18.75rem]">
       <div className="px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
@@ -67,21 +67,23 @@ function BrandingSection() {
           </ScrollingBanner>
         </div>
         <div className="mt-[4.688rem] ml-[4.688rem] mb-[4.688rem] lg:ml-auto lg:max-w-[72rem]">
-          <div className="text-[.875rem] leading-[1.31] lg:text-[1.688rem] lg:[column-count:2] lg:gap-x-[3.4375rem] font-extralight">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate
-            sagittis a massa netus pretium quis quisque tellus torquent. Dis
-            maecenas dis nascetur rhoncus, eleifend conubia a. Lorem ipsum odor
-            amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus
-            pretium quis quisque tellus torquent. Dis maecenas dis nascetur
-            rhoncus, eleifend conubia a.
-          </div>
+          <OpacityOnScroll start={100} end={100}>
+            <p className="text-[.875rem] leading-[1.31] lg:text-[1.688rem] lg:[column-count:2] lg:gap-x-[3.4375rem] font-extralight">
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Vulputate
+              sagittis a massa netus pretium quis quisque tellus torquent. Dis
+              maecenas dis nascetur rhoncus, eleifend conubia a. Lorem ipsum odor
+              amet, consectetuer adipiscing elit. Vulputate sagittis a massa netus
+              pretium quis quisque tellus torquent. Dis maecenas dis nascetur
+              rhoncus, eleifend conubia a.
+            </p>
+          </OpacityOnScroll>
           <div className="mt-[1.875rem] text-right">
             <Link
               className="group inline-flex text-[1.031rem] text-[#0E0F11] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
               href="/contact"
               onClick={handleClick("/contact")}
             >
-              <span className="relative flex px-[2.344rem] py-[0] bg-white leading-[1.2] rounded-full items-center h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
+              <span className="relative flex px-[1.5625rem] lg:px-[2.344rem] py-[0] bg-white leading-[1.2] rounded-full items-center h-[2.8125rem] lg:h-[4.219rem] whitespace-nowrap [transition:.4s_ease-in-out] [transition-property:background,color] ">
                 <span className="relative flex flex-col overflow-hidden">
                   <span className="group-hover:-translate-y-[1.4875rem] [transition:transform_.2s_ease-in-out]">
                     Our Studio
@@ -91,7 +93,7 @@ function BrandingSection() {
                   </span>
                 </span>
               </span>
-              <i className="flex justify-center items-center text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white [transition:.4s_ease-in-out] [transition-property:background,color]">
+              <i className="flex justify-center items-center text-[2.8125rem] lg:text-[4.219rem] w-[1em] h-[1em] rounded-[50%] bg-white [transition:.4s_ease-in-out] [transition-property:background,color]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1024 1024"

@@ -54,18 +54,18 @@ function HeroSection({ shortDescription, tags, title, mainImage }: any) {
   }, []);
 
   return (
-    <section className="relative flex flex-col lg:flex-row pt-[9.375rem] size-full h-screen">
+    <section className="relative flex flex-col lg:flex-row pt-[9.375rem] size-full h-screen bg-bagiRed">
       <div className="!absolute top-[0] left-[0] w-full h-full flex relative overflow-hidden">
         <div
           className="h-full w-full flex [-webkit-transform-style:inherit!important] brightness-[.5]"
           data-speed="1.1"
         >
           <div className="h-full w-full flex [-webkit-transform-style:inherit!important]">
-            <div className="opacity-10 bg-[#E81D5A] size-full min-h-[100vh] absolute pointer-events-none"></div>
+            <div className="z-10 opacity-10 bg-[#E81D5A] size-[125%] min-h-[100vh] absolute pointer-events-none"></div>
 
             <img
               src={mainImage}
-              className="absolute w-full max-w-full min-h-full block object-cover"
+              className="absolute w-full max-w-full min-h-full block object-cover scale-125"
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </div>

@@ -1,53 +1,54 @@
 import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Article } from "@/data/articles";
 import { useHandleClick } from "@/contexts/HandleNavigation";
 import Link from "next/link";
-import { useCaseStudy } from "@/contexts/CaseStudyContext";
+import { useCaseStudy } from "@/contexts/CaseStudyContext"; // Fetch case studies from context
 import { CaseStudy } from "@/data/CaseStudyType";
-
-interface CarouselArticle {
-  src: string;
-  title: string;
-  tags: string[];
-  heading: string;
-}
 
 function WorkListSection() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [filteredArticles, setFilteredArticles] = useState<CaseStudy[] | null>(null);
+  const [filteredArticles, setFilteredArticles] = useState<CaseStudy[] | null>(
+    null
+  );
   const [isLoading, setIsLoading] = useState(false);
   const handleClick = useHandleClick();
-    const { caseStudies, loading, error } = useCaseStudy() as { caseStudies: CaseStudy[] | null; loading: boolean; error: any }; // Fetch case studies context // Fetch case studies context
 
-  // Extract unique tags
-  const uniqueTags = Array.from(
-    new Set(caseStudies?.flatMap((article: any) => article.tags))
-  );
+  // Fetch case studies from the CMS via the CaseStudyContext
+  const { caseStudies, loading, error } = useCaseStudy() as {
+    caseStudies: CaseStudy[] | null;
+    loading: boolean;
+    error: any;
+  };
+
+  // Extract unique tags from the case studies
+  const uniqueTags = caseStudies
+    ? Array.from(new Set(caseStudies.flatMap((article) => article.tags)))
+    : [];
 
   useEffect(() => {
     const applyFilter = async () => {
-      setIsLoading(true);
+      setIsLoading(true); // Set loading to true while fetching data
       const tag = searchParams.get("tag");
       setSelectedTag(tag);
 
       // Simulate a delay to show the loading indicator
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
       if (tag && caseStudies) {
         setFilteredArticles(
-          caseStudies.filter((article: any) => article.tags.includes(tag))
+          caseStudies.filter((article) => article.tags.includes(tag))
         );
       } else {
-        if (caseStudies) setFilteredArticles(caseStudies);
+        setFilteredArticles(caseStudies || []);
       }
-      setIsLoading(false);
+
+      setIsLoading(false); // Set loading to false when fetching is done
     };
 
     applyFilter();
-  }, [searchParams]);
+  }, [searchParams, caseStudies]);
 
   const handleTagClick = (tag: string) => {
     const newTag = tag === selectedTag ? null : tag;
@@ -83,7 +84,7 @@ function WorkListSection() {
                     "https://via.placeholder.com/465x433"
                   }
                   alt={article.title}
-                  className="w-full h-auto block [aspect-ratio:465/433] object-cover [transition:all_.6s_ease-in-out] bg-bagiRed group-hover:scale-125"
+                  className="w-full h-auto block [aspect-ratio:465/433] object-cover [transition:all_.6s_ease-in-out] bg-bagiBlack group-hover:scale-125"
                 />
                 <ul className="flex flex-wrap gap-[.28125rem] absolute left-[1.125rem] bottom-[1.125rem] pr-[1.125rem]">
                   <li className="px-[0.938rem] py-[0] rounded-[1.875rem] text-[1.125rem] leading-[1.5625rem] bg-[#000] text-[#fff] capitalize h-[2.344rem] flex items-center">

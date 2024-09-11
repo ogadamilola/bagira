@@ -2,6 +2,7 @@ import { useHandleClick } from "@/contexts/HandleNavigation";
 import Link from "next/link";
 import React from "react";
 import { NavLinks } from "@/data/navLinks";
+import LetterRevealOnScroll from "@/components/animations/LetterRevealOnScroll";
 
 function Footer({ setIsEnter, setIsExit }: any) {
   const handleClick = useHandleClick();
@@ -14,9 +15,14 @@ function Footer({ setIsEnter, setIsExit }: any) {
       <footer className="flex flex-col bottom-[-10%] left-[0] w-screen min-h-screen pt-[1.5625rem] px-[0] pb-[2.1875rem] bg-[#f6f6f3] text-[#0E0F11] [padding-top:calc(4.063rem_+_1.5625rem)]">
         <div className="size-full flex-grow flex flex-col justify-between px-5 py-[0] ml-auto mr-auto max-w-[105rem] relative">
           <div className="mb-10 flex flex-col lg:flex-row lg:items-end justify-between">
-            <div className="champagne-limos mt-[0] mx-[0] mb-5 tracking-[-.04em] leading-none text-[4.5rem] lg:text-[17.625rem] lg:m-0 lg:translate-y-[.12em] font-light">
-              Let&apos;s Talk
-            </div>
+            <LetterRevealOnScroll
+              start="top bottom"
+              end="bottom bottom"
+            >
+              <h1 className="champagne-limos mt-[0] mx-[0] mb-5 tracking-[-.04em] leading-none text-[4.5rem] lg:text-[17.625rem] lg:m-0 lg:translate-y-[.12em] font-light">
+                Let&apos;s Talk
+              </h1>
+            </LetterRevealOnScroll>
             <a
               className="group inline-flex text-[1.031rem] text-[#f6f6f3] select-none appearance-none border-[none] outline-[none] [box-shadow:none] bg-transparent cursor-pointer p-0 [font-family:inherit] !no-underline cursor-select-hover"
               onClick={() => {
