@@ -18,14 +18,14 @@ function DeliverablesSection({ deliverables }: any) {
         <div className="grid gap-[3.4375rem] grid-cols-[1fr] lg:grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] mt-[3.4375rem] lg:mt-[5.9375rem]">
           {deliverables.items.map(
             (item: { subheading: string; content: string }, index: number) => (
-              <OpacityOnScroll start={100} end={90}>
-                <div key={index} className="">
+              <div key={index} className="">
+                <OpacityOnScroll start={100} end={90}>
                   <h6 className="text-[2.063rem] mb-[2.4375rem] lg:mb-[2.4375rem] font-light">
                     {item.subheading}
                   </h6>
                   <p className="font-extralight">{item.content}</p>
-                </div>
-              </OpacityOnScroll>
+                </OpacityOnScroll>
+              </div>
             )
           )}
         </div>
