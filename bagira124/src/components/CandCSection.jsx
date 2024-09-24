@@ -11,13 +11,13 @@ const CandCSection = () => {
           <div className="candc-info">
             <div className="ap-info-bottom">
               <div className="candc-sub-title">
-                <div anim="3" split="words" className="jost-300-50 ">
+                <div anim="3" split="words" className="jost-700-50 lowercase">
                   Collection
                 </div>
               </div>
 
               <div className="candc-title">
-                <h2 anim="2" className="josefin-400-13">
+                <h2 anim="2" className="josefin-400-13 mb-[1.375rem]">
                   BAGIRA&apos;s collection are paintings she created based on
                   her inspiration. These pieces are for sale and available at
                   the Gallery in Kura Hulanda Village and can be shipped
@@ -34,9 +34,8 @@ const CandCSection = () => {
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     className="cta"
                   >
-                    <div className="josefin-400-13">Learn More</div>
-
                     <div className="cta-ball">
+                    <div className="josefin-400-13 z-10 text-nowrap text-white">Learn More</div>
                       <div className="seta-cta-wrap">
                         <div className="seta-cta-anda-1">
                           <img
@@ -76,7 +75,7 @@ const CandCSection = () => {
               {/* <div img-castanho="1" className="img-background"></div> */}
               <img
                 className="ap-img-a-candc"
-                src="/images/IMG_8093-784x1024.webp"
+                src="/images/ali.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 // data-flip-id="1"
@@ -95,13 +94,13 @@ const CandCSection = () => {
           <div className="candc-info-bottom">
             <div className="ap-info-bottom">
               <div className="candc-sub-title">
-                <div anim="3" split="words" className="jost-300-50 ">
+                <div anim="3" split="words" className="jost-700-50 lowercase">
                   Commission
                 </div>
               </div>
 
               <div className="candc-title">
-                <h2 anim="2" className="josefin-400-13">
+                <h2 anim="2" className="josefin-400-13 mb-[1.375rem]">
                   Custom paintings, in other words, commission are pieces that
                   are created based on the client&apos;s request. These pieces
                   are customizable based on design, material, color-scheme and
@@ -118,9 +117,9 @@ const CandCSection = () => {
                     data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                     className="cta"
                   >
-                    <div className="josefin-400-13">Learn More</div>
 
                     <div className="cta-ball">
+                    <div className="josefin-400-13 z-10 text-nowrap text-white">Learn More</div>
                       <div className="seta-cta-wrap">
                         <div className="seta-cta-anda-1">
                           <img
@@ -160,7 +159,7 @@ const CandCSection = () => {
               {/* <div img-castanho="1" className="img-background"></div> */}
               <img
                 className="ap-img-a-candc"
-                src="/images/IMG_8080-892x1024.webp"
+                src="/images/woman.webp"
                 alt="BAGIRA"
                 // sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 54vw"
                 // data-flip-id="1"

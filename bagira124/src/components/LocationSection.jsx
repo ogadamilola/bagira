@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import ScrollingBanner from "./animations/ScrollingBanner";
 
 const LocationSection = () => {
   return (
@@ -8,12 +10,12 @@ const LocationSection = () => {
       <div className="location-sticky">
         <div className="location-width"></div>
 
-        <div className="location-marquee">
+        <div className="location-marquee !overflow-visible">
           <div
             data-w-id="a69e3c76-4a04-0ceb-2f87-e329ebd28016"
-            className="location-anda"
+            className="location-anda relative justify-center"
           >
-            <div className="location-track">
+            {/* <div className="location-track">
               <div className="location-marquee-repete">
                 <div className="location-ball"></div>
                 <div className="location-marquee-text">
@@ -45,7 +47,21 @@ const LocationSection = () => {
                   <div className="jost-300-50 ">commissions</div>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            <ScrollingBanner
+              vertical
+              baseVelocity={10000}
+              className="jost-700-50 hidden lg:flex"
+            >
+              The world without art is just ‘meh’ —
+            </ScrollingBanner>
+            <ScrollingBanner
+              baseVelocity={100}
+              className="jost-700-50 flex lg:hidden"
+            >
+              The world without art is just ‘meh’ —
+            </ScrollingBanner>
           </div>
         </div>
 
@@ -63,34 +79,41 @@ const LocationSection = () => {
 
         <div className="location-info">
           <div className="location-info-component">
-            <div className="location-info-wrap relative">
-              <div className="location-sub-title">
-                <div className="josefin-400-13">location</div>
+            <div className="location-info-wrap !w-full lg:w-[25rem] relative justify-center">
+              <div className="location-sub-title h-full lg:h-auto flex flex-col items-center !mb-0">
+                {/* <div className="josefin-400-13">location</div> */}
+                <img
+                  alt=""
+                  src="/images/The_gallery_logo_black.webp"
+
+                  className="object-cover h-[5rem] gallery-circle-image"
+                />
+                <div className="location-title mt-[1.5rem]">
+                  <div className="josefin-300-25">Otrobanda, Curaçao</div>
+                  <h3
+                    anim="1"
+                    split="words"
+                    className="josefin-600-30 !text-[1.875rem] !normal-case text-nowrap mt-[1.3rem] z-10"
+                  >
+                    In Kura Hulanda Village
+                    {/* <span className="main-color">curaçao</span> */}
+                  </h3>
+                </div>
               </div>
 
-              <div className="location-info-anim">
+              <div className="location-info-anim !h-full lg:!h-auto">
                 <div className="location-info-wrap n1">
-                  <div className="location-title">
-                    <h3 anim="1" split="words" className="jost-300-50 ">
-                      Kura Hulanda Village,
-                      <span className="main-color">curaçao</span>
-                    </h3>
-                  </div>
-
                   <div className="location-paragraph">
-                    <p className="josefin-400-13">
-                      commercial murals Transforming spaces, elevating brands We
-                      specialize in crafting bespoke mural experiences that
-                      transcend conventional aesthetics. Elevate your business
-                      with our expertly designed and executed murals.
+                    <p className="josefin-300-25">
+                      The gallery opened its doors in March 2024.
                     </p>
                   </div>
 
-                  <div className="location-background"></div>
+                  {/* <div className="location-background"></div> */}
                 </div>
 
                 <div className="location-info-wrap n2">
-                  <div className="location-title">
+                  {/* <div className="location-title">
                     <h3 className="jost-300-50 ">
                       <span className="main-color">whiteglove delivery</span> to
                       Your <span className="main-color">doorstep</span>
@@ -105,29 +128,32 @@ const LocationSection = () => {
                       reality, whether it’s a personal portrait, a made up
                       person’s portrait, landscape or abstract piece.
                     </p>
-                  </div>
-
-                  <div className="location-background"></div>
-                </div>
-
-                <div className="location-info-wrap n3">
-                  <div className="location-title">
-                    <h3 className="jost-300-50 ">
-                      Comissions <span className="main-color">& murals</span>
-                    </h3>
-                  </div>
+                  </div> */}
 
                   <div className="location-paragraph">
-                    <p className="josefin-400-13">
-                      We believe in collaboration as the key to creating
-                      exceptional murals. Our design process involves continuous
-                      communication with you, incorporating your feedback to
-                      guarantee that the final artwork aligns seamlessly with
-                      your expectations and business objectives.
+                    <p className="josefin-300-25">
+                      Bagira’s artworks can be seen exclusively at the gallery.
                     </p>
                   </div>
 
-                  <div className="location-background"></div>
+                  {/* <div className="location-background"></div> */}
+                </div>
+
+                <div className="location-info-wrap n3">
+                  {/* <div className="location-title">
+                    <h3 className="jost-300-50 ">
+                      Comissions <span className="main-color">& murals</span>
+                    </h3>
+                  </div> */}
+
+                  <div className="location-paragraph">
+                    <p className="josefin-300-25">
+                      Additionally, the artist curates solo exhibitions
+                      featuring other artists a few times each year.
+                    </p>
+                  </div>
+
+                  {/* <div className="location-background"></div> */}
                 </div>
               </div>
             </div>
@@ -136,7 +162,7 @@ const LocationSection = () => {
           <div className="location-cta mb-none">
             <div className="location-cta-wrap">
               <a
-                href="https://maps.app.goo.gl/1FH2BbBcsGKJHYz39"
+                href="https://tourmkr.com/F1bvPdKIKm/43774788p&232.52h&85.72t"
                 target="_blank"
                 className="cta-link max-w-full h-full inline-block"
               >
@@ -144,9 +170,10 @@ const LocationSection = () => {
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   className="cta"
                 >
-                  <div className="josefin-400-13">see Location</div>
-
                   <div className="cta-ball">
+                    <div className="josefin-400-13 z-10 text-nowrap text-white">
+                      Virtual Tour
+                    </div>
                     <div className="seta-cta-wrap">
                       <div className="seta-cta-anda-1">
                         <img
@@ -181,12 +208,12 @@ const LocationSection = () => {
         <div className="location-big-img-wrap">
           <div className="img-background"></div>
           <img
-            src="/images/64070b5af80a800a9c6bf1d9_big-img.webp"
+            src="/images/gallery.webp"
             loading="lazy"
             sizes="100vw"
-            srcSet="/images/64070b5af80a800a9c6bf1d9_big-img-p-500.webp 500w, images/64070b5af80a800a9c6bf1d9_big-img-p-800.webp 800w, images/64070b5af80a800a9c6bf1d9_big-img-p-1080.webp 1080w, images/64070b5af80a800a9c6bf1d9_big-img-p-1600.webp 1600w, images/64070b5af80a800a9c6bf1d9_big-img-p-2000.webp 2000w, images/64070b5af80a800a9c6bf1d9_big-img.webp 2161w"
+            srcSet="/images/gallery-p-500.webp 500w, images/gallery-p-800.webp 800w, images/gallery-p-1080.webp 1080w, images/gallery-p-1600.webp 1600w, images/gallery-p-2000.webp 2000w, images/gallery.webp 2161w"
             alt="EDIFICIO BAGIRA"
-            className="location-big-img"
+            className="location-big-img  w-full lg:w-[50vw] -ml-[5vw]"
           />
         </div>
       </div>

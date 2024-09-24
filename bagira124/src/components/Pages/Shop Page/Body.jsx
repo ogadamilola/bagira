@@ -113,7 +113,7 @@ const Body = ({
                 {images ? (
                   <>
                     <div
-                      className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#e81d5a]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
+                      className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#0F1211]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
                       onClick={() => setSelectedImage(image)} // Update selected image on click
                     >
                       <img
@@ -129,7 +129,7 @@ const Body = ({
                       <div
                         key={index}
                         className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] 
-                      ${selectedImage === item ? "border-4 border-[#e81d5a]" : ""}
+                      ${selectedImage === item ? "border-4 border-[#0F1211]" : ""}
                       transition-all duration-200 hover:brightness-[110%] image-selection`}
                         onClick={() => setSelectedImage(item)} // Update selected image on click
                       >
@@ -146,7 +146,7 @@ const Body = ({
                   </>
                 ) : (
                   <div
-                    className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#e81d5a]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
+                    className={`justify-center items-center flex relative flex-col w-[8.125rem] h-[8.125rem] ${selectedImage === image ? "border-4 border-[#0F1211]" : ""} transition-all duration-200 hover:brightness-[110%] image-selection`}
                   >
                     <img
                       className="cursor-pointer object-cover w-full h-full relative image-selection"
@@ -161,8 +161,8 @@ const Body = ({
               </div>
             </div>
             <div className="justify-center items-start flex relative flex-col w-full h-full  mb-[1.875rem]">
-              <div className="text-start relative mb-[1.875rem] md:mb-[10.875rem]">
-                <div className="jost-300-122 text-ellipsis">{title}</div>
+              <div className="text-start relative mb-[1.875rem] md:mb-[1.875rem]">
+                <div className="jost-700-48 text-ellipsis">'{title}'</div>
               </div>
               <div className="justify-between items-start flex relative flex-col mb-[1.875rem] w-full gap-y-[1.875rem]">
                 <div className="justify-start items-center flex relative flex-row gap-x-[0.875rem]">
@@ -170,7 +170,7 @@ const Body = ({
                     <h2 className="josefin-400-26">ƒ {price.toFixed(3)}</h2>
                   </div>
                   {!availability && (
-                    <div className="justify-center items-center flex background-color-main rounded-full px-[1.25rem] py-[0.75rem]">
+                    <div className="justify-center items-center flex background-color-main px-[1.25rem] py-[0.75rem]">
                       <div className="justify-center items-center flex relative">
                         <h2 className="josefin text-[0.8125rem] font-normal mt-[0.3rem] text-white">
                           SOLD
@@ -179,47 +179,89 @@ const Body = ({
                     </div>
                   )}
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=+59996863862"
-                  target="_blank"
-                  className=" max-w-full h-full inline-block"
-                >
-                  <div
-                    data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
-                    className="cta"
+                <h2 className="jost-300-18 mt-[2rem]">I'm Interested In This Piece...</h2>
+                <div className="flex gap-[1.5rem]">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+59996863862"
+                    target="_blank"
+                    className=" max-w-full h-full inline-block"
                   >
-                    <div className="josefin-400-13">
-                      Message me on Whatsapp +5999 68 63 62
-                    </div>
-
-                    <div className="cta-ball">
-                      <div className="seta-cta-wrap">
-                        <div className="seta-cta-anda-1">
-                          <img
-                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
-                            loading="lazy"
-                            alt=""
-                            className="seta-cta"
-                          />
+                    <div
+                      data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                      className="cta"
+                    >
+                      <div className="cta-ball">
+                        <div className="josefin-400-13 z-10 text-nowrap text-white">
+                          e-mail
                         </div>
+                        <div className="seta-cta-wrap">
+                          <div className="seta-cta-anda-1">
+                            <img
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              loading="lazy"
+                              alt=""
+                              className="seta-cta"
+                            />
+                          </div>
 
-                        <div className="seta-cta-anda-2">
-                          <img
-                            src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
-                            loading="lazy"
-                            alt=""
-                            className="seta-cta"
-                          />
+                          <div className="seta-cta-anda-2">
+                            <img
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              loading="lazy"
+                              alt=""
+                              className="seta-cta"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
 
+                      <div
+                        data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                        className="cta-hover-sticky"
+                      ></div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+59996863862"
+                    target="_blank"
+                    className=" max-w-full h-full inline-block"
+                  >
                     <div
-                      data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
-                      className="cta-hover-sticky"
-                    ></div>
-                  </div>
-                </a>
+                      data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                      className="cta"
+                    >
+                      <div className="cta-ball">
+                        <div className="josefin-400-13 z-10 text-nowrap text-white">
+                          WhatsApp
+                        </div>
+                        <div className="seta-cta-wrap">
+                          <div className="seta-cta-anda-1">
+                            <img
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              loading="lazy"
+                              alt=""
+                              className="seta-cta"
+                            />
+                          </div>
+
+                          <div className="seta-cta-anda-2">
+                            <img
+                              src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                              loading="lazy"
+                              alt=""
+                              className="seta-cta"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                        className="cta-hover-sticky"
+                      ></div>
+                    </div>
+                  </a>
+                </div>
               </div>
 
               <div className="justify-center items-center flex relative flex-row">

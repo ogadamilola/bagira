@@ -65,10 +65,12 @@ const Body = () => {
               target="_blank"
               className="cta-link max-w-full h-full inline-block"
             >
-              <div data-w-id="e458047e-b02a-b003-344d-013e414fafd4" className="cta">
-                <div className="josefin-400-13">contact us</div>
-
+              <div
+                data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                className="cta"
+              >
                 <div className="cta-ball">
+                  <div className="josefin-400-13 z-10 text-nowrap text-white">contact us</div>
                   <div className="seta-cta-wrap">
                     <div className="seta-cta-anda-1">
                       <img

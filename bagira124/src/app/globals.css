@@ -88,6 +88,7 @@ width: 160%;
 height: 160%;
 animation: spin 20s linear infinite;
 transition: all 500ms;
+overflow: visible !important;
 }
 
 .gallery-circle:hover .gallery-circle-svg {

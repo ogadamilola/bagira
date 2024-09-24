@@ -4,20 +4,20 @@ const AboutSection = () => {
   return (
     <section id="about" className="about-section panel">
       <div className="about-top">
-        <div className="about-sub-title">
+        {/* <div className="about-sub-title">
           <h2 className="josefin-400-13">About the artist</h2>
-        </div>
+        </div> */}
 
         <div className="about-bottom">
-          <div className="about-img-component">
+          <div className="about-img-component w-full">
             <div className="about-img-brown z-0 w-full h-full absolute top-0 bottom-0 left-0 right-0"></div>
 
-            <div className="about-img-wrap">
+            <div className="about-img-wrap min-h-[32.883rem]">
               <img
-                src="/images/BagiraAboutHeadshot.webp"
+                src="/images/profile_image_bagira.webp"
                 loading="lazy"
                 sizes="(max-width: 479px) 91vw, (max-width: 767px) 93vw, (max-width: 991px) 94vw, 21vw"
-                srcSet="/images/BagiraAboutHeadshot-p-500.webp 500w, images/BagiraAboutHeadshot-p-800.webp 800w, images/BagiraAboutHeadshot-p-1080.webp 1080w, images/BagiraAboutHeadshot-p-1600.webp 1600w, images/BagiraAboutHeadshot.webp 1920w"
+                srcSet="/images/profile_image_bagira-p-500.webp 500w, images/profile_image_bagira-p-800.webp 800w, images/profile_image_bagira-p-1080.webp 1080w, images/profile_image_bagira-p-1600.webp 1600w, images/profile_image_bagira.webp 1920w"
                 alt="BAGIRA"
                 className="about-img n1"
               />
@@ -44,7 +44,7 @@ const AboutSection = () => {
       </div>
 
       <div className="about-title ap-info-bottom">
-        <div anim="1" split="words" className="jost-300-40 ">
+        <div anim="1" split="words" className="jost-700-24">
           <span id="bagira-img" className="about-hover-text">
             BAGIRA
           </span>{" "}
@@ -65,12 +65,14 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="artwork-cta ap-info-bottom">
-        <a href="/about" className="cta-link artwork[x] max-w-full h-full inline-block">
+      <div className="artwork-cta ap-info-bottom w-full justify-end flex items-end">
+        <a
+          href="/about"
+          className="cta-link artwork[x] max-w-full h-full inline-block"
+        >
           <div data-w-id="e458047e-b02a-b003-344d-013e414fafd4" className="cta">
-            <div className="josefin-400-13">Learn More</div>
-
             <div className="cta-ball">
+              <div className="josefin-400-13 z-10 text-nowrap text-white">Learn More</div>
               <div className="seta-cta-wrap">
                 <div className="seta-cta-anda-1">
                   <img

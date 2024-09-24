@@ -1285,7 +1285,7 @@ horizontalM.add("(min-width: 991px)", () => {
       scrollTrigger: {
         trigger: ".location-section",
         containerAnimation: tlMain,
-        start: "40% left",
+        start: "50% left",
         end: "right left",
         scrub: true,
         // markers: true

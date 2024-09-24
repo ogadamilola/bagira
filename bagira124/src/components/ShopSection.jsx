@@ -321,11 +321,10 @@ const ShopSection = () => {
                   data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
                   className="cta"
                 >
-                  <div className="josefin-400-13">
-                    See All Available Artwork
-                  </div>
-
                   <div className="cta-ball">
+                    <div className="josefin-400-13 z-10 text-nowrap text-white">
+                      See All Available Artwork
+                    </div>
                     <div className="seta-cta-wrap">
                       <div className="seta-cta-anda-1">
                         <img

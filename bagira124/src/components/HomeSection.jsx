@@ -5,17 +5,18 @@ const HomeSection = () => {
     <div id="home" className="hero-section panel">
       <div className="page-padding">
         <div className="hero-component">
+          <div className="absolute hidden lg:block w-[100vw] left-0 -translate-x-[2.5rem] h-[94px] from-black to-transparent bg-gradient-to-b z-10 pointer-events-none" />
           <img
             src="/images/6405cdaf4aff8b98974c7362_Logo-NV.webp"
             loading="lazy"
             alt="Logo BAGIRA"
-            className="hero-logo"
+            className="hero-logo z-10"
           />
 
           <div className="hero-title-component">
             <div className="hero-title">
               <h1 load="anim" split="words" className="jost-700-122 ">
-                Life without art is just ‘meh’
+                The world without art is just ‘meh’
               </h1>
             </div>
 
@@ -41,12 +42,18 @@ const HomeSection = () => {
                     className="small-links"
                   >
                     <div className="collection-numero w-dyn-list">
-                      <div role="list" className="collection-numero w-dyn-items">
+                      <div
+                        role="list"
+                        className="collection-numero w-dyn-items"
+                      >
                         <div
                           role="listitem"
                           className="collection-numero w-dyn-item"
                         >
-                          <a href="tel:+5999 686 38 62" className="josefin-400-13">
+                          <a
+                            href="tel:+5999 686 38 62"
+                            className="josefin-400-13"
+                          >
                             +5999 686 38 62
                           </a>
                         </div>
@@ -67,7 +74,10 @@ const HomeSection = () => {
 
                   <div className="small-links">
                     <div className="collection-numero w-dyn-list">
-                      <div role="list" className="collection-numero w-dyn-items">
+                      <div
+                        role="list"
+                        className="collection-numero w-dyn-items"
+                      >
                         <div
                           role="listitem"
                           className="collection-numero w-dyn-item"
@@ -104,8 +114,8 @@ const HomeSection = () => {
                 href="#about"
                 className="big-cta about max-w-full h-full inline-block"
               >
-                <div className="big-cta-text">
-                  <div className="josefin-400-13">scroll</div>
+                <div className="big-cta-text z-10">
+                  <div className="josefin-600-20">scroll</div>
                 </div>
 
                 <div className="big-cta-hover"></div>

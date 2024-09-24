@@ -61,7 +61,7 @@ export default function Home() {
                     {/* <CandCSection /> */}
                     <ShopSection />
                     <GallerySection />
-                    {/* <GalleryCircleSection /> */}
+                    <GalleryCircleSection />
                     <LocationSection />
                     <MuralsSection />
                   </div>

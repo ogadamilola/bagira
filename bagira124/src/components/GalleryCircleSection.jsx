@@ -89,15 +89,16 @@ const GalleryCircleSection = () => {
                 fill="transparent"
               />
               <text
-                className="josefin-400-13"
+                className="josefin-600-20 normal-case"
                 fill="white"
               >
                 <textPath
                   href="#circlePath"
                   textAnchor="middle"
                   startOffset="50%"
+                  fontSize="15"
                 >
-                  Life Without Art is just &quot;Meh&quot; -
+                  The world without art is just &quot;meh&quot;—
                 </textPath>
               </text>
             </svg>
@@ -110,8 +111,8 @@ const GalleryCircleSection = () => {
                 alt=""
                 src="/images/The_gallery_logo_black.webp"
                 objectFit="cover"
-                height={100}
-                width={100}
+                height={170}
+                width={414}
                 className="gallery-circle-image"
               />
               <video

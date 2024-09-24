@@ -30,7 +30,7 @@ const GallerySection = () => {
 
           <div className="gallery-bottom">
             <div className="gallery-sub-title-2">
-              <div anim="1" split="words" className="jost-300-122 ">
+              <div anim="1" split="words" className="josefin-600-48 tracking-[1.5rem]">
                 IN KURA HULANDA
               </div>
             </div>
@@ -100,7 +100,7 @@ const GallerySection = () => {
           </div>
         </div>
       </div>
-      <GalleryCircleSection />
+      
     </div>
   );
 };
