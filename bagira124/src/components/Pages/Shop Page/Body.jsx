@@ -162,7 +162,7 @@ const Body = ({
             </div>
             <div className="justify-center items-start flex relative flex-col w-full h-full  mb-[1.875rem]">
               <div className="text-start relative mb-[1.875rem] md:mb-[1.875rem]">
-                <div className="jost-700-48 text-ellipsis">'{title}'</div>
+                <div className="jost-700-48 text-ellipsis">&apos;{title}&apos;</div>
               </div>
               <div className="justify-between items-start flex relative flex-col mb-[1.875rem] w-full gap-y-[1.875rem]">
                 <div className="justify-start items-center flex relative flex-row gap-x-[0.875rem]">
@@ -179,7 +179,7 @@ const Body = ({
                     </div>
                   )}
                 </div>
-                <h2 className="jost-300-18 mt-[2rem]">I'm Interested In This Piece...</h2>
+                <h2 className="jost-300-18 mt-[2rem]">I&apos;m Interested In This Piece...</h2>
                 <div className="flex gap-[1.5rem]">
                   <a
                     href="https://api.whatsapp.com/send?phone=+59996863862"
