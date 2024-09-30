@@ -2,9 +2,67 @@ import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
 import { ArtworkContext } from "@/contexts/ArtworkContext";
 
+import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  CarouselDots,
+} from "@/components/ui/carousel";
+
 const Body = () => {
   const { artwork, loading, error } = useContext(ArtworkContext);
   const [paintings, setPaintings] = useState(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleSlideChange = (index) => {
+    setActiveSlide(index);
+  };
+
+  const Reviews = [
+    {
+      src: "/images/IMG_8383.jpg",
+      description:
+        "Bagira was really able to capture the essence of the concept and brought this project to life by a one of a kind mural!",
+      title: "Caleo",
+      name: "Khalid",
+    },
+    {
+      src: "/images/IMG_8527-2.jpg",
+      description:
+        "Our goal with the CrossFit box concept was to create a vibrant, motivational space that energized high-intensity workouts. We sought a Bagira original for its standout, colorful impact. The result? A dynamic, inspiring wall that transforms our fitness experience into something truly exciting and engaging.",
+      title: "RPM",
+      name: "Liz Van De Laar",
+    },
+    {
+      src: "/images/63d3f9ba4c4c44c7c6346fb6_OpenGraph.webp",
+      description: "Dutch treat mural review",
+      title: "Dutch",
+      name: "Dhino",
+    },
+    {
+      src: "/images/murals-hero.png",
+      description: "Bagira mural review minister",
+      title: "Min. Justitie",
+      name: "Minister Hato",
+    },
+    {
+      src: "/images/IMG_8528.jpg",
+      description: "Rustiq mural review",
+      title: "Rustiq",
+      name: "Alex",
+    },
+    {
+      src: "/images/IMG_8536.jpg",
+      description:
+        "I love working with Bagira. For our new colorful Boutique Hotel I wanted something that matched our Hotel’s core design aspects. I had a specific idea in my mind but had no clue how to brief anyone on it. Somehow, she got it and we just let her creativity flow. A few years later and we still love every cm of our fabulous mural.",
+      title: "Wynwood Boutique Hotel",
+      name: "Marijke",
+    },
+  ];
 
   // useEffect(() => {
   //   if (artwork) {
@@ -244,7 +302,7 @@ const Body = () => {
               <div className="flex flex-col justify-start items-start flex-grow gap-[30px]">
                 <div className="flex flex-col justify-start items-start h-[257.14px]  gap-3">
                   <div className="flex flex-col justify-start items-start self-stretch relative">
-                    <p className="self-stretch  text-xl font-semibold text-left capitalize text-black">
+                    <p className="jost-700-32 self-stretch  text-xl font-semibold text-left capitalize text-black">
                       Durable
                     </p>
                   </div>
@@ -260,7 +318,7 @@ const Body = () => {
                 </div>
                 <div className="flex flex-col justify-start items-start h-[257.14px]  gap-3">
                   <div className="flex flex-col justify-start items-start self-stretch relative">
-                    <p className="self-stretch  text-xl font-semibold text-left capitalize text-black">
+                    <p className="jost-700-32 self-stretch  text-xl font-semibold text-left capitalize text-black">
                       Customization
                     </p>
                   </div>
@@ -278,7 +336,7 @@ const Body = () => {
               <div className="flex flex-col justify-start items-start flex-grow gap-[30px]">
                 <div className="flex flex-col justify-start items-start h-[257.14px]  gap-3">
                   <div className="flex flex-col justify-start items-start self-stretch relative">
-                    <p className="self-stretch  text-xl font-semibold text-left capitalize text-black">
+                    <p className="jost-700-32 self-stretch  text-xl font-semibold text-left capitalize text-black">
                       Collaboration
                     </p>
                   </div>
@@ -455,8 +513,8 @@ const Body = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-start left-0 top-[202px] px-[3px] pt-[5px] pb-[3px]">
-              <div className="flex flex-col justify-start items-start self-stretch flex-grow">
-                <div className="flex flex-col justify-start items-center self-stretch relative px-[347.55999755859375px]">
+              <div className="flex flex-col justify-start items-center self-stretch">
+                {/* <div className="flex flex-col justify-start items-center self-stretch relative px-[347.55999755859375px]">
                   <div className="h-[509.56px] relative overflow-hidden">
                     <div className="flex justify-start items-start h-[469.56px]  left-[-1042px] top-0">
                       <div className="flex flex-col justify-center items-start self-stretch pr-[13px]">
@@ -508,7 +566,76 @@ const Body = () => {
                     <div className="w-1.5 h-1.5 opacity-20 rounded-[3px] bg-black" />
                     <div className="w-1.5 h-1.5 opacity-20 rounded-[3px] bg-black" />
                   </div>
-                </div>
+                </div> */}
+                <Carousel
+                  className="flex flex-col justify-between w-full h-full relative overflow-hidden mt-12"
+                  selectedItem={activeSlide} // Set the current slide
+                  showArrows={false} // Hide default arrows
+                  onChange={(index) => handleSlideChange(index)} // Handle slide change
+                  plugins={[
+                    Autoplay({
+                      delay: 5000,
+                    }),
+                  ]}
+                  opts={{
+                    align: "start",
+                    loop: true,
+                  }}
+                >
+                  <CarouselContent className="flex w-full h-full">
+                    {Reviews.map((_, index) => (
+                      <CarouselItem
+                        key={index}
+                        className="flex w-full h-full p-0"
+                      >
+                        <Card className="flex w-full h-full bg-transparent border-none rounded-none text-black shadow-none">
+                          <CardContent className="flex w-full items-center justify-center">
+                            <div className="flex flex-col-reverse justify-start items-start space-y-[-0.6000000238418579px] space-y-reverse">
+                              <div className="flex flex-col justify-center items-center self-stretch gap-[2rem]">
+                                <div className="flex flex-col justify-start items-center self-stretch relative mt-12">
+                                  <p className="self-stretch italic text-center text-black max-w-[25rem] lg:max-w-[100ch] line-clamp-4">
+                                    {_.description}
+                                  </p>
+                                </div>
+                                <div className="flex flex-col w-full items-center justify-center">
+                                  <p className="jost-700-58 normal-case text-center text-black max-w-[25rem] lg:max-w-[100ch]">
+                                    {_.title}
+                                  </p>
+
+                                  <p className="jost-700-32 text-center capitalize text-black mt-6 max-w-[25rem]">
+                                    {_.name}
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="flex flex-col justify-start items-start self-stretch pb-6">
+                                <div className="flex justify-center items-center self-stretch">
+                                  <div className="flex size-[20rem] rounded-2xl flex-col justify-start items-center relative overflow-hidden">
+                                    <img
+                                      src={_.src}
+                                      loading="lazy"
+                                      alt="BAGIRA"
+                                      className="size-full object-cover"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+
+                  {/* Custom Dot Navigation */}
+                  <div className="flex flex-row items-center justify-center gap-10 mt-12">
+                    {/* <CarouselPrevious className="flex flex-col p-2 w-[5vw] h-[5vw] border-none" /> */}
+                    <CarouselDots
+                      itemCount={Reviews.length}
+                      className="flex flex-row h-[0.75rem]"
+                    />
+                    {/* <CarouselNext className="flex flex-col p-2 w-[5vw] h-[5vw] border-none" /> */}
+                  </div>
+                </Carousel>
               </div>
             </div>
           </div>
