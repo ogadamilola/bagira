@@ -54,8 +54,8 @@ const MuralsSection = () => {
 
                 <div className="murals-cta-component">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+59996863862"
-                    target="_blank"
+                    href="/murals"
+                    // target="_blank"
                     className=" max-w-full h-full inline-block"
                   >
                     <div

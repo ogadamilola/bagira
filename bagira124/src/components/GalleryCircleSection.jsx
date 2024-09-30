@@ -104,7 +104,7 @@ const GalleryCircleSection = () => {
             </svg>
 
             <a
-              href="/the-gallery"
+              href="/gallery"
               className="gallery-circle-a"
             >
               <Image

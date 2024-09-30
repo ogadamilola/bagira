@@ -80,9 +80,9 @@ const Body = () => {
   const [paintings, setPaintings] = useState(null);
 
   // useEffect(() => {
-  //   if (artwork) {
-  //     console.log("Artwork data: ", artwork);
-  //   }
+  //  if (artwork) {
+  //   console.log("Artwork data: ", artwork);
+  //  }
   // }, [artwork]);
 
   // Map for Recently Sold Artwork
@@ -130,7 +130,7 @@ const Body = () => {
   }, [artwork]);
 
   return (
-    <div id="shop" className="page-section">
+    <div id="shop" className="page-section josefin-400-20">
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
         <div className="text-center mb-[1.875rem]">
           <h2 className="josefin-400-26">OTROBANDA, CURAÇAO</h2>
@@ -143,52 +143,62 @@ const Body = () => {
         <div className="horizontal-line grey"></div>
       </div>
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
-        <div className="flex flex-col lg:flex-row justify-center items-center self-stretch flex-grow-0 flex-shrink-0 gap-[60px] pt-[115px]">
-          <div className="flex w-full flex-col justify-start items-start flex-grow">
-            <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[753.33px] relative pb-[30px]">
-              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[753.33px] text-[58px] font-bold text-left text-black">
+        <div className="flex flex-col lg:flex-row justify-between items-center self-stretch gap-[2rem] pt-[115px]">
+          <div className="flex w-full flex-col justify-start items-start lg:max-w-[50%]">
+            <div className="flex flex-col justify-start items-center w-[753.33px] relative pb-[30px]">
+              <p className="jost-700-58 lowercase self-stretch w-[753.33px] text-[58px] font-bold text-left text-black">
                 the gallery is now open
               </p>
             </div>
-            <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative pb-[30px]">
-              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-lg text-left text-black">
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-lg text-left text-black">
-                  We opened our doors March 23, 2024. A beautiful space
-                  dedicated to showcasing the beauty and
-                </span>
-                <br />
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-lg text-left text-black">
-                  diversity of contemporary art.
-                </span>
+            <div className="flex flex-col justify-start items-start self-stretch relative pb-[30px]">
+              <p className="self-stretch w-[820px] text-lg text-left text-black">
+                We opened our doors March 23, 2024. A beautiful space dedicated
+                to showcasing the beauty and diversity of contemporary art.
               </p>
             </div>
-            <div className="flex justify-center items-start flex-grow-0 flex-shrink-0 bg-[#0f1211]">
-              <div className="flex flex-row-reverse justify-start items-center flex-grow-0 flex-shrink-0 h-[47px] relative gap-[18px] px-[25px]">
-                <svg
-                  width={8}
-                  height={8}
-                  viewBox="0 0 8 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-grow-0 flex-shrink-0"
-                  preserveAspectRatio="none"
+            <div className="w-full flex">
+              <a
+                href="/"
+                className="cta-link artwork[x] max-w-full h-full inline-block"
+              >
+                <div
+                  data-w-id="e458047e-b02a-b003-344d-013e414fafd4"
+                  className="cta"
                 >
-                  <path
-                    d="M6.48744 6.1689L6.48558 1.96535L0.957887 7.49304L0.456922 6.99208L5.98462 1.46438L1.78107 1.46253L1.78068 0.754472L7.19323 0.75674L7.1955 6.16929L6.48744 6.1689Z"
-                    fill="white"
-                    stroke="white"
-                    stroke-width="0.5"
-                  />
-                </svg>
-                <div className="flex w-full flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative">
-                  <p className="flex-grow-0 flex-shrink-0 text-[13px] text-left uppercase text-white">
-                    Stay Updated
-                  </p>
+                  <div className="cta-ball">
+                    <div className="josefin-400-13 z-10 text-nowrap text-white">
+                      Stay Updated
+                    </div>
+                    <div className="seta-cta-wrap">
+                      <div className="seta-cta-anda-1">
+                        <img
+                          src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          className="seta-cta-redirect"
+                        />
+                      </div>
+
+                      <div className="seta-cta-anda-2">
+                        <img
+                          src="/images/64061c1e2a3bfa6e8bc74d9c_seta-cta.svg"
+                          loading="lazy"
+                          alt=""
+                          className="seta-cta-redirect"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-w-id="5a2429a5-eb5f-a67f-523e-f06da6ab7913"
+                    className="cta-hover-sticky"
+                  ></div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-start flex-grow h-[600px] relative overflow-hidden">
+          <div className="flex flex-col justify-center items-start h-[600px] relative overflow-hidden lg:max-w-[50%]">
             <img
               src="/images/IMG_9527-1-scaled.png"
               loading="lazy"
@@ -202,8 +212,8 @@ const Body = () => {
         <div className="horizontal-line grey"></div>
       </div>
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
-        <div className="flex flex-col lg:flex-row justify-center items-center self-stretch flex-grow-0 flex-shrink-0 gap-[60px] pt-[115px]">
-          <div className="flex flex-col justify-center items-center flex-grow h-[600px] relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row justify-between items-center self-stretch gap-[2rem] pt-[115px]">
+          <div className="flex flex-col justify-center items-center h-[600px] relative overflow-hidden lg:max-w-[50%]">
             <img
               src="/images/IMG_7906-2.png"
               loading="lazy"
@@ -211,34 +221,23 @@ const Body = () => {
               className="size-full object-cover"
             />
           </div>
-          <div className="flex w-full flex-col justify-start items-start flex-grow gap-4 pt-2">
-            <div className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative pb-[30px]">
-              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-[62px] font-black text-left text-black">
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-[62px] font-black text-left text-black">
+          <div className="flex w-full flex-col justify-start items-start gap-4 pt-2 lg:max-w-[50%]">
+            <div className="flex flex-col justify-start items-center self-stretch relative pb-[30px]">
+              <p className="self-stretch w-[820px] text-[62px] font-black text-left text-black">
+                <span className="jost-700-58 normal-case self-stretch w-[820px] text-[62px] font-black text-left text-black">
                   Hidden gem in
-                </span>
-                <br />
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-[62px] font-black text-left text-black">
+                  <br />
                   Otrobanda
                 </span>
               </p>
             </div>
-            <div className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative">
-              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-xl text-left text-black">
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-xl text-left text-black">
-                  The gallery is located in the heart of Otrobanda, Curacao,
-                  specifically in Kura Hulanda
-                </span>
-                <br />
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-xl text-left text-black">
-                  Village. We are open mainly in the afternoon through the
-                  evening, take a stroll in the
-                </span>
-                <br />
-                <span className="self-stretch flex-grow-0 flex-shrink-0 w-[820px] text-xl text-left text-black">
-                  Village, have drinks and a nice dinner and come by to admire
-                  the artworks.
-                </span>
+            <div className="flex flex-col justify-start items-center self-stretch relative">
+              <p className="self-stretch w-[820px] text-xl text-left text-black">
+                The gallery is located in the heart of Otrobanda, Curacao,
+                specifically in Kura Hulanda Village. We are open mainly in the
+                afternoon through the evening, take a stroll in the Village,
+                have drinks and a nice dinner and come by to admire the
+                artworks.
               </p>
             </div>
           </div>
@@ -265,7 +264,7 @@ const Body = () => {
         <div className="horizontal-line grey"></div>
       </div>
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
-      <iframe
+        <iframe
           src="https://tourmkr.com/F1bvPdKIKm/43774788p&232.52h&85.72t"
           className="w-full h-[37.5rem]"
           allowfullscreen=""
