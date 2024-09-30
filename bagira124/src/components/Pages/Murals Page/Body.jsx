@@ -98,9 +98,9 @@ const Body = () => {
                 />
               </div>
               <div className="flex flex-col justify-center items-start self-stretch pb-1">
-                <div className="flex flex-col justify-start items-start flex-grow w-[572.48px]">
+                <div className="flex flex-col justify-start items-start flex-grow">
                   <div className="flex flex-col justify-start items-start self-stretch relative">
-                    <p className="self-stretch w-[572.48px] text-[15px] font-light text-left text-black">
+                    <p className="self-stretch text-[15px] font-light text-left text-black">
                       Lions Dive Beach Resort
                     </p>
                   </div>
@@ -294,7 +294,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-start items-start flex-grow gap-5 max-w-[1/2]">
+            <div className="flex flex-col justify-start items-start flex-grow gap-5 lg:max-w-[50%]">
               <div className="flex flex-col justify-start items-start self-stretch h-[478.13px] relative overflow-hidden">
                 <img
                   src="/images/6405d4c052dec18e7d8789b9_hero-p-2000.webp"
@@ -325,7 +325,7 @@ const Body = () => {
               />
             </div>
             <div className="flex flex-col justify-start items-start self-stretch relative">
-              <p className="self-stretch w-[820px] text-base font-light text-left text-black">
+              <p className="self-stretch text-base font-light text-left text-black">
                 RPM Crossfit Curacao
               </p>
             </div>
@@ -333,12 +333,12 @@ const Body = () => {
           <div className="flex flex-col lg:flex-row justify-center items-center self-stretch flex-grow overflow-hidden gap-[30px] lg:max-w-[50%]">
             <div className="flex flex-col justify-center items-start self-stretch">
               <div className="flex flex-col justify-start items-start relative pb-[30px]">
-                <p className="self-stretch w-[301px] text-3xl font-bold text-left lowercase text-black">
+                <p className="self-stretch text-3xl font-bold text-left lowercase text-black">
                   elevate your business
                 </p>
               </div>
               <div className="flex flex-col justify-start items-start relative">
-                <p className="self-stretch w-[228px] text-base text-left lowercase text-black">
+                <p className="self-stretch text-base text-left lowercase text-black">
                   CONTACT US IF YOU WISH TO HAVE A MURAL!
                 </p>
               </div>
@@ -434,9 +434,9 @@ const Body = () => {
         <div className="horizontal-line grey"></div>
       </div>
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
-        <div className="flex flex-col justify-center items-center w-[1920px] relative px-[95px]">
-          <div className="flex-grow w-[1730px] relative">
-            <div className="flex flex-col justify-center items-start w-[1730px]  left-1.5 top-[24.26px] px-[7px] pt-4 pb-2.5">
+        <div className="flex flex-col justify-center items-center relative px-[95px]">
+          <div className="flex-grow relative">
+            <div className="flex flex-col justify-center items-start left-1.5 top-[24.26px] px-[7px] pt-4 pb-2.5">
               <div className="flex flex-col justify-start items-start self-stretch flex-grow">
                 <div className="flex flex-col justify-start items-center self-stretch relative pl-[677.8800048828125px] pr-[677.8699951171875px]">
                   <p className="jost-700-122 normal-case font-black text-center text-black">
@@ -445,26 +445,26 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-start w-[1730px]  left-0 top-[126px]">
+            <div className="flex flex-col justify-center items-start left-0 top-[126px]">
               <div className="flex flex-col justify-start items-start self-stretch flex-grow">
                 <div className="flex flex-col justify-start items-center self-stretch relative px-[801.5599975585938px]">
-                  <p className="self-stretch w-[126.88px] text-[21px] font-bold text-center text-black">
+                  <p className="self-stretch text-[21px] font-bold text-center text-black">
                     MURALS
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-start w-[1730px]  left-0 top-[202px] px-[3px] pt-[5px] pb-[3px]">
+            <div className="flex flex-col justify-center items-start left-0 top-[202px] px-[3px] pt-[5px] pb-[3px]">
               <div className="flex flex-col justify-start items-start self-stretch flex-grow">
                 <div className="flex flex-col justify-start items-center self-stretch relative px-[347.55999755859375px]">
-                  <div className="w-[1028.88px] h-[509.56px] relative overflow-hidden">
-                    <div className="flex justify-start items-start w-[2084px] h-[469.56px]  left-[-1042px] top-0 pl-[1042px]">
-                      <div className="flex flex-col justify-center items-start self-stretch w-[1042px] pr-[13px]">
-                        <div className="flex flex-col justify-start items-start h-[469.56px] w-[1029px] overflow-hidden p-5">
-                          <div className="flex flex-col-reverse justify-start items-start w-[1009px] space-y-[-0.6000000238418579px] space-y-reverse">
+                  <div className="h-[509.56px] relative overflow-hidden">
+                    <div className="flex justify-start items-start h-[469.56px]  left-[-1042px] top-0">
+                      <div className="flex flex-col justify-center items-start self-stretch pr-[13px]">
+                        <div className="flex flex-col justify-start items-start h-[469.56px] overflow-hidden p-5">
+                          <div className="flex flex-col-reverse justify-start items-start space-y-[-0.6000000238418579px] space-y-reverse">
                             <div className="flex flex-col justify-start items-start self-stretch gap-[25px]">
                               <div className="flex flex-col justify-start items-center self-stretch relative pl-[32.91999816894531px] pr-[32.93000030517578px] pb-[0.5899999737739563px]">
-                                <p className="self-stretch w-[943.15px] text-[20.799999237060547px] italic text-center text-black">
+                                <p className="self-stretch text-[20.799999237060547px] italic text-center text-black">
                                   Bagira was really able to capture the essence
                                   of the concept and brought this project to
                                   life by a one of a kind mural!
@@ -472,12 +472,12 @@ const Body = () => {
                               </div>
                               <div className="flex flex-col justify-start items-start self-stretch">
                                 <div className="flex flex-col justify-start items-center self-stretch relative pl-[416.3900146484375px] pr-[416.3999938964844px]">
-                                  <p className="self-stretch w-[176.21px] font-bold text-center text-black">
+                                  <p className="self-stretch font-bold text-center text-black">
                                     Caleo
                                   </p>
                                 </div>
                                 <div className="flex flex-col justify-start items-center self-stretch relative pl-[464.1300048828125px] pr-[464.1199951171875px]">
-                                  <p className="self-stretch w-[80.75px] text-xl font-semibold text-center capitalize text-black">
+                                  <p className="self-stretch text-xl font-semibold text-center capitalize text-black">
                                     Khalid
                                   </p>
                                 </div>
@@ -500,7 +500,7 @@ const Body = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex justify-start items-start w-[1724px]  left-0 top-[480.56px] gap-3 px-[814px] pt-[11px] pb-[7px]">
+                  <div className="flex justify-start items-start left-0 top-[480.56px] gap-3 px-[814px] pt-[11px] pb-[7px]">
                     <div className="w-1.5 h-1.5 rounded-[3px] bg-black" />
                     <div className="w-1.5 h-1.5 opacity-20 rounded-[3px] bg-black" />
                     <div className="w-1.5 h-1.5 opacity-20 rounded-[3px] bg-black" />

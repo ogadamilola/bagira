@@ -145,13 +145,13 @@ const Body = () => {
       <div className="relative overflow-hidden flex-col justify-center items-center flex w-full">
         <div className="flex flex-col lg:flex-row justify-between items-center self-stretch gap-[2rem] pt-[115px]">
           <div className="flex w-full flex-col justify-start items-start lg:max-w-[50%]">
-            <div className="flex flex-col justify-start items-center w-[753.33px] relative pb-[30px]">
-              <p className="jost-700-58 lowercase self-stretch w-[753.33px] text-[58px] font-bold text-left text-black">
+            <div className="flex w-full flex-col justify-start items-center relative pb-[30px]">
+              <p className="jost-700-58 w-full lowercase self-stretch text-[58px] font-bold text-left text-black">
                 the gallery is now open
               </p>
             </div>
             <div className="flex flex-col justify-start items-start self-stretch relative pb-[30px]">
-              <p className="self-stretch w-[820px] text-lg text-left text-black">
+              <p className="self-stretch text-lg text-left text-black">
                 We opened our doors March 23, 2024. A beautiful space dedicated
                 to showcasing the beauty and diversity of contemporary art.
               </p>
@@ -223,8 +223,8 @@ const Body = () => {
           </div>
           <div className="flex w-full flex-col justify-start items-start gap-4 pt-2 lg:max-w-[50%]">
             <div className="flex flex-col justify-start items-center self-stretch relative pb-[30px]">
-              <p className="self-stretch w-[820px] text-[62px] font-black text-left text-black">
-                <span className="jost-700-58 normal-case self-stretch w-[820px] text-[62px] font-black text-left text-black">
+              <p className="self-stretch text-[62px] font-black text-left text-black">
+                <span className="jost-700-58 normal-case self-stretch text-[62px] font-black text-left text-black">
                   Hidden gem in
                   <br />
                   Otrobanda
@@ -232,7 +232,7 @@ const Body = () => {
               </p>
             </div>
             <div className="flex flex-col justify-start items-center self-stretch relative">
-              <p className="self-stretch w-[820px] text-xl text-left text-black">
+              <p className="self-stretch text-xl text-left text-black">
                 The gallery is located in the heart of Otrobanda, Curacao,
                 specifically in Kura Hulanda Village. We are open mainly in the
                 afternoon through the evening, take a stroll in the Village,
