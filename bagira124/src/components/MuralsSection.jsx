@@ -231,7 +231,7 @@ const MuralsSection = () => {
                 {/* Instagram Horizontal Row with last 6 Posts */}
                 <div className="mt-[1.875rem] instagram-feed">
                   <div className="instagram-posts-wrapper flex justify-center space-x-4">
-                    {posts.length > 0 ? (
+                    {Array.isArray(posts) && posts.length > 0 ? (
                       posts.map((post) => (
                         <div key={post.id} className="instagram-post">
                           <a

@@ -1,6 +1,7 @@
 // components/FlowScript.js
 "use client";
 import { useEffect } from "react";
+import $ from "jquery";
 
 const FlowScript = () => {
   useEffect(() => {
