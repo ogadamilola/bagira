@@ -1,0 +1,29 @@
+# Node modules for both directories
+bagira124/node_modules/
+bagiracms/node_modules/
+
+# Build output for Next.js (bagira124) and Sanity (bagiracms)
+bagira124/.next/
+bagira124/out/
+bagiracms/dist/
+
+# Log files for both directories
+bagira124/npm-debug.log*
+bagiracms/npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables for both directories
+bagira124/.env
+bagira124/.env.local
+bagira124/.env.*.local
+bagiracms/.env
+bagiracms/.env.local
+
+# Mac OS files
+.DS_Store
+
+# Misc
+*.log
+
