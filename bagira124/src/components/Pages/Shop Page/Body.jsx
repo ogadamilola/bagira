@@ -11,6 +11,7 @@ const Body = ({
   year,
   size,
   description,
+  addtionalDescription,
   availability,
   image,
   images,
@@ -269,6 +270,7 @@ const Body = ({
                   <h2 className="jost-300-16  mb-[0.75rem]">{year}</h2>
                   <h2 className="jost-300-16  mb-[0.75rem]">{size}</h2>
                   <h2 className="jost-300-16  mb-[0.75rem]">{description}</h2>
+                  <h2 className="jost-300-16  mb-[0.75rem]">{addtionalDescription}</h2>
                 </div>
               </div>
             </div>

@@ -45,19 +45,32 @@ export default defineType({
       title: 'Price (ƒ)',
       type: 'number',
     }),
-    defineField({
-      name: 'year',
-      title: 'Year',
-      type: 'number',
-    }),
+    // defineField({
+    //   name: 'year',
+    //   title: 'Year',
+    //   type: 'number',
+    // }),
     defineField({
       name: 'size',
-      title: 'Artwork Dimensions (A x B cm)',
+      title: 'Artwork Dimensions (A x B cm, A x B inches)',
       type: 'string',
     }),
     defineField({
       name: 'description',
       title: 'Artwork Description',
+      type: 'array',
+      of: [
+        {
+          title: 'Block',
+          type: 'block',
+          styles: [{title: 'Normal', value: 'normal'}],
+          lists: [],
+        },
+      ],
+    }),
+    defineField({
+      name: 'additionalDescription',
+      title: 'Additional Description',
       type: 'array',
       of: [
         {
