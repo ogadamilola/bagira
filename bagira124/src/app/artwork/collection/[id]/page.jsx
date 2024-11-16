@@ -72,7 +72,7 @@ export default function Home({ params }) {
                   <Body
                     title={product.title}
                     price={product.price}
-                    // year={product.year}
+                    year={product.year}
                     size={product.size}
                     description={flattenRichText(product.description)}
                     additionalDescription={flattenRichText(product.additionalDescription)}

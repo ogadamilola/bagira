@@ -45,11 +45,11 @@ export default defineType({
       title: 'Price (ƒ)',
       type: 'number',
     }),
-    // defineField({
-    //   name: 'year',
-    //   title: 'Year',
-    //   type: 'number',
-    // }),
+    defineField({
+      name: 'year',
+      title: 'Year',
+      type: 'number',
+    }),
     defineField({
       name: 'size',
       title: 'Artwork Dimensions (A x B cm, A x B inches)',
